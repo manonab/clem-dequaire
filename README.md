@@ -12,9 +12,14 @@ Welcome to the Awesome Portfolio project! This portfolio is designed for an amaz
 ## How to get started
 
 To get started, clone the repository and run: 
+```sh
 npm install
+```
+To start the project, run the following command: 
 
-To start the project, run the following command: npm run dev
+```sh
+npm run dev
+```
 
 The project will then be available at http://localhost:3000.
 
