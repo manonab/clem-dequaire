@@ -1,0 +1,40 @@
+{
+    "name": "clem-dequaire",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.tsx",
+    "type": "module",
+    "scripts": {
+        "build": "remix build",
+        "typecheck": "tsc",
+        "dev": "remix dev --manual",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/manonab/clem-dequaire.git"
+    },
+    "author": "manonab",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/manonab/clem-dequaire/issues"
+    },
+    "homepage": "https://github.com/manonab/clem-dequaire#readme",
+    "dependencies": {
+        "@remix-run/node": "^2.3.0",
+        "@remix-run/react": "^2.3.0",
+        "@remix-run/serve": "^2.3.0",
+        "isbot": "^3.7.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@remix-run/dev": "^2.3.0",
+        "@remix-run/eslint-config": "latest",
+        "@types/react": "^18.2.20",
+        "@types/react-dom": "^18.2.7",
+        "eslint": "^8.23.1",
+        "tailwindcss": "^3.3.5",
+        "typescript": "^5.1.6"
+    }
+}
