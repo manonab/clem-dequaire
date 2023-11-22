@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div>
-      <p>coucou from about</p>
+      <p className="font-clash">coucou from about</p>
     </div>
   );
 }

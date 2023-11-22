@@ -8,9 +8,12 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import styles from "~/tailwind.css";
+import { Layout } from "./common/layout";
+
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
 ];
+
 export default function App() {
   return (
     <html lang="en">
@@ -21,10 +24,13 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        <LiveReload />
+        <Layout>
+          <Outlet />
+          <ScrollRestoration />
+          <Scripts />
+          <LiveReload />
+        </Layout>
+
       </body>
     </html>
   );
