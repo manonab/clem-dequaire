@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 export default {
     content: ["./app/**/*.{js,ts,jsx,tsx,mdx}"],
@@ -8,8 +9,10 @@ export default {
                 mainColor: "#FCF6EF",
                 grayBlack: "#201F20",
                 yellowHome: "#F8FAD2",
+                orange: "#FF5C00",
                 redHome: "#FF0101",
                 blueHome: "#0071F3",
+                saumon: "#FCDED7",
             },
             fontFamily: {
                 clash: ["Clash"],
@@ -25,6 +28,7 @@ export default {
                 neueSemiBold: ["neue-semi"],
                 neueBold: ["neue-bold"],
                 neueExtra: ["neue-extra"],
+                footer: ["Public Sans", ...defaultTheme.fontFamily.sans],
             },
         },
     },

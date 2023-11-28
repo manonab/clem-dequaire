@@ -13,6 +13,7 @@ import Logo from "../../styles/assets/logo.png";
 import Mosaic from "../../styles/assets/mosaic.png";
 import Bear from "../../styles/assets/bear.png";
 import Capiche from "../../styles/assets/capiche.png";
+import Becks from "../../styles/assets/becks.png";
 
 export const Images = {
   eye: Eye,
@@ -29,6 +30,7 @@ export const Images = {
   logo: Logo,
   mosaic: Mosaic,
   bear: Bear,
-  capiche: Capiche
+  capiche: Capiche,
+  becks: Becks
 };
 

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import HomeComponent from "~/  components/home";
-import BackgroundSlider from "~/  components/home/background-slider";
 import { Images } from "~/common/images";
 import { motion } from "framer-motion";
+import BackgroundSlider from "~/components/home/background-slider";
+import HomeComponent from "~/components/home";
 
 export default function Index() {
   const [state, setState] = useState<{

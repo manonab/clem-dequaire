@@ -1,6 +1,6 @@
 // Layout.tsx
 import React, { ReactNode } from "react";
-import { Menu } from "~/  components/header";
+import { Menu } from "~/components/header";
 
 interface LayoutProps {
   children: ReactNode;
