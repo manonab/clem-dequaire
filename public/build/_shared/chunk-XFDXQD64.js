@@ -50,13 +50,16 @@ var capiche_default = "/build/_assets/capiche-ET66KVMZ.png";
 // app/styles/assets/becks.png
 var becks_default = "/build/_assets/becks-PBRWWEAP.png";
 
+// app/styles/assets/rabbit.png
+var rabbit_default = "/build/_assets/rabbit-IAV27EE5.png";
+
 // app/common/images/index.tsx
 if (import.meta) {
   import.meta.hot = createHotContext(
     //@ts-expect-error
     "app/common/images/index.tsx"
   );
-  import.meta.hot.lastModified = "1700658677083.206";
+  import.meta.hot.lastModified = "1701265396577.8948";
 }
 var Images = {
   eye: eye_default,
@@ -74,10 +77,11 @@ var Images = {
   mosaic: mosaic_default,
   bear: bear_default,
   capiche: capiche_default,
-  becks: becks_default
+  becks: becks_default,
+  rabbit: rabbit_default
 };
 
 export {
   Images
 };
-//# sourceMappingURL=/build/_shared/chunk-FW5BL6XR.js.map
+//# sourceMappingURL=/build/_shared/chunk-XFDXQD64.js.map

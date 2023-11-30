@@ -6,7 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
   useNavigate
-} from "/build/_shared/chunk-P4DS5TL5.js";
+} from "/build/_shared/chunk-2UQKAZU3.js";
 import "/build/_shared/chunk-GIAAE3CH.js";
 import {
   createHotContext
@@ -21,7 +21,7 @@ import {
 } from "/build/_shared/chunk-PNG5AS42.js";
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-ST7GTQ7P.css";
+var tailwind_default = "/build/_assets/tailwind-J7CR6VAV.css";
 
 // app/components/header/index.tsx
 var import_jsx_dev_runtime = __toESM(require_jsx_dev_runtime(), 1);
@@ -192,14 +192,19 @@ function App() {
         lineNumber: 31,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Meta, {}, void 0, false, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("link", { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" }, void 0, false, {
         fileName: "app/root.tsx",
         lineNumber: 32,
         columnNumber: 9
       }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Meta, {}, void 0, false, {
+        fileName: "app/root.tsx",
+        lineNumber: 34,
+        columnNumber: 9
+      }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Links, {}, void 0, false, {
         fileName: "app/root.tsx",
-        lineNumber: 33,
+        lineNumber: 35,
         columnNumber: 9
       }, this)
     ] }, void 0, true, {
@@ -210,31 +215,31 @@ function App() {
     /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("body", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Layout, { children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Outlet, {}, void 0, false, {
         fileName: "app/root.tsx",
-        lineNumber: 37,
+        lineNumber: 39,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(ScrollRestoration, {}, void 0, false, {
         fileName: "app/root.tsx",
-        lineNumber: 38,
+        lineNumber: 40,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Scripts, {}, void 0, false, {
         fileName: "app/root.tsx",
-        lineNumber: 39,
+        lineNumber: 41,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(LiveReload, {}, void 0, false, {
         fileName: "app/root.tsx",
-        lineNumber: 40,
+        lineNumber: 42,
         columnNumber: 11
       }, this)
     ] }, void 0, true, {
       fileName: "app/root.tsx",
-      lineNumber: 36,
+      lineNumber: 38,
       columnNumber: 9
     }, this) }, void 0, false, {
       fileName: "app/root.tsx",
-      lineNumber: 35,
+      lineNumber: 37,
       columnNumber: 7
     }, this)
   ] }, void 0, true, {
@@ -252,4 +257,4 @@ export {
   App as default,
   links
 };
-//# sourceMappingURL=/build/root-CKPTL6UY.js.map
+//# sourceMappingURL=/build/root-TAJBU2ND.js.map

@@ -3,7 +3,7 @@ import { Images } from "~/common/images";
 export default function Contact() {
   return (
     <div
-      className="rounded-[20px] mx-auto container w-[875px] h-[559px] z-10">
+      className="animate__animated animate__zoomIn animate__delay-1.3s  rounded-[20px] mx-auto container w-[875px] h-[559px] z-10">
       <div className="flex bg-mainColor justify-around flex-col gap-2 items-center">
         <p className="text-[80px] text-redHome font-neueSemiBold leading-[70px]">Hello you,</p>
         <p className="w-[526px] text-xl text-center leading-6">if you really really want to see this webiste, please keep in mind that it’s still a work in progress !</p>

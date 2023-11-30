@@ -13,6 +13,7 @@ export default {
                 redHome: "#FF0101",
                 blueHome: "#0071F3",
                 saumon: "#FCDED7",
+                royalBlue: "#0071F3",
             },
             fontFamily: {
                 clash: ["Clash"],
@@ -29,6 +30,7 @@ export default {
                 neueBold: ["neue-bold"],
                 neueExtra: ["neue-extra"],
                 footer: ["Public Sans", ...defaultTheme.fontFamily.sans],
+                inter: ["Inter", ...defaultTheme.fontFamily.sans],
             },
         },
     },

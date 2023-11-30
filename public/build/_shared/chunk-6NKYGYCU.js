@@ -1,9 +1,9 @@
 import {
   useNavigate
-} from "/build/_shared/chunk-P4DS5TL5.js";
+} from "/build/_shared/chunk-2UQKAZU3.js";
 import {
   Images
-} from "/build/_shared/chunk-FW5BL6XR.js";
+} from "/build/_shared/chunk-XFDXQD64.js";
 import {
   createHotContext
 } from "/build/_shared/chunk-43WGSL2O.js";
@@ -8189,60 +8189,184 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/home/description.tsx"
   );
-  import.meta.hot.lastModified = "1701167602063.4036";
+  import.meta.hot.lastModified = "1701266744251.4402";
 }
 var Description = () => {
   _s();
   const router = useNavigate();
   return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "w-full h-auto flex flex-col", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "w-full h-full bg-yellowHome mx-auto py-48 flex flex-col gap-[150px]", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "w-full h-full bg-yellowHome mx-auto flex flex-col gap-[150px] py-32", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "w-[1100px] ml-24 text-left text-orange text-[64px] leading-[57.6px] font-neueMedium", children: "Anchour is a hard-working marketing agency that propels good companies to discover greatness." }, void 0, false, {
-        fileName: "app/components/home/description.tsx",
-        lineNumber: 30,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "w-[1100px] ml-48 text-right text-orange text-[64px] leading-[57.6px] font-neueMedium", children: "We\u2019re pragmatic creatives who get our kicks helping brands win through design, digital experiences, and strategy." }, void 0, false, {
         fileName: "app/components/home/description.tsx",
         lineNumber: 31,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { onClick: () => router("/about"), className: "hover:cursor-pointer ml-20 flex border-b-black border-b-2 w-[184px] pb-4 items-center justify-around", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "w-[1100px] ml-48 text-right text-orange text-[64px] leading-[57.6px] font-neueMedium", children: "We\u2019re pragmatic creatives who get our kicks helping brands win through design, digital experiences, and strategy." }, void 0, false, {
+        fileName: "app/components/home/description.tsx",
+        lineNumber: 32,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { onClick: () => router("/about"), className: "mb-20 hover:cursor-pointer ml-28 flex border-b-black border-b-2 w-[184px] pb-2 items-center justify-around", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "uppercase text-xl	font-footer", children: "learn more" }, void 0, false, {
           fileName: "app/components/home/description.tsx",
-          lineNumber: 33,
+          lineNumber: 34,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(ArrowRight, {}, void 0, false, {
           fileName: "app/components/home/description.tsx",
-          lineNumber: 34,
+          lineNumber: 35,
           columnNumber: 11
         }, this)
       ] }, void 0, true, {
         fileName: "app/components/home/description.tsx",
-        lineNumber: 32,
+        lineNumber: 33,
         columnNumber: 9
       }, this)
     ] }, void 0, true, {
       fileName: "app/components/home/description.tsx",
-      lineNumber: 29,
+      lineNumber: 30,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "w-full h-screen bg-saumon", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "w-[800px] break-words", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "text-[250px] text-uppercase ", children: "Services" }, void 0, false, {
-      fileName: "app/components/home/description.tsx",
-      lineNumber: 39,
-      columnNumber: 11
-    }, this) }, void 0, false, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "w-screen h-full bg-saumon relative", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "flex items-start w-full -mt-24", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "w-[800px] ml-20", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "text-[250px] text-redHome font-neueMedium uppercase leading-[225px] ", children: "Servi" }, void 0, false, {
+          fileName: "app/components/home/description.tsx",
+          lineNumber: 41,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "text-[250px] text-redHome font-neueMedium uppercase leading-[225px]", children: "ces" }, void 0, false, {
+          fileName: "app/components/home/description.tsx",
+          lineNumber: 42,
+          columnNumber: 13
+        }, this)
+      ] }, void 0, true, {
+        fileName: "app/components/home/description.tsx",
+        lineNumber: 40,
+        columnNumber: 11
+      }, this) }, void 0, false, {
+        fileName: "app/components/home/description.tsx",
+        lineNumber: 39,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "flex items-center justify-around my-36", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "flex-col items-center gap-3", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "font-neueBold  text-[75px] leading-[75px]", children: "Digital" }, void 0, false, {
+            fileName: "app/components/home/description.tsx",
+            lineNumber: 47,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "flex items-center justify-around", children: [
+            /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "font-neueBold  text-[75px] leading-[75px]", children: "&" }, void 0, false, {
+              fileName: "app/components/home/description.tsx",
+              lineNumber: 49,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "font-neueBold  text-[75px] leading-[75px]", children: "marketing" }, void 0, false, {
+              fileName: "app/components/home/description.tsx",
+              lineNumber: 50,
+              columnNumber: 15
+            }, this)
+          ] }, void 0, true, {
+            fileName: "app/components/home/description.tsx",
+            lineNumber: 48,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "font-neueBold  text-[75px] leading-[75px]", children: "comms." }, void 0, false, {
+            fileName: "app/components/home/description.tsx",
+            lineNumber: 52,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, true, {
+          fileName: "app/components/home/description.tsx",
+          lineNumber: 46,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "font-neueBold  text-[75px] leading-[75px]", children: "Design" }, void 0, false, {
+          fileName: "app/components/home/description.tsx",
+          lineNumber: 54,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "font-neueBold  text-[75px] leading-[75px]", children: "Consulting" }, void 0, false, {
+          fileName: "app/components/home/description.tsx",
+          lineNumber: 55,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "app/components/home/description.tsx",
+        lineNumber: 45,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { onClick: () => router("/projects"), className: "my-20 hover:cursor-pointer ml-20 flex border-b-black border-b-2 w-[184px] pb-2 items-center justify-around", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "uppercase text-xl	font-footer", children: "what I do" }, void 0, false, {
+          fileName: "app/components/home/description.tsx",
+          lineNumber: 59,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(ArrowRight, {}, void 0, false, {
+          fileName: "app/components/home/description.tsx",
+          lineNumber: 60,
+          columnNumber: 13
+        }, this)
+      ] }, void 0, true, {
+        fileName: "app/components/home/description.tsx",
+        lineNumber: 58,
+        columnNumber: 11
+      }, this) }, void 0, false, {
+        fileName: "app/components/home/description.tsx",
+        lineNumber: 57,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
       fileName: "app/components/home/description.tsx",
       lineNumber: 38,
-      columnNumber: 9
-    }, this) }, void 0, false, {
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "w-screen h-screen bg-mainColor relative", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "flex-col items-center justify-center", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "flex justify-center mt-44 items-center text-[100px] leading-[100px] text-royalBlue uppercase font-neueSemiBold", children: [
+          "Like what you s",
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("span", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("img", { src: Images?.rabbit, className: "w-[130px] bg-center rounded-2xl mx-2" }, void 0, false, {
+            fileName: "app/components/home/description.tsx",
+            lineNumber: 66,
+            columnNumber: 158
+          }, this) }, void 0, false, {
+            fileName: "app/components/home/description.tsx",
+            lineNumber: 66,
+            columnNumber: 152
+          }, this),
+          "?"
+        ] }, void 0, true, {
+          fileName: "app/components/home/description.tsx",
+          lineNumber: 66,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "text-black font-footer font-medium leading-[100px] text-center text-[90px]", children: "Let\u2019s keep in touch." }, void 0, false, {
+          fileName: "app/components/home/description.tsx",
+          lineNumber: 67,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "app/components/home/description.tsx",
+        lineNumber: 65,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { onClick: () => router("/contact"), className: "hover:cursor-pointer border-black border my-20 rounded-3xl px-5 py-3 w-[200px] mx-auto", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "leading-[17.5px] font-bold text-sm text-center text-grayBlack", children: "CONTACT ME NOW" }, void 0, false, {
+        fileName: "app/components/home/description.tsx",
+        lineNumber: 70,
+        columnNumber: 11
+      }, this) }, void 0, false, {
+        fileName: "app/components/home/description.tsx",
+        lineNumber: 69,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
       fileName: "app/components/home/description.tsx",
-      lineNumber: 37,
+      lineNumber: 64,
       columnNumber: 7
     }, this)
   ] }, void 0, true, {
     fileName: "app/components/home/description.tsx",
-    lineNumber: 28,
+    lineNumber: 29,
     columnNumber: 10
   }, this);
 };
@@ -8429,4 +8553,4 @@ export {
   motion,
   home_default
 };
-//# sourceMappingURL=/build/_shared/chunk-D3BF25VY.js.map
+//# sourceMappingURL=/build/_shared/chunk-6NKYGYCU.js.map

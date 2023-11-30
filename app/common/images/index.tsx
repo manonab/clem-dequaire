@@ -14,6 +14,7 @@ import Mosaic from "../../styles/assets/mosaic.png";
 import Bear from "../../styles/assets/bear.png";
 import Capiche from "../../styles/assets/capiche.png";
 import Becks from "../../styles/assets/becks.png";
+import Rabbit from "../../styles/assets/rabbit.png";
 
 export const Images = {
   eye: Eye,
@@ -31,6 +32,7 @@ export const Images = {
   mosaic: Mosaic,
   bear: Bear,
   capiche: Capiche,
-  becks: Becks
+  becks: Becks,
+  rabbit: Rabbit,
 };
 

@@ -1,12 +1,12 @@
 import {
   home_default,
   motion
-} from "/build/_shared/chunk-D3BF25VY.js";
-import "/build/_shared/chunk-P4DS5TL5.js";
+} from "/build/_shared/chunk-6NKYGYCU.js";
+import "/build/_shared/chunk-2UQKAZU3.js";
 import "/build/_shared/chunk-GIAAE3CH.js";
 import {
   Images
-} from "/build/_shared/chunk-FW5BL6XR.js";
+} from "/build/_shared/chunk-XFDXQD64.js";
 import {
   createHotContext
 } from "/build/_shared/chunk-43WGSL2O.js";
@@ -45,7 +45,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/home/background-slider.tsx"
   );
-  import.meta.hot.lastModified = "1700656811529.9683";
+  import.meta.hot.lastModified = "1701250538755.7395";
 }
 var BackgroundSlider = ({
   isVisible = false
@@ -77,7 +77,7 @@ var BackgroundSlider = ({
   }, transition: {
     duration: 1,
     ease: [0.43, 0.13, 0.23, 0.96]
-  }, className: `${!isVisible ? "hidden" : "w-full md:min-h-[910px] flex justify-between items-start z-10 h-full inset-0 absolute -top-20 bg_slider "} ${isHovered && "hovered"}`, children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "flex-col", children: [
+  }, className: `animate__animated animate__fadeInUpBig animate__delay-1.3s ${!isVisible ? "hidden" : "w-full md:min-h-[910px] flex justify-between items-start z-10 h-full inset-0 absolute -top-20 bg_slider "} ${isHovered && "hovered"}`, children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "flex-col", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: `move-left-to-right uppercase text-[245px] leading-[200px] font-neueExtra`, style: {
       animationDelay: "2s"
     }, children: "for" }, void 0, false, {
@@ -235,4 +235,4 @@ window.$RefreshSig$ = prevRefreshSig;
 export {
   Index as default
 };
-//# sourceMappingURL=/build/routes/_index-JRASTSTQ.js.map
+//# sourceMappingURL=/build/routes/_index-U3ZZ2SDG.js.map
