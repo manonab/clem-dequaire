@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useHeaderColor } from "~/context";
 
 interface BgProps {
   isVisible: boolean;
@@ -7,27 +8,18 @@ interface BgProps {
 
 const BackgroundSlider: React.FC<BgProps> = ({ isVisible = false }: BgProps) => {
   const [isHovered, setIsHovered] = useState<boolean>(false);
-
+  const { setHeaderColor } = useHeaderColor();
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsHovered(true);
+      setHeaderColor('bg_slider');
     }, 1500);
 
     return () => {
       clearTimeout(timer);
     };
-  }, []);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsHovered(true);
-    }, 1500);
-
-    return () => {
-      clearTimeout(timer);
-    };
-  }, []);
+  }, [setHeaderColor]);
 
   return (
     <motion.div

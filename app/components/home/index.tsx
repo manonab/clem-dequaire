@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Images } from "~/common/images";
-// import { Construction } from "../construction";
-import { BigArrow } from "~/styles/assets/big-arrow";
+import { BigArrow } from "~/assets/big-arrow";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import Description from "./description";
 
@@ -39,7 +38,7 @@ const HomeComponent: React.FC = () => {
             className="relative"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ ...timing, delay: 1.3 }}
+            transition={{ ...timing, delay: 0.5 }}
           >
             <motion.img
               src={Images.bear}
@@ -64,7 +63,7 @@ const HomeComponent: React.FC = () => {
             className="w-[300px] h-[380px] opacity-[0.9] mt-[300px]"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ ...timing, delay: 1.5 }}
+            transition={{ ...timing, delay: 0.8 }}
           />
         </motion.div>
         <motion.div

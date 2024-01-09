@@ -1,17 +1,49 @@
-import { Images } from "~/common/images";
+import { useEffect } from "react";
+import { ParallaxProvider } from "react-scroll-parallax";
+import { BigDownArrow } from "~/assets/big-down-arrow";
+import { useHeaderColor } from "~/context";
 
 export default function About() {
+  const { setHeaderColor } = useHeaderColor();
+
+  useEffect(() => {
+    setHeaderColor("linear-background");
+  }, [setHeaderColor]);
+
   return (
-    <div
-      className="rounded-[20px] mx-auto container w-[875px] h-[559px] z-10">
-      <div className="flex bg-mainColor justify-around flex-col gap-2 items-center">
-        <p className="text-[80px] text-redHome font-neueSemiBold leading-[70px]">Hello you,</p>
-        <p className="w-[526px] text-xl text-center leading-6">if you really really want to see this webiste, please keep in mind that it’s still a work in progress !</p>
-        <img
-          src={Images.becks}
-          alt="victoria beckham image"
-          className="w-full h-[372px]" />
+    <ParallaxProvider>
+      <div className="flex-col flex gap-12 w-screen h-auto">
+        <div className="flex items-end justify-between w-auto">
+          <div className="min-w-[950px] flex-col flex">
+            <div className="w-[1259px] ml-10">
+              <p className="font-neueSemiBold text-[200px] uppercase leading-[180px] text-orange font-medium">IT’S ALL ABOUT PASSION.</p>
+            </div>
+            <div className="w-[637px] ml-12 my-16">
+              <p className="leading-[31.2px] text-justify text-2xl font-normal font-footer">Lorem ipsum dolor sit amet consectetur. Rhoncus maecenas non tempor ut sed sapien semper quis sem. Enim aliquet tristique fringilla orci turpis erat pulvinar. Sapien facilisis tellus netus tortor. Molestie turpis a ultrices blandit ut imperdiet duis.</p>
+            </div>
+          </div>
+          <div className="w-auto">
+            <p className="mx-10 uppercase text-redHome text-[100px] font-medium font-neueMedium leading-[90px]">Scroll</p>
+          </div>
+        </div>
+        <div className="self-end mr-[220px] -mb-[130px] z-[10]">
+          <BigDownArrow />
+        </div>
+        <div className="bg-saumon h-full w-full flex-col flex">
+          <div className="flex items-end justify-around">
+            <div className="bg-[#D9D9D9] w-[395px] h-[480px] rounded-[50px] -mt-10"></div>
+            <p className="-mb-40 z-[10] w-[802px] leading-[72px] text-royalBlue text-right text-[80px] font-neueMedium">Lorem ipsum dolor 32% sit amet consectetur. Neque leo euismod id mauris.</p>
+          </div>
+          <div className="flex items-center justify-around mb-10 mt-28 mx-20">
+            <p className="text-[25px] leading-[32px] font-normal font-footer text-justify w-[640px]">Lorem ipsum dolor sit amet consectetur. Rhoncus maecenas non tempor ut sed sapien semper quis sem. Enim aliquet tristique fringilla orci turpis erat pulvinar. Sapien facilisis tellus netus tortor. Molestie turpis a ultrices blandit ut imperdiet duis.</p>
+            <div className="bg-[#D9D9D9] z-0 w-[395px] h-[480px] rounded-[50px]"></div>
+          </div>
+        </div>
+
+        <div className="bg-mainColor h-full w-full flex-col flex gap-12">
+
+        </div>
       </div>
-    </div>
+    </ParallaxProvider>
   );
 }
