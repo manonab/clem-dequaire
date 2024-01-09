@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"  # Commande pour construire votre application
+  publish = "build"          # Dossier où se trouve le contenu à déployer
+  functions = "functions"     # Dossier contenant les fonctions serverless (si applicable)
+
+[dev]
+  command = "npm run dev"    # Commande pour exécuter localement votre application en mode développement
