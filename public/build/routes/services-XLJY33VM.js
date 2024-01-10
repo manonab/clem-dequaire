@@ -1,1 +1,0 @@
-import{a as l}from"/build/_shared/chunk-HW7LTQEW.js";import{d as e,f as i,g as r}from"/build/_shared/chunk-C46C5URB.js";var f=e(i(),1);var s=e(r(),1);function t(){let{setHeaderColor:o}=l();return(0,f.useEffect)(()=>{o("linear-services")},[o]),(0,s.jsx)("div",{className:"bg-yellowHome w-full h-full"})}export{t as default};

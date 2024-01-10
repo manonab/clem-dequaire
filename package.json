@@ -1,14 +1,12 @@
 {
     "name": "clem-dequaire",
     "version": "1.0.0",
-    "description": "",
-    "main": "index.tsx",
     "type": "module",
     "scripts": {
         "build": "remix build",
-        "typecheck": "tsc",
         "dev": "remix dev --manual",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "netlify serve",
+        "typecheck": "tsc"
     },
     "repository": {
         "type": "git",
@@ -25,6 +23,8 @@
         "@emotion/styled": "^11.11.0",
         "@mui/icons-material": "^5.14.18",
         "@mui/material": "^5.14.18",
+        "@netlify/functions": "^2.4.1",
+        "@netlify/remix-adapter": "^2.2.0",
         "@remix-run/node": "^2.3.0",
         "@remix-run/react": "^2.3.0",
         "@remix-run/serve": "^2.3.0",
