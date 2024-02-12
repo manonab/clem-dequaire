@@ -9,7 +9,7 @@ export const Menu: React.FC = () => {
 
   const pathTextMapping = [
     { path: "/about", name: "À propos" },
-    { path: "/values", name: "Mes valeurs" },
+    // { path: "/values", name: "Mes valeurs" },
     { path: "/services", name: "Services" },
     { path: "/projects", name: "Projets" }
   ];

@@ -55,19 +55,27 @@
   }
   @font-face {
     font-family: 'neue-medium';
-    src: url('./assets/fonts/NeueHelveticaBQMedium.woff') format('woff');
+    src: url('./assets/fonts/NeueHelveticaBQMedium.otf') format('truetype');
+  }
+  @font-face {
+    font-family: 'neue-regular';
+    src: url('./assets/fonts/NeueHelveticaBQRegular.otf') format('truetype');
   }
   @font-face {
     font-family: 'neue-semi';
-    src: url('./assets/fonts/NeueHelveticaBQHeavy.woff') format('woff');
+    src: url('./assets/fonts/NeueHelveticaBQHeavy.otf') format('truetype');
   }
   @font-face {
     font-family: 'neue-bold';
-    src: url('./assets/fonts/NeueHelveticaBQBold.woff') format('woff');
+    src: url('./assets/fonts/NeueHelveticaCondensedBQBold.otf') format('truetype');
   }
   @font-face {
     font-family: 'neue-extra';
-    src: url('./assets/fonts/NeueHelveticaBQBlack.woff') format('woff');
+    src: url('./assets/fonts/NeueHelveticaBQBlack.otf') format('truetype');
+  }
+  @font-face {
+    font-family: 'neue-condensed';
+    src: url('./assets/fonts/HelveticaNeueMediumCondensed.otf') format('truetype');
   }
 }
 

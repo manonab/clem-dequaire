@@ -32,7 +32,7 @@ const Description: React.FC = () => {
       <div className="w-screen h-full relative">
         <div className="flex items-start w-full -mt-24">
           <div className="w-[800px] ml-20">
-            <p className="text-[250px] text-redHome text-center font-neueMedium uppercase leading-[225px]">Services</p>
+            <p className="text-[250px] text-redHome text-center font-neueRegular uppercase leading-[225px]">Services</p>
           </div>
         </div>
         <div className="flex items-center justify-around my-36 mx-20">
@@ -47,7 +47,7 @@ const Description: React.FC = () => {
           <p className="font-neueBold  text-[75px] leading-[75px]">Design</p>
           <p className="font-neueBold  text-[75px] leading-[75px]">Consulting</p>
         </div>
-        <div onClick={() => router('/projects')} className="my-20 hover:cursor-pointer ml-20 flex border-b-black border-b-2 w-[184px] pb-2 items-center justify-around">
+        <div onClick={() => router('/projects')} className="mb-[250px] hover:cursor-pointer ml-20 flex border-b-black border-b-2 w-[184px] pb-2 items-center justify-around">
           <p className="uppercase text-xl	font-footer">VOIR PLUS</p>
           <ArrowRight />
         </div>

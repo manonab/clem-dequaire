@@ -14,6 +14,7 @@ export default {
                 blueHome: "#0071F3",
                 saumon: "#FCDED7",
                 royalBlue: "#0071F3",
+                magenta: "#E00F6D",
             },
             fontFamily: {
                 clash: ["Clash"],
@@ -29,6 +30,8 @@ export default {
                 neueSemiBold: ["neue-semi"],
                 neueBold: ["neue-bold"],
                 neueExtra: ["neue-extra"],
+                neueRegular: ["neue-regular"],
+                neueCondensed: ["neue-condensed"],
                 footer: ["Public Sans", ...defaultTheme.fontFamily.sans],
                 inter: ["Inter", ...defaultTheme.fontFamily.sans],
             },

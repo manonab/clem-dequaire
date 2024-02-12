@@ -34,8 +34,8 @@ const HomeComponent: React.FC = () => {
           transition={{ ...timing }}
         >
           <motion.img
-            src={Images.mosaic}
-            alt="mosaic image"
+            src={Images.has}
+            alt="ha image"
             className="w-[310px] h-[425px]"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
@@ -65,8 +65,8 @@ const HomeComponent: React.FC = () => {
             </motion.p>
           </motion.div>
           <motion.img
-            src={Images.capiche}
-            alt="capiche image"
+            src={Images.book}
+            alt="book image"
             className="w-[300px] h-[380px] opacity-[0.9] mt-[300px]"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}

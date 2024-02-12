@@ -12,10 +12,18 @@ import Image10 from "../../assets/image10.png";
 import Logo from "../../assets/logo.png";
 import Mosaic from "../../assets/mosaic.png";
 import Bear from "../../assets/bear.png";
+import Book from "../../assets/book.png";
+import Has from "../../assets/hastag.png";
 import Capiche from "../../assets/capiche.png";
 import Becks from "../../assets/becks.png";
 import Rabbit from "../../assets/rabbit.png";
-
+import Group from "../../assets/group.png";
+import Pride from "../../assets/pride.png";
+import Manifesto from "../../assets/arrow-manifesto.png";
+import Service from "../../assets/arrow-service.png";
+import Magenta from "../../assets/magenta.png";
+import Mosaic1 from "../../assets/mosaic_1.png";
+import Mosaic2 from "../../assets/mosaic_2.png";
 export const Images = {
   eye: Eye,
   image1: Image1,
@@ -34,5 +42,14 @@ export const Images = {
   capiche: Capiche,
   becks: Becks,
   rabbit: Rabbit,
+  has: Has,
+  book: Book,
+  group: Group,
+  pride: Pride,
+  manifesto: Manifesto,
+  service: Service,
+  rectangle: Magenta,
+  mosaic1: Mosaic1,
+  mosaic2: Mosaic2
 };
 
