@@ -8,10 +8,10 @@ export const Menu: React.FC = () => {
   const { headerColor } = useHeaderColor();
 
   const pathTextMapping = [
-    { path: "/about", name: "About" },
-    { path: "/values", name: "My Values" },
+    { path: "/about", name: "À propos" },
+    { path: "/values", name: "Mes valeurs" },
     { path: "/services", name: "Services" },
-    { path: "/projects", name: "Projects" }
+    { path: "/projects", name: "Projets" }
   ];
 
   return (

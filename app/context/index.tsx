@@ -17,8 +17,8 @@ const HeaderColorContext = createContext<HeaderColorContextProps>({
 export const useHeaderColor = () => useContext(HeaderColorContext);
 
 export const HeaderColorProvider: React.FC<HeaderProps> = ({ children }: HeaderProps) => {
-  const [headerColor, setHeaderColor] = useState<string>('linear-background');
-
+  const [headerColor, setHeaderColor] = useState<string>("");
+  console.log("headerColor from context:", headerColor)
   return (
     <HeaderColorContext.Provider value={{ headerColor, setHeaderColor }}>
       {children}

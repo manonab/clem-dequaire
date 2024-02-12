@@ -4,6 +4,7 @@ import { Images } from "~/common/images";
 import { BigArrow } from "~/assets/big-arrow";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import Description from "./description";
+import { useHeaderColor } from "~/context";
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -16,6 +17,12 @@ const timing = {
 };
 
 const HomeComponent: React.FC = () => {
+  const { setHeaderColor } = useHeaderColor();
+
+  useEffect(() => {
+    setHeaderColor('#FCF6EF')
+  }, [])
+
   return (
     <ParallaxProvider>
       <Parallax speed={-30}>
@@ -49,12 +56,12 @@ const HomeComponent: React.FC = () => {
               transition={{ ...timing, delay: 0.5 }}
             />
             <motion.p
-              className="text-center text-mainColor absolute top-[50%]  transform translate(-50%, -50%) font-neueMedium text-[50px]"
+              className="text-center text-mainColor absolute top-[50%] left-[30%] font-neueMedium text-[50px]"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ ...timing, delay: 0.7 }}
             >
-              Welcome to my portfolio.
+              Bienvenue.
             </motion.p>
           </motion.div>
           <motion.img

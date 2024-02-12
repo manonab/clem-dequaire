@@ -11,8 +11,9 @@
   background: linear-gradient(180deg, rgba(144, 144, 144, 0.20) 0%, rgba(252, 246, 239, 0.20) 100%, rgba(252, 246, 239, 0.20) 100%);
 }
 .linear-services {
-  background: linear-gradient(180deg, rgba(144, 144, 144, 0.20) 0%, rgba(252, 246, 239, 0.20) 100%);
+  background: #F8FAD2 linear-gradient(180deg, rgba(144, 144, 144, 0.20) 0%, rgba(252, 246, 239, 0.20) 100%) !important;
 }
+
 
 @layer base {
   @font-face {

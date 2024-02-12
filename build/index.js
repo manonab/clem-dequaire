@@ -128,7 +128,7 @@ import {
 } from "@remix-run/react";
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-EI37NBNE.css";
+var tailwind_default = "/build/_assets/tailwind-NF7E4QHZ.css";
 
 // app/components/header/index.tsx
 import { useNavigate } from "@remix-run/react";
@@ -141,8 +141,8 @@ var HeaderColorContext = createContext({
   setHeaderColor: () => {
   }
 }), useHeaderColor = () => useContext(HeaderColorContext), HeaderColorProvider = ({ children }) => {
-  let [headerColor, setHeaderColor] = useState("linear-background");
-  return /* @__PURE__ */ jsxDEV2(HeaderColorContext.Provider, { value: { headerColor, setHeaderColor }, children }, void 0, !1, {
+  let [headerColor, setHeaderColor] = useState("");
+  return console.log("headerColor from context:", headerColor), /* @__PURE__ */ jsxDEV2(HeaderColorContext.Provider, { value: { headerColor, setHeaderColor }, children }, void 0, !1, {
     fileName: "app/context/index.tsx",
     lineNumber: 23,
     columnNumber: 5
@@ -154,10 +154,10 @@ import { motion } from "framer-motion";
 import { jsxDEV as jsxDEV3 } from "react/jsx-dev-runtime";
 var Menu = () => {
   let router = useNavigate(), { headerColor } = useHeaderColor(), pathTextMapping = [
-    { path: "/about", name: "About" },
-    { path: "/values", name: "My Values" },
+    { path: "/about", name: "\xC0 propos" },
+    { path: "/values", name: "Mes valeurs" },
     { path: "/services", name: "Services" },
-    { path: "/projects", name: "Projects" }
+    { path: "/projects", name: "Projets" }
   ];
   return /* @__PURE__ */ jsxDEV3(
     motion.div,
@@ -480,7 +480,7 @@ function Services() {
   let { setHeaderColor } = useHeaderColor();
   return useEffect(() => {
     setHeaderColor("linear-services");
-  }, [setHeaderColor]), /* @__PURE__ */ jsxDEV7("div", { className: "bg-yellowHome w-full h-full" }, void 0, !1, {
+  }, [setHeaderColor]), /* @__PURE__ */ jsxDEV7("div", { className: "bg-yellowHome w-full h-screen flex" }, void 0, !1, {
     fileName: "app/routes/services.tsx",
     lineNumber: 12,
     columnNumber: 5
@@ -547,7 +547,7 @@ var index_exports = {};
 __export(index_exports, {
   default: () => Index
 });
-import { useEffect as useEffect4, useState as useState4 } from "react";
+import { useEffect as useEffect5, useState as useState5 } from "react";
 import { motion as motion4 } from "framer-motion";
 
 // app/components/home/background-slider.tsx
@@ -558,7 +558,7 @@ var BackgroundSlider = ({ isVisible = !1 }) => {
   let [isHovered, setIsHovered] = useState2(!1), { setHeaderColor } = useHeaderColor();
   return useEffect2(() => {
     let timer = setTimeout(() => {
-      setIsHovered(!0), setHeaderColor("bg_slider");
+      setIsHovered(!0);
     }, 1500);
     return () => {
       clearTimeout(timer);
@@ -569,31 +569,31 @@ var BackgroundSlider = ({ isVisible = !1 }) => {
       initial: { opacity: 0, y: 20 },
       animate: { opacity: 1, y: 0 },
       transition: { duration: 1, ease: [0.43, 0.13, 0.23, 0.96] },
-      className: `animate__animated animate__fadeInUpBig animate__delay-1.3s ${isVisible ? "w-full md:min-h-[910px] flex justify-between items-start z-10 h-full inset-0 absolute -top-20 bg_slider " : "hidden"} ${isHovered && "hovered"}`,
+      className: `animate__animated animate__fadeInUpBig animate__delay-1.3s ${isVisible ? "w-full md:min-h-[910px] flex justify-between items-start z-10 h-full inset-0 absolute -top-20 bg_slider" : "hidden"} ${isHovered && "hovered"}`,
       children: /* @__PURE__ */ jsxDEV9("div", { className: "flex-col", children: [
         /* @__PURE__ */ jsxDEV9("p", { className: "move-left-to-right uppercase text-[245px] leading-[200px] font-neueExtra", style: { animationDelay: "2s" }, children: "for" }, void 0, !1, {
           fileName: "app/components/home/background-slider.tsx",
-          lineNumber: 32,
+          lineNumber: 31,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ jsxDEV9("p", { className: "move-left-to-right uppercase text-[245px] leading-[200px] font-neueExtra", style: { animationDelay: "2.1s" }, children: "bold" }, void 0, !1, {
           fileName: "app/components/home/background-slider.tsx",
-          lineNumber: 35,
+          lineNumber: 34,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ jsxDEV9("p", { className: "move-left-to-right uppercase text-[245px] leading-[200px] font-neueExtra", style: { animationDelay: "2.2s" }, children: "mind" }, void 0, !1, {
           fileName: "app/components/home/background-slider.tsx",
-          lineNumber: 38,
+          lineNumber: 37,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ jsxDEV9("p", { className: "move-left-to-right uppercase text-[245px] leading-[200px] font-neueExtra", style: { animationDelay: "2.3s" }, children: "only" }, void 0, !1, {
           fileName: "app/components/home/background-slider.tsx",
-          lineNumber: 41,
+          lineNumber: 40,
           columnNumber: 9
         }, this)
       ] }, void 0, !0, {
         fileName: "app/components/home/background-slider.tsx",
-        lineNumber: 31,
+        lineNumber: 30,
         columnNumber: 7
       }, this)
     },
@@ -601,7 +601,7 @@ var BackgroundSlider = ({ isVisible = !1 }) => {
     !1,
     {
       fileName: "app/components/home/background-slider.tsx",
-      lineNumber: 25,
+      lineNumber: 24,
       columnNumber: 5
     },
     this
@@ -609,6 +609,7 @@ var BackgroundSlider = ({ isVisible = !1 }) => {
 }, background_slider_default = BackgroundSlider;
 
 // app/components/home/index.tsx
+import { useEffect as useEffect4 } from "react";
 import { motion as motion3 } from "framer-motion";
 
 // app/assets/big-arrow.tsx
@@ -658,18 +659,18 @@ var Description = () => {
   let isServicesSectionVisible = scrollPosition > 2e3;
   return /* @__PURE__ */ jsxDEV12("div", { className: `w-full h-auto flex flex-col ${isServicesSectionVisible ? "bg-saumon" : "bg-yellowHome"}`, children: [
     /* @__PURE__ */ jsxDEV12("div", { className: "w-full h-full mx-auto flex flex-col gap-[150px] py-32", children: [
-      /* @__PURE__ */ jsxDEV12("p", { className: "w-[1100px] ml-24 text-left text-orange text-[64px] leading-[57.6px] font-neueMedium", children: "Anchour is a hard-working marketing agency that propels good companies to discover greatness." }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV12("p", { className: "w-[1100px] ml-24 text-left text-orange text-[64px] leading-[57.6px] font-neueMedium", children: "Aux grands mots les grands designs. Parce que votre message m\xE9ritent d\u2019\xEAtre entendu, travaillons ensemble." }, void 0, !1, {
         fileName: "app/components/home/description.tsx",
         lineNumber: 25,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV12("p", { className: "w-[1100px] ml-48 text-right text-orange text-[64px] leading-[57.6px] font-neueMedium", children: "We\u2019re pragmatic creatives who get our kicks helping brands win through design, digital experiences, and strategy." }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV12("p", { className: "w-[1100px] ml-48 text-right text-orange text-[64px] leading-[57.6px] font-neueMedium", children: "Cr\xE9ative passionn\xE9e, je m\u2019efforce d\u2019aider votre marque \xE0 grandir gr\xE2ce au design et au marketing digital." }, void 0, !1, {
         fileName: "app/components/home/description.tsx",
         lineNumber: 26,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV12("div", { onClick: () => router("/about"), className: "mb-20 hover:cursor-pointer ml-28 flex border-b-black border-b-2 w-[184px] pb-2 items-center justify-around", children: [
-        /* @__PURE__ */ jsxDEV12("p", { className: "uppercase text-xl	font-footer", children: "learn more" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV12("div", { onClick: () => router("/about"), className: "mb-20 hover:cursor-pointer ml-28 flex border-b-black border-b-2 w-[220px] pb-2 items-center justify-around", children: [
+        /* @__PURE__ */ jsxDEV12("p", { className: "uppercase text-xl	font-footer", children: "En savoir plus" }, void 0, !1, {
           fileName: "app/components/home/description.tsx",
           lineNumber: 28,
           columnNumber: 11
@@ -690,7 +691,7 @@ var Description = () => {
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV12("div", { className: "w-screen h-full relative", children: [
-      /* @__PURE__ */ jsxDEV12("div", { className: "flex items-start w-full -mt-24", children: /* @__PURE__ */ jsxDEV12("div", { className: "w-[800px] ml-20", children: /* @__PURE__ */ jsxDEV12("p", { className: "text-[250px] text-redHome text-center font-neueMedium uppercase leading-[225px] ", children: "Services" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV12("div", { className: "flex items-start w-full -mt-24", children: /* @__PURE__ */ jsxDEV12("div", { className: "w-[800px] ml-20", children: /* @__PURE__ */ jsxDEV12("p", { className: "text-[250px] text-redHome text-center font-neueMedium uppercase leading-[225px]", children: "Services" }, void 0, !1, {
         fileName: "app/components/home/description.tsx",
         lineNumber: 35,
         columnNumber: 13
@@ -703,15 +704,15 @@ var Description = () => {
         lineNumber: 33,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV12("div", { className: "flex items-center justify-around my-36", children: [
+      /* @__PURE__ */ jsxDEV12("div", { className: "flex items-center justify-around my-36 mx-20", children: [
         /* @__PURE__ */ jsxDEV12("div", { className: "flex-col items-center gap-3", children: [
-          /* @__PURE__ */ jsxDEV12("p", { className: "font-neueBold  text-[75px] leading-[75px]", children: "Digital" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV12("p", { className: "font-neueBold  text-[75px] leading-[75px]", children: "Communication" }, void 0, !1, {
             fileName: "app/components/home/description.tsx",
             lineNumber: 40,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ jsxDEV12("div", { className: "flex items-center justify-around", children: [
-            /* @__PURE__ */ jsxDEV12("p", { className: "font-neueBold  text-[75px] leading-[75px]", children: "&" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV12("div", { className: "flex items-center", children: [
+            /* @__PURE__ */ jsxDEV12("p", { className: "font-neueBold  text-[75px] leading-[75px] mr-10", children: "&" }, void 0, !1, {
               fileName: "app/components/home/description.tsx",
               lineNumber: 42,
               columnNumber: 15
@@ -726,7 +727,7 @@ var Description = () => {
             lineNumber: 41,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ jsxDEV12("p", { className: "font-neueBold  text-[75px] leading-[75px]", children: "comms." }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV12("p", { className: "font-neueBold  text-[75px] leading-[75px] ml-20", children: "digital." }, void 0, !1, {
             fileName: "app/components/home/description.tsx",
             lineNumber: 45,
             columnNumber: 13
@@ -751,11 +752,11 @@ var Description = () => {
         lineNumber: 38,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV12("div", { onClick: () => router("/projects"), className: "mt-20 hover:cursor-pointer ml-20 flex border-b-black border-b-2 w-[184px] pb-2 items-center justify-around", children: [
-        /* @__PURE__ */ jsxDEV12("p", { className: "uppercase text-xl	font-footer", children: "what I do" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV12("div", { onClick: () => router("/projects"), className: "my-20 hover:cursor-pointer ml-20 flex border-b-black border-b-2 w-[184px] pb-2 items-center justify-around", children: [
+        /* @__PURE__ */ jsxDEV12("p", { className: "uppercase text-xl	font-footer", children: "VOIR PLUS" }, void 0, !1, {
           fileName: "app/components/home/description.tsx",
           lineNumber: 51,
-          columnNumber: 13
+          columnNumber: 11
         }, this),
         /* @__PURE__ */ jsxDEV12(ArrowRight, {}, void 0, !1, {
           fileName: "app/components/home/description.tsx",
@@ -772,18 +773,18 @@ var Description = () => {
       lineNumber: 32,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV12(Parallax, { speed: -15, children: /* @__PURE__ */ jsxDEV12("div", { className: "w-full h-screen bg-mainColor relative pt-20 ", children: [
+    /* @__PURE__ */ jsxDEV12(Parallax, { speed: -15, className: "min-h-[450px]", children: /* @__PURE__ */ jsxDEV12("div", { className: "w-full h-screen bg-mainColor relative pt-20", children: [
       /* @__PURE__ */ jsxDEV12("div", { className: "flex-col items-center justify-center", children: [
-        /* @__PURE__ */ jsxDEV12("p", { className: "flex justify-center mt-44 items-center text-[100px] leading-[100px] text-royalBlue uppercase font-neueSemiBold", children: [
+        /* @__PURE__ */ jsxDEV12("p", { className: "flex justify-center mt-44 items-center text-[100px] leading-[100px] text-royalBlue font-neueSemiBold", children: [
           "Like what you s",
           /* @__PURE__ */ jsxDEV12("span", { children: /* @__PURE__ */ jsxDEV12("img", { src: Images?.rabbit, className: "w-[130px] bg-center rounded-2xl mx-2" }, void 0, !1, {
             fileName: "app/components/home/description.tsx",
             lineNumber: 58,
-            columnNumber: 160
+            columnNumber: 150
           }, this) }, void 0, !1, {
             fileName: "app/components/home/description.tsx",
             lineNumber: 58,
-            columnNumber: 154
+            columnNumber: 144
           }, this),
           "?"
         ] }, void 0, !0, {
@@ -791,7 +792,7 @@ var Description = () => {
           lineNumber: 58,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV12("p", { className: "text-black font-footer font-medium leading-[100px] text-center text-[90px]", children: "Let\u2019s keep in touch." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV12("p", { className: "text-black font-footer font-medium leading-[100px] text-center text-[90px]", children: "Restons en contact" }, void 0, !1, {
           fileName: "app/components/home/description.tsx",
           lineNumber: 59,
           columnNumber: 13
@@ -801,7 +802,7 @@ var Description = () => {
         lineNumber: 57,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV12("div", { onClick: () => router("/contact"), className: "hover:cursor-pointer border-black border my-20 rounded-3xl px-5 py-3 w-[200px] mx-auto", children: /* @__PURE__ */ jsxDEV12("p", { className: "leading-[17.5px] font-bold text-sm text-center text-grayBlack", children: "CONTACT ME NOW" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV12("div", { onClick: () => router("/contact"), className: "hover:cursor-pointer border-black border my-20 rounded-3xl px-5 py-3 w-[200px] mx-auto", children: /* @__PURE__ */ jsxDEV12("p", { className: "leading-[17.5px] font-bold text-sm text-center text-grayBlack uppercase", children: "Contactez-moi" }, void 0, !1, {
         fileName: "app/components/home/description.tsx",
         lineNumber: 62,
         columnNumber: 13
@@ -834,175 +835,180 @@ var sectionVariants = {
 }, timing = {
   duration: 0.7,
   ease: [0.43, 0.13, 0.23, 0.96]
-}, HomeComponent = () => /* @__PURE__ */ jsxDEV13(ParallaxProvider, { children: [
-  /* @__PURE__ */ jsxDEV13(Parallax2, { speed: -30, children: [
-    /* @__PURE__ */ jsxDEV13(
-      motion3.div,
-      {
-        className: "w-screen h-screen z-10 flex justify-between items-start",
-        initial: "hidden",
-        animate: "visible",
-        variants: sectionVariants,
-        transition: { ...timing },
-        children: [
-          /* @__PURE__ */ jsxDEV13(
-            motion3.img,
-            {
-              src: Images.mosaic,
-              alt: "mosaic image",
-              className: "w-[310px] h-[425px]",
-              initial: { opacity: 0, y: 100 },
-              animate: { opacity: 1, y: 0 },
-              transition: { ...timing, delay: 0.2 }
-            },
-            void 0,
-            !1,
-            {
+}, HomeComponent = () => {
+  let { setHeaderColor } = useHeaderColor();
+  return useEffect4(() => {
+    setHeaderColor("#FCF6EF");
+  }, []), /* @__PURE__ */ jsxDEV13(ParallaxProvider, { children: [
+    /* @__PURE__ */ jsxDEV13(Parallax2, { speed: -30, children: [
+      /* @__PURE__ */ jsxDEV13(
+        motion3.div,
+        {
+          className: "w-screen h-screen z-10 flex justify-between items-start",
+          initial: "hidden",
+          animate: "visible",
+          variants: sectionVariants,
+          transition: { ...timing },
+          children: [
+            /* @__PURE__ */ jsxDEV13(
+              motion3.img,
+              {
+                src: Images.mosaic,
+                alt: "mosaic image",
+                className: "w-[310px] h-[425px]",
+                initial: { opacity: 0, y: 100 },
+                animate: { opacity: 1, y: 0 },
+                transition: { ...timing, delay: 0.2 }
+              },
+              void 0,
+              !1,
+              {
+                fileName: "app/components/home/index.tsx",
+                lineNumber: 36,
+                columnNumber: 11
+              },
+              this
+            ),
+            /* @__PURE__ */ jsxDEV13(
+              motion3.div,
+              {
+                className: "relative",
+                initial: { opacity: 0, y: 100 },
+                animate: { opacity: 1, y: 0 },
+                transition: { ...timing, delay: 0.5 },
+                children: [
+                  /* @__PURE__ */ jsxDEV13(
+                    motion3.img,
+                    {
+                      src: Images.bear,
+                      alt: "bear image",
+                      className: "w-[550px] h-[600px] mt-[80px]",
+                      initial: { opacity: 0, y: 50 },
+                      animate: { opacity: 1, y: 0 },
+                      transition: { ...timing, delay: 0.5 }
+                    },
+                    void 0,
+                    !1,
+                    {
+                      fileName: "app/components/home/index.tsx",
+                      lineNumber: 50,
+                      columnNumber: 13
+                    },
+                    this
+                  ),
+                  /* @__PURE__ */ jsxDEV13(
+                    motion3.p,
+                    {
+                      className: "text-center text-mainColor absolute top-[50%] left-[30%] font-neueMedium text-[50px]",
+                      initial: { opacity: 0, y: 50 },
+                      animate: { opacity: 1, y: 0 },
+                      transition: { ...timing, delay: 0.7 },
+                      children: "Bienvenue."
+                    },
+                    void 0,
+                    !1,
+                    {
+                      fileName: "app/components/home/index.tsx",
+                      lineNumber: 58,
+                      columnNumber: 13
+                    },
+                    this
+                  )
+                ]
+              },
+              void 0,
+              !0,
+              {
+                fileName: "app/components/home/index.tsx",
+                lineNumber: 44,
+                columnNumber: 11
+              },
+              this
+            ),
+            /* @__PURE__ */ jsxDEV13(
+              motion3.img,
+              {
+                src: Images.capiche,
+                alt: "capiche image",
+                className: "w-[300px] h-[380px] opacity-[0.9] mt-[300px]",
+                initial: { opacity: 0, y: 100 },
+                animate: { opacity: 1, y: 0 },
+                transition: { ...timing, delay: 0.8 }
+              },
+              void 0,
+              !1,
+              {
+                fileName: "app/components/home/index.tsx",
+                lineNumber: 67,
+                columnNumber: 11
+              },
+              this
+            )
+          ]
+        },
+        void 0,
+        !0,
+        {
+          fileName: "app/components/home/index.tsx",
+          lineNumber: 29,
+          columnNumber: 9
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV13(
+        motion3.div,
+        {
+          className: "mx-auto mb-[450px] pl-40 mt-[50px]  flex-col flex items-center gap-3",
+          initial: { opacity: 0, y: 100 },
+          animate: { opacity: 1, y: 0 },
+          transition: { ...timing, delay: 2 },
+          children: [
+            /* @__PURE__ */ jsxDEV13(BigArrow, {}, void 0, !1, {
               fileName: "app/components/home/index.tsx",
-              lineNumber: 29,
+              lineNumber: 82,
               columnNumber: 11
-            },
-            this
-          ),
-          /* @__PURE__ */ jsxDEV13(
-            motion3.div,
-            {
-              className: "relative",
-              initial: { opacity: 0, y: 100 },
-              animate: { opacity: 1, y: 0 },
-              transition: { ...timing, delay: 0.5 },
-              children: [
-                /* @__PURE__ */ jsxDEV13(
-                  motion3.img,
-                  {
-                    src: Images.bear,
-                    alt: "bear image",
-                    className: "w-[550px] h-[600px] mt-[80px]",
-                    initial: { opacity: 0, y: 50 },
-                    animate: { opacity: 1, y: 0 },
-                    transition: { ...timing, delay: 0.5 }
-                  },
-                  void 0,
-                  !1,
-                  {
-                    fileName: "app/components/home/index.tsx",
-                    lineNumber: 43,
-                    columnNumber: 13
-                  },
-                  this
-                ),
-                /* @__PURE__ */ jsxDEV13(
-                  motion3.p,
-                  {
-                    className: "text-center text-mainColor absolute top-[50%]  transform translate(-50%, -50%) font-neueMedium text-[50px]",
-                    initial: { opacity: 0, y: 50 },
-                    animate: { opacity: 1, y: 0 },
-                    transition: { ...timing, delay: 0.7 },
-                    children: "Welcome to my portfolio."
-                  },
-                  void 0,
-                  !1,
-                  {
-                    fileName: "app/components/home/index.tsx",
-                    lineNumber: 51,
-                    columnNumber: 13
-                  },
-                  this
-                )
-              ]
-            },
-            void 0,
-            !0,
-            {
+            }, this),
+            /* @__PURE__ */ jsxDEV13("p", { className: "font-footer uppercase font-bold leading-[20px]", children: "SCROLL & ROLL" }, void 0, !1, {
               fileName: "app/components/home/index.tsx",
-              lineNumber: 37,
+              lineNumber: 83,
               columnNumber: 11
-            },
-            this
-          ),
-          /* @__PURE__ */ jsxDEV13(
-            motion3.img,
-            {
-              src: Images.capiche,
-              alt: "capiche image",
-              className: "w-[300px] h-[380px] opacity-[0.9] mt-[300px]",
-              initial: { opacity: 0, y: 100 },
-              animate: { opacity: 1, y: 0 },
-              transition: { ...timing, delay: 0.8 }
-            },
-            void 0,
-            !1,
-            {
-              fileName: "app/components/home/index.tsx",
-              lineNumber: 60,
-              columnNumber: 11
-            },
-            this
-          )
-        ]
-      },
-      void 0,
-      !0,
-      {
-        fileName: "app/components/home/index.tsx",
-        lineNumber: 22,
-        columnNumber: 9
-      },
-      this
-    ),
-    /* @__PURE__ */ jsxDEV13(
-      motion3.div,
-      {
-        className: "mx-auto mb-[450px] pl-40 mt-[50px]  flex-col flex items-center gap-3",
-        initial: { opacity: 0, y: 100 },
-        animate: { opacity: 1, y: 0 },
-        transition: { ...timing, delay: 2 },
-        children: [
-          /* @__PURE__ */ jsxDEV13(BigArrow, {}, void 0, !1, {
-            fileName: "app/components/home/index.tsx",
-            lineNumber: 75,
-            columnNumber: 11
-          }, this),
-          /* @__PURE__ */ jsxDEV13("p", { className: "font-footer uppercase font-bold leading-[20px]", children: "SCROLL & ROLL" }, void 0, !1, {
-            fileName: "app/components/home/index.tsx",
-            lineNumber: 76,
-            columnNumber: 11
-          }, this)
-        ]
-      },
-      void 0,
-      !0,
-      {
-        fileName: "app/components/home/index.tsx",
-        lineNumber: 69,
-        columnNumber: 9
-      },
-      this
-    )
+            }, this)
+          ]
+        },
+        void 0,
+        !0,
+        {
+          fileName: "app/components/home/index.tsx",
+          lineNumber: 76,
+          columnNumber: 9
+        },
+        this
+      )
+    ] }, void 0, !0, {
+      fileName: "app/components/home/index.tsx",
+      lineNumber: 28,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV13(Parallax2, { speed: -15, children: /* @__PURE__ */ jsxDEV13(description_default, {}, void 0, !1, {
+      fileName: "app/components/home/index.tsx",
+      lineNumber: 88,
+      columnNumber: 9
+    }, this) }, void 0, !1, {
+      fileName: "app/components/home/index.tsx",
+      lineNumber: 87,
+      columnNumber: 7
+    }, this)
   ] }, void 0, !0, {
     fileName: "app/components/home/index.tsx",
-    lineNumber: 21,
-    columnNumber: 7
-  }, this),
-  /* @__PURE__ */ jsxDEV13(Parallax2, { speed: -15, children: /* @__PURE__ */ jsxDEV13(description_default, {}, void 0, !1, {
-    fileName: "app/components/home/index.tsx",
-    lineNumber: 81,
-    columnNumber: 9
-  }, this) }, void 0, !1, {
-    fileName: "app/components/home/index.tsx",
-    lineNumber: 80,
-    columnNumber: 7
-  }, this)
-] }, void 0, !0, {
-  fileName: "app/components/home/index.tsx",
-  lineNumber: 20,
-  columnNumber: 5
-}, this), home_default = HomeComponent;
+    lineNumber: 27,
+    columnNumber: 5
+  }, this);
+}, home_default = HomeComponent;
 
 // app/routes/_index.tsx
 import { jsxDEV as jsxDEV14 } from "react/jsx-dev-runtime";
 function Index() {
-  let [state, setState] = useState4({
+  let { setHeaderColor } = useHeaderColor(), [state, setState] = useState5({
     currentImage: 0,
     showLastPart: !1,
     animationFinished: !1
@@ -1028,18 +1034,20 @@ function Index() {
     }, 150);
     return () => clearInterval(interval);
   };
-  return useEffect4(() => {
+  return useEffect5(() => {
     let fadeInUpAnimationTimer = setTimeout(() => {
       startSlideShow();
     }, 1200);
     return () => {
       clearTimeout(fadeInUpAnimationTimer);
     };
-  }, []), useEffect4(() => {
-    state.currentImage === images.length - 1 && setTimeout(() => {
+  }, []), useEffect5(() => {
+    state.currentImage === images.length - 1 && (setTimeout(() => {
       setState((prev) => ({ ...prev, showLastPart: !0 }));
-    }, 1500);
-  }, [state.currentImage, images.length]), useEffect4(() => {
+    }, 1500), setTimeout(() => {
+      setHeaderColor("bg_slider hovered");
+    }, 2400));
+  }, [state.currentImage, images.length]), useEffect5(() => {
     state.showLastPart && setTimeout(() => {
       setState((prev) => ({ ...prev, animationFinished: !0 }));
     }, 4e3);
@@ -1067,7 +1075,7 @@ function Index() {
               !1,
               {
                 fileName: "app/routes/_index.tsx",
-                lineNumber: 81,
+                lineNumber: 87,
                 columnNumber: 11
               },
               this
@@ -1077,19 +1085,19 @@ function Index() {
           !1,
           {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 75,
+            lineNumber: 81,
             columnNumber: 7
           },
           this
         ),
         state.showLastPart && /* @__PURE__ */ jsxDEV14(background_slider_default, { isVisible: !state.animationFinished }, void 0, !1, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 91,
+          lineNumber: 97,
           columnNumber: 30
         }, this),
         state.animationFinished && /* @__PURE__ */ jsxDEV14(home_default, {}, void 0, !1, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 92,
+          lineNumber: 98,
           columnNumber: 35
         }, this)
       ]
@@ -1098,7 +1106,7 @@ function Index() {
     !0,
     {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 71,
+      lineNumber: 77,
       columnNumber: 5
     },
     this
@@ -1110,21 +1118,25 @@ var values_exports = {};
 __export(values_exports, {
   default: () => Values
 });
+import { useEffect as useEffect6 } from "react";
 import { jsxDEV as jsxDEV15 } from "react/jsx-dev-runtime";
 function Values() {
-  return /* @__PURE__ */ jsxDEV15(
+  let { setHeaderColor } = useHeaderColor();
+  return useEffect6(() => {
+    setHeaderColor("linear-background");
+  }, [setHeaderColor]), /* @__PURE__ */ jsxDEV15(
     "div",
     {
       className: "rounded-[20px] mx-auto container w-[875px] h-[559px] z-10",
       children: /* @__PURE__ */ jsxDEV15("div", { className: "flex bg-mainColor justify-around flex-col gap-2 items-center", children: [
         /* @__PURE__ */ jsxDEV15("p", { className: "text-[80px] text-redHome font-neueSemiBold leading-[70px]", children: "Hello you," }, void 0, !1, {
           fileName: "app/routes/values.tsx",
-          lineNumber: 8,
+          lineNumber: 15,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ jsxDEV15("p", { className: "w-[526px] text-xl text-center leading-6", children: "if you really really want to see this webiste, please keep in mind that it\u2019s still a work in progress !" }, void 0, !1, {
           fileName: "app/routes/values.tsx",
-          lineNumber: 9,
+          lineNumber: 16,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ jsxDEV15(
@@ -1138,14 +1150,14 @@ function Values() {
           !1,
           {
             fileName: "app/routes/values.tsx",
-            lineNumber: 10,
+            lineNumber: 17,
             columnNumber: 9
           },
           this
         )
       ] }, void 0, !0, {
         fileName: "app/routes/values.tsx",
-        lineNumber: 7,
+        lineNumber: 14,
         columnNumber: 7
       }, this)
     },
@@ -1153,7 +1165,7 @@ function Values() {
     !1,
     {
       fileName: "app/routes/values.tsx",
-      lineNumber: 5,
+      lineNumber: 12,
       columnNumber: 5
     },
     this
@@ -1165,7 +1177,7 @@ var about_exports = {};
 __export(about_exports, {
   default: () => About
 });
-import { useEffect as useEffect5 } from "react";
+import { useEffect as useEffect7 } from "react";
 import { ParallaxProvider as ParallaxProvider2 } from "react-scroll-parallax";
 
 // app/assets/big-down-arrow.tsx
@@ -1184,7 +1196,7 @@ var BigDownArrow = () => /* @__PURE__ */ jsxDEV16("svg", { xmlns: "http://www.w3
 import { jsxDEV as jsxDEV17 } from "react/jsx-dev-runtime";
 function About() {
   let { setHeaderColor } = useHeaderColor();
-  return useEffect5(() => {
+  return useEffect7(() => {
     setHeaderColor("linear-background");
   }, [setHeaderColor]), /* @__PURE__ */ jsxDEV17(ParallaxProvider2, { children: /* @__PURE__ */ jsxDEV17("div", { className: "flex-col flex gap-12 w-screen h-auto", children: [
     /* @__PURE__ */ jsxDEV17("div", { className: "flex items-end justify-between w-auto", children: [
@@ -1308,7 +1320,7 @@ function Home() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-WSXQMMVQ.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-P4DS5TL5.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-43WGSL2O.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-ICHNG2JE.js", imports: ["/build/_shared/chunk-HC72RTTB.js", "/build/_shared/chunk-S6PJ4UDN.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-AWWUZDU6.js", imports: ["/build/_shared/chunk-CGRSUNHP.js", "/build/_shared/chunk-MHJG5VZ7.js", "/build/_shared/chunk-FYYCLQBT.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-IIWMLWIQ.js", imports: ["/build/_shared/chunk-FYYCLQBT.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-MRXSP2NE.js", imports: ["/build/_shared/chunk-MHJG5VZ7.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/home": { id: "routes/home", parentId: "root", path: "home", index: void 0, caseSensitive: void 0, module: "/build/routes/home-BPKI3B4G.js", imports: ["/build/_shared/chunk-CGRSUNHP.js", "/build/_shared/chunk-MHJG5VZ7.js", "/build/_shared/chunk-FYYCLQBT.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/projects": { id: "routes/projects", parentId: "root", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/projects-PWLW72X2.js", imports: ["/build/_shared/chunk-MHJG5VZ7.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-CTCMNH2H.js", imports: void 0, hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/values": { id: "routes/values", parentId: "root", path: "values", index: void 0, caseSensitive: void 0, module: "/build/routes/values-OZGKEY45.js", imports: ["/build/_shared/chunk-MHJG5VZ7.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 } }, version: "37647b18", hmr: { runtime: "/build/_shared/chunk-43WGSL2O.js", timestamp: 1704875445554 }, url: "/build/manifest-37647B18.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-WSXQMMVQ.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-P4DS5TL5.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-43WGSL2O.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-76KAMJY3.js", imports: ["/build/_shared/chunk-HC72RTTB.js", "/build/_shared/chunk-WSSTHBAM.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-OWWUQ2RO.js", imports: ["/build/_shared/chunk-2ZU3NIX6.js", "/build/_shared/chunk-MHJG5VZ7.js", "/build/_shared/chunk-FYYCLQBT.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-3QB6GORZ.js", imports: ["/build/_shared/chunk-FYYCLQBT.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-MRXSP2NE.js", imports: ["/build/_shared/chunk-MHJG5VZ7.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/home": { id: "routes/home", parentId: "root", path: "home", index: void 0, caseSensitive: void 0, module: "/build/routes/home-O3Q524MJ.js", imports: ["/build/_shared/chunk-2ZU3NIX6.js", "/build/_shared/chunk-MHJG5VZ7.js", "/build/_shared/chunk-FYYCLQBT.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/projects": { id: "routes/projects", parentId: "root", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/projects-PWLW72X2.js", imports: ["/build/_shared/chunk-MHJG5VZ7.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-PGMEW7ZH.js", imports: void 0, hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/values": { id: "routes/values", parentId: "root", path: "values", index: void 0, caseSensitive: void 0, module: "/build/routes/values-JTJKJDOL.js", imports: ["/build/_shared/chunk-MHJG5VZ7.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 } }, version: "4b365fde", hmr: { runtime: "/build/_shared/chunk-43WGSL2O.js", timestamp: 1707760535982 }, url: "/build/manifest-4B365FDE.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "development", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1 }, publicPath = "/build/", entry = { module: entry_server_node_exports }, routes = {

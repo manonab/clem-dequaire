@@ -5,11 +5,12 @@ export default function Services() {
   const { setHeaderColor } = useHeaderColor();
 
   useEffect(() => {
-    setHeaderColor('linear-services');
+    setHeaderColor("linear-services")
   }, [setHeaderColor]);
 
   return (
-    <div className="bg-yellowHome w-full h-full">
+    <div className="bg-yellowHome w-full h-screen flex">
+
     </div>
   );
 }

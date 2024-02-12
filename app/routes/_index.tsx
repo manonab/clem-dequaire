@@ -3,8 +3,11 @@ import { Images } from "~/common/images";
 import { motion } from "framer-motion";
 import BackgroundSlider from "~/components/home/background-slider";
 import HomeComponent from "~/components/home";
+import { useHeaderColor } from "~/context";
 
 export default function Index() {
+  const { setHeaderColor } = useHeaderColor();
+
   const [state, setState] = useState<{
     currentImage: number;
     showLastPart: boolean;
@@ -56,6 +59,9 @@ export default function Index() {
       setTimeout(() => {
         setState((prev) => ({ ...prev, showLastPart: true }));
       }, 1500);
+      setTimeout(() => {
+        setHeaderColor('bg_slider hovered')
+      }, 2400);
     }
   }, [state.currentImage, images.length]);
 
@@ -88,7 +94,7 @@ export default function Index() {
         )}
       </motion.div>
 
-      {state.showLastPart && <BackgroundSlider isVisible={!state.animationFinished} />}
+      {state.showLastPart && < BackgroundSlider isVisible={!state.animationFinished} />}
       {state.animationFinished && <HomeComponent />}
     </div>
   );

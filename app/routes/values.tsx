@@ -1,6 +1,13 @@
+import { useEffect } from "react";
 import { Images } from "~/common/images";
+import { useHeaderColor } from "~/context";
 
 export default function Values() {
+  const { setHeaderColor } = useHeaderColor();
+
+  useEffect(() => {
+    setHeaderColor("linear-background")
+  }, [setHeaderColor]);
   return (
     <div
       className="rounded-[20px] mx-auto container w-[875px] h-[559px] z-10">
