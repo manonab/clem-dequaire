@@ -128,7 +128,7 @@ import {
 } from "@remix-run/react";
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-W3LEYYFK.css";
+var tailwind_default = "/build/_assets/tailwind-WUIVI2IG.css";
 
 // app/components/header/index.tsx
 import { useNavigate } from "@remix-run/react";
@@ -793,108 +793,158 @@ var contact_exports = {};
 __export(contact_exports, {
   default: () => Contact
 });
-import { useEffect as useEffect3 } from "react";
+import { useEffect as useEffect3, useState as useState2 } from "react";
+import emailjs from "emailjs-com";
 import { jsxDEV as jsxDEV9 } from "react/jsx-dev-runtime";
+function Modal({ onClose }) {
+  return /* @__PURE__ */ jsxDEV9("div", { className: "fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-black bg-opacity-50", children: /* @__PURE__ */ jsxDEV9("div", { className: "bg-white p-8 rounded-md", children: [
+    /* @__PURE__ */ jsxDEV9("p", { className: "font-neueRegular text-xl text-center", children: "Votre message a bien \xE9t\xE9 envoy\xE9 !" }, void 0, !1, {
+      fileName: "app/routes/contact.tsx",
+      lineNumber: 11,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV9("button", { onClick: onClose, className: "block mx-auto mt-4 bg-royalBlue text-white font-bold py-2 px-4 rounded", children: "Fermer" }, void 0, !1, {
+      fileName: "app/routes/contact.tsx",
+      lineNumber: 12,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/contact.tsx",
+    lineNumber: 10,
+    columnNumber: 7
+  }, this) }, void 0, !1, {
+    fileName: "app/routes/contact.tsx",
+    lineNumber: 9,
+    columnNumber: 5
+  }, this);
+}
 function Contact() {
-  let { setHeaderColor } = useHeaderColor();
+  let { setHeaderColor } = useHeaderColor(), [showModal, setShowModal] = useState2(!1), [name, setName] = useState2(""), [email, setEmail] = useState2(""), [subject, setSubject] = useState2(""), [message, setMessage] = useState2("");
   return useEffect3(() => {
-    setHeaderColor("mainColor");
+    emailjs.init("IoYqcS-FyoRAsKFCH"), setHeaderColor("mainColor");
   }, [setHeaderColor]), /* @__PURE__ */ jsxDEV9("div", { className: "w-screen h-screen flex mt-20 mb-10", children: [
     /* @__PURE__ */ jsxDEV9("div", { className: "flex-col ml-10 ", children: [
       /* @__PURE__ */ jsxDEV9("p", { className: "text-[200px] leading-[90%] text-royalBlue uppercase font-neueRegular", children: "Con" }, void 0, !1, {
         fileName: "app/routes/contact.tsx",
-        lineNumber: 14,
+        lineNumber: 61,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV9("p", { className: "text-[200px] leading-[90%] text-royalBlue uppercase font-neueRegular", children: "tact." }, void 0, !1, {
         fileName: "app/routes/contact.tsx",
-        lineNumber: 15,
+        lineNumber: 62,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/contact.tsx",
-      lineNumber: 13,
+      lineNumber: 60,
       columnNumber: 7
+    }, this),
+    showModal && /* @__PURE__ */ jsxDEV9(Modal, { onClose: () => {
+      setShowModal(!1);
+    } }, void 0, !1, {
+      fileName: "app/routes/contact.tsx",
+      lineNumber: 64,
+      columnNumber: 21
     }, this),
     /* @__PURE__ */ jsxDEV9("div", { className: "flex-col mx-auto", children: [
       /* @__PURE__ */ jsxDEV9("div", { className: "flex justify-around", children: [
         /* @__PURE__ */ jsxDEV9("div", { children: [
           /* @__PURE__ */ jsxDEV9("p", { className: "font-inter mb-1", children: "Nom" }, void 0, !1, {
             fileName: "app/routes/contact.tsx",
-            lineNumber: 20,
+            lineNumber: 68,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ jsxDEV9("input", { className: "rounded-[20px] bg-mainColor border-[2px] border-black w-[305px] h-[55px]" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV9("input", { value: name, onChange: (e) => setName(e.target.value), className: "p-2 rounded-[20px] bg-mainColor border-[2px] border-black w-[305px] h-[55px]" }, void 0, !1, {
             fileName: "app/routes/contact.tsx",
-            lineNumber: 21,
+            lineNumber: 69,
             columnNumber: 13
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/contact.tsx",
-          lineNumber: 19,
+          lineNumber: 67,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ jsxDEV9("div", { children: [
           /* @__PURE__ */ jsxDEV9("p", { className: "font-inter mb-1", children: "Email" }, void 0, !1, {
             fileName: "app/routes/contact.tsx",
-            lineNumber: 24,
+            lineNumber: 72,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ jsxDEV9("input", { className: "rounded-[20px] bg-mainColor border-[2px] border-black w-[305px] h-[55px]" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV9("input", { value: email, onChange: (e) => setEmail(e.target.value), className: "p-2 rounded-[20px] bg-mainColor border-[2px] border-black w-[305px] h-[55px]" }, void 0, !1, {
             fileName: "app/routes/contact.tsx",
-            lineNumber: 25,
+            lineNumber: 73,
             columnNumber: 13
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/contact.tsx",
-          lineNumber: 23,
+          lineNumber: 71,
           columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/contact.tsx",
-        lineNumber: 18,
+        lineNumber: 66,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV9("div", { className: "my-10", children: [
         /* @__PURE__ */ jsxDEV9("p", { className: "font-inter mb-1", children: "Object" }, void 0, !1, {
           fileName: "app/routes/contact.tsx",
-          lineNumber: 29,
+          lineNumber: 77,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV9("input", { className: "rounded-[20px] bg-mainColor border-[2px] border-black w-[305px] h-[55px]" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV9("input", { value: subject, onChange: (e) => setSubject(e.target.value), className: "p-2 rounded-[20px] bg-mainColor border-[2px] border-black w-[305px] h-[55px]" }, void 0, !1, {
           fileName: "app/routes/contact.tsx",
-          lineNumber: 30,
+          lineNumber: 78,
           columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/contact.tsx",
-        lineNumber: 28,
+        lineNumber: 76,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV9("div", { className: " mt-10", children: [
         /* @__PURE__ */ jsxDEV9("p", { className: "font-inter mb-1", children: "Message" }, void 0, !1, {
           fileName: "app/routes/contact.tsx",
-          lineNumber: 33,
+          lineNumber: 81,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV9("textarea", { className: "rounded-[20px] bg-mainColor border-[2px] border-black w-[635px] h-[190px]" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV9("textarea", { value: message, onChange: (e) => setMessage(e.target.value), className: "p-2 rounded-[20px] bg-mainColor border-[2px] border-black w-[635px] h-[190px]" }, void 0, !1, {
           fileName: "app/routes/contact.tsx",
-          lineNumber: 34,
+          lineNumber: 82,
           columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/contact.tsx",
-        lineNumber: 32,
+        lineNumber: 80,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV9("div", { onClick: () => {
+        emailjs.send("service_bws8nok", "template_xk52e9b", {
+          user_name: name,
+          message,
+          user_email: email,
+          user_object: subject
+        }).then((response) => {
+          console.log("Email envoy\xE9 avec succ\xE8s !", response), setShowModal(!0), setName(""), setEmail(""), setSubject(""), setMessage("");
+        }).catch((error) => {
+          console.error("Erreur lors de l'envoi de l'e-mail :", error);
+        });
+      }, className: "hover:cursor-pointer border-black bg-black border mt-5 mr-[10px] rounded-3xl px-5 py-3 w-[200px] mx-auto", children: /* @__PURE__ */ jsxDEV9("p", { className: "leading-[17.5px] font-bold text-sm text-center text-white uppercase", children: "Envoyez" }, void 0, !1, {
+        fileName: "app/routes/contact.tsx",
+        lineNumber: 85,
+        columnNumber: 11
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/contact.tsx",
+        lineNumber: 84,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/contact.tsx",
-      lineNumber: 17,
+      lineNumber: 65,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/contact.tsx",
-    lineNumber: 12,
+    lineNumber: 58,
     columnNumber: 5
   }, this);
 }
@@ -904,15 +954,15 @@ var index_exports = {};
 __export(index_exports, {
   default: () => Index
 });
-import { useEffect as useEffect7, useState as useState5 } from "react";
+import { useEffect as useEffect7, useState as useState6 } from "react";
 import { motion as motion4 } from "framer-motion";
 
 // app/components/home/background-slider.tsx
-import { useEffect as useEffect4, useState as useState2 } from "react";
+import { useEffect as useEffect4, useState as useState3 } from "react";
 import { motion as motion2 } from "framer-motion";
 import { jsxDEV as jsxDEV10 } from "react/jsx-dev-runtime";
 var BackgroundSlider = ({ isVisible = !1 }) => {
-  let [isHovered, setIsHovered] = useState2(!1), { setHeaderColor } = useHeaderColor();
+  let [isHovered, setIsHovered] = useState3(!1), { setHeaderColor } = useHeaderColor();
   return useEffect4(() => {
     let timer = setTimeout(() => {
       setIsHovered(!0);
@@ -985,12 +1035,12 @@ var BigArrow = () => /* @__PURE__ */ jsxDEV11("svg", { xmlns: "http://www.w3.org
 import { Parallax as Parallax2, ParallaxProvider } from "react-scroll-parallax";
 
 // app/components/home/description.tsx
-import { useEffect as useEffect5, useState as useState3 } from "react";
+import { useEffect as useEffect5, useState as useState4 } from "react";
 import { useNavigate as useNavigate4 } from "@remix-run/react";
 import { Parallax } from "react-scroll-parallax";
 import { jsxDEV as jsxDEV12 } from "react/jsx-dev-runtime";
 var Description = () => {
-  let router = useNavigate4(), [scrollPosition, setScrollPosition] = useState3(0);
+  let router = useNavigate4(), [scrollPosition, setScrollPosition] = useState4(0);
   useEffect5(() => {
     let handleScroll = () => {
       setScrollPosition(window.scrollY);
@@ -1351,7 +1401,7 @@ var sectionVariants = {
 // app/routes/_index.tsx
 import { jsxDEV as jsxDEV14 } from "react/jsx-dev-runtime";
 function Index() {
-  let { setHeaderColor } = useHeaderColor(), [state, setState] = useState5({
+  let { setHeaderColor } = useHeaderColor(), [state, setState] = useState6({
     currentImage: 0,
     showLastPart: !1,
     animationFinished: !1
@@ -1989,7 +2039,7 @@ function Home() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-WSXQMMVQ.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-P4DS5TL5.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-43WGSL2O.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-Y2NFDO2M.js", imports: ["/build/_shared/chunk-HC72RTTB.js", "/build/_shared/chunk-WSSTHBAM.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-IZ4SFPG7.js", imports: ["/build/_shared/chunk-2I4OTFRJ.js", "/build/_shared/chunk-FYYCLQBT.js", "/build/_shared/chunk-4XKXEAD2.js", "/build/_shared/chunk-ZYGGPWYC.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-CRBWYHP5.js", imports: ["/build/_shared/chunk-FYYCLQBT.js", "/build/_shared/chunk-ZYGGPWYC.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-JZ2J3ZOG.js", imports: void 0, hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/home": { id: "routes/home", parentId: "root", path: "home", index: void 0, caseSensitive: void 0, module: "/build/routes/home-5NA5T2AP.js", imports: ["/build/_shared/chunk-2I4OTFRJ.js", "/build/_shared/chunk-FYYCLQBT.js", "/build/_shared/chunk-4XKXEAD2.js", "/build/_shared/chunk-ZYGGPWYC.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/mosaic": { id: "routes/mosaic", parentId: "root", path: "mosaic", index: void 0, caseSensitive: void 0, module: "/build/routes/mosaic-ESJ56PGD.js", imports: ["/build/_shared/chunk-ZYGGPWYC.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/projects": { id: "routes/projects", parentId: "root", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/projects-2KJO3SFW.js", imports: void 0, hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-F6WIVDTS.js", imports: ["/build/_shared/chunk-4XKXEAD2.js", "/build/_shared/chunk-ZYGGPWYC.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/values": { id: "routes/values", parentId: "root", path: "values", index: void 0, caseSensitive: void 0, module: "/build/routes/values-7IXAD4UV.js", imports: ["/build/_shared/chunk-ZYGGPWYC.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 } }, version: "ba99bf69", hmr: { runtime: "/build/_shared/chunk-43WGSL2O.js", timestamp: 1707776099861 }, url: "/build/manifest-BA99BF69.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-WSXQMMVQ.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-P4DS5TL5.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-43WGSL2O.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-GRQKCMS6.js", imports: ["/build/_shared/chunk-HC72RTTB.js", "/build/_shared/chunk-WSSTHBAM.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-IZ4SFPG7.js", imports: ["/build/_shared/chunk-2I4OTFRJ.js", "/build/_shared/chunk-FYYCLQBT.js", "/build/_shared/chunk-4XKXEAD2.js", "/build/_shared/chunk-ZYGGPWYC.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-CRBWYHP5.js", imports: ["/build/_shared/chunk-FYYCLQBT.js", "/build/_shared/chunk-ZYGGPWYC.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-45WLSZL4.js", imports: void 0, hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/home": { id: "routes/home", parentId: "root", path: "home", index: void 0, caseSensitive: void 0, module: "/build/routes/home-5NA5T2AP.js", imports: ["/build/_shared/chunk-2I4OTFRJ.js", "/build/_shared/chunk-FYYCLQBT.js", "/build/_shared/chunk-4XKXEAD2.js", "/build/_shared/chunk-ZYGGPWYC.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/mosaic": { id: "routes/mosaic", parentId: "root", path: "mosaic", index: void 0, caseSensitive: void 0, module: "/build/routes/mosaic-ESJ56PGD.js", imports: ["/build/_shared/chunk-ZYGGPWYC.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/projects": { id: "routes/projects", parentId: "root", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/projects-2KJO3SFW.js", imports: void 0, hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-F6WIVDTS.js", imports: ["/build/_shared/chunk-4XKXEAD2.js", "/build/_shared/chunk-ZYGGPWYC.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/values": { id: "routes/values", parentId: "root", path: "values", index: void 0, caseSensitive: void 0, module: "/build/routes/values-7IXAD4UV.js", imports: ["/build/_shared/chunk-ZYGGPWYC.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 } }, version: "76d33a58", hmr: { runtime: "/build/_shared/chunk-43WGSL2O.js", timestamp: 1707815991098 }, url: "/build/manifest-76D33A58.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "development", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1 }, publicPath = "/build/", entry = { module: entry_server_node_exports }, routes = {
