@@ -1,0 +1,1 @@
+import{d as o,f as n,g as t}from"/build/_shared/chunk-C46C5URB.js";var e=o(n(),1),d=o(t(),1),a=(0,e.createContext)({headerColor:"",setHeaderColor:()=>{}}),H=()=>(0,e.useContext)(a),i=({children:C})=>{let[r,l]=(0,e.useState)("");return console.log("headerColor from context:",r),(0,d.jsx)(a.Provider,{value:{headerColor:r,setHeaderColor:l},children:C})};export{H as a,i as b};

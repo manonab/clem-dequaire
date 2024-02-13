@@ -22,7 +22,7 @@ const Description: React.FC = () => {
   return (
     <div className={`w-full h-auto flex flex-col ${isServicesSectionVisible ? "bg-saumon" : "bg-yellowHome"}`}>
       <div className="w-full h-full mx-auto flex flex-col gap-[150px] py-32">
-        <p className="w-[1100px] ml-24 text-left text-orange text-[64px] leading-[57.6px] font-neueMedium">Aux grands mots les grands designs. Parce que votre message méritent d’être entendu, travaillons ensemble.</p>
+        <p className="w-[1100px] ml-24 text-left text-orange text-[64px] leading-[57.6px] font-neueMedium">Aux grands mots les grands designs. Parce que votre message mérite d’être entendu, travaillons ensemble.</p>
         <p className="w-[1100px] ml-48 text-right text-orange text-[64px] leading-[57.6px] font-neueMedium">Créative passionnée, je m’efforce d’aider votre marque à grandir grâce au design et au marketing digital.</p>
         <div onClick={() => router('/about')} className="mb-20 hover:cursor-pointer ml-28 flex border-b-black border-b-2 w-[220px] pb-2 items-center justify-around">
           <p className="uppercase text-xl	font-footer">En savoir plus</p>
