@@ -25,38 +25,35 @@ const HomeComponent: React.FC = () => {
 
   return (
     <ParallaxProvider>
-      <Parallax speed={-30}>
+      <Parallax speed={-30} className="flex flex-col justify-around items-center gap-4">
         <motion.div
-          className="w-screen h-screen z-10 flex justify-between items-start"
+          className="w-full z-10"
           initial="hidden"
           animate="visible"
           variants={sectionVariants}
           transition={{ ...timing }}
         >
-          <motion.img
-            src={Images.has}
-            alt="ha image"
-            className="w-[310px] h-[425px]"
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ ...timing, delay: 0.2 }}
-          />
+
           <motion.div
-            className="relative"
+            className="relative flex flex-col items-center justify-center"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ...timing, delay: 0.5 }}
+            whileHover={{ scale: 1.1 }}
           >
-            <motion.img
-              src={Images.bear}
-              alt="bear image"
-              className="w-[550px] h-[600px] mt-[80px]"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ ...timing, delay: 0.5 }}
-            />
+            <div className="image-container">
+              <motion.img
+                src={Images.bear}
+                alt="bear image"
+                className="w-[550px] h-[600px] mt-[80px] hidden-image"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ ...timing, delay: 0.5 }}
+              />
+              <div className="hover-shape"></div>
+            </div>
             <motion.p
-              className="text-center text-mainColor absolute top-[50%] left-[30%] font-neueMedium text-[50px]"
+              className="text-center text-mainColor font-neueMedium text-[50px]"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ ...timing, delay: 0.7 }}
@@ -64,14 +61,8 @@ const HomeComponent: React.FC = () => {
               Bienvenue.
             </motion.p>
           </motion.div>
-          <motion.img
-            src={Images.book}
-            alt="book image"
-            className="w-[300px] h-[380px] opacity-[0.9] mt-[300px]"
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ ...timing, delay: 0.8 }}
-          />
+
+
         </motion.div>
         <motion.div
           className="mx-auto mb-[450px] pl-40 mt-[50px]  flex-col flex items-center gap-3"
@@ -82,7 +73,6 @@ const HomeComponent: React.FC = () => {
           <BigArrow />
           <p className="font-footer uppercase font-bold leading-[20px]">SCROLL & ROLL</p>
         </motion.div>
-
       </Parallax>
       <Parallax speed={-15}>
         <Description />

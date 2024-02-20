@@ -8,10 +8,10 @@ export const Menu: React.FC = () => {
   const { headerColor } = useHeaderColor();
 
   const pathTextMapping = [
-    { path: "/about", name: "À propos" },
-    // { path: "/values", name: "Mes valeurs" },
-    { path: "/services", name: "Services" },
-    { path: "/projects", name: "Projets" }
+    { path: "/about", name: "à propos" },
+    { path: "/values", name: "mes valeurs" },
+    { path: "/services", name: "services" },
+    { path: "/projects", name: "projets" }
   ];
 
   return (
@@ -21,24 +21,24 @@ export const Menu: React.FC = () => {
       transition={{ duration: 1, ease: [0.43, 0.13, 0.23, 0.96] }}
       className={`${headerColor} flex mx-auto justify-between py-[30px] px-[40px]`}>
       <div onClick={() => router('/home')} className="hover:cursor-pointer">
-        <p className="text-grayBlack font-kateMedium text-3xl leading-8">C.</p>
+        <p className="text-orange font-kateMedium text-[52px] leading-8">C.</p>
       </div>
       <div
-        className="flex justify-center items-center">
+        className="flex justify-center items-center gap-4">
         {pathTextMapping.map((route) => (
           <div
-            className="px-5 w-auto"
+            className="w-auto"
             key={route.path}
             onClick={() => router(`${route.path}`)}
           >
-            <p className="leading-4 text-grayBlack hover:cursor-pointer text-xs font-clash text-black">
+            <p className="leading-4 text-grayBlack hover:cursor-pointer text-[18px] font-clash text-black">
               {route.name}
             </p>
           </div>
         ))}
       </div>
       <div onClick={() => router('/contact')}>
-        <p className="text-xs hover:cursor-pointer font-clashSemibold underline">Let’s work together</p>
+        <p className="text-[15px] hover:cursor-pointer font-clashSemibold uppercase underline">Rencontrons-nous</p>
       </div>
     </motion.div>
   );

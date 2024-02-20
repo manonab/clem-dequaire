@@ -128,7 +128,7 @@ import {
 } from "@remix-run/react";
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-WUIVI2IG.css";
+var tailwind_default = "/build/_assets/tailwind-LYCGF4SZ.css";
 
 // app/components/header/index.tsx
 import { useNavigate } from "@remix-run/react";
@@ -154,10 +154,10 @@ import { motion } from "framer-motion";
 import { jsxDEV as jsxDEV3 } from "react/jsx-dev-runtime";
 var Menu = () => {
   let router = useNavigate(), { headerColor } = useHeaderColor(), pathTextMapping = [
-    { path: "/about", name: "\xC0 propos" },
-    // { path: "/values", name: "Mes valeurs" },
-    { path: "/services", name: "Services" },
-    { path: "/projects", name: "Projets" }
+    { path: "/about", name: "\xE0 propos" },
+    { path: "/values", name: "mes valeurs" },
+    { path: "/services", name: "services" },
+    { path: "/projects", name: "projets" }
   ];
   return /* @__PURE__ */ jsxDEV3(
     motion.div,
@@ -167,7 +167,7 @@ var Menu = () => {
       transition: { duration: 1, ease: [0.43, 0.13, 0.23, 0.96] },
       className: `${headerColor} flex mx-auto justify-between py-[30px] px-[40px]`,
       children: [
-        /* @__PURE__ */ jsxDEV3("div", { onClick: () => router("/home"), className: "hover:cursor-pointer", children: /* @__PURE__ */ jsxDEV3("p", { className: "text-grayBlack font-kateMedium text-3xl leading-8", children: "C." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV3("div", { onClick: () => router("/home"), className: "hover:cursor-pointer", children: /* @__PURE__ */ jsxDEV3("p", { className: "text-orange font-kateMedium text-[52px] leading-8", children: "C." }, void 0, !1, {
           fileName: "app/components/header/index.tsx",
           lineNumber: 24,
           columnNumber: 9
@@ -179,13 +179,13 @@ var Menu = () => {
         /* @__PURE__ */ jsxDEV3(
           "div",
           {
-            className: "flex justify-center items-center",
+            className: "flex justify-center items-center gap-4",
             children: pathTextMapping.map((route) => /* @__PURE__ */ jsxDEV3(
               "div",
               {
-                className: "px-5 w-auto",
+                className: "w-auto",
                 onClick: () => router(`${route.path}`),
-                children: /* @__PURE__ */ jsxDEV3("p", { className: "leading-4 text-grayBlack hover:cursor-pointer text-xs font-clash text-black", children: route.name }, void 0, !1, {
+                children: /* @__PURE__ */ jsxDEV3("p", { className: "leading-4 text-grayBlack hover:cursor-pointer text-[18px] font-clash text-black", children: route.name }, void 0, !1, {
                   fileName: "app/components/header/index.tsx",
                   lineNumber: 34,
                   columnNumber: 13
@@ -210,7 +210,7 @@ var Menu = () => {
           },
           this
         ),
-        /* @__PURE__ */ jsxDEV3("div", { onClick: () => router("/contact"), children: /* @__PURE__ */ jsxDEV3("p", { className: "text-xs hover:cursor-pointer font-clashSemibold underline", children: "Let\u2019s work together" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV3("div", { onClick: () => router("/contact"), children: /* @__PURE__ */ jsxDEV3("p", { className: "text-[15px] hover:cursor-pointer font-clashSemibold uppercase underline", children: "Rencontrons-nous" }, void 0, !1, {
           fileName: "app/components/header/index.tsx",
           lineNumber: 41,
           columnNumber: 9
@@ -419,7 +419,7 @@ var image9_default = "/build/_assets/image9-DNNGWOFO.png";
 var image10_default = "/build/_assets/image10-PE62ZTPI.png";
 
 // app/assets/logo.png
-var logo_default = "/build/_assets/logo-JRSPZ2IB.png";
+var logo_default = "/build/_assets/logo-NRS4NM6T.png";
 
 // app/assets/mosaic.png
 var mosaic_default = "/build/_assets/mosaic-7QDG5ZMK.png";
@@ -1052,18 +1052,18 @@ var Description = () => {
   let isServicesSectionVisible = scrollPosition > 2e3;
   return /* @__PURE__ */ jsxDEV12("div", { className: `w-full h-auto flex flex-col ${isServicesSectionVisible ? "bg-saumon" : "bg-yellowHome"}`, children: [
     /* @__PURE__ */ jsxDEV12("div", { className: "w-full h-full mx-auto flex flex-col gap-[150px] py-32", children: [
-      /* @__PURE__ */ jsxDEV12("p", { className: "w-[1100px] ml-24 text-left text-orange text-[64px] leading-[57.6px] font-neueMedium", children: "Aux grands mots les grands designs. Parce que votre message m\xE9ritent d\u2019\xEAtre entendu, travaillons ensemble." }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV12("p", { className: "w-[1100px] ml-24 text-left text-orange text-[60px] leading-[57.6px] font-neueCondensed", children: "Le courage de nos id\xE9es, la passion de les partager. Parce que vous avez quelque chose \xE0 raconter, qu\u2019attendons nous pour commencer ?" }, void 0, !1, {
         fileName: "app/components/home/description.tsx",
         lineNumber: 25,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV12("p", { className: "w-[1100px] ml-48 text-right text-orange text-[64px] leading-[57.6px] font-neueMedium", children: "Cr\xE9ative passionn\xE9e, je m\u2019efforce d\u2019aider votre marque \xE0 grandir gr\xE2ce au design et au marketing digital." }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV12("p", { className: "w-[1100px] ml-48 text-right text-orange text-[64px] leading-[57.6px] font-neueCondensed", children: "Consultante en communication et cr\xE9ative passionn\xE9e, je m\u2019efforce d\u2019aider votre marque \xE0 grandir gr\xE2ce au design et au marketing digital." }, void 0, !1, {
         fileName: "app/components/home/description.tsx",
         lineNumber: 26,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV12("div", { onClick: () => router("/about"), className: "mb-20 hover:cursor-pointer ml-28 flex border-b-black border-b-2 w-[220px] pb-2 items-center justify-around", children: [
-        /* @__PURE__ */ jsxDEV12("p", { className: "uppercase text-xl	font-footer", children: "En savoir plus" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV12("p", { className: "uppercase text-[15px]	font-footer", children: "En savoir plus" }, void 0, !1, {
           fileName: "app/components/home/description.tsx",
           lineNumber: 28,
           columnNumber: 11
@@ -1099,18 +1099,18 @@ var Description = () => {
       }, this),
       /* @__PURE__ */ jsxDEV12("div", { className: "flex items-center justify-around my-36 mx-20", children: [
         /* @__PURE__ */ jsxDEV12("div", { className: "flex-col items-center gap-3", children: [
-          /* @__PURE__ */ jsxDEV12("p", { className: "font-neueBold  text-[75px] leading-[75px]", children: "Communication" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV12("p", { className: "font-neueBold  text-[67px] leading-[67px]", children: "Communication" }, void 0, !1, {
             fileName: "app/components/home/description.tsx",
             lineNumber: 40,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ jsxDEV12("div", { className: "flex items-center", children: [
-            /* @__PURE__ */ jsxDEV12("p", { className: "font-neueBold  text-[75px] leading-[75px] mr-10", children: "&" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV12("p", { className: "font-neueBold  text-[67px] leading-[67px] mr-4", children: "&" }, void 0, !1, {
               fileName: "app/components/home/description.tsx",
               lineNumber: 42,
               columnNumber: 15
             }, this),
-            /* @__PURE__ */ jsxDEV12("p", { className: "font-neueBold  text-[75px] leading-[75px]", children: "marketing" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV12("p", { className: "font-neueBold  text-[67px] leading-[67px]", children: "marketing" }, void 0, !1, {
               fileName: "app/components/home/description.tsx",
               lineNumber: 43,
               columnNumber: 15
@@ -1120,7 +1120,7 @@ var Description = () => {
             lineNumber: 41,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ jsxDEV12("p", { className: "font-neueBold  text-[75px] leading-[75px] ml-20", children: "digital." }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV12("p", { className: "font-neueBold  text-[67px] leading-[67px] ml-20", children: "digital." }, void 0, !1, {
             fileName: "app/components/home/description.tsx",
             lineNumber: 45,
             columnNumber: 13
@@ -1130,12 +1130,12 @@ var Description = () => {
           lineNumber: 39,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV12("p", { className: "font-neueBold  text-[75px] leading-[75px]", children: "Design" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV12("p", { className: "font-neueBold  text-[67px] leading-[67px]", children: "Design" }, void 0, !1, {
           fileName: "app/components/home/description.tsx",
           lineNumber: 47,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV12("p", { className: "font-neueBold  text-[75px] leading-[75px]", children: "Consulting" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV12("p", { className: "font-neueBold  text-[67px] leading-[67px]", children: "Consulting" }, void 0, !1, {
           fileName: "app/components/home/description.tsx",
           lineNumber: 48,
           columnNumber: 11
@@ -1168,16 +1168,16 @@ var Description = () => {
     }, this),
     /* @__PURE__ */ jsxDEV12(Parallax, { speed: -15, className: "min-h-[450px]", children: /* @__PURE__ */ jsxDEV12("div", { className: "w-full h-screen bg-mainColor relative pt-20", children: [
       /* @__PURE__ */ jsxDEV12("div", { className: "flex-col items-center justify-center", children: [
-        /* @__PURE__ */ jsxDEV12("p", { className: "flex justify-center mt-44 items-center text-[100px] leading-[100px] text-royalBlue font-neueSemiBold", children: [
+        /* @__PURE__ */ jsxDEV12("p", { className: "flex justify-center mt-44 items-baseline text-[100px] leading-[100px] text-royalBlue font-neueSemiBold", children: [
           "Like what you s",
           /* @__PURE__ */ jsxDEV12("span", { children: /* @__PURE__ */ jsxDEV12("img", { src: Images?.rabbit, className: "w-[130px] bg-center rounded-2xl mx-2" }, void 0, !1, {
             fileName: "app/components/home/description.tsx",
             lineNumber: 58,
-            columnNumber: 150
+            columnNumber: 152
           }, this) }, void 0, !1, {
             fileName: "app/components/home/description.tsx",
             lineNumber: 58,
-            columnNumber: 144
+            columnNumber: 146
           }, this),
           "?"
         ] }, void 0, !0, {
@@ -1185,7 +1185,7 @@ var Description = () => {
           lineNumber: 58,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV12("p", { className: "text-black font-footer font-medium leading-[100px] text-center text-[90px]", children: "Restons en contact" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV12("p", { className: "text-black font-footer font-medium leading-[100px] text-center text-[80px]", children: "Restons en contact" }, void 0, !1, {
           fileName: "app/components/home/description.tsx",
           lineNumber: 59,
           columnNumber: 13
@@ -1195,7 +1195,7 @@ var Description = () => {
         lineNumber: 57,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV12("div", { onClick: () => router("/contact"), className: "hover:cursor-pointer border-black border my-20 rounded-3xl px-5 py-3 w-[200px] mx-auto", children: /* @__PURE__ */ jsxDEV12("p", { className: "leading-[17.5px] font-bold text-sm text-center text-grayBlack uppercase", children: "Contactez-moi" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV12("div", { onClick: () => router("/contact"), className: "hover:cursor-pointer border-black border my-20 rounded-3xl px-[40px] py-[10px] w-[200px] mx-auto", children: /* @__PURE__ */ jsxDEV12("p", { className: "leading-[17.5px] font-bold text-sm text-center text-grayBlack uppercase", children: "Me contactez" }, void 0, !1, {
         fileName: "app/components/home/description.tsx",
         lineNumber: 62,
         columnNumber: 13
@@ -1233,49 +1233,31 @@ var sectionVariants = {
   return useEffect6(() => {
     setHeaderColor("#FCF6EF");
   }, []), /* @__PURE__ */ jsxDEV13(ParallaxProvider, { children: [
-    /* @__PURE__ */ jsxDEV13(Parallax2, { speed: -30, children: [
+    /* @__PURE__ */ jsxDEV13(Parallax2, { speed: -30, className: "flex flex-col justify-around items-center gap-4", children: [
       /* @__PURE__ */ jsxDEV13(
         motion3.div,
         {
-          className: "w-screen h-screen z-10 flex justify-between items-start",
+          className: "w-full z-10",
           initial: "hidden",
           animate: "visible",
           variants: sectionVariants,
           transition: { ...timing },
-          children: [
-            /* @__PURE__ */ jsxDEV13(
-              motion3.img,
-              {
-                src: Images.has,
-                alt: "ha image",
-                className: "w-[310px] h-[425px]",
-                initial: { opacity: 0, y: 100 },
-                animate: { opacity: 1, y: 0 },
-                transition: { ...timing, delay: 0.2 }
-              },
-              void 0,
-              !1,
-              {
-                fileName: "app/components/home/index.tsx",
-                lineNumber: 36,
-                columnNumber: 11
-              },
-              this
-            ),
-            /* @__PURE__ */ jsxDEV13(
-              motion3.div,
-              {
-                className: "relative",
-                initial: { opacity: 0, y: 100 },
-                animate: { opacity: 1, y: 0 },
-                transition: { ...timing, delay: 0.5 },
-                children: [
+          children: /* @__PURE__ */ jsxDEV13(
+            motion3.div,
+            {
+              className: "relative flex flex-col items-center justify-center",
+              initial: { opacity: 0, y: 100 },
+              animate: { opacity: 1, y: 0 },
+              transition: { ...timing, delay: 0.5 },
+              whileHover: { scale: 1.1 },
+              children: [
+                /* @__PURE__ */ jsxDEV13("div", { className: "image-container", children: [
                   /* @__PURE__ */ jsxDEV13(
                     motion3.img,
                     {
                       src: Images.bear,
                       alt: "bear image",
-                      className: "w-[550px] h-[600px] mt-[80px]",
+                      className: "w-[550px] h-[600px] mt-[80px] hidden-image",
                       initial: { opacity: 0, y: 50 },
                       animate: { opacity: 1, y: 0 },
                       transition: { ...timing, delay: 0.5 }
@@ -1284,63 +1266,53 @@ var sectionVariants = {
                     !1,
                     {
                       fileName: "app/components/home/index.tsx",
-                      lineNumber: 50,
-                      columnNumber: 13
+                      lineNumber: 45,
+                      columnNumber: 15
                     },
                     this
                   ),
-                  /* @__PURE__ */ jsxDEV13(
-                    motion3.p,
-                    {
-                      className: "text-center text-mainColor absolute top-[50%] left-[30%] font-neueMedium text-[50px]",
-                      initial: { opacity: 0, y: 50 },
-                      animate: { opacity: 1, y: 0 },
-                      transition: { ...timing, delay: 0.7 },
-                      children: "Bienvenue."
-                    },
-                    void 0,
-                    !1,
-                    {
-                      fileName: "app/components/home/index.tsx",
-                      lineNumber: 58,
-                      columnNumber: 13
-                    },
-                    this
-                  )
-                ]
-              },
-              void 0,
-              !0,
-              {
-                fileName: "app/components/home/index.tsx",
-                lineNumber: 44,
-                columnNumber: 11
-              },
-              this
-            ),
-            /* @__PURE__ */ jsxDEV13(
-              motion3.img,
-              {
-                src: Images.book,
-                alt: "book image",
-                className: "w-[300px] h-[380px] opacity-[0.9] mt-[300px]",
-                initial: { opacity: 0, y: 100 },
-                animate: { opacity: 1, y: 0 },
-                transition: { ...timing, delay: 0.8 }
-              },
-              void 0,
-              !1,
-              {
-                fileName: "app/components/home/index.tsx",
-                lineNumber: 67,
-                columnNumber: 11
-              },
-              this
-            )
-          ]
+                  /* @__PURE__ */ jsxDEV13("div", { className: "hover-shape" }, void 0, !1, {
+                    fileName: "app/components/home/index.tsx",
+                    lineNumber: 53,
+                    columnNumber: 15
+                  }, this)
+                ] }, void 0, !0, {
+                  fileName: "app/components/home/index.tsx",
+                  lineNumber: 44,
+                  columnNumber: 13
+                }, this),
+                /* @__PURE__ */ jsxDEV13(
+                  motion3.p,
+                  {
+                    className: "text-center text-mainColor font-neueMedium text-[50px]",
+                    initial: { opacity: 0, y: 50 },
+                    animate: { opacity: 1, y: 0 },
+                    transition: { ...timing, delay: 0.7 },
+                    children: "Bienvenue."
+                  },
+                  void 0,
+                  !1,
+                  {
+                    fileName: "app/components/home/index.tsx",
+                    lineNumber: 55,
+                    columnNumber: 13
+                  },
+                  this
+                )
+              ]
+            },
+            void 0,
+            !0,
+            {
+              fileName: "app/components/home/index.tsx",
+              lineNumber: 37,
+              columnNumber: 11
+            },
+            this
+          )
         },
         void 0,
-        !0,
+        !1,
         {
           fileName: "app/components/home/index.tsx",
           lineNumber: 29,
@@ -1358,12 +1330,12 @@ var sectionVariants = {
           children: [
             /* @__PURE__ */ jsxDEV13(BigArrow, {}, void 0, !1, {
               fileName: "app/components/home/index.tsx",
-              lineNumber: 82,
+              lineNumber: 73,
               columnNumber: 11
             }, this),
             /* @__PURE__ */ jsxDEV13("p", { className: "font-footer uppercase font-bold leading-[20px]", children: "SCROLL & ROLL" }, void 0, !1, {
               fileName: "app/components/home/index.tsx",
-              lineNumber: 83,
+              lineNumber: 74,
               columnNumber: 11
             }, this)
           ]
@@ -1372,7 +1344,7 @@ var sectionVariants = {
         !0,
         {
           fileName: "app/components/home/index.tsx",
-          lineNumber: 76,
+          lineNumber: 67,
           columnNumber: 9
         },
         this
@@ -1384,11 +1356,11 @@ var sectionVariants = {
     }, this),
     /* @__PURE__ */ jsxDEV13(Parallax2, { speed: -15, children: /* @__PURE__ */ jsxDEV13(description_default, {}, void 0, !1, {
       fileName: "app/components/home/index.tsx",
-      lineNumber: 88,
+      lineNumber: 78,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/components/home/index.tsx",
-      lineNumber: 87,
+      lineNumber: 77,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
@@ -2039,7 +2011,7 @@ function Home() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-WSXQMMVQ.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-P4DS5TL5.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-43WGSL2O.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-GRQKCMS6.js", imports: ["/build/_shared/chunk-HC72RTTB.js", "/build/_shared/chunk-WSSTHBAM.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-IZ4SFPG7.js", imports: ["/build/_shared/chunk-2I4OTFRJ.js", "/build/_shared/chunk-FYYCLQBT.js", "/build/_shared/chunk-4XKXEAD2.js", "/build/_shared/chunk-ZYGGPWYC.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-CRBWYHP5.js", imports: ["/build/_shared/chunk-FYYCLQBT.js", "/build/_shared/chunk-ZYGGPWYC.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-45WLSZL4.js", imports: void 0, hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/home": { id: "routes/home", parentId: "root", path: "home", index: void 0, caseSensitive: void 0, module: "/build/routes/home-5NA5T2AP.js", imports: ["/build/_shared/chunk-2I4OTFRJ.js", "/build/_shared/chunk-FYYCLQBT.js", "/build/_shared/chunk-4XKXEAD2.js", "/build/_shared/chunk-ZYGGPWYC.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/mosaic": { id: "routes/mosaic", parentId: "root", path: "mosaic", index: void 0, caseSensitive: void 0, module: "/build/routes/mosaic-ESJ56PGD.js", imports: ["/build/_shared/chunk-ZYGGPWYC.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/projects": { id: "routes/projects", parentId: "root", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/projects-2KJO3SFW.js", imports: void 0, hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-F6WIVDTS.js", imports: ["/build/_shared/chunk-4XKXEAD2.js", "/build/_shared/chunk-ZYGGPWYC.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/values": { id: "routes/values", parentId: "root", path: "values", index: void 0, caseSensitive: void 0, module: "/build/routes/values-7IXAD4UV.js", imports: ["/build/_shared/chunk-ZYGGPWYC.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 } }, version: "76d33a58", hmr: { runtime: "/build/_shared/chunk-43WGSL2O.js", timestamp: 1707815991098 }, url: "/build/manifest-76D33A58.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-WSXQMMVQ.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-P4DS5TL5.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-43WGSL2O.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-WGRTSGJB.js", imports: ["/build/_shared/chunk-HC72RTTB.js", "/build/_shared/chunk-WSSTHBAM.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-JK6SAGFV.js", imports: ["/build/_shared/chunk-VGYKPBCS.js", "/build/_shared/chunk-FYYCLQBT.js", "/build/_shared/chunk-4XKXEAD2.js", "/build/_shared/chunk-GMZI2DNI.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-L2BFHL2F.js", imports: ["/build/_shared/chunk-FYYCLQBT.js", "/build/_shared/chunk-GMZI2DNI.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-45WLSZL4.js", imports: void 0, hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/home": { id: "routes/home", parentId: "root", path: "home", index: void 0, caseSensitive: void 0, module: "/build/routes/home-XDMRPLGB.js", imports: ["/build/_shared/chunk-VGYKPBCS.js", "/build/_shared/chunk-FYYCLQBT.js", "/build/_shared/chunk-4XKXEAD2.js", "/build/_shared/chunk-GMZI2DNI.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/mosaic": { id: "routes/mosaic", parentId: "root", path: "mosaic", index: void 0, caseSensitive: void 0, module: "/build/routes/mosaic-S36TVWXM.js", imports: ["/build/_shared/chunk-GMZI2DNI.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/projects": { id: "routes/projects", parentId: "root", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/projects-2KJO3SFW.js", imports: void 0, hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-RFSNXQBL.js", imports: ["/build/_shared/chunk-4XKXEAD2.js", "/build/_shared/chunk-GMZI2DNI.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/values": { id: "routes/values", parentId: "root", path: "values", index: void 0, caseSensitive: void 0, module: "/build/routes/values-GJOEWWC4.js", imports: ["/build/_shared/chunk-GMZI2DNI.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 } }, version: "4ee10f44", hmr: { runtime: "/build/_shared/chunk-43WGSL2O.js", timestamp: 1708179020265 }, url: "/build/manifest-4EE10F44.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "development", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1 }, publicPath = "/build/", entry = { module: entry_server_node_exports }, routes = {
