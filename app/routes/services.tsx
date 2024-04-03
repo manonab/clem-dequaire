@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Images } from "~/common/images";
 import { useHeaderColor } from "~/context";
 import { ArrowRight } from "~/assets/arrow-right";
@@ -6,11 +6,29 @@ import { useNavigate } from "@remix-run/react";
 
 export default function Services() {
   const { setHeaderColor } = useHeaderColor();
+  const [scrolled, setScrolled] = useState<boolean>(false);
   const router = useNavigate();
 
+  const scrollingTextRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    setHeaderColor("linear-services")
+    setHeaderColor("linear-services");
+
+    const handleScroll = () => {
+      if (scrollingTextRef.current) {
+        const rect = scrollingTextRef.current.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+        setScrolled(isVisible);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, [setHeaderColor]);
+
 
   return (
     <div className="w-full h-full flex-col">
@@ -46,7 +64,6 @@ export default function Services() {
                 <li className="text-[16px] font-semibold">UX/UI design</li>
                 <li className="text-[16px] font-semibold">Supports de communication</li>
                 <li className="text-[16px] font-semibold">Posts réseaux sociaux</li>
-
               </ul>
             </div>
           </div>
@@ -60,9 +77,10 @@ export default function Services() {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-end pb-20">
-          <img src={Images.service} className="mr-10" />
-          <p className="text-right font-neueRegular uppercase text-[160px] leading-[90%] text-orange">MES SERVICES</p>
+        <div id="scrolling-text" ref={scrollingTextRef} className={`flex items-center justify-end gap-3 relative ${scrolled ? 'scrolling' : ''}`}>
+          <p className="text-right font-neueRegular uppercase text-[160px] leading-[90%] text-orange">CRÉER</p>
+          <img src={Images.service} alt="Service" />
+          <p className={`text-right font-neueRegular uppercase text-[160px] leading-[90%] text-orange ${scrolled ? 'text-transition' : 'hidden'}`}>CRÉER</p>
         </div>
       </div>
       <div className="bg-mainColor h-screen my-20">

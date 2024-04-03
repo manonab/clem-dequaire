@@ -18,7 +18,7 @@ export default function About() {
         <div className="flex items-end justify-between w-auto">
           <div className="min-w-[950px] flex-col flex">
             <div className="w-[1259px] ml-10">
-              <p className="font-neueRegular text-[200px] uppercase leading-[180px] text-orange font-medium">IT’S ALL ABOUT PASSION.</p>
+              <p className="font-neueRegular text-[190px] uppercase leading-[180px] text-orange font-medium">Tout commença par une idée</p>
             </div>
             <div className="w-[637px] ml-12 my-16">
               <p className="leading-[31.2px] text-justify text-2xl font-normal font-footer">

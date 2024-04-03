@@ -55,14 +55,32 @@ export default function Contact() {
   };
 
   return (
-    <div className="w-screen h-screen flex mt-20 mb-10">
+    <div className="flex-col flex gap-20 mx-20">
       {/* Contenu du composant */}
-      <div className="flex-col ml-10 ">
-        <p className="text-[200px] leading-[90%] text-royalBlue uppercase font-neueRegular">Con</p>
-        <p className="text-[200px] leading-[90%] text-royalBlue uppercase font-neueRegular">tact.</p>
+      <div className="">
+        <p className="text-[190px] leading-[90%] text-orange  font-neueRegular">Créons</p>
+        <p className="text-[190px] leading-[90%] text-orange  font-neueRegular">ensemble.</p>
       </div>
       {showModal && <Modal onClose={handleCloseModal} />}
-      <div className="flex-col mx-auto">
+      <div className="flex flex-col gap-3 items-center">
+        <div className="flex justify-between w-full">
+          <span className="flex-col flex gap-1 items-start">
+            <p className="font-inter mb-1">Nom</p>
+            <input
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="w-fit p-2 rounded-[10px] bg-mainColor border border-black min-w-[530px] min-h-[65px]" />
+          </span>
+          <span className="flex-col flex gap-1 items-start">
+            <p className="font-inter mb-1">Prénom</p>
+            <input
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-fit p-2 rounded-[10px] bg-mainColor border border-black min-w-[530px] min-h-[65px]" />
+          </span>
+        </div>
+      </div>
+      {/* <div className="flex-col flex gap-3 mx-auto">
         <div className="flex justify-around">
           <div>
             <p className="font-inter mb-1">Nom</p>
@@ -84,7 +102,7 @@ export default function Contact() {
         <div onClick={handleSendEmail} className="hover:cursor-pointer border-black bg-black border mt-5 mr-[10px] rounded-3xl px-5 py-3 w-[200px] mx-auto">
           <p className="leading-[17.5px] font-bold text-sm text-center text-white uppercase">Envoyez</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

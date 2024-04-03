@@ -9,55 +9,38 @@ export default function Values() {
   const { setHeaderColor } = useHeaderColor();
   const router = useNavigate();
   useEffect(() => {
-    setHeaderColor("linear-background");
+    setHeaderColor("linear-values");
   }, [setHeaderColor]);
 
   return (
     <ParallaxProvider>
-      <div className="flex-col flex gap-12 w-screen h-auto">
-        <div className="flex items-end justify-between w-auto">
-          <div className="min-w-[950px] flex-col flex">
-            <div className="w-[1259px] ml-10">
-              <p className="font-neueRegular text-[200px] uppercase leading-[180px] text-orange font-medium">IT’S ALL ABOUT PASSION.</p>
-            </div>
-            <div className="w-[637px] ml-12 my-16">
-              <p className="leading-[31.2px] text-justify text-2xl font-normal font-footer">
-                Spécialiste en communication/marketing et passionnée de design, j’aide les entreprises à valoriser leur image de marque en leur proposant une stratégie digitale adaptée. J’aime relever de nouveaux défis et méthodiquement mener les projets jusqu'à leur pleine réussite.                  </p>
-            </div>
-          </div>
-          <div className="w-auto">
-            <p className="mx-10 uppercase text-redHome text-[100px] font-medium font-neueRegular leading-[90px]">Scroll</p>
-          </div>
+      <div className="flex-col flex w-full h-auto">
+        <div className="!w-full bg-saumon pb-20">
+          <p className="ml-10 font-neueRegular text-[190px] leading-[180px] text-orange font-medium">Tout commença par une <br></br><span className="text-redHome">idée</span>.</p>
         </div>
-        <div className="self-end mr-[220px] -mb-[130px] z-[10]">
-          <BigDownArrow />
-        </div>
-        <div className="bg-saumon h-full w-full flex-col flex">
-          <div className="flex items-end justify-around">
-            <div className="w-[395px] h-[480px] rounded-[50px] -mt-10 ml-12">
+        <div className="bg-mainColor h-full flex-col flex">
+          <div className="flex gap-12 justify-evenly items-center">
+            <div className="w-[659px] ml-10">
+              <p className="text-[18px] text-justify"><span className="font-semibold">Spécialisée en communication et marketing digital</span>, j’ai toujours ressenti ce besoin de trouver du sens. Plus qu’un métier, je vois la communication comme un moyen de partager et faire grandir des projets auxquels je crois profondément. Cinq années se sont écoulées depuis mon premier poste et cette idée s’est transformée en un défi que je relève passionnément chaque jour. Grâce à d’autres humain.e.s qui croyaient fort en leur convictions,   j’ai eu la chance de porter défis audacieux et des messages engagés. Peut-être serez vous les prochain.e.s ?</p>
+            </div>
+            <div className="!w-fit bg-white h-[480px] rounded-[50px] -mt-16">
               <img alt="men with pride flag" src={Images.pride} />
             </div>
-            <p className="-mb-40 z-[10] w-[802px] leading-[72px] text-royalBlue text-right text-[80px] font-neueRegular">
-              "Seules 54% des entreprises françaises ont embrassé la diversité"*.
-            </p>
           </div>
-          <div className="flex items-center justify-around mb-10 mt-28 mx-20">
-            <p className="text-[25px] leading-[32px] font-normal font-footer text-justify w-[640px]">
-              Dans un monde où l'équité n'est plus simplement une option mais une nécessité, j'ai un grand intérêt à utiliser mon expertise pour aider les marques à évoluer. Mon objectif est de les guider vers une approche plus inclusive. Cela implique de comprendre et de respecter la diversité de leur public et de s'assurer que tous se sentent représentés et valorisés. Ensemble, faisons bouger les choses !              </p>
-            <div className="z-0 w-[395px] h-[480px] rounded-[50px]">
-              <img alt="group people" src={Images.group} />
+          <p className="z-[10] -mb-32 w-[741px] ml-[300px] leading-[72px] text-royalBlue text-[60px] font-neueRegular">
+            "Seules 54% des entreprises françaises ont embrassé la diversité".<span className="text-black">*</span>
+          </p>
+          <div className="flex items-center justify-evenly">
+            <div className="z-0 flex justify-start items-center">
+              <p className="rotate-[270deg] -mr-16">Têtu, Nom de l’enquête.</p>
+              <img alt="group people" src={Images.group} className="rounded-[50px h-[480px] w-[395px]" />
             </div>
+            <p className="text-[18px] font-normal text-justify w-[640px]">
+              Au fil de ma vie et de ma carrière personnelle,  j’ai pu appréhender avec clarté et détermination les bouleversements sociaux qui se jouent depuis maintenant des années.  Pour toutes les entreprises qui souhaitent faire parti du changement, je propose une <span className="font-semibold">relecture inclusive</span> et une vision sensible de votre communication.             </p>
           </div>
         </div>
-
-        <div className="bg-mainColor h-full w-full flex-col flex gap-12">
-          <div className="flex items-center justify-center">
-            <p className="text-[250px] text-redHome font-neueRegular uppercase mr-10">Militer</p>
-            <img alt="arrow pink" src={Images.manifesto} width={100} height={100} />
-
-          </div>
+        <div className="bg-yellowHome pt-40 -mt-16">
           <p className="font-neueRegular italic text-[50px] leading-[90%] mx-16">Manifesto</p>
-
           <div className="w-3/4 mx-auto">
             <div className="flex items-center">
               <p className="font-footer text-[70px] mr-14">01.</p>
@@ -76,8 +59,8 @@ export default function Values() {
               <p className="leading-[100%] text-[28px] font-footer"><span className="text-orange">Amusons nous</span> à créer, partager, designer. Partageons l’amour de nos métiers.</p>
             </div>
           </div>
-          <div onClick={() => router('/services')} className="hover:cursor-pointer border-black border mb-20 rounded-3xl p-[10px] w-[200px] mx-auto">
-            <p className="leading-[17.5px] font-bold text-sm text-center text-grayBlack uppercase">Services</p>
+          <div onClick={() => router('/projects')} className="py-5 px-10 transition-all duration-300 ease-in-out leading-[17.5px] font-bold text-sm text-center text-grayBlack uppercase hover:text-white hover:bg-grayBlack translate hover:cursor-pointer border-black border my-20 rounded-full w-[200px] mx-auto">
+            Mes projets
           </div>
         </div>
       </div>
