@@ -20,7 +20,7 @@ const HomeComponent: React.FC = () => {
 
   return (
     <ParallaxProvider>
-      <Parallax speed={-30} className="flex flex-col justify-around items-center gap-4">
+      <Parallax speed={-30} className="hidden md:flex flex-col justify-around items-center gap-4">
         <motion.div
           transition={{ ...timing, delay: 2 }}
           className="flex flex-col items-center justify-evenly h-screen">
@@ -32,7 +32,6 @@ const HomeComponent: React.FC = () => {
         </motion.div>
 
       </Parallax>
-
       <Parallax speed={-15}>
         <Description />
       </Parallax>
