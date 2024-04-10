@@ -43,6 +43,9 @@ export default {
 				title: ["190px", "90%"],
 				bannerTitile: ["160px", "90%"],
 				serviceTitle: ["60px", "100%"],
+				homeMobileTitle: ["60px", "90%"],
+				homeMobileContent: ["20px", "90%"],
+
 				welcome: ["200px", "100%"],
 				titleMobile: ["50px", "100%"],
 			},

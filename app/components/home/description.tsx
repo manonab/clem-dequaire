@@ -3,6 +3,7 @@ import { ArrowRight } from "~/assets/arrow-right";
 import { useNavigate } from "@remix-run/react";
 import { Images } from "~/common/images";
 import { Parallax } from "react-scroll-parallax";
+import { BigArrow } from "~/assets/big-arrow";
 
 const Description: React.FC = () => {
   const router = useNavigate();
@@ -80,8 +81,25 @@ const Description: React.FC = () => {
           </div>
         </Parallax>
       </div>
-      <div className="flex md:hidden">
-        <p>coucou mon coeur</p>
+      <div className="flex flex-col md:hidden h-full w-full gap-12">
+        <div>
+          <img src={Images.homeMobile} width="200px" />
+          <p className="text-homeMobileTitle text-redHome text-neueRegular -mt-[200px] ml-10">Tout<br></br> commence<br></br> par une<br></br> idée. </p>
+          <div className="ml-4">
+            <p className="text-condensed text-orange text-homeMobileContent max-w-[300px]">Consultante en communication et créative passionnée, je m’efforce d’aider votre marque à grandir grâce au design et au marketing digital.</p>
+          </div>
+          <div className="flex items-center justify-end">
+            <div className="flex flex-col items-center gap-3">
+              <BigArrow />
+              <p className="font-footer uppercase font-bold leading-[20px]">SCROLL & ROLL</p>
+            </div>
+            <img src={Images.homeMobile2} width="160px" />
+          </div>
+        </div>
+        <div className="bg-yellowHome w-full">
+          <p className="text-homeMobileTitle text-redHome text-neueRegular -mt-[200px] ml-10">Tout<br></br> commence<br></br> par une<br></br> idée. </p>
+
+        </div>
       </div>
     </div>
   );

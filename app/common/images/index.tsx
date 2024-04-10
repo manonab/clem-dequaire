@@ -35,6 +35,7 @@ import Mosaic006 from "../../assets/mosaic/mosaic-006.png"
 import Mosaic007 from "../../assets/mosaic/mosaic-007.png"
 import CapicheBG from "../../assets/capiche/background-capiche.png"
 import HomeMobile from "../../assets/home/home-mobile.png"
+import HomeMobile1 from "../../assets/home/home-mobile-2.png"
 
 export const Images = {
   eye: Eye,
@@ -73,6 +74,7 @@ export const Images = {
   mosaic006: Mosaic006,
   mosaic007: Mosaic007,
   capicheBG: CapicheBG,
-  homeMobile: HomeMobile
+  homeMobile: HomeMobile,
+  homeMobile2: HomeMobile1
 };
 
