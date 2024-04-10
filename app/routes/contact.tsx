@@ -126,13 +126,13 @@ export default function Contact() {
             <input
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="p-2 rounded-[5px] bg-mainColor border border-black" />
+              className="p-2 rounded-[5px] bg-mainColor border border-black !w-fit" />
           </div>
           <div className="flex-col flex items-start">
             <p className="font-inter mb-2">Prénom</p>
             <input
               value={lastName}
-              onChange={(e) => setLastName(e.target.value)} className="p-2 rounded-[5px] bg-mainColor border border-black" />
+              onChange={(e) => setLastName(e.target.value)} className="p-2 rounded-[5px] !w-fit bg-mainColor border border-black" />
           </div>
         </div>
         <div className="flex justify-around">
@@ -140,14 +140,14 @@ export default function Contact() {
             <p className="font-inter mb-2">Email</p>
             <input
               value={email}
-              onChange={(e) => setEmail(e.target.value)} className="p-2 rounded-[5px] bg-mainColor border border-black" />
+              onChange={(e) => setEmail(e.target.value)} className="p-2 rounded-[5px] !w-fit bg-mainColor border border-black" />
           </div>
 
           <div className="flex-col flex items-start">
             <p className="font-inter mb-2">Object</p>
             <input
-              value={lastName}
-              onChange={(e) => setSubject(e.target.value)} className="p-2 rounded-[5px] bg-mainColor border border-black" />
+              value={Object}
+              onChange={(e) => setSubject(e.target.value)} className="p-2  rounded-[5px] !w-fit bg-mainColor border border-black" />
           </div>
         </div>
         <div className="flex-col flex items-start">
