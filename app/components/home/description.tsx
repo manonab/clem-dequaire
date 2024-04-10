@@ -4,6 +4,7 @@ import { useNavigate } from "@remix-run/react";
 import { Images } from "~/common/images";
 import { Parallax } from "react-scroll-parallax";
 import { BigArrow } from "~/assets/big-arrow";
+import Contact from "~/routes/contact";
 
 const Description: React.FC = () => {
   const router = useNavigate();
@@ -81,7 +82,7 @@ const Description: React.FC = () => {
           </div>
         </Parallax>
       </div>
-      <div className="flex flex-col md:hidden h-full w-full gap-12">
+      <div className="flex flex-col md:hidden h-full w-full gap-12 mt-10">
         <div>
           <img src={Images.homeMobile} width="200px" />
           <p className="text-homeMobileTitle text-redHome text-neueRegular -mt-[100px] ml-10">Tout<br></br> commence<br></br> par une<br></br> idée. </p>
@@ -96,13 +97,36 @@ const Description: React.FC = () => {
             <img src={Images.homeMobile2} width="160px" />
           </div>
         </div>
-        <div className="bg-yellowHome w-full">
-          <div className="my-20 m-4">
+        <div className="bg-yellowHome w-full pb-24">
+          <div className="mt-20 mb-10 m-4">
             <p className="text-condensed text-orange text-homeMobileContent max-w-[300px]">Le courage de nos idées, la passion de les partager. Parce que vous avez quelque chose à raconter, <span className="text-redHome font-bold">qu’attendons nous pour commencer ?</span></p>
           </div>
-          <div>
-            <p className="m-4 mb-5 neueRegular text-redHome font-bold text-homeMobileServices">Services</p>
+          <p className="mx-4 mb-5 font-neueBold text-redHome text-homeMobileServices">services</p>
+          <div className="flex flex-col gap-3 items-start mx-4 my-5">
+            <p className="text-grayBlack font-footer font-bold">Communication</p>
+            <img src={Images.line} className="-mt-3" />
+            <p className="text-grayBlack font-footer font-bold">Marketing digital</p>
+            <img src={Images.line} className="-mt-3" />
+            <p className="text-grayBlack font-footer font-bold">Design</p>
+            <img src={Images.line} className="-mt-3" />
+            <p className="text-grayBlack font-footer font-bold">Consulting</p>
+            <img src={Images.line} className="-mt-3" />
           </div>
+          <p className="uppercase font-footer text-grayBlack text-[8px] mx-4 my-5">EN SAVOIR PLUS</p>
+          <p className="m-4 my-5 font-neueBold text-redHome text-homeMobileServices">projets</p>
+          <div className="overflow-auto whitespace-nowrap ml-5 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200">
+            <div className="flex items-center justify-evenly space-x-6 py-5 px-10">
+              <img onClick={() => router('/capiche')}
+                src={Images.homeCapiche} alt="Image 1" className="w-[130px] mx-5" />
+              <img onClick={() => router('/mosaic')} src={Images.homeMosaic} alt="Image 2" className="w-[130px] mx-5" />
+              <img onClick={() => router('/portfolio')} src={Images.homePortfolio} alt="Image 3" className="w-[130px] mx-5" />
+            </div>
+          </div>
+          <p className="uppercase font-footer text-grayBlack text-[8px] mx-4 my-5">EN SAVOIR PLUS</p>
+
+        </div>
+        <div className="bg-mainColor w-full pb-18">
+          <Contact />
         </div>
       </div>
     </div>

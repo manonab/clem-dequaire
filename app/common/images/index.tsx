@@ -36,6 +36,11 @@ import Mosaic007 from "../../assets/mosaic/mosaic-007.png"
 import CapicheBG from "../../assets/capiche/background-capiche.png"
 import HomeMobile from "../../assets/home/home-mobile.png"
 import HomeMobile1 from "../../assets/home/home-mobile-2.png"
+import HomeLine from "../../assets/home/home-line.png"
+import HomeCapiche from "../../assets/home/home-capiche.png"
+import HomePortfolio from "../../assets/home/home-portfolio.png"
+import HomeMosaic from "../../assets/home/home-mosaic.png"
+import ContactArrow from "../../assets/contact/contact-arrow.png"
 
 export const Images = {
   eye: Eye,
@@ -75,6 +80,11 @@ export const Images = {
   mosaic007: Mosaic007,
   capicheBG: CapicheBG,
   homeMobile: HomeMobile,
-  homeMobile2: HomeMobile1
+  homeMobile2: HomeMobile1,
+  line: HomeLine,
+  homeCapiche: HomeCapiche,
+  homeMosaic: HomeMosaic,
+  homePortfolio: HomePortfolio,
+  contactArrow: ContactArrow
 };
 
