@@ -45,6 +45,7 @@ export default {
 				serviceTitle: ["60px", "100%"],
 				homeMobileTitle: ["60px", "90%"],
 				homeMobileContent: ["20px", "90%"],
+				homeMobileServices: ["55px", "90%"],
 
 				welcome: ["200px", "100%"],
 				titleMobile: ["50px", "100%"],

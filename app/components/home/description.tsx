@@ -84,8 +84,8 @@ const Description: React.FC = () => {
       <div className="flex flex-col md:hidden h-full w-full gap-12">
         <div>
           <img src={Images.homeMobile} width="200px" />
-          <p className="text-homeMobileTitle text-redHome text-neueRegular -mt-[200px] ml-10">Tout<br></br> commence<br></br> par une<br></br> idée. </p>
-          <div className="ml-4">
+          <p className="text-homeMobileTitle text-redHome text-neueRegular -mt-[100px] ml-10">Tout<br></br> commence<br></br> par une<br></br> idée. </p>
+          <div className="mx-4 my-10">
             <p className="text-condensed text-orange text-homeMobileContent max-w-[300px]">Consultante en communication et créative passionnée, je m’efforce d’aider votre marque à grandir grâce au design et au marketing digital.</p>
           </div>
           <div className="flex items-center justify-end">
@@ -97,8 +97,12 @@ const Description: React.FC = () => {
           </div>
         </div>
         <div className="bg-yellowHome w-full">
-          <p className="text-homeMobileTitle text-redHome text-neueRegular -mt-[200px] ml-10">Tout<br></br> commence<br></br> par une<br></br> idée. </p>
-
+          <div className="my-20 m-4">
+            <p className="text-condensed text-orange text-homeMobileContent max-w-[300px]">Le courage de nos idées, la passion de les partager. Parce que vous avez quelque chose à raconter, <span className="text-redHome font-bold">qu’attendons nous pour commencer ?</span></p>
+          </div>
+          <div>
+            <p className="m-4 mb-5 neueRegular text-redHome font-bold text-homeMobileServices">Services</p>
+          </div>
         </div>
       </div>
     </div>
