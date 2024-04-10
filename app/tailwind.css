@@ -58,7 +58,7 @@
 
 @keyframes scroll-right {
   0% { transform: translateX(100%); }
-  50% { transform: translateX(25%); } 
+  50% { transform: translateX(0%); } 
 }
 .hidden {
   display: none;
@@ -69,7 +69,7 @@
 }
 
 #scrolling-text.scrolling {
-  animation: scroll-right 3s linear;
+  animation: scroll-right 5s linear;
 }
 
 @keyframes reappearFromRight {

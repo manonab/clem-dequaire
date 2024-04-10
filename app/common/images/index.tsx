@@ -20,7 +20,7 @@ import Rabbit from "../../assets/rabbit.png";
 import Group from "../../assets/group.png";
 import Pride from "../../assets/pride.png";
 import Manifesto from "../../assets/arrow-manifesto.png";
-import Service from "../../assets/arrow-service.png";
+import Service from "../../assets/arrow-services.png";
 import Magenta from "../../assets/magenta.png";
 import Mosaic1 from "../../assets/mosaic_1.png";
 import Mosaic2 from "../../assets/mosaic_2.png";
