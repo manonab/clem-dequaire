@@ -10,12 +10,21 @@ export default function Project() {
     setHeaderColor("mainColor")
   }, [setHeaderColor]);
   return (
-    <div className="h-full">
-      <div onClick={() => console.log('nothing from now')} className="hover:cursor-pointer">
-        <p className="text-[180px] my-20 text-center  font-neueRegular text-orange leading-[90%]">PORTEFOLIO</p>
-      </div>
+    <div className="h-full flex flex-col gap-6 md:gap-12 items-start mx-16 my-10 md:my-auto">
       <div onClick={() => router('/mosaic')} className="hover:cursor-pointer">
-        <p className="text-[180px] my-20 text-left ml-28 font-neueRegular text-redHome leading-[90%]">MOSAIC</p>
+        <p className="uppercase text-titleMobile md:text-title text-left font-neueRegular text-orange hover:text-redHome">MOSAIC</p>
+      </div>
+      <div onClick={() => router('/portfolio')} className="hover:cursor-pointer">
+        <p className="uppercase text-titleMobile md:text-title text-left  font-neueRegular text-orange hover:text-redHome">PORTEFOLIO</p>
+      </div>
+      <div onClick={() => router('/capiche')} className="hover:cursor-pointer">
+        <p className="uppercase text-titleMobile md:text-title text-left  font-neueRegular text-orange hover:text-redHome">CAPICHE</p>
+      </div>
+      <div onClick={() => router('/logofolio')} className="hover:cursor-pointer">
+        <p className="uppercase text-titleMobile md:text-title text-left  font-neueRegular text-orange hover:text-redHome">LOGOfolio</p>
+      </div>
+      <div onClick={() => router('/cards')} className="hover:cursor-pointer">
+        <p className="uppercase text-titleMobile md:text-title text-left  font-neueRegular text-orange hover:text-redHome">CARTES</p>
       </div>
     </div>
   );

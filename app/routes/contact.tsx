@@ -58,8 +58,8 @@ export default function Contact() {
     <div className="flex-col flex gap-20 mx-20">
       {/* Contenu du composant */}
       <div className="">
-        <p className="text-[190px] leading-[90%] text-orange  font-neueRegular">Créons</p>
-        <p className="text-[190px] leading-[90%] text-orange  font-neueRegular">ensemble.</p>
+        <p className="text-title text-orange  font-neueRegular">Créons</p>
+        <p className="text-title text-orange  font-neueRegular">ensemble.</p>
       </div>
       {showModal && <Modal onClose={handleCloseModal} />}
       <div className="flex flex-col gap-3 items-center">

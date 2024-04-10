@@ -7,9 +7,15 @@ import { Parallax } from "react-scroll-parallax";
 const Description: React.FC = () => {
   const router = useNavigate();
   const [scrollPosition, setScrollPosition] = useState<number>(0);
+  const [scrolled, setScrolled] = useState<boolean>(false);
+  const isServicesSectionVisible = scrollPosition > 1350;
+
   useEffect(() => {
     const handleScroll = () => {
       setScrollPosition(window.scrollY);
+      if (window.scrollY > 1150) {
+        setScrolled(true);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -18,15 +24,15 @@ const Description: React.FC = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const isServicesSectionVisible = scrollPosition > 2000;
+
   return (
-    <div className={`w-full h-auto flex flex-col ${isServicesSectionVisible ? "bg-saumon" : "bg-yellowHome"}`}>
+    <div className={`w-full h-auto flex flex-col ${isServicesSectionVisible ? "bg-mainColor" : "bg-yellowHome"}`}>
       <div className="w-full h-full mx-auto flex flex-col gap-[150px] py-32">
-        <p className="w-[1100px] ml-24 text-left text-orange text-[53px] leading-[57.6px] font-neueCondensed">Le courage de nos idées, la passion de les partager. Parce que vous avez quelque chose à raconter, qu’attendons nous pour commencer ?</p>
+        <p className="w-[1100px] ml-24 text-left text-orange text-[53px] leading-[57.6px] font-neueCondensed">Le courage de nos idées, la passion de les partager. Parce que vous avez quelque chose à raconter, <span className="text-redHome font-bold">qu’attendons nous pour commencer ?</span></p>
         <p className="w-[1100px] ml-48 text-right text-orange text-[53px] leading-[57.6px] font-neueCondensed">Consultante en communication et créative passionnée, je m’efforce d’aider votre marque à grandir grâce au design et au marketing digital.</p>
         <div
           onClick={() => router('/about')}
-          className="mb-[250px] hover:cursor-pointer ml-20 flex flex-col mb-2 w-[150px] pb-2 items-center justify-around">
+          className="hover:cursor-pointer ml-24 flex flex-col mb-2 w-[150px] pb-2 items-center justify-around">
           <span className="flex items-center gap-3">
             <p className="uppercase text-xs	font-footer">En savoir plus</p>
           <ArrowRight />
@@ -34,11 +40,10 @@ const Description: React.FC = () => {
           <div className="border-b-black border-b-2 w-[150px] h-12 absolute transition-transform duration-300 transform origin-left hover:scale-x-0" />
         </div>
       </div>
-      <div className="w-screen h-full relative">
-        <div className="flex items-start w-full -mt-24">
-          <div className="w-[800px] ml-20">
-            <p className="text-[250px] text-redHome text-center font-neueRegular uppercase leading-[225px]">Services</p>
-          </div>
+      <div className="w-auto h-full relative">
+        <div id="scrolling-text" className={`flex items-center justify-end gap-3 relative w-full ${scrolled ? 'scrolling' : 'hidden'}`}>
+          <p className="text-right font-neueRegular uppercase text-bannerTitile text-redHome">SERVICES</p>
+          <img src={Images.service} alt="Service" />
         </div>
         <div className="flex items-center justify-around my-36 mx-20">
           <div className="flex-col items-center gap-3">

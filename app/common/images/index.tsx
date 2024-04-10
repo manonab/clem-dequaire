@@ -24,6 +24,17 @@ import Service from "../../assets/arrow-service.png";
 import Magenta from "../../assets/magenta.png";
 import Mosaic1 from "../../assets/mosaic_1.png";
 import Mosaic2 from "../../assets/mosaic_2.png";
+import NewLogo from "../../assets/newlogo.png";
+import CapicheLogo from "../../assets/capiche-logo.png";
+import Mosaic001 from "../../assets/mosaic/mosaic-001.png";
+import Mosaic002 from "../../assets/mosaic/mosaic-002.png"
+import Mosaic003 from "../../assets/mosaic/mosaic-003.png"
+import Mosaic004 from "../../assets/mosaic/mosaic-004.png"
+import Mosaic005 from "../../assets/mosaic/mosaic-005.png"
+import Mosaic006 from "../../assets/mosaic/mosaic-006.png"
+import Mosaic007 from "../../assets/mosaic/mosaic-007.png"
+import CapicheBG from "../../assets/capiche/background-capiche.png"
+
 export const Images = {
   eye: Eye,
   image1: Image1,
@@ -50,6 +61,16 @@ export const Images = {
   service: Service,
   rectangle: Magenta,
   mosaic1: Mosaic1,
-  mosaic2: Mosaic2
+  mosaic2: Mosaic2,
+  newlogo: NewLogo,
+  capichelogo: CapicheLogo,
+  mosaic001: Mosaic001,
+  mosaic002: Mosaic002,
+  mosaic003: Mosaic003,
+  mosaic004: Mosaic004,
+  mosaic005: Mosaic005,
+  mosaic006: Mosaic006,
+  mosaic007: Mosaic007,
+  capicheBG: CapicheBG,
 };
 

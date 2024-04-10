@@ -16,7 +16,7 @@ export default function Values() {
     <ParallaxProvider>
       <div className="flex-col flex w-full h-auto">
         <div className="!w-full bg-saumon pb-20">
-          <p className="ml-10 font-neueRegular text-[190px] leading-[180px] text-orange font-medium">Tout commença par une <br></br><span className="text-redHome">idée</span>.</p>
+          <p className="ml-10 font-neueRegular text-title text-orange font-medium">Tout commença par une <br></br><span className="text-redHome">idée</span>.</p>
         </div>
         <div className="bg-mainColor h-full flex-col flex">
           <div className="flex gap-12 justify-evenly items-center">

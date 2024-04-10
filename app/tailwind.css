@@ -45,7 +45,7 @@
   transition: transform  ease-in-out; 
   animation: reappearFromRight 0.8s ease forwards; 
 }
-#scrolling-text {
+/* #scrolling-text {
   white-space: nowrap;
   overflow: hidden;
   animation: scroll-right 3s linear;
@@ -54,6 +54,22 @@
 @keyframes scroll-right {
   0% { transform: translateX(60%); }
   100% { transform: translateX(-20%); }
+} */
+
+@keyframes scroll-right {
+  0% { transform: translateX(100%); }
+  50% { transform: translateX(25%); } 
+}
+.hidden {
+  display: none;
+}
+#scrolling-text {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#scrolling-text.scrolling {
+  animation: scroll-right 3s linear;
 }
 
 @keyframes reappearFromRight {
@@ -92,6 +108,7 @@
 
 
 @layer base {
+  
   @font-face {
     font-family: 'Clash';
     src: url('./assets/fonts/ClashDisplay-Regular.otf') format('truetype');
