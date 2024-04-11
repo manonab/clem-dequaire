@@ -82,10 +82,10 @@ const Description: React.FC = () => {
           </div>
         </Parallax>
       </div>
-      <div className="flex flex-col md:hidden h-full w-full gap-12 mt-10">
+      <div className="flex flex-col md:hidden h-full w-full gap-12 mt-16">
         <div>
           <img src={Images.homeMobile} width="200px" />
-          <p className="text-homeMobileTitle text-redHome font-neueRegular -mt-[100px] ml-10">Tout<br></br> commence<br></br> par une<br></br> idée. </p>
+          <p className="text-homeMobileTitle text-redHome font-neueRegular -mt-[100px] ml-8">Tout<br></br> commence<br></br> par une<br></br> idée. </p>
           <div className="mx-4 my-10">
             <p className="text-condensed text-orange text-homeMobileContent max-w-[300px]">Consultante en communication et créative passionnée, je m’efforce d’aider votre marque à grandir grâce au design et au marketing digital.</p>
           </div>

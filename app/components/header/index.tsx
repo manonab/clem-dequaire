@@ -70,7 +70,7 @@ export const Menu: React.FC = () => {
       </motion.div>
       <div className="md:hidden">
         <div
-          className={`${headerColor} flex justify-between items-center py-[30px] px-[40px]`}
+          className={`${headerColor} flex justify-between items-center py-[30px] px-[30px]`}
         >
           <div onClick={() => router("/home")} className="hover:cursor-pointer h-[70px]">
             <img src={Images.newlogo} alt="logo" width="50px" height="50px" />

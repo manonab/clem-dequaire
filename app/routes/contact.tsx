@@ -3,6 +3,7 @@ import { useHeaderColor } from "~/context";
 import emailjs from 'emailjs-com';
 import { Images } from "~/common/images";
 import { MailOutlined } from '@mui/icons-material';
+import { ContactArrow } from "~/assets/contact/contactArrow";
 type CloseModalFunction = () => void;
 
 function Modal({ onClose }: { onClose: CloseModalFunction }) {
@@ -117,37 +118,45 @@ export default function Contact() {
           <p className="leading-[17.5px] font-bold text-sm text-center text-white uppercase">Envoyez</p>
         </div>
       </div>
-      <div className="md:hidden flex-col flex gap-1.5 mx-auto">
-        <p className="text-royalBlue text-[45px] leading-[100%] font-neueRegular mb-10">Rencontrons<br></br> nous.</p>
-        <img src={Images.contactArrow} className="w-[30px]" />
-        <div className="flex justify-around">
+      <div className="md:hidden flex-col flex gap-3 mx-1">
+        <div className="mx-2 flex flex-col items-start gap-4 justify-around mb-5">
+          <p className="text-royalBlue text-[45px] leading-[100%] font-neueRegular">Rencontrons<br />nous.</p>
+          <ContactArrow />
+        </div>
+        <div className="flex justify-around gap-1.5">
           <div className="flex-col flex items-start">
             <p className="font-inter mb-2">Nom</p>
             <input
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="p-2 rounded-[5px] bg-mainColor border border-black !w-fit" />
+              className="p-2 rounded-[5px] bg-mainColor border border-black w-full"
+            />
           </div>
           <div className="flex-col flex items-start">
             <p className="font-inter mb-2">Prénom</p>
             <input
               value={lastName}
-              onChange={(e) => setLastName(e.target.value)} className="p-2 rounded-[5px] !w-fit bg-mainColor border border-black" />
+              onChange={(e) => setLastName(e.target.value)}
+              className="p-2 rounded-[5px] bg-mainColor border border-black w-full"
+            />
           </div>
         </div>
-        <div className="flex justify-around">
+        <div className="flex justify-around gap-1.5">
           <div className="flex-col flex items-start">
             <p className="font-inter mb-2">Email</p>
             <input
               value={email}
-              onChange={(e) => setEmail(e.target.value)} className="p-2 rounded-[5px] !w-fit bg-mainColor border border-black" />
+              onChange={(e) => setEmail(e.target.value)}
+              className="p-2 rounded-[5px] bg-mainColor border border-black w-full"
+            />
           </div>
-
           <div className="flex-col flex items-start">
             <p className="font-inter mb-2">Object</p>
             <input
-              value={Object}
-              onChange={(e) => setSubject(e.target.value)} className="p-2  rounded-[5px] !w-fit bg-mainColor border border-black" />
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
+              className="p-2 rounded-[5px] bg-mainColor border border-black w-full"
+            />
           </div>
         </div>
         <div className="flex-col flex items-start">
@@ -155,24 +164,26 @@ export default function Contact() {
           <textarea
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="p-2 w-full mx-0.5 rounded-[5px] bg-mainColor border border-black min-h-[200px]" />
+            className="p-2 rounded-[5px] bg-mainColor border border-black w-full min-h-[200px]"
+          />
         </div>
-        <div className="flex items-center my-10 justify-between mx-2 gap-3">
+        <div className="flex items-center my-10 justify-between gap-3">
           <div
             className="hover:cursor-pointer border-black border rounded-3xl p-2 mx-auto max-w-[100px] max-h-[25px]"
-            onClick={handleSendEmail}>
+            onClick={handleSendEmail}
+          >
             <p className="font-footer font-bold text-[6px] text-center text-grayBlack uppercase">Hit me baby (one time)</p>
           </div>
           <div className="flex flex-col items-start gap-3">
-            <p className="font-neueRegular text-[16px] leading-[90%] text-orange">Retrouvez moi également sur <br></br>Linkedin juste <a className="text-redHome" target={"_blank"} href="wwww.linkedin.com">ici</a>.</p>
+            <p className="font-neueRegular text-[16px] leading-[90%] text-orange">Retrouvez moi également sur <br />Linkedin juste <a className="text-redHome" target="_blank" href="https://www.linkedin.com/in/cl%C3%A9mence-dequaire/?locale=en_US">ici</a>.</p>
             <div className="flex items-center gap-1.5">
               <MailOutlined />
               <p className="font-neueCondensed text-grayBlack text-[10px] leading-[90%]">clemence.dequaire.pro@gmail.com</p>
             </div>
           </div>
         </div>
-
       </div>
+
     </div>
   );
 }
