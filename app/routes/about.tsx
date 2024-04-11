@@ -14,7 +14,7 @@ export default function About() {
 
   return (
     <ParallaxProvider>
-      <div className="flex-col flex gap-12 w-screen h-auto">
+      <div className="flex-col md:flex gap-12 w-screen h-auto hidden">
         <div className="flex items-end justify-between w-auto">
           <div className="min-w-[950px] flex-col flex">
             <div className="w-[1259px] ml-10">
@@ -80,6 +80,18 @@ export default function About() {
             <p className="leading-[17.5px] font-bold text-sm text-center text-grayBlack uppercase">Services</p>
           </div>
         </div>
+      </div>
+      <div className="md:hidden flex flex-col">
+
+        <p className="text-redHome uppercase  hover:cursor-pointer text-titleMobile font-neueRegular">
+          Partage
+        </p>
+        <p className="text-redHome uppercase  hover:cursor-pointer text-titleMobile font-neueRegular">
+          Création
+        </p>
+        <p className="text-redHome uppercase  hover:cursor-pointer text-titleMobile font-neueRegular">
+          Ambition
+        </p>
       </div>
     </ParallaxProvider>
   );

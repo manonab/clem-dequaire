@@ -131,7 +131,7 @@ import {
 } from "@remix-run/react";
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-V6ENPTN3.css";
+var tailwind_default = "/build/_assets/tailwind-LXN5PJ6P.css";
 
 // app/components/header/index.tsx
 import { useState as useState2 } from "react";
@@ -2751,9 +2751,6 @@ var useDesktopAnimation = () => {
   }, [state.showLastPart]), { state, images };
 };
 
-// app/routes/_index.tsx
-import { isMobile } from "react-device-detect";
-
 // app/animations/home-mobile.tsx
 import { motion as motion6 } from "framer-motion";
 import { jsxDEV as jsxDEV18 } from "react/jsx-dev-runtime";
@@ -2840,65 +2837,72 @@ var MobileAnimation = () => /* @__PURE__ */ jsxDEV18("div", { className: "flex i
 }, this), home_mobile_default2 = MobileAnimation;
 
 // app/routes/_index.tsx
-import { Fragment, jsxDEV as jsxDEV19 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV19 } from "react/jsx-dev-runtime";
 function Index() {
   let { state } = useDesktopAnimation();
-  return /* @__PURE__ */ jsxDEV19("div", { className: `${state.currentImage === state.images.length - 1 ? "top-0" : "top-[80px]"} mx-auto top-[80px] relative h-full`, children: isMobile ? /* @__PURE__ */ jsxDEV19(home_mobile_default2, {}, void 0, !1, {
-    fileName: "app/routes/_index.tsx",
-    lineNumber: 14,
-    columnNumber: 9
-  }, this) : /* @__PURE__ */ jsxDEV19(Fragment, { children: [
-    /* @__PURE__ */ jsxDEV19(
-      motion7.div,
-      {
-        initial: { opacity: 0, y: 100 },
-        animate: { opacity: 1, y: 0 },
-        transition: { duration: 1, ease: [0.43, 0.13, 0.23, 0.96] },
-        children: !state.animationFinished && /* @__PURE__ */ jsxDEV19(
-          "img",
-          {
-            src: state.images[state.currentImage],
-            alt: "Image",
-            width: 400,
-            height: 400,
-            className: "rounded mx-auto"
-          },
-          void 0,
-          !1,
-          {
-            fileName: "app/routes/_index.tsx",
-            lineNumber: 23,
-            columnNumber: 15
-          },
-          this
-        )
-      },
-      void 0,
-      !1,
-      {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 17,
-        columnNumber: 11
-      },
-      this
-    ),
-    state.showLastPart && /* @__PURE__ */ jsxDEV19(background_slider_default, { isVisible: !state.animationFinished }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV19("div", { children: [
+    /* @__PURE__ */ jsxDEV19("div", { className: "md:hidden flex", children: /* @__PURE__ */ jsxDEV19(home_mobile_default2, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 32,
-      columnNumber: 36
+      lineNumber: 13,
+      columnNumber: 9
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 12,
+      columnNumber: 7
     }, this),
-    state.animationFinished && /* @__PURE__ */ jsxDEV19(home_default, {}, void 0, !1, {
+    /* @__PURE__ */ jsxDEV19("div", { className: `hidden md:flex ${state.currentImage === state.images.length - 1 ? "top-0" : "top-[80px]"} mx-auto top-[80px] relative h-full`, children: [
+      /* @__PURE__ */ jsxDEV19(
+        motion7.div,
+        {
+          initial: { opacity: 0, y: 100 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: 1, ease: [0.43, 0.13, 0.23, 0.96] },
+          children: !state.animationFinished && /* @__PURE__ */ jsxDEV19(
+            "img",
+            {
+              src: state.images[state.currentImage],
+              alt: "Image",
+              width: 400,
+              height: 400,
+              className: "rounded mx-auto"
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/routes/_index.tsx",
+              lineNumber: 22,
+              columnNumber: 15
+            },
+            this
+          )
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/routes/_index.tsx",
+          lineNumber: 16,
+          columnNumber: 11
+        },
+        this
+      ),
+      state.showLastPart && /* @__PURE__ */ jsxDEV19(background_slider_default, { isVisible: !state.animationFinished }, void 0, !1, {
+        fileName: "app/routes/_index.tsx",
+        lineNumber: 31,
+        columnNumber: 36
+      }, this),
+      state.animationFinished && /* @__PURE__ */ jsxDEV19(home_default, {}, void 0, !1, {
+        fileName: "app/routes/_index.tsx",
+        lineNumber: 32,
+        columnNumber: 37
+      }, this)
+    ] }, void 0, !0, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 33,
-      columnNumber: 35
+      lineNumber: 15,
+      columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/_index.tsx",
-    lineNumber: 16,
-    columnNumber: 9
-  }, this) }, void 0, !1, {
-    fileName: "app/routes/_index.tsx",
-    lineNumber: 12,
+    lineNumber: 11,
     columnNumber: 5
   }, this);
 }
@@ -2973,243 +2977,455 @@ __export(values_exports, {
 });
 import { useNavigate as useNavigate5 } from "@remix-run/react";
 import { useEffect as useEffect12 } from "react";
+import { isMobile } from "react-device-detect";
 import { ParallaxProvider as ParallaxProvider2 } from "react-scroll-parallax";
 import { jsxDEV as jsxDEV21 } from "react/jsx-dev-runtime";
 function Values() {
   let { setHeaderColor } = useHeaderColor(), router = useNavigate5();
   return useEffect12(() => {
-    setHeaderColor("linear-values");
-  }, [setHeaderColor]), /* @__PURE__ */ jsxDEV21(ParallaxProvider2, { children: /* @__PURE__ */ jsxDEV21("div", { className: "flex-col flex w-full h-auto", children: [
-    /* @__PURE__ */ jsxDEV21("div", { className: "!w-full bg-saumon pb-20", children: /* @__PURE__ */ jsxDEV21("p", { className: "ml-10 font-neueRegular text-title text-orange font-medium", children: [
-      "Tout commen\xE7a par une ",
-      /* @__PURE__ */ jsxDEV21("br", {}, void 0, !1, {
-        fileName: "app/routes/values.tsx",
-        lineNumber: 19,
-        columnNumber: 106
-      }, this),
-      /* @__PURE__ */ jsxDEV21("span", { className: "text-redHome", children: "id\xE9e" }, void 0, !1, {
-        fileName: "app/routes/values.tsx",
-        lineNumber: 19,
-        columnNumber: 115
-      }, this),
-      "."
-    ] }, void 0, !0, {
-      fileName: "app/routes/values.tsx",
-      lineNumber: 19,
-      columnNumber: 11
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/values.tsx",
-      lineNumber: 18,
-      columnNumber: 9
-    }, this),
-    /* @__PURE__ */ jsxDEV21("div", { className: "bg-mainColor h-full flex-col flex", children: [
-      /* @__PURE__ */ jsxDEV21("div", { className: "flex gap-12 justify-evenly items-center", children: [
-        /* @__PURE__ */ jsxDEV21("div", { className: "w-[659px] ml-10", children: /* @__PURE__ */ jsxDEV21("p", { className: "text-[18px] text-justify", children: [
-          /* @__PURE__ */ jsxDEV21("span", { className: "font-semibold", children: "Sp\xE9cialis\xE9e en communication et marketing digital" }, void 0, !1, {
-            fileName: "app/routes/values.tsx",
-            lineNumber: 24,
-            columnNumber: 55
-          }, this),
-          ", j\u2019ai toujours ressenti ce besoin de trouver du sens. Plus qu\u2019un m\xE9tier, je vois la communication comme un moyen de partager et faire grandir des projets auxquels je crois profond\xE9ment. Cinq ann\xE9es se sont \xE9coul\xE9es depuis mon premier poste et cette id\xE9e s\u2019est transform\xE9e en un d\xE9fi que je rel\xE8ve passionn\xE9ment chaque jour. Gr\xE2ce \xE0 d\u2019autres humain.e.s qui croyaient fort en leur convictions,   j\u2019ai eu la chance de porter d\xE9fis audacieux et des messages engag\xE9s. Peut-\xEAtre serez vous les prochain.e.s ?"
-        ] }, void 0, !0, {
+    isMobile || setHeaderColor("linear-values");
+  }, [setHeaderColor]), /* @__PURE__ */ jsxDEV21(ParallaxProvider2, { children: [
+    /* @__PURE__ */ jsxDEV21("div", { className: "flex-col md:flex w-full h-auto hidden", children: [
+      /* @__PURE__ */ jsxDEV21("div", { className: "!w-full bg-saumon pb-20", children: /* @__PURE__ */ jsxDEV21("p", { className: "ml-10 font-neueRegular text-title text-orange font-medium", children: [
+        "Tout commen\xE7a par une ",
+        /* @__PURE__ */ jsxDEV21("br", {}, void 0, !1, {
           fileName: "app/routes/values.tsx",
-          lineNumber: 24,
-          columnNumber: 15
-        }, this) }, void 0, !1, {
-          fileName: "app/routes/values.tsx",
-          lineNumber: 23,
-          columnNumber: 13
+          lineNumber: 22,
+          columnNumber: 106
         }, this),
-        /* @__PURE__ */ jsxDEV21("div", { className: "!w-fit bg-white h-[480px] rounded-[50px] -mt-16", children: /* @__PURE__ */ jsxDEV21("img", { alt: "men with pride flag", src: Images.pride }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV21("span", { className: "text-redHome", children: "id\xE9e" }, void 0, !1, {
           fileName: "app/routes/values.tsx",
-          lineNumber: 27,
-          columnNumber: 15
-        }, this) }, void 0, !1, {
-          fileName: "app/routes/values.tsx",
-          lineNumber: 26,
-          columnNumber: 13
-        }, this)
+          lineNumber: 22,
+          columnNumber: 115
+        }, this),
+        "."
       ] }, void 0, !0, {
         fileName: "app/routes/values.tsx",
         lineNumber: 22,
         columnNumber: 11
-      }, this),
-      /* @__PURE__ */ jsxDEV21("p", { className: "z-[10] -mb-32 w-[741px] ml-[300px] leading-[72px] text-royalBlue text-[60px] font-neueRegular", children: [
-        '"Seules 54% des entreprises fran\xE7aises ont embrass\xE9 la diversit\xE9".',
-        /* @__PURE__ */ jsxDEV21("span", { className: "text-black", children: "*" }, void 0, !1, {
-          fileName: "app/routes/values.tsx",
-          lineNumber: 31,
-          columnNumber: 79
-        }, this)
-      ] }, void 0, !0, {
+      }, this) }, void 0, !1, {
         fileName: "app/routes/values.tsx",
-        lineNumber: 30,
-        columnNumber: 11
+        lineNumber: 21,
+        columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV21("div", { className: "flex items-center justify-evenly", children: [
-        /* @__PURE__ */ jsxDEV21("div", { className: "z-0 flex justify-start items-center", children: [
-          /* @__PURE__ */ jsxDEV21("p", { className: "rotate-[270deg] -mr-16", children: "T\xEAtu, Nom de l\u2019enqu\xEAte." }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV21("div", { className: "bg-mainColor h-full flex-col flex", children: [
+        /* @__PURE__ */ jsxDEV21("div", { className: "flex gap-12 justify-evenly items-center", children: [
+          /* @__PURE__ */ jsxDEV21("div", { className: "w-[659px] ml-10", children: /* @__PURE__ */ jsxDEV21("p", { className: "text-[18px] text-justify", children: [
+            /* @__PURE__ */ jsxDEV21("span", { className: "font-semibold", children: "Sp\xE9cialis\xE9e en communication et marketing digital" }, void 0, !1, {
+              fileName: "app/routes/values.tsx",
+              lineNumber: 27,
+              columnNumber: 55
+            }, this),
+            ", j\u2019ai toujours ressenti ce besoin de trouver du sens. Plus qu\u2019un m\xE9tier, je vois la communication comme un moyen de partager et faire grandir des projets auxquels je crois profond\xE9ment. Cinq ann\xE9es se sont \xE9coul\xE9es depuis mon premier poste et cette id\xE9e s\u2019est transform\xE9e en un d\xE9fi que je rel\xE8ve passionn\xE9ment chaque jour. Gr\xE2ce \xE0 d\u2019autres humain.e.s qui croyaient fort en leur convictions,   j\u2019ai eu la chance de porter d\xE9fis audacieux et des messages engag\xE9s. Peut-\xEAtre serez vous les prochain.e.s ?"
+          ] }, void 0, !0, {
             fileName: "app/routes/values.tsx",
-            lineNumber: 35,
+            lineNumber: 27,
             columnNumber: 15
+          }, this) }, void 0, !1, {
+            fileName: "app/routes/values.tsx",
+            lineNumber: 26,
+            columnNumber: 13
           }, this),
-          /* @__PURE__ */ jsxDEV21("img", { alt: "group people", src: Images.group, className: "rounded-[50px h-[480px] w-[395px]" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV21("div", { className: "!w-fit bg-white h-[480px] rounded-[50px] -mt-16", children: /* @__PURE__ */ jsxDEV21("img", { alt: "men with pride flag", src: Images.pride }, void 0, !1, {
             fileName: "app/routes/values.tsx",
-            lineNumber: 36,
+            lineNumber: 30,
             columnNumber: 15
+          }, this) }, void 0, !1, {
+            fileName: "app/routes/values.tsx",
+            lineNumber: 29,
+            columnNumber: 13
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/values.tsx",
-          lineNumber: 34,
-          columnNumber: 13
+          lineNumber: 25,
+          columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV21("p", { className: "text-[18px] font-normal text-justify w-[640px]", children: [
-          "Au fil de ma vie et de ma carri\xE8re personnelle,  j\u2019ai pu appr\xE9hender avec clart\xE9 et d\xE9termination les bouleversements sociaux qui se jouent depuis maintenant des ann\xE9es.  Pour toutes les entreprises qui souhaitent faire parti du changement, je propose une ",
-          /* @__PURE__ */ jsxDEV21("span", { className: "font-semibold", children: "relecture inclusive" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV21("p", { className: "z-[10] -mb-32 w-[741px] ml-[300px] leading-[72px] text-royalBlue text-[60px] font-neueRegular", children: [
+          '"Seules 54% des entreprises fran\xE7aises ont embrass\xE9 la diversit\xE9".',
+          /* @__PURE__ */ jsxDEV21("span", { className: "text-black", children: "*" }, void 0, !1, {
             fileName: "app/routes/values.tsx",
-            lineNumber: 39,
-            columnNumber: 271
-          }, this),
-          " et une vision sensible de votre communication.             "
+            lineNumber: 34,
+            columnNumber: 79
+          }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/values.tsx",
-          lineNumber: 38,
-          columnNumber: 13
+          lineNumber: 33,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV21("div", { className: "flex items-center justify-evenly", children: [
+          /* @__PURE__ */ jsxDEV21("div", { className: "z-0 flex justify-start items-center", children: [
+            /* @__PURE__ */ jsxDEV21("p", { className: "rotate-[270deg] -mr-16", children: "T\xEAtu, Nom de l\u2019enqu\xEAte." }, void 0, !1, {
+              fileName: "app/routes/values.tsx",
+              lineNumber: 38,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV21("img", { alt: "group people", src: Images.group, className: "rounded-[50px h-[480px] w-[395px]" }, void 0, !1, {
+              fileName: "app/routes/values.tsx",
+              lineNumber: 39,
+              columnNumber: 15
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/routes/values.tsx",
+            lineNumber: 37,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ jsxDEV21("p", { className: "text-[18px] font-normal text-justify w-[640px]", children: [
+            "Au fil de ma vie et de ma carri\xE8re personnelle,  j\u2019ai pu appr\xE9hender avec clart\xE9 et d\xE9termination les bouleversements sociaux qui se jouent depuis maintenant des ann\xE9es.  Pour toutes les entreprises qui souhaitent faire parti du changement, je propose une ",
+            /* @__PURE__ */ jsxDEV21("span", { className: "font-semibold", children: "relecture inclusive" }, void 0, !1, {
+              fileName: "app/routes/values.tsx",
+              lineNumber: 42,
+              columnNumber: 271
+            }, this),
+            " et une vision sensible de votre communication.             "
+          ] }, void 0, !0, {
+            fileName: "app/routes/values.tsx",
+            lineNumber: 41,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/routes/values.tsx",
+          lineNumber: 36,
+          columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/values.tsx",
-        lineNumber: 33,
-        columnNumber: 11
+        lineNumber: 24,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV21("div", { className: "bg-yellowHome pt-40 -mt-16", children: [
+        /* @__PURE__ */ jsxDEV21("p", { className: "font-neueRegular text-[50px] leading-[90%] mx-16", children: "Manifesto" }, void 0, !1, {
+          fileName: "app/routes/values.tsx",
+          lineNumber: 46,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV21("div", { className: "w-3/4 mx-auto", children: [
+          /* @__PURE__ */ jsxDEV21("div", { className: "flex items-center", children: [
+            /* @__PURE__ */ jsxDEV21("p", { className: "font-footer text-[70px] mr-14", children: "01." }, void 0, !1, {
+              fileName: "app/routes/values.tsx",
+              lineNumber: 49,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV21("p", { className: "leading-[100%] text-[28px] font-footer", children: [
+              "L'",
+              /* @__PURE__ */ jsxDEV21("span", { className: "text-orange", children: "inclusivit\xE9" }, void 0, !1, {
+                fileName: "app/routes/values.tsx",
+                lineNumber: 50,
+                columnNumber: 71
+              }, this),
+              " et le respect d\u2019autrui sont des valeurs fondamentales. Faisons de la diversit\xE9 un engagement quotidien."
+            ] }, void 0, !0, {
+              fileName: "app/routes/values.tsx",
+              lineNumber: 50,
+              columnNumber: 15
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/routes/values.tsx",
+            lineNumber: 48,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ jsxDEV21("div", { className: "flex items-center", children: [
+            /* @__PURE__ */ jsxDEV21("p", { className: "font-footer text-[70px] mr-11", children: "02." }, void 0, !1, {
+              fileName: "app/routes/values.tsx",
+              lineNumber: 53,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV21("p", { className: "leading-[100%] text-[28px] font-footer", children: [
+              "La ",
+              /* @__PURE__ */ jsxDEV21("span", { className: "text-orange", children: "bienveillance" }, void 0, !1, {
+                fileName: "app/routes/values.tsx",
+                lineNumber: 54,
+                columnNumber: 72
+              }, this),
+              " et l'\xE9coute forment la base d'une culture d'entreprise saine et productive. Le dialogue est la cl\xE9."
+            ] }, void 0, !0, {
+              fileName: "app/routes/values.tsx",
+              lineNumber: 54,
+              columnNumber: 15
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/routes/values.tsx",
+            lineNumber: 52,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ jsxDEV21("div", { className: "flex items-center", children: [
+            /* @__PURE__ */ jsxDEV21("p", { className: "font-footer text-[70px] mr-11", children: "03." }, void 0, !1, {
+              fileName: "app/routes/values.tsx",
+              lineNumber: 57,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV21("p", { className: "font-footer leading-[100%] text-[28px]", children: [
+              "Sans ",
+              /* @__PURE__ */ jsxDEV21("span", { className: "text-orange", children: "passion" }, void 0, !1, {
+                fileName: "app/routes/values.tsx",
+                lineNumber: 58,
+                columnNumber: 74
+              }, this),
+              ", pas d\u2019action. Croyez en votre message, je m\u2019occupe de le partager."
+            ] }, void 0, !0, {
+              fileName: "app/routes/values.tsx",
+              lineNumber: 58,
+              columnNumber: 15
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/routes/values.tsx",
+            lineNumber: 56,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ jsxDEV21("div", { className: "flex items-center", children: [
+            /* @__PURE__ */ jsxDEV21("p", { className: "font-footer text-[70px] mr-11", children: "04." }, void 0, !1, {
+              fileName: "app/routes/values.tsx",
+              lineNumber: 61,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV21("p", { className: "leading-[100%] text-[28px] font-footer", children: [
+              /* @__PURE__ */ jsxDEV21("span", { className: "text-orange", children: "Amusons nous" }, void 0, !1, {
+                fileName: "app/routes/values.tsx",
+                lineNumber: 62,
+                columnNumber: 69
+              }, this),
+              " \xE0 cr\xE9er, partager, designer. Partageons l\u2019amour de nos m\xE9tiers."
+            ] }, void 0, !0, {
+              fileName: "app/routes/values.tsx",
+              lineNumber: 62,
+              columnNumber: 15
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/routes/values.tsx",
+            lineNumber: 60,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/routes/values.tsx",
+          lineNumber: 47,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV21("div", { onClick: () => router("/projects"), className: "py-5 px-10 transition-all duration-300 ease-in-out leading-[17.5px] font-bold text-sm text-center text-grayBlack uppercase hover:text-white hover:bg-grayBlack translate hover:cursor-pointer border-black border my-20 rounded-full w-[200px] mx-auto", children: "Mes projets" }, void 0, !1, {
+          fileName: "app/routes/values.tsx",
+          lineNumber: 65,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/values.tsx",
+        lineNumber: 45,
+        columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/values.tsx",
-      lineNumber: 21,
-      columnNumber: 9
+      lineNumber: 20,
+      columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV21("div", { className: "bg-yellowHome pt-40 -mt-16", children: [
-      /* @__PURE__ */ jsxDEV21("p", { className: "font-neueRegular italic text-[50px] leading-[90%] mx-16", children: "Manifesto" }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV21("div", { className: "flex flex-col items-center md:hidden gap-4 mt-10", children: [
+      /* @__PURE__ */ jsxDEV21("p", { className: "text-redHome uppercase hover:cursor-pointer text-[60px] leading-[90%] font-neueRegular", children: "partage" }, void 0, !1, {
         fileName: "app/routes/values.tsx",
-        lineNumber: 43,
-        columnNumber: 11
+        lineNumber: 71,
+        columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV21("div", { className: "w-3/4 mx-auto", children: [
-        /* @__PURE__ */ jsxDEV21("div", { className: "flex items-center", children: [
-          /* @__PURE__ */ jsxDEV21("p", { className: "font-footer text-[70px] mr-14", children: "01." }, void 0, !1, {
-            fileName: "app/routes/values.tsx",
-            lineNumber: 46,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ jsxDEV21("p", { className: "leading-[100%] text-[28px] font-footer", children: [
-            "L'",
-            /* @__PURE__ */ jsxDEV21("span", { className: "text-orange", children: "inclusivit\xE9" }, void 0, !1, {
-              fileName: "app/routes/values.tsx",
-              lineNumber: 47,
-              columnNumber: 71
-            }, this),
-            " et le respect d\u2019autrui sont des valeurs fondamentales. Faisons de la diversit\xE9 un engagement quotidien."
-          ] }, void 0, !0, {
-            fileName: "app/routes/values.tsx",
-            lineNumber: 47,
-            columnNumber: 15
-          }, this)
-        ] }, void 0, !0, {
+      /* @__PURE__ */ jsxDEV21("p", { className: "text-redHome uppercase hover:cursor-pointer text-[60px] leading-[90%] font-neueRegular", children: "cr\xE9ation" }, void 0, !1, {
+        fileName: "app/routes/values.tsx",
+        lineNumber: 72,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV21("p", { className: "text-redHome uppercase hover:cursor-pointer text-[60px] leading-[90%] font-neueRegular", children: "ambition" }, void 0, !1, {
+        fileName: "app/routes/values.tsx",
+        lineNumber: 73,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV21("div", { className: "flex gap-3 items-start justify-center mr-16 mt-20", children: [
+        /* @__PURE__ */ jsxDEV21("img", { src: Images.manifesto, className: "rotate-[185deg] w-[20px]" }, void 0, !1, {
           fileName: "app/routes/values.tsx",
-          lineNumber: 45,
-          columnNumber: 13
+          lineNumber: 75,
+          columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV21("div", { className: "flex items-center", children: [
-          /* @__PURE__ */ jsxDEV21("p", { className: "font-footer text-[70px] mr-11", children: "02." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV21("p", { className: "font-footer text-justify text-[7px] w-2/3", children: [
+          /* @__PURE__ */ jsxDEV21("span", { className: "font-bold", children: "Sp\xE9cialis\xE9e en communication et marketing digital" }, void 0, !1, {
             fileName: "app/routes/values.tsx",
-            lineNumber: 50,
-            columnNumber: 15
+            lineNumber: 76,
+            columnNumber: 68
           }, this),
-          /* @__PURE__ */ jsxDEV21("p", { className: "leading-[100%] text-[28px] font-footer", children: [
-            "La ",
-            /* @__PURE__ */ jsxDEV21("span", { className: "text-orange", children: "bienveillance" }, void 0, !1, {
-              fileName: "app/routes/values.tsx",
-              lineNumber: 51,
-              columnNumber: 72
-            }, this),
-            " et l'\xE9coute forment la base d'une culture d'entreprise saine et productive. Le dialogue est la cl\xE9."
-          ] }, void 0, !0, {
+          ", j\u2019ai toujours ressenti ce besoin de trouver du sens. Plus qu\u2019un m\xE9tier, je vois la communication comme un moyen de partager et faire grandir des projets auxquels je crois profond\xE9ment.",
+          /* @__PURE__ */ jsxDEV21("br", {}, void 0, !1, {
             fileName: "app/routes/values.tsx",
-            lineNumber: 51,
-            columnNumber: 15
-          }, this)
+            lineNumber: 76,
+            columnNumber: 338
+          }, this),
+          /* @__PURE__ */ jsxDEV21("br", {}, void 0, !1, {
+            fileName: "app/routes/values.tsx",
+            lineNumber: 76,
+            columnNumber: 347
+          }, this),
+          "Cinq ann\xE9es se sont \xE9coul\xE9es depuis mon premier poste et cette id\xE9e s\u2019est transform\xE9e en un d\xE9fi que je rel\xE8ve passionn\xE9ment chaque jour. Gr\xE2ce \xE0 d\u2019autres humain.e.s qui croyaient fort en leur convictions,   j\u2019ai eu la chance de porter d\xE9fis audacieux et des messages engag\xE9s. Peut-\xEAtre serez vous les prochain.e.s ?"
         ] }, void 0, !0, {
           fileName: "app/routes/values.tsx",
-          lineNumber: 49,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ jsxDEV21("div", { className: "flex items-center", children: [
-          /* @__PURE__ */ jsxDEV21("p", { className: "font-footer text-[70px] mr-11", children: "03." }, void 0, !1, {
-            fileName: "app/routes/values.tsx",
-            lineNumber: 54,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ jsxDEV21("p", { className: "font-footer leading-[100%] text-[28px]", children: [
-            "Sans ",
-            /* @__PURE__ */ jsxDEV21("span", { className: "text-orange", children: "passion" }, void 0, !1, {
-              fileName: "app/routes/values.tsx",
-              lineNumber: 55,
-              columnNumber: 74
-            }, this),
-            ", pas d\u2019action. Croyez en votre message, je m\u2019occupe de le partager."
-          ] }, void 0, !0, {
-            fileName: "app/routes/values.tsx",
-            lineNumber: 55,
-            columnNumber: 15
-          }, this)
-        ] }, void 0, !0, {
-          fileName: "app/routes/values.tsx",
-          lineNumber: 53,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ jsxDEV21("div", { className: "flex items-center", children: [
-          /* @__PURE__ */ jsxDEV21("p", { className: "font-footer text-[70px] mr-11", children: "04." }, void 0, !1, {
-            fileName: "app/routes/values.tsx",
-            lineNumber: 58,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ jsxDEV21("p", { className: "leading-[100%] text-[28px] font-footer", children: [
-            /* @__PURE__ */ jsxDEV21("span", { className: "text-orange", children: "Amusons nous" }, void 0, !1, {
-              fileName: "app/routes/values.tsx",
-              lineNumber: 59,
-              columnNumber: 69
-            }, this),
-            " \xE0 cr\xE9er, partager, designer. Partageons l\u2019amour de nos m\xE9tiers."
-          ] }, void 0, !0, {
-            fileName: "app/routes/values.tsx",
-            lineNumber: 59,
-            columnNumber: 15
-          }, this)
-        ] }, void 0, !0, {
-          fileName: "app/routes/values.tsx",
-          lineNumber: 57,
-          columnNumber: 13
+          lineNumber: 76,
+          columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/values.tsx",
-        lineNumber: 44,
-        columnNumber: 11
+        lineNumber: 74,
+        columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV21("div", { onClick: () => router("/projects"), className: "py-5 px-10 transition-all duration-300 ease-in-out leading-[17.5px] font-bold text-sm text-center text-grayBlack uppercase hover:text-white hover:bg-grayBlack translate hover:cursor-pointer border-black border my-20 rounded-full w-[200px] mx-auto", children: "Mes projets" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV21("p", { className: "self-start ml-20 text-[6px] font-bold mb-10", children: "MON PARCOURS" }, void 0, !1, {
         fileName: "app/routes/values.tsx",
-        lineNumber: 62,
-        columnNumber: 11
+        lineNumber: 79,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV21("p", { className: "text-orange w-1/2 -mb-10 z-50", children: "\u201CSeules 54 % des entreprises fran\xE7aises ont embrass\xE9 la diversit\xE9\u201D." }, void 0, !1, {
+        fileName: "app/routes/values.tsx",
+        lineNumber: 80,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV21("div", { className: "flex items-center mx-10", children: [
+        /* @__PURE__ */ jsxDEV21("img", { src: Images.group, className: "w-[130px]" }, void 0, !1, {
+          fileName: "app/routes/values.tsx",
+          lineNumber: 82,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV21("div", { className: "flex items-start justify-end gap-1.5 ml-5", children: [
+          /* @__PURE__ */ jsxDEV21("img", { src: Images.manifesto, className: "rotate-[185deg] w-[20px]" }, void 0, !1, {
+            fileName: "app/routes/values.tsx",
+            lineNumber: 84,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ jsxDEV21("p", { className: "text-[7px] text-justify", children: "Au fil de ma vie et de ma carri\xE8re personnelle,  j\u2019ai pu appr\xE9hender avec clart\xE9 et d\xE9termination les bouleversements sociaux qui se jouent depuis maintenant des ann\xE9es.  Pour toutes les entreprises qui souhaitent faire parti du changement, je propose une relecture inclusive et une vision sensible de votre communication. " }, void 0, !1, {
+            fileName: "app/routes/values.tsx",
+            lineNumber: 85,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/routes/values.tsx",
+          lineNumber: 83,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/values.tsx",
+        lineNumber: 81,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV21("div", { className: "bg-yellowHome w-full h-full py-20 mt-10", children: [
+        /* @__PURE__ */ jsxDEV21("p", { className: "font-neueRegular text-[20px] leading-[90%] mx-10", children: "Manifesto" }, void 0, !1, {
+          fileName: "app/routes/values.tsx",
+          lineNumber: 89,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV21("div", { className: "my-20 flex flex-col gap-4", children: [
+          /* @__PURE__ */ jsxDEV21("div", { className: "flex items-center justify-evenly", children: [
+            /* @__PURE__ */ jsxDEV21("p", { className: "font-semibold text-footer text-[35px] leading-[90px]", children: "01." }, void 0, !1, {
+              fileName: "app/routes/values.tsx",
+              lineNumber: 92,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV21("p", { className: "font-semibold text-footer text-[12px] leading-[120%] text-justify tracking-[02%] w-2/3", children: [
+              "L'",
+              /* @__PURE__ */ jsxDEV21("span", { className: "text-orange", children: "inclusivit\xE9" }, void 0, !1, {
+                fileName: "app/routes/values.tsx",
+                lineNumber: 94,
+                columnNumber: 19
+              }, this),
+              " et le respect d\u2019autrui sont des valeurs fondamentales. Faisons de la diversit\xE9 un engagement quotidien."
+            ] }, void 0, !0, {
+              fileName: "app/routes/values.tsx",
+              lineNumber: 93,
+              columnNumber: 15
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/routes/values.tsx",
+            lineNumber: 91,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ jsxDEV21("div", { className: "flex items-center justify-evenly", children: [
+            /* @__PURE__ */ jsxDEV21("p", { className: "font-semibold text-footer text-[35px] leading-[90px]", children: "02." }, void 0, !1, {
+              fileName: "app/routes/values.tsx",
+              lineNumber: 98,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV21("p", { className: "font-semibold text-footer text-[12px] leading-[120%] text-justify tracking-[02%] w-2/3", children: [
+              "La ",
+              /* @__PURE__ */ jsxDEV21("span", { className: "text-orange", children: "bienveillance" }, void 0, !1, {
+                fileName: "app/routes/values.tsx",
+                lineNumber: 100,
+                columnNumber: 20
+              }, this),
+              " et l'\xE9coute forment la base d'une culture d'entreprise saine et productive. Le dialogue est la cl\xE9."
+            ] }, void 0, !0, {
+              fileName: "app/routes/values.tsx",
+              lineNumber: 99,
+              columnNumber: 15
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/routes/values.tsx",
+            lineNumber: 97,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ jsxDEV21("div", { className: "flex items-center justify-evenly", children: [
+            /* @__PURE__ */ jsxDEV21("p", { className: "font-semibold text-footer text-[35px] leading-[90px]", children: "03." }, void 0, !1, {
+              fileName: "app/routes/values.tsx",
+              lineNumber: 104,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV21("p", { className: "font-semibold text-footer text-[12px] leading-[120%] text-justify tracking-[02%] w-2/3", children: [
+              "Sans ",
+              /* @__PURE__ */ jsxDEV21("span", { className: "text-orange", children: "passion" }, void 0, !1, {
+                fileName: "app/routes/values.tsx",
+                lineNumber: 106,
+                columnNumber: 22
+              }, this),
+              ", pas d\u2019action. Croyez en votre message, je me charge de le partager."
+            ] }, void 0, !0, {
+              fileName: "app/routes/values.tsx",
+              lineNumber: 105,
+              columnNumber: 15
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/routes/values.tsx",
+            lineNumber: 103,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ jsxDEV21("div", { className: "flex items-center justify-evenly", children: [
+            /* @__PURE__ */ jsxDEV21("p", { className: "font-semibold text-footer text-[35px] leading-[90px]", children: "04." }, void 0, !1, {
+              fileName: "app/routes/values.tsx",
+              lineNumber: 110,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV21("p", { className: "font-semibold text-footer text-[12px] leading-[120%] text-justify tracking-[02%] w-2/3", children: [
+              /* @__PURE__ */ jsxDEV21("span", { className: "text-orange", children: "Amusons nous" }, void 0, !1, {
+                fileName: "app/routes/values.tsx",
+                lineNumber: 112,
+                columnNumber: 17
+              }, this),
+              " \xE0 cr\xE9er, partager, designer. Partageons l\u2019amour de nos m\xE9tiers.               "
+            ] }, void 0, !0, {
+              fileName: "app/routes/values.tsx",
+              lineNumber: 111,
+              columnNumber: 15
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/routes/values.tsx",
+            lineNumber: 109,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/routes/values.tsx",
+          lineNumber: 90,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV21("div", { onClick: () => router("/projects"), className: "py-3 px-2 transition-all duration-300 ease-in-out font-bold text-[7px] text-center text-grayBlack uppercase hover:text-white hover:bg-grayBlack translate hover:cursor-pointer border-black border rounded-full w-[100px] mx-auto", children: "Mes projets" }, void 0, !1, {
+          fileName: "app/routes/values.tsx",
+          lineNumber: 115,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/values.tsx",
+        lineNumber: 88,
+        columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/values.tsx",
-      lineNumber: 42,
-      columnNumber: 9
+      lineNumber: 70,
+      columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/values.tsx",
-    lineNumber: 17,
-    columnNumber: 7
-  }, this) }, void 0, !1, {
-    fileName: "app/routes/values.tsx",
-    lineNumber: 16,
+    lineNumber: 19,
     columnNumber: 5
   }, this);
 }
@@ -3241,243 +3457,266 @@ function About() {
   let { setHeaderColor } = useHeaderColor(), router = useNavigate6();
   return useEffect13(() => {
     setHeaderColor("linear-background");
-  }, [setHeaderColor]), /* @__PURE__ */ jsxDEV23(ParallaxProvider3, { children: /* @__PURE__ */ jsxDEV23("div", { className: "flex-col flex gap-12 w-screen h-auto", children: [
-    /* @__PURE__ */ jsxDEV23("div", { className: "flex items-end justify-between w-auto", children: [
-      /* @__PURE__ */ jsxDEV23("div", { className: "min-w-[950px] flex-col flex", children: [
-        /* @__PURE__ */ jsxDEV23("div", { className: "w-[1259px] ml-10", children: /* @__PURE__ */ jsxDEV23("p", { className: "font-neueRegular text-title uppercase  text-orange font-medium", children: "Tout commen\xE7a par une id\xE9e" }, void 0, !1, {
+  }, [setHeaderColor]), /* @__PURE__ */ jsxDEV23(ParallaxProvider3, { children: [
+    /* @__PURE__ */ jsxDEV23("div", { className: "flex-col md:flex gap-12 w-screen h-auto hidden", children: [
+      /* @__PURE__ */ jsxDEV23("div", { className: "flex items-end justify-between w-auto", children: [
+        /* @__PURE__ */ jsxDEV23("div", { className: "min-w-[950px] flex-col flex", children: [
+          /* @__PURE__ */ jsxDEV23("div", { className: "w-[1259px] ml-10", children: /* @__PURE__ */ jsxDEV23("p", { className: "font-neueRegular text-title uppercase  text-orange font-medium", children: "Tout commen\xE7a par une id\xE9e" }, void 0, !1, {
+            fileName: "app/routes/about.tsx",
+            lineNumber: 21,
+            columnNumber: 15
+          }, this) }, void 0, !1, {
+            fileName: "app/routes/about.tsx",
+            lineNumber: 20,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ jsxDEV23("div", { className: "w-[637px] ml-12 my-16", children: /* @__PURE__ */ jsxDEV23("p", { className: "leading-[31.2px] text-justify text-2xl font-normal font-footer", children: "Sp\xE9cialiste en communication/marketing et passionn\xE9e de design, j\u2019aide les entreprises \xE0 valoriser leur image de marque en leur proposant une strat\xE9gie digitale adapt\xE9e. J\u2019aime relever de nouveaux d\xE9fis et m\xE9thodiquement mener les projets jusqu'\xE0 leur pleine r\xE9ussite.                  " }, void 0, !1, {
+            fileName: "app/routes/about.tsx",
+            lineNumber: 24,
+            columnNumber: 15
+          }, this) }, void 0, !1, {
+            fileName: "app/routes/about.tsx",
+            lineNumber: 23,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, !0, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 21,
-          columnNumber: 15
-        }, this) }, void 0, !1, {
-          fileName: "app/routes/about.tsx",
-          lineNumber: 20,
-          columnNumber: 13
+          lineNumber: 19,
+          columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV23("div", { className: "w-[637px] ml-12 my-16", children: /* @__PURE__ */ jsxDEV23("p", { className: "leading-[31.2px] text-justify text-2xl font-normal font-footer", children: "Sp\xE9cialiste en communication/marketing et passionn\xE9e de design, j\u2019aide les entreprises \xE0 valoriser leur image de marque en leur proposant une strat\xE9gie digitale adapt\xE9e. J\u2019aime relever de nouveaux d\xE9fis et m\xE9thodiquement mener les projets jusqu'\xE0 leur pleine r\xE9ussite.                  " }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV23("div", { className: "w-auto", children: /* @__PURE__ */ jsxDEV23("p", { className: "mx-10 uppercase text-redHome text-[100px] font-medium font-neueRegular leading-[90px]", children: "Scroll" }, void 0, !1, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 24,
-          columnNumber: 15
+          lineNumber: 29,
+          columnNumber: 13
         }, this) }, void 0, !1, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 23,
-          columnNumber: 13
+          lineNumber: 28,
+          columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/about.tsx",
-        lineNumber: 19,
-        columnNumber: 11
+        lineNumber: 18,
+        columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV23("div", { className: "w-auto", children: /* @__PURE__ */ jsxDEV23("p", { className: "mx-10 uppercase text-redHome text-[100px] font-medium font-neueRegular leading-[90px]", children: "Scroll" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV23("div", { className: "self-end mr-[220px] -mb-[130px] z-[10]", children: /* @__PURE__ */ jsxDEV23(BigDownArrow, {}, void 0, !1, {
         fileName: "app/routes/about.tsx",
-        lineNumber: 29,
-        columnNumber: 13
+        lineNumber: 33,
+        columnNumber: 11
       }, this) }, void 0, !1, {
         fileName: "app/routes/about.tsx",
-        lineNumber: 28,
-        columnNumber: 11
-      }, this)
-    ] }, void 0, !0, {
-      fileName: "app/routes/about.tsx",
-      lineNumber: 18,
-      columnNumber: 9
-    }, this),
-    /* @__PURE__ */ jsxDEV23("div", { className: "self-end mr-[220px] -mb-[130px] z-[10]", children: /* @__PURE__ */ jsxDEV23(BigDownArrow, {}, void 0, !1, {
-      fileName: "app/routes/about.tsx",
-      lineNumber: 33,
-      columnNumber: 11
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/about.tsx",
-      lineNumber: 32,
-      columnNumber: 9
-    }, this),
-    /* @__PURE__ */ jsxDEV23("div", { className: "bg-saumon h-full w-full flex-col flex", children: [
-      /* @__PURE__ */ jsxDEV23("div", { className: "flex items-end justify-around", children: [
-        /* @__PURE__ */ jsxDEV23("div", { className: "w-[395px] h-[480px] rounded-[50px] -mt-10 ml-12", children: /* @__PURE__ */ jsxDEV23("img", { alt: "men with pride flag", src: Images.pride }, void 0, !1, {
-          fileName: "app/routes/about.tsx",
-          lineNumber: 38,
-          columnNumber: 15
-        }, this) }, void 0, !1, {
-          fileName: "app/routes/about.tsx",
-          lineNumber: 37,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ jsxDEV23("p", { className: "-mb-40 z-[10] w-[802px] leading-[72px] text-royalBlue text-right text-[80px] font-neueRegular", children: '"Seules 54% des entreprises fran\xE7aises ont embrass\xE9 la diversit\xE9"*.' }, void 0, !1, {
-          fileName: "app/routes/about.tsx",
-          lineNumber: 40,
-          columnNumber: 13
-        }, this)
-      ] }, void 0, !0, {
-        fileName: "app/routes/about.tsx",
-        lineNumber: 36,
-        columnNumber: 11
+        lineNumber: 32,
+        columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV23("div", { className: "flex items-center justify-around mb-10 mt-28 mx-20", children: [
-        /* @__PURE__ */ jsxDEV23("p", { className: "text-[25px] leading-[32px] font-normal font-footer text-justify w-[640px]", children: "Dans un monde o\xF9 l'\xE9quit\xE9 n'est plus simplement une option mais une n\xE9cessit\xE9, j'ai un grand int\xE9r\xEAt \xE0 utiliser mon expertise pour aider les marques \xE0 \xE9voluer. Mon objectif est de les guider vers une approche plus inclusive. Cela implique de comprendre et de respecter la diversit\xE9 de leur public et de s'assurer que tous se sentent repr\xE9sent\xE9s et valoris\xE9s. Ensemble, faisons bouger les choses !              " }, void 0, !1, {
-          fileName: "app/routes/about.tsx",
-          lineNumber: 45,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ jsxDEV23("div", { className: "z-0 w-[395px] h-[480px] rounded-[50px]", children: /* @__PURE__ */ jsxDEV23("img", { alt: "group people", src: Images.group }, void 0, !1, {
-          fileName: "app/routes/about.tsx",
-          lineNumber: 48,
-          columnNumber: 15
-        }, this) }, void 0, !1, {
-          fileName: "app/routes/about.tsx",
-          lineNumber: 47,
-          columnNumber: 13
-        }, this)
-      ] }, void 0, !0, {
-        fileName: "app/routes/about.tsx",
-        lineNumber: 44,
-        columnNumber: 11
-      }, this)
-    ] }, void 0, !0, {
-      fileName: "app/routes/about.tsx",
-      lineNumber: 35,
-      columnNumber: 9
-    }, this),
-    /* @__PURE__ */ jsxDEV23("div", { className: "bg-mainColor h-full w-full flex-col flex gap-12", children: [
-      /* @__PURE__ */ jsxDEV23("div", { className: "flex items-center justify-center", children: [
-        /* @__PURE__ */ jsxDEV23("p", { className: "text-[250px] text-redHome font-neueRegular uppercase mr-10", children: "Militer" }, void 0, !1, {
-          fileName: "app/routes/about.tsx",
-          lineNumber: 55,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ jsxDEV23("img", { alt: "arrow pink", src: Images.manifesto, width: 100, height: 100 }, void 0, !1, {
-          fileName: "app/routes/about.tsx",
-          lineNumber: 56,
-          columnNumber: 13
-        }, this)
-      ] }, void 0, !0, {
-        fileName: "app/routes/about.tsx",
-        lineNumber: 54,
-        columnNumber: 11
-      }, this),
-      /* @__PURE__ */ jsxDEV23("p", { className: "font-neueRegular italic text-[50px] leading-[90%] mx-16", children: "Manifesto" }, void 0, !1, {
-        fileName: "app/routes/about.tsx",
-        lineNumber: 59,
-        columnNumber: 11
-      }, this),
-      /* @__PURE__ */ jsxDEV23("div", { className: "w-3/4 mx-auto", children: [
-        /* @__PURE__ */ jsxDEV23("div", { className: "flex items-center", children: [
-          /* @__PURE__ */ jsxDEV23("p", { className: "font-footer text-[70px] mr-14", children: "01." }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV23("div", { className: "bg-saumon h-full w-full flex-col flex", children: [
+        /* @__PURE__ */ jsxDEV23("div", { className: "flex items-end justify-around", children: [
+          /* @__PURE__ */ jsxDEV23("div", { className: "w-[395px] h-[480px] rounded-[50px] -mt-10 ml-12", children: /* @__PURE__ */ jsxDEV23("img", { alt: "men with pride flag", src: Images.pride }, void 0, !1, {
             fileName: "app/routes/about.tsx",
-            lineNumber: 63,
+            lineNumber: 38,
             columnNumber: 15
+          }, this) }, void 0, !1, {
+            fileName: "app/routes/about.tsx",
+            lineNumber: 37,
+            columnNumber: 13
           }, this),
-          /* @__PURE__ */ jsxDEV23("p", { className: "leading-[100%] text-[28px] font-footer", children: [
-            "L'",
-            /* @__PURE__ */ jsxDEV23("span", { className: "text-orange", children: "inclusivit\xE9" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV23("p", { className: "-mb-40 z-[10] w-[802px] leading-[72px] text-royalBlue text-right text-[80px] font-neueRegular", children: '"Seules 54% des entreprises fran\xE7aises ont embrass\xE9 la diversit\xE9"*.' }, void 0, !1, {
+            fileName: "app/routes/about.tsx",
+            lineNumber: 40,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/routes/about.tsx",
+          lineNumber: 36,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV23("div", { className: "flex items-center justify-around mb-10 mt-28 mx-20", children: [
+          /* @__PURE__ */ jsxDEV23("p", { className: "text-[25px] leading-[32px] font-normal font-footer text-justify w-[640px]", children: "Dans un monde o\xF9 l'\xE9quit\xE9 n'est plus simplement une option mais une n\xE9cessit\xE9, j'ai un grand int\xE9r\xEAt \xE0 utiliser mon expertise pour aider les marques \xE0 \xE9voluer. Mon objectif est de les guider vers une approche plus inclusive. Cela implique de comprendre et de respecter la diversit\xE9 de leur public et de s'assurer que tous se sentent repr\xE9sent\xE9s et valoris\xE9s. Ensemble, faisons bouger les choses !              " }, void 0, !1, {
+            fileName: "app/routes/about.tsx",
+            lineNumber: 45,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ jsxDEV23("div", { className: "z-0 w-[395px] h-[480px] rounded-[50px]", children: /* @__PURE__ */ jsxDEV23("img", { alt: "group people", src: Images.group }, void 0, !1, {
+            fileName: "app/routes/about.tsx",
+            lineNumber: 48,
+            columnNumber: 15
+          }, this) }, void 0, !1, {
+            fileName: "app/routes/about.tsx",
+            lineNumber: 47,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/routes/about.tsx",
+          lineNumber: 44,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/about.tsx",
+        lineNumber: 35,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV23("div", { className: "bg-mainColor h-full w-full flex-col flex gap-12", children: [
+        /* @__PURE__ */ jsxDEV23("div", { className: "flex items-center justify-center", children: [
+          /* @__PURE__ */ jsxDEV23("p", { className: "text-[250px] text-redHome font-neueRegular uppercase mr-10", children: "Militer" }, void 0, !1, {
+            fileName: "app/routes/about.tsx",
+            lineNumber: 55,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ jsxDEV23("img", { alt: "arrow pink", src: Images.manifesto, width: 100, height: 100 }, void 0, !1, {
+            fileName: "app/routes/about.tsx",
+            lineNumber: 56,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/routes/about.tsx",
+          lineNumber: 54,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV23("p", { className: "font-neueRegular italic text-[50px] leading-[90%] mx-16", children: "Manifesto" }, void 0, !1, {
+          fileName: "app/routes/about.tsx",
+          lineNumber: 59,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV23("div", { className: "w-3/4 mx-auto", children: [
+          /* @__PURE__ */ jsxDEV23("div", { className: "flex items-center", children: [
+            /* @__PURE__ */ jsxDEV23("p", { className: "font-footer text-[70px] mr-14", children: "01." }, void 0, !1, {
+              fileName: "app/routes/about.tsx",
+              lineNumber: 63,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV23("p", { className: "leading-[100%] text-[28px] font-footer", children: [
+              "L'",
+              /* @__PURE__ */ jsxDEV23("span", { className: "text-orange", children: "inclusivit\xE9" }, void 0, !1, {
+                fileName: "app/routes/about.tsx",
+                lineNumber: 64,
+                columnNumber: 71
+              }, this),
+              " et le respect d\u2019autrui sont des valeurs fondamentales. Faisons de la diversit\xE9 un engagement quotidien."
+            ] }, void 0, !0, {
               fileName: "app/routes/about.tsx",
               lineNumber: 64,
-              columnNumber: 71
-            }, this),
-            " et le respect d\u2019autrui sont des valeurs fondamentales. Faisons de la diversit\xE9 un engagement quotidien."
+              columnNumber: 15
+            }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/about.tsx",
-            lineNumber: 64,
-            columnNumber: 15
-          }, this)
-        ] }, void 0, !0, {
-          fileName: "app/routes/about.tsx",
-          lineNumber: 62,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ jsxDEV23("div", { className: "flex items-center", children: [
-          /* @__PURE__ */ jsxDEV23("p", { className: "font-footer text-[70px] mr-11", children: "02." }, void 0, !1, {
-            fileName: "app/routes/about.tsx",
-            lineNumber: 67,
-            columnNumber: 15
+            lineNumber: 62,
+            columnNumber: 13
           }, this),
-          /* @__PURE__ */ jsxDEV23("p", { className: "leading-[100%] text-[28px] font-footer", children: [
-            "La ",
-            /* @__PURE__ */ jsxDEV23("span", { className: "text-orange", children: "bienveillance" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV23("div", { className: "flex items-center", children: [
+            /* @__PURE__ */ jsxDEV23("p", { className: "font-footer text-[70px] mr-11", children: "02." }, void 0, !1, {
+              fileName: "app/routes/about.tsx",
+              lineNumber: 67,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV23("p", { className: "leading-[100%] text-[28px] font-footer", children: [
+              "La ",
+              /* @__PURE__ */ jsxDEV23("span", { className: "text-orange", children: "bienveillance" }, void 0, !1, {
+                fileName: "app/routes/about.tsx",
+                lineNumber: 68,
+                columnNumber: 72
+              }, this),
+              " et l'\xE9coute forment la base d'une culture d'entreprise saine et productive. Le dialogue est la cl\xE9."
+            ] }, void 0, !0, {
               fileName: "app/routes/about.tsx",
               lineNumber: 68,
-              columnNumber: 72
-            }, this),
-            " et l'\xE9coute forment la base d'une culture d'entreprise saine et productive. Le dialogue est la cl\xE9."
+              columnNumber: 15
+            }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/about.tsx",
-            lineNumber: 68,
-            columnNumber: 15
-          }, this)
-        ] }, void 0, !0, {
-          fileName: "app/routes/about.tsx",
-          lineNumber: 66,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ jsxDEV23("div", { className: "flex items-center", children: [
-          /* @__PURE__ */ jsxDEV23("p", { className: "font-footer text-[70px] mr-11", children: "03." }, void 0, !1, {
-            fileName: "app/routes/about.tsx",
-            lineNumber: 71,
-            columnNumber: 15
+            lineNumber: 66,
+            columnNumber: 13
           }, this),
-          /* @__PURE__ */ jsxDEV23("p", { className: "font-footer leading-[100%] text-[28px]", children: [
-            "Sans ",
-            /* @__PURE__ */ jsxDEV23("span", { className: "text-orange", children: "passion" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV23("div", { className: "flex items-center", children: [
+            /* @__PURE__ */ jsxDEV23("p", { className: "font-footer text-[70px] mr-11", children: "03." }, void 0, !1, {
+              fileName: "app/routes/about.tsx",
+              lineNumber: 71,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV23("p", { className: "font-footer leading-[100%] text-[28px]", children: [
+              "Sans ",
+              /* @__PURE__ */ jsxDEV23("span", { className: "text-orange", children: "passion" }, void 0, !1, {
+                fileName: "app/routes/about.tsx",
+                lineNumber: 72,
+                columnNumber: 74
+              }, this),
+              ", pas d\u2019action. Croyez en votre message, je m\u2019occupe de le partager."
+            ] }, void 0, !0, {
               fileName: "app/routes/about.tsx",
               lineNumber: 72,
-              columnNumber: 74
-            }, this),
-            ", pas d\u2019action. Croyez en votre message, je m\u2019occupe de le partager."
+              columnNumber: 15
+            }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/about.tsx",
-            lineNumber: 72,
-            columnNumber: 15
-          }, this)
-        ] }, void 0, !0, {
-          fileName: "app/routes/about.tsx",
-          lineNumber: 70,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ jsxDEV23("div", { className: "flex items-center", children: [
-          /* @__PURE__ */ jsxDEV23("p", { className: "font-footer text-[70px] mr-11", children: "04." }, void 0, !1, {
-            fileName: "app/routes/about.tsx",
-            lineNumber: 75,
-            columnNumber: 15
+            lineNumber: 70,
+            columnNumber: 13
           }, this),
-          /* @__PURE__ */ jsxDEV23("p", { className: "leading-[100%] text-[28px] font-footer", children: [
-            /* @__PURE__ */ jsxDEV23("span", { className: "text-orange", children: "Amusons nous" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV23("div", { className: "flex items-center", children: [
+            /* @__PURE__ */ jsxDEV23("p", { className: "font-footer text-[70px] mr-11", children: "04." }, void 0, !1, {
+              fileName: "app/routes/about.tsx",
+              lineNumber: 75,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV23("p", { className: "leading-[100%] text-[28px] font-footer", children: [
+              /* @__PURE__ */ jsxDEV23("span", { className: "text-orange", children: "Amusons nous" }, void 0, !1, {
+                fileName: "app/routes/about.tsx",
+                lineNumber: 76,
+                columnNumber: 69
+              }, this),
+              " \xE0 cr\xE9er, partager, designer. Partageons l\u2019amour de nos m\xE9tiers."
+            ] }, void 0, !0, {
               fileName: "app/routes/about.tsx",
               lineNumber: 76,
-              columnNumber: 69
-            }, this),
-            " \xE0 cr\xE9er, partager, designer. Partageons l\u2019amour de nos m\xE9tiers."
+              columnNumber: 15
+            }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/about.tsx",
-            lineNumber: 76,
-            columnNumber: 15
+            lineNumber: 74,
+            columnNumber: 13
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 74,
+          lineNumber: 61,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV23("div", { onClick: () => router("/services"), className: "hover:cursor-pointer border-black border mb-20 rounded-3xl p-[10px] w-[200px] mx-auto", children: /* @__PURE__ */ jsxDEV23("p", { className: "leading-[17.5px] font-bold text-sm text-center text-grayBlack uppercase", children: "Services" }, void 0, !1, {
+          fileName: "app/routes/about.tsx",
+          lineNumber: 80,
           columnNumber: 13
+        }, this) }, void 0, !1, {
+          fileName: "app/routes/about.tsx",
+          lineNumber: 79,
+          columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/about.tsx",
-        lineNumber: 61,
-        columnNumber: 11
-      }, this),
-      /* @__PURE__ */ jsxDEV23("div", { onClick: () => router("/services"), className: "hover:cursor-pointer border-black border mb-20 rounded-3xl p-[10px] w-[200px] mx-auto", children: /* @__PURE__ */ jsxDEV23("p", { className: "leading-[17.5px] font-bold text-sm text-center text-grayBlack uppercase", children: "Services" }, void 0, !1, {
-        fileName: "app/routes/about.tsx",
-        lineNumber: 80,
-        columnNumber: 13
-      }, this) }, void 0, !1, {
-        fileName: "app/routes/about.tsx",
-        lineNumber: 79,
-        columnNumber: 11
+        lineNumber: 53,
+        columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/about.tsx",
-      lineNumber: 53,
-      columnNumber: 9
+      lineNumber: 17,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV23("div", { className: "md:hidden flex flex-col", children: [
+      /* @__PURE__ */ jsxDEV23("p", { className: "text-redHome uppercase  hover:cursor-pointer text-titleMobile font-neueRegular", children: "Partage" }, void 0, !1, {
+        fileName: "app/routes/about.tsx",
+        lineNumber: 86,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV23("p", { className: "text-redHome uppercase  hover:cursor-pointer text-titleMobile font-neueRegular", children: "Cr\xE9ation" }, void 0, !1, {
+        fileName: "app/routes/about.tsx",
+        lineNumber: 89,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV23("p", { className: "text-redHome uppercase  hover:cursor-pointer text-titleMobile font-neueRegular", children: "Ambition" }, void 0, !1, {
+        fileName: "app/routes/about.tsx",
+        lineNumber: 92,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/about.tsx",
+      lineNumber: 84,
+      columnNumber: 7
     }, this)
   ] }, void 0, !0, {
-    fileName: "app/routes/about.tsx",
-    lineNumber: 17,
-    columnNumber: 7
-  }, this) }, void 0, !1, {
     fileName: "app/routes/about.tsx",
     lineNumber: 16,
     columnNumber: 5
@@ -3688,7 +3927,7 @@ function Home() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-75X5CYH4.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-FWVAADBG.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-43WGSL2O.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-PR3Z5HUA.js", imports: ["/build/_shared/chunk-APMP54XW.js", "/build/_shared/chunk-YTWU66CS.js", "/build/_shared/chunk-JOGLTZST.js", "/build/_shared/chunk-NMZL6IDN.js", "/build/_shared/chunk-DIGSRBO4.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-KUDNR3H2.js", imports: ["/build/_shared/chunk-KCNGSYT6.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-O7O3W72P.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-V7NN2KEA.js", imports: ["/build/_shared/chunk-5T6BUAZE.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/capiche": { id: "routes/capiche", parentId: "root", path: "capiche", index: void 0, caseSensitive: void 0, module: "/build/routes/capiche-GHITOHR3.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/cards": { id: "routes/cards", parentId: "root", path: "cards", index: void 0, caseSensitive: void 0, module: "/build/routes/cards-W4X4WYIB.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-C4RRCPVE.js", imports: ["/build/_shared/chunk-O7O3W72P.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/home": { id: "routes/home", parentId: "root", path: "home", index: void 0, caseSensitive: void 0, module: "/build/routes/home-APNREJ7O.js", imports: ["/build/_shared/chunk-KCNGSYT6.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-O7O3W72P.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/logofolio": { id: "routes/logofolio", parentId: "root", path: "logofolio", index: void 0, caseSensitive: void 0, module: "/build/routes/logofolio-PL6JJT4Q.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/mosaic": { id: "routes/mosaic", parentId: "root", path: "mosaic", index: void 0, caseSensitive: void 0, module: "/build/routes/mosaic-I67JMF2Y.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-VPMZWTI6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/projects": { id: "routes/projects", parentId: "root", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/projects-JK3AXN3C.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-SMC42HMX.js", imports: ["/build/_shared/chunk-Z7AT2O2U.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/values": { id: "routes/values", parentId: "root", path: "values", index: void 0, caseSensitive: void 0, module: "/build/routes/values-KQ5A4TJX.js", imports: ["/build/_shared/chunk-5T6BUAZE.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "746723c3", hmr: { runtime: "/build/_shared/chunk-43WGSL2O.js", timestamp: 1712856333933 }, url: "/build/manifest-746723C3.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-75X5CYH4.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-FWVAADBG.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-43WGSL2O.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-FBTKSGOF.js", imports: ["/build/_shared/chunk-APMP54XW.js", "/build/_shared/chunk-YTWU66CS.js", "/build/_shared/chunk-JOGLTZST.js", "/build/_shared/chunk-NMZL6IDN.js", "/build/_shared/chunk-DIGSRBO4.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-C5VWSE2Q.js", imports: ["/build/_shared/chunk-KCNGSYT6.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-O7O3W72P.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-DE2RUPGG.js", imports: ["/build/_shared/chunk-5T6BUAZE.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/capiche": { id: "routes/capiche", parentId: "root", path: "capiche", index: void 0, caseSensitive: void 0, module: "/build/routes/capiche-GHITOHR3.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/cards": { id: "routes/cards", parentId: "root", path: "cards", index: void 0, caseSensitive: void 0, module: "/build/routes/cards-W4X4WYIB.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-C4RRCPVE.js", imports: ["/build/_shared/chunk-O7O3W72P.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/home": { id: "routes/home", parentId: "root", path: "home", index: void 0, caseSensitive: void 0, module: "/build/routes/home-APNREJ7O.js", imports: ["/build/_shared/chunk-KCNGSYT6.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-O7O3W72P.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/logofolio": { id: "routes/logofolio", parentId: "root", path: "logofolio", index: void 0, caseSensitive: void 0, module: "/build/routes/logofolio-PL6JJT4Q.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/mosaic": { id: "routes/mosaic", parentId: "root", path: "mosaic", index: void 0, caseSensitive: void 0, module: "/build/routes/mosaic-I67JMF2Y.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-VPMZWTI6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/projects": { id: "routes/projects", parentId: "root", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/projects-JK3AXN3C.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-SMC42HMX.js", imports: ["/build/_shared/chunk-Z7AT2O2U.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/values": { id: "routes/values", parentId: "root", path: "values", index: void 0, caseSensitive: void 0, module: "/build/routes/values-47PCYOY2.js", imports: ["/build/_shared/chunk-5T6BUAZE.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "019c7d3d", hmr: { runtime: "/build/_shared/chunk-43WGSL2O.js", timestamp: 1712860596160 }, url: "/build/manifest-019C7D3D.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "development", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1, v3_relativeSplatPath: !1, v3_throwAbortReason: !1 }, publicPath = "/build/", entry = { module: entry_server_node_exports }, routes = {

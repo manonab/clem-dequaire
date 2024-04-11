@@ -1,20 +1,23 @@
 import { useNavigate } from "@remix-run/react";
 import { useEffect } from "react";
+import { isMobile } from "react-device-detect";
 import { ParallaxProvider } from "react-scroll-parallax";
-import { BigDownArrow } from "~/assets/big-down-arrow";
 import { Images } from "~/common/images";
 import { useHeaderColor } from "~/context";
 
 export default function Values() {
   const { setHeaderColor } = useHeaderColor();
   const router = useNavigate();
+
   useEffect(() => {
-    setHeaderColor("linear-values");
+    if (!isMobile) {
+      setHeaderColor("linear-values");
+    }
   }, [setHeaderColor]);
 
   return (
     <ParallaxProvider>
-      <div className="flex-col flex w-full h-auto">
+      <div className="flex-col md:flex w-full h-auto hidden">
         <div className="!w-full bg-saumon pb-20">
           <p className="ml-10 font-neueRegular text-title text-orange font-medium">Tout commença par une <br></br><span className="text-redHome">idée</span>.</p>
         </div>
@@ -40,7 +43,7 @@ export default function Values() {
           </div>
         </div>
         <div className="bg-yellowHome pt-40 -mt-16">
-          <p className="font-neueRegular italic text-[50px] leading-[90%] mx-16">Manifesto</p>
+          <p className="font-neueRegular text-[50px] leading-[90%] mx-16">Manifesto</p>
           <div className="w-3/4 mx-auto">
             <div className="flex items-center">
               <p className="font-footer text-[70px] mr-14">01.</p>
@@ -60,6 +63,56 @@ export default function Values() {
             </div>
           </div>
           <div onClick={() => router('/projects')} className="py-5 px-10 transition-all duration-300 ease-in-out leading-[17.5px] font-bold text-sm text-center text-grayBlack uppercase hover:text-white hover:bg-grayBlack translate hover:cursor-pointer border-black border my-20 rounded-full w-[200px] mx-auto">
+            Mes projets
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col items-center md:hidden gap-4 mt-10">
+        <p className="text-redHome uppercase hover:cursor-pointer text-[60px] leading-[90%] font-neueRegular">partage</p>
+        <p className="text-redHome uppercase hover:cursor-pointer text-[60px] leading-[90%] font-neueRegular">création</p>
+        <p className="text-redHome uppercase hover:cursor-pointer text-[60px] leading-[90%] font-neueRegular">ambition</p>
+        <div className="flex gap-3 items-start justify-center mr-16 mt-20">
+          <img src={Images.manifesto} className="rotate-[185deg] w-[20px]" />
+          <p className="font-footer text-justify text-[7px] w-2/3"><span className="font-bold">Spécialisée en communication et marketing digital</span>, j’ai toujours ressenti ce besoin de trouver du sens. Plus qu’un métier, je vois la communication comme un moyen de partager et faire grandir des projets auxquels je crois profondément.<br></br><br></br>
+            Cinq années se sont écoulées depuis mon premier poste et cette idée s’est transformée en un défi que je relève passionnément chaque jour. Grâce à d’autres humain.e.s qui croyaient fort en leur convictions,   j’ai eu la chance de porter défis audacieux et des messages engagés. Peut-être serez vous les prochain.e.s ?</p>
+        </div>
+        <p className="self-start ml-20 text-[6px] font-bold mb-10">MON PARCOURS</p>
+        <p className="text-orange w-1/2 -mb-10 z-50">“Seules 54 % des entreprises françaises ont embrassé la diversité”.</p>
+        <div className="flex items-center mx-10">
+          <img src={Images.group} className="w-[130px]" />
+          <div className="flex items-start justify-end gap-1.5 ml-5">
+            <img src={Images.manifesto} className="rotate-[185deg] w-[20px]" />
+            <p className="text-[7px] text-justify">Au fil de ma vie et de ma carrière personnelle,  j’ai pu appréhender avec clarté et détermination les bouleversements sociaux qui se jouent depuis maintenant des années.  Pour toutes les entreprises qui souhaitent faire parti du changement, je propose une relecture inclusive et une vision sensible de votre communication. </p>
+          </div>
+        </div>
+        <div className="bg-yellowHome w-full h-full py-20 mt-10">
+          <p className="font-neueRegular text-[20px] leading-[90%] mx-10">Manifesto</p>
+          <div className="my-20 flex flex-col gap-4">
+            <div className="flex items-center justify-evenly">
+              <p className="font-semibold text-footer text-[35px] leading-[90px]">01.</p>
+              <p className="font-semibold text-footer text-[12px] leading-[120%] text-justify tracking-[02%] w-2/3">
+                L'<span className="text-orange">inclusivité</span> et le respect d’autrui sont des valeurs fondamentales. Faisons de la diversité un engagement quotidien.
+              </p>
+            </div>
+            <div className="flex items-center justify-evenly">
+              <p className="font-semibold text-footer text-[35px] leading-[90px]">02.</p>
+              <p className="font-semibold text-footer text-[12px] leading-[120%] text-justify tracking-[02%] w-2/3">
+                La <span className="text-orange">bienveillance</span> et l'écoute forment la base d'une culture d'entreprise saine et productive. Le dialogue est la clé.
+              </p>
+            </div>
+            <div className="flex items-center justify-evenly">
+              <p className="font-semibold text-footer text-[35px] leading-[90px]">03.</p>
+              <p className="font-semibold text-footer text-[12px] leading-[120%] text-justify tracking-[02%] w-2/3">
+                Sans <span className="text-orange">passion</span>, pas d’action. Croyez en votre message, je me charge de le partager.
+              </p>
+            </div>
+            <div className="flex items-center justify-evenly">
+              <p className="font-semibold text-footer text-[35px] leading-[90px]">04.</p>
+              <p className="font-semibold text-footer text-[12px] leading-[120%] text-justify tracking-[02%] w-2/3">
+                <span className="text-orange">Amusons nous</span> à créer, partager, designer. Partageons l’amour de nos métiers.               </p>
+            </div>
+          </div>
+          <div onClick={() => router('/projects')} className="py-3 px-2 transition-all duration-300 ease-in-out font-bold text-[7px] text-center text-grayBlack uppercase hover:text-white hover:bg-grayBlack translate hover:cursor-pointer border-black border rounded-full w-[100px] mx-auto">
             Mes projets
           </div>
         </div>
