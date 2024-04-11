@@ -45,6 +45,8 @@ export default {
 				bannerTitile: ["160px", "90%"],
 				serviceTitle: ["60px", "100%"],
 				homeMobileTitle: ["60px", "90%"],
+				capicheMobile: ["65px", "90%"],
+
 				homeMobileContent: ["20px", "90%"],
 				homeMobileServices: ["55px", "90%"],
 				homeMobileTitleServices: ["45px", "90%"],

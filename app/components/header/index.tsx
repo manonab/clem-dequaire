@@ -6,7 +6,6 @@ import { Images } from "~/common/images";
 import { Close } from "@mui/icons-material";
 export const Menu: React.FC = () => {
   const router = useNavigate();
-  const params = useParams();
   const [selected, setSelected] = useState<string>("/home");
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const { headerColor } = useHeaderColor();
@@ -70,13 +69,13 @@ export const Menu: React.FC = () => {
       </motion.div>
       <div className="md:hidden">
         <div
-          className={`${headerColor} flex justify-between items-center py-[30px] px-[30px]`}
+          className={`${headerColor} flex justify-between items-center py-[32px] px-[30px] mt-2`}
         >
-          <div onClick={() => router("/home")} className="hover:cursor-pointer h-[70px]">
-            <img src={Images.newlogo} alt="logo" width="50px" height="50px" />
+          <div onClick={() => router("/home")} className="hover:cursor-pointer h-[80px]">
+            <img src={Images.newlogo} alt="logo" width="60px" height="50px" />
           </div>
-          <div className="flex items-center">
-            <button onClick={toggleMenu} className="text-grayBlack focus:outline-none flex gap-0.5">
+          <div className="flex items-center mb-6">
+            <button onClick={toggleMenu} className="text-grayBlack focus:outline-none flex gap-1">
               <motion.div
                 initial={{ y: 10, opacity: 0, scale: 0.5 }}
                 animate={{ y: 0, opacity: 1, scale: 1 }}
@@ -116,7 +115,7 @@ export const Menu: React.FC = () => {
                     handleChange(route.path);
                     toggleMenu();
                   }}
-                  className="text-orange uppercase  hover:cursor-pointer text-titleMobile font-neueRegular">
+                  className="text-orange uppercase hover:cursor-pointer text-titleMobile font-neueRegular">
                   {route.name}
                 </p>
               ))}

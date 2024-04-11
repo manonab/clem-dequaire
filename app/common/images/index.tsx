@@ -41,6 +41,8 @@ import HomeCapiche from "../../assets/home/home-capiche.png"
 import HomePortfolio from "../../assets/home/home-portfolio.png"
 import HomeMosaic from "../../assets/home/home-mosaic.png"
 import ContactArrow from "../../assets/contact/contact-arrow.png"
+import Capiche001 from "../../assets/capiche/cap-img-001.png"
+import Capiche002 from "../../assets/capiche/cap-img-002.png"
 
 export const Images = {
   eye: Eye,
@@ -85,6 +87,9 @@ export const Images = {
   homeCapiche: HomeCapiche,
   homeMosaic: HomeMosaic,
   homePortfolio: HomePortfolio,
-  contactArrow: ContactArrow
+  contactArrow: ContactArrow,
+  capicheImg1: Capiche001,
+  capicheImg2: Capiche002,
+
 };
 

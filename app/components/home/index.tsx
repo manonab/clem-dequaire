@@ -30,7 +30,6 @@ const HomeComponent: React.FC = () => {
             <p className="font-footer uppercase font-bold leading-[20px]">SCROLL & ROLL</p>
           </div>
         </motion.div>
-
       </Parallax>
       <Parallax speed={-15}>
         <Description />

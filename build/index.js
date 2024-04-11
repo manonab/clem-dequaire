@@ -131,11 +131,11 @@ import {
 } from "@remix-run/react";
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-KS5GPTLZ.css";
+var tailwind_default = "/build/_assets/tailwind-FQRRROOH.css";
 
 // app/components/header/index.tsx
 import { useState as useState2 } from "react";
-import { useNavigate, useParams } from "@remix-run/react";
+import { useNavigate } from "@remix-run/react";
 
 // app/context/index.tsx
 import { createContext, useContext, useState } from "react";
@@ -285,6 +285,12 @@ var home_mosaic_default = "/build/_assets/home-mosaic-D7ZOAKP6.png";
 // app/assets/contact/contact-arrow.png
 var contact_arrow_default = "/build/_assets/contact-arrow-KH4MVL42.png";
 
+// app/assets/capiche/cap-img-001.png
+var cap_img_001_default = "/build/_assets/cap-img-001-LGUTTJPM.png";
+
+// app/assets/capiche/cap-img-002.png
+var cap_img_002_default = "/build/_assets/cap-img-002-GGMZJ5UJ.png";
+
 // app/common/images/index.tsx
 var Images = {
   eye: eye_default,
@@ -329,14 +335,16 @@ var Images = {
   homeCapiche: home_capiche_default,
   homeMosaic: home_mosaic_default,
   homePortfolio: home_portfolio_default,
-  contactArrow: contact_arrow_default
+  contactArrow: contact_arrow_default,
+  capicheImg1: cap_img_001_default,
+  capicheImg2: cap_img_002_default
 };
 
 // app/components/header/index.tsx
 import { Close } from "@mui/icons-material";
 import { jsxDEV as jsxDEV3 } from "react/jsx-dev-runtime";
 var Menu = () => {
-  let router = useNavigate(), params = useParams(), [selected, setSelected] = useState2("/home"), [isMenuOpen, setIsMenuOpen] = useState2(!1), { headerColor } = useHeaderColor(), pathTextMapping = [
+  let router = useNavigate(), [selected, setSelected] = useState2("/home"), [isMenuOpen, setIsMenuOpen] = useState2(!1), { headerColor } = useHeaderColor(), pathTextMapping = [
     { path: "/home", name: "accueil" },
     { path: "/values", name: "mes valeurs" },
     { path: "/services", name: "services" },
@@ -363,11 +371,11 @@ var Menu = () => {
         children: [
           /* @__PURE__ */ jsxDEV3("div", { onClick: () => router("/home"), className: "hover:cursor-pointer h-[70px]", children: /* @__PURE__ */ jsxDEV3("img", { src: Images.newlogo, alt: "logo", width: "50px", height: "50px" }, void 0, !1, {
             fileName: "app/components/header/index.tsx",
-            lineNumber: 46,
+            lineNumber: 45,
             columnNumber: 11
           }, this) }, void 0, !1, {
             fileName: "app/components/header/index.tsx",
-            lineNumber: 45,
+            lineNumber: 44,
             columnNumber: 9
           }, this),
           /* @__PURE__ */ jsxDEV3(
@@ -381,7 +389,7 @@ var Menu = () => {
                   onClick: () => handleChange(route.path),
                   children: /* @__PURE__ */ jsxDEV3("p", { className: `${selected === route.path ? "text-redHome font-bold" : " text-grayBlack"} hover:text-redHome hover:font-bold leading-4 hover:cursor-pointer text-[18px] font-footer text-black`, children: route.name }, void 0, !1, {
                     fileName: "app/components/header/index.tsx",
-                    lineNumber: 56,
+                    lineNumber: 55,
                     columnNumber: 15
                   }, this)
                 },
@@ -389,7 +397,7 @@ var Menu = () => {
                 !1,
                 {
                   fileName: "app/components/header/index.tsx",
-                  lineNumber: 51,
+                  lineNumber: 50,
                   columnNumber: 13
                 },
                 this
@@ -399,7 +407,7 @@ var Menu = () => {
             !1,
             {
               fileName: "app/components/header/index.tsx",
-              lineNumber: 48,
+              lineNumber: 47,
               columnNumber: 9
             },
             this
@@ -412,16 +420,16 @@ var Menu = () => {
               children: [
                 /* @__PURE__ */ jsxDEV3("span", { className: "flex items-center gap-3", children: /* @__PURE__ */ jsxDEV3("p", { className: "text-[15px] hover:cursor-pointer font-clashSemibold uppercase", children: "Rencontrons nous" }, void 0, !1, {
                   fileName: "app/components/header/index.tsx",
-                  lineNumber: 66,
+                  lineNumber: 65,
                   columnNumber: 13
                 }, this) }, void 0, !1, {
                   fileName: "app/components/header/index.tsx",
-                  lineNumber: 65,
+                  lineNumber: 64,
                   columnNumber: 11
                 }, this),
                 /* @__PURE__ */ jsxDEV3("div", { className: "border-b-black border-b-2 w-[165px] h-10 absolute transition-transform duration-300 transform origin-left hover:scale-x-0" }, void 0, !1, {
                   fileName: "app/components/header/index.tsx",
-                  lineNumber: 68,
+                  lineNumber: 67,
                   columnNumber: 11
                 }, this)
               ]
@@ -430,7 +438,7 @@ var Menu = () => {
             !0,
             {
               fileName: "app/components/header/index.tsx",
-              lineNumber: 62,
+              lineNumber: 61,
               columnNumber: 9
             },
             this
@@ -441,7 +449,7 @@ var Menu = () => {
       !0,
       {
         fileName: "app/components/header/index.tsx",
-        lineNumber: 40,
+        lineNumber: 39,
         columnNumber: 7
       },
       this
@@ -450,18 +458,18 @@ var Menu = () => {
       /* @__PURE__ */ jsxDEV3(
         "div",
         {
-          className: `${headerColor} flex justify-between items-center py-[30px] px-[30px]`,
+          className: `${headerColor} flex justify-between items-center py-[32px] px-[30px] mt-2`,
           children: [
-            /* @__PURE__ */ jsxDEV3("div", { onClick: () => router("/home"), className: "hover:cursor-pointer h-[70px]", children: /* @__PURE__ */ jsxDEV3("img", { src: Images.newlogo, alt: "logo", width: "50px", height: "50px" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV3("div", { onClick: () => router("/home"), className: "hover:cursor-pointer h-[80px]", children: /* @__PURE__ */ jsxDEV3("img", { src: Images.newlogo, alt: "logo", width: "60px", height: "50px" }, void 0, !1, {
               fileName: "app/components/header/index.tsx",
-              lineNumber: 76,
+              lineNumber: 75,
               columnNumber: 13
             }, this) }, void 0, !1, {
               fileName: "app/components/header/index.tsx",
-              lineNumber: 75,
+              lineNumber: 74,
               columnNumber: 11
             }, this),
-            /* @__PURE__ */ jsxDEV3("div", { className: "flex items-center", children: /* @__PURE__ */ jsxDEV3("button", { onClick: toggleMenu, className: "text-grayBlack focus:outline-none flex gap-0.5", children: [
+            /* @__PURE__ */ jsxDEV3("div", { className: "flex items-center mb-6", children: /* @__PURE__ */ jsxDEV3("button", { onClick: toggleMenu, className: "text-grayBlack focus:outline-none flex gap-1", children: [
               /* @__PURE__ */ jsxDEV3(
                 motion.div,
                 {
@@ -474,7 +482,7 @@ var Menu = () => {
                 !1,
                 {
                   fileName: "app/components/header/index.tsx",
-                  lineNumber: 80,
+                  lineNumber: 79,
                   columnNumber: 15
                 },
                 this
@@ -491,7 +499,7 @@ var Menu = () => {
                 !1,
                 {
                   fileName: "app/components/header/index.tsx",
-                  lineNumber: 86,
+                  lineNumber: 85,
                   columnNumber: 15
                 },
                 this
@@ -508,18 +516,18 @@ var Menu = () => {
                 !1,
                 {
                   fileName: "app/components/header/index.tsx",
-                  lineNumber: 92,
+                  lineNumber: 91,
                   columnNumber: 15
                 },
                 this
               )
             ] }, void 0, !0, {
               fileName: "app/components/header/index.tsx",
-              lineNumber: 79,
+              lineNumber: 78,
               columnNumber: 13
             }, this) }, void 0, !1, {
               fileName: "app/components/header/index.tsx",
-              lineNumber: 78,
+              lineNumber: 77,
               columnNumber: 11
             }, this)
           ]
@@ -528,7 +536,7 @@ var Menu = () => {
         !0,
         {
           fileName: "app/components/header/index.tsx",
-          lineNumber: 72,
+          lineNumber: 71,
           columnNumber: 9
         },
         this
@@ -543,11 +551,11 @@ var Menu = () => {
           children: [
             /* @__PURE__ */ jsxDEV3("div", { onClick: toggleMenu, className: "m-5", children: /* @__PURE__ */ jsxDEV3(Close, { className: "w-8 h-8" }, void 0, !1, {
               fileName: "app/components/header/index.tsx",
-              lineNumber: 109,
+              lineNumber: 108,
               columnNumber: 15
             }, this) }, void 0, !1, {
               fileName: "app/components/header/index.tsx",
-              lineNumber: 108,
+              lineNumber: 107,
               columnNumber: 13
             }, this),
             /* @__PURE__ */ jsxDEV3("div", { className: "flex items-center flex-col gap-6 w-full", children: pathTextMappingMobile.map((route) => /* @__PURE__ */ jsxDEV3(
@@ -556,20 +564,20 @@ var Menu = () => {
                 onClick: () => {
                   handleChange(route.path), toggleMenu();
                 },
-                className: "text-orange uppercase  hover:cursor-pointer text-titleMobile font-neueRegular",
+                className: "text-orange uppercase hover:cursor-pointer text-titleMobile font-neueRegular",
                 children: route.name
               },
               route.path,
               !1,
               {
                 fileName: "app/components/header/index.tsx",
-                lineNumber: 113,
+                lineNumber: 112,
                 columnNumber: 17
               },
               this
             )) }, void 0, !1, {
               fileName: "app/components/header/index.tsx",
-              lineNumber: 111,
+              lineNumber: 110,
               columnNumber: 13
             }, this)
           ]
@@ -578,19 +586,19 @@ var Menu = () => {
         !0,
         {
           fileName: "app/components/header/index.tsx",
-          lineNumber: 102,
+          lineNumber: 101,
           columnNumber: 11
         },
         this
       )
     ] }, void 0, !0, {
       fileName: "app/components/header/index.tsx",
-      lineNumber: 71,
+      lineNumber: 70,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/components/header/index.tsx",
-    lineNumber: 39,
+    lineNumber: 38,
     columnNumber: 5
   }, this);
 };
@@ -1776,9 +1784,10 @@ __export(capiche_exports, {
 });
 import { useEffect as useEffect5 } from "react";
 import { motion as motion3 } from "framer-motion";
+import { useNavigate as useNavigate4 } from "@remix-run/react";
 import { jsxDEV as jsxDEV12 } from "react/jsx-dev-runtime";
 function Capiche() {
-  let { setHeaderColor } = useHeaderColor();
+  let { setHeaderColor } = useHeaderColor(), router = useNavigate4();
   useEffect5(() => {
     setHeaderColor("mainColor");
   }, [setHeaderColor]);
@@ -1786,33 +1795,33 @@ function Capiche() {
     duration: 0.7,
     ease: [0.43, 0.13, 0.23, 0.96]
   }, capicheContent = [
-    { title: "Concept.", content: "Capiche est un site fictif de revente de jeux de soci\xE9t\xE9 de seconde main. Sa particularit\xE9 est d\u2019avoir des sections sp\xE9cialis\xE9es dans le vintage et les produits japonais, toujours d\u2019occasion. " },
-    { title: "Intention", content: "L\u2019univers et le ton se veulent l\xE9ger, la palette de couleur est un rappel du logo. Le site et l\u2019application mobile sont \xE0 la fois ludiques et fond\xE9s sur les principes de L\u2019UX design pour une exp\xE9rience utilisateur optimum. " },
+    { title: "Concept.", content: "Capiche est un site fictif sp\xE9cialis\xE9 dans la revente de jeux de soci\xE9t\xE9 de seconde main. Il se distingue par ses sections d\xE9di\xE9es aux produits vintage et japonais, toujours d'occasion. L\u2019objectif est d\u2019encourager le consommateur \xE0 un mode de consommation plus responsable via une plateforme ludique et moderne." },
+    { title: "Intention", content: "L\u2019univers et le ton se veulent l\xE9ger, la palette de couleur est un rappel du logo. Le site et l\u2019application mobile sont \xE0 la fois ludiques et fond\xE9s sur les principes de L\u2019UX design pour une exp\xE9rience utilisateur optimum." },
     { title: "R\xE9alisation", content: "Lorem ipsum dolor sit amet consectetur. Orci sed vulputate molestie et aliquet. Sem sapien eget lectus elementum vulputate. Purus congue ullamcorper id at felis et." }
   ];
   return /* @__PURE__ */ jsxDEV12("div", { className: "h-full flex-col items-center justify-center mx-auto", children: [
     /* @__PURE__ */ jsxDEV12("div", { className: "flex-col my-20", children: [
-      /* @__PURE__ */ jsxDEV12("p", { className: "uppercase font-neueRegular md:text-title text-titleMobile text-redHome text-center my-40", children: "Capiche" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV12("p", { className: "uppercase font-neueRegular md:text-title text-capicheMobile text-redHome text-center mt-[180px] mb-[100px]", children: "Capiche" }, void 0, !1, {
         fileName: "app/routes/capiche.tsx",
-        lineNumber: 27,
+        lineNumber: 29,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV12(
         motion3.div,
         {
-          className: "mx-auto flex-col flex items-center gap-3 mb-20",
+          className: "mx-auto flex-col flex items-center gap-3 mb-[150px]",
           initial: { opacity: 0, y: 100 },
           animate: { opacity: 1, y: 0 },
           transition: { ...timing2, delay: 0.6 },
           children: [
             /* @__PURE__ */ jsxDEV12(BigArrow, {}, void 0, !1, {
               fileName: "app/routes/capiche.tsx",
-              lineNumber: 34,
+              lineNumber: 36,
               columnNumber: 11
             }, this),
-            /* @__PURE__ */ jsxDEV12("p", { className: "font-footer uppercase font-bold leading-[20px]", children: "DISCOVER" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV12("p", { className: "font-footer uppercase font-bold leading-[20px] text-[14px]", children: "DISCOVER" }, void 0, !1, {
               fileName: "app/routes/capiche.tsx",
-              lineNumber: 35,
+              lineNumber: 37,
               columnNumber: 11
             }, this)
           ]
@@ -1821,65 +1830,100 @@ function Capiche() {
         !0,
         {
           fileName: "app/routes/capiche.tsx",
-          lineNumber: 28,
+          lineNumber: 30,
           columnNumber: 9
         },
         this
       )
     ] }, void 0, !0, {
       fileName: "app/routes/capiche.tsx",
-      lineNumber: 26,
+      lineNumber: 28,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV12("div", { className: "w-full h-auto my-20", children: /* @__PURE__ */ jsxDEV12("img", { src: Images.capicheBG, alt: "capiche background" }, void 0, !1, {
-      fileName: "app/routes/capiche.tsx",
-      lineNumber: 39,
-      columnNumber: 9
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/capiche.tsx",
-      lineNumber: 38,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ jsxDEV12("div", { className: "w-auto m-20", children: /* @__PURE__ */ jsxDEV12("p", { className: "font-neueCondensed text-left leading-[90%] text-orange text-[25px]", children: [
-      "Une alternative \xE9cologique",
-      /* @__PURE__ */ jsxDEV12("br", {}, void 0, !1, {
-        fileName: "app/routes/capiche.tsx",
-        lineNumber: 42,
-        columnNumber: 117
-      }, this),
-      " \xE0 vos soir\xE9es endiabl\xE9es. "
-    ] }, void 0, !0, {
-      fileName: "app/routes/capiche.tsx",
-      lineNumber: 42,
-      columnNumber: 9
-    }, this) }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV12("div", { className: "w-full h-auto mb-16 mt-20", children: /* @__PURE__ */ jsxDEV12("img", { src: Images.capicheBG, alt: "capiche background", height: "260px" }, void 0, !1, {
       fileName: "app/routes/capiche.tsx",
       lineNumber: 41,
+      columnNumber: 9
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/capiche.tsx",
+      lineNumber: 40,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV12("div", { className: "flex gap-6 items-center w-full overflow-x-auto", children: capicheContent.map((content, index) => /* @__PURE__ */ jsxDEV12("div", { className: "flex flex-col items-start", children: [
-      /* @__PURE__ */ jsxDEV12("p", { children: content.title }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV12("div", { className: "w-auto mt-12 mb-10 mx-10", children: /* @__PURE__ */ jsxDEV12("p", { className: "font-neueCondensed text-left leading-[90%] text-orange text-[30px]", children: [
+      "Une alternative",
+      /* @__PURE__ */ jsxDEV12("br", {}, void 0, !1, {
         fileName: "app/routes/capiche.tsx",
-        lineNumber: 47,
+        lineNumber: 44,
+        columnNumber: 106
+      }, this),
+      " \xE9cologique \xE0 vos soir\xE9es",
+      /* @__PURE__ */ jsxDEV12("br", {}, void 0, !1, {
+        fileName: "app/routes/capiche.tsx",
+        lineNumber: 44,
+        columnNumber: 140
+      }, this),
+      " endiabl\xE9es. "
+    ] }, void 0, !0, {
+      fileName: "app/routes/capiche.tsx",
+      lineNumber: 44,
+      columnNumber: 9
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/capiche.tsx",
+      lineNumber: 43,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV12("div", { className: "flex gap-6 items-start w-full overflow-auto h-full size-12 px-4 mb-10", children: capicheContent.map((content, index) => /* @__PURE__ */ jsxDEV12("div", { className: "flex flex-col items-start pl-6 pb-6", children: [
+      /* @__PURE__ */ jsxDEV12("p", { className: "text-redHome font-neueSemiBold lowercase text-[25px] mb-5", children: content.title }, void 0, !1, {
+        fileName: "app/routes/capiche.tsx",
+        lineNumber: 49,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ jsxDEV12("p", { children: content.content }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV12("p", { className: "font-footer text-[16px] min-w-[320px]", children: content.content }, void 0, !1, {
         fileName: "app/routes/capiche.tsx",
-        lineNumber: 48,
+        lineNumber: 50,
         columnNumber: 13
       }, this)
     ] }, index, !0, {
       fileName: "app/routes/capiche.tsx",
-      lineNumber: 46,
+      lineNumber: 48,
       columnNumber: 11
     }, this)) }, void 0, !1, {
       fileName: "app/routes/capiche.tsx",
-      lineNumber: 44,
+      lineNumber: 46,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV12("div", { className: "bg-saumon mt-10 flex flex-col gap-3 justify-center py-20", children: /* @__PURE__ */ jsxDEV12("div", { className: "flex gap-3 justify-evenly", children: [
+      /* @__PURE__ */ jsxDEV12("img", { src: Images.capicheImg1, width: "160px", className: "-mt-10" }, void 0, !1, {
+        fileName: "app/routes/capiche.tsx",
+        lineNumber: 56,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV12("img", { src: Images.capicheImg2, width: "160px", className: "-mb-10" }, void 0, !1, {
+        fileName: "app/routes/capiche.tsx",
+        lineNumber: 57,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/capiche.tsx",
+      lineNumber: 55,
+      columnNumber: 9
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/capiche.tsx",
+      lineNumber: 54,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV12("div", { className: "my-20", children: /* @__PURE__ */ jsxDEV12("div", { onClick: () => router("/projects"), className: "py-2 px-2 transition-all duration-300 ease-in-out font-bold text-[10px] text-center text-grayBlack uppercase hover:text-white hover:bg-grayBlack translate hover:cursor-pointer border-black border rounded-full min-w-[100px] max-w-[130px] mx-auto", children: "Autres projets" }, void 0, !1, {
+      fileName: "app/routes/capiche.tsx",
+      lineNumber: 61,
+      columnNumber: 9
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/capiche.tsx",
+      lineNumber: 60,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/capiche.tsx",
-    lineNumber: 25,
+    lineNumber: 27,
     columnNumber: 5
   }, this);
 }
@@ -2421,11 +2465,11 @@ import { motion as motion5 } from "framer-motion";
 
 // app/components/home/description.tsx
 import { useEffect as useEffect8, useState as useState7 } from "react";
-import { useNavigate as useNavigate4 } from "@remix-run/react";
+import { useNavigate as useNavigate5 } from "@remix-run/react";
 import { Parallax } from "react-scroll-parallax";
 import { jsxDEV as jsxDEV16 } from "react/jsx-dev-runtime";
 var Description = () => {
-  let router = useNavigate4(), [scrollPosition, setScrollPosition] = useState7(0), [scrolled, setScrolled] = useState7(!1), isServicesSectionVisible = scrollPosition > 1350;
+  let router = useNavigate5(), [scrollPosition, setScrollPosition] = useState7(0), [scrolled, setScrolled] = useState7(!1), isServicesSectionVisible = scrollPosition > 1350;
   return useEffect8(() => {
     let handleScroll = () => {
       setScrollPosition(window.scrollY), window.scrollY > 1150 && setScrolled(!0);
@@ -2925,11 +2969,11 @@ var timing = {
     }, this),
     /* @__PURE__ */ jsxDEV17(Parallax2, { speed: -15, children: /* @__PURE__ */ jsxDEV17(description_default, {}, void 0, !1, {
       fileName: "app/components/home/index.tsx",
-      lineNumber: 36,
+      lineNumber: 35,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/components/home/index.tsx",
-      lineNumber: 35,
+      lineNumber: 34,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
@@ -3229,13 +3273,13 @@ var values_exports = {};
 __export(values_exports, {
   default: () => Values
 });
-import { useNavigate as useNavigate5 } from "@remix-run/react";
+import { useNavigate as useNavigate6 } from "@remix-run/react";
 import { useEffect as useEffect12 } from "react";
 import { isMobile as isMobile2 } from "react-device-detect";
 import { ParallaxProvider as ParallaxProvider2 } from "react-scroll-parallax";
 import { jsxDEV as jsxDEV21 } from "react/jsx-dev-runtime";
 function Values() {
-  let { setHeaderColor } = useHeaderColor(), router = useNavigate5();
+  let { setHeaderColor } = useHeaderColor(), router = useNavigate6();
   return useEffect12(() => {
     isMobile2 || setHeaderColor("linear-values");
   }, [setHeaderColor]), /* @__PURE__ */ jsxDEV21(ParallaxProvider2, { children: [
@@ -3689,7 +3733,7 @@ var about_exports = {};
 __export(about_exports, {
   default: () => About
 });
-import { useNavigate as useNavigate6 } from "@remix-run/react";
+import { useNavigate as useNavigate7 } from "@remix-run/react";
 import { useEffect as useEffect13 } from "react";
 import { ParallaxProvider as ParallaxProvider3 } from "react-scroll-parallax";
 
@@ -3708,7 +3752,7 @@ var BigDownArrow = () => /* @__PURE__ */ jsxDEV22("svg", { xmlns: "http://www.w3
 // app/routes/about.tsx
 import { jsxDEV as jsxDEV23 } from "react/jsx-dev-runtime";
 function About() {
-  let { setHeaderColor } = useHeaderColor(), router = useNavigate6();
+  let { setHeaderColor } = useHeaderColor(), router = useNavigate7();
   return useEffect13(() => {
     setHeaderColor("linear-background");
   }, [setHeaderColor]), /* @__PURE__ */ jsxDEV23(ParallaxProvider3, { children: [
@@ -4181,7 +4225,7 @@ function Home() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-75X5CYH4.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-FWVAADBG.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-43WGSL2O.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-U5Q4TV5F.js", imports: ["/build/_shared/chunk-APMP54XW.js", "/build/_shared/chunk-YTWU66CS.js", "/build/_shared/chunk-JOGLTZST.js", "/build/_shared/chunk-NMZL6IDN.js", "/build/_shared/chunk-DIGSRBO4.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-ICPWJYAP.js", imports: ["/build/_shared/chunk-X2OUAU7S.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-O7O3W72P.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-DE2RUPGG.js", imports: ["/build/_shared/chunk-5T6BUAZE.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/capiche": { id: "routes/capiche", parentId: "root", path: "capiche", index: void 0, caseSensitive: void 0, module: "/build/routes/capiche-GHITOHR3.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/cards": { id: "routes/cards", parentId: "root", path: "cards", index: void 0, caseSensitive: void 0, module: "/build/routes/cards-W4X4WYIB.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-C4RRCPVE.js", imports: ["/build/_shared/chunk-O7O3W72P.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/home": { id: "routes/home", parentId: "root", path: "home", index: void 0, caseSensitive: void 0, module: "/build/routes/home-AYFREOKM.js", imports: ["/build/_shared/chunk-X2OUAU7S.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-O7O3W72P.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/logofolio": { id: "routes/logofolio", parentId: "root", path: "logofolio", index: void 0, caseSensitive: void 0, module: "/build/routes/logofolio-PL6JJT4Q.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/mosaic": { id: "routes/mosaic", parentId: "root", path: "mosaic", index: void 0, caseSensitive: void 0, module: "/build/routes/mosaic-I67JMF2Y.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-VPMZWTI6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/projects": { id: "routes/projects", parentId: "root", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/projects-JK3AXN3C.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-ZOOF7ALM.js", imports: ["/build/_shared/chunk-IR7NE7RZ.js", "/build/_shared/chunk-Z7AT2O2U.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/values": { id: "routes/values", parentId: "root", path: "values", index: void 0, caseSensitive: void 0, module: "/build/routes/values-S4CYAM7F.js", imports: ["/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-IR7NE7RZ.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "3847c12d", hmr: { runtime: "/build/_shared/chunk-43WGSL2O.js", timestamp: 1712867154548 }, url: "/build/manifest-3847C12D.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-75X5CYH4.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-FWVAADBG.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-43WGSL2O.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-24QUDE7A.js", imports: ["/build/_shared/chunk-APMP54XW.js", "/build/_shared/chunk-T5TQ65FD.js", "/build/_shared/chunk-JOGLTZST.js", "/build/_shared/chunk-NMZL6IDN.js", "/build/_shared/chunk-DIGSRBO4.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-YCJFWFN5.js", imports: ["/build/_shared/chunk-QAIRQCHO.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-O7O3W72P.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-D26OOSZL.js", imports: ["/build/_shared/chunk-5T6BUAZE.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/capiche": { id: "routes/capiche", parentId: "root", path: "capiche", index: void 0, caseSensitive: void 0, module: "/build/routes/capiche-Z2E4W56L.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/cards": { id: "routes/cards", parentId: "root", path: "cards", index: void 0, caseSensitive: void 0, module: "/build/routes/cards-BKTA7OK5.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-C4RRCPVE.js", imports: ["/build/_shared/chunk-O7O3W72P.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/home": { id: "routes/home", parentId: "root", path: "home", index: void 0, caseSensitive: void 0, module: "/build/routes/home-6AJTBBGH.js", imports: ["/build/_shared/chunk-QAIRQCHO.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-O7O3W72P.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/logofolio": { id: "routes/logofolio", parentId: "root", path: "logofolio", index: void 0, caseSensitive: void 0, module: "/build/routes/logofolio-V3NFMFL2.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/mosaic": { id: "routes/mosaic", parentId: "root", path: "mosaic", index: void 0, caseSensitive: void 0, module: "/build/routes/mosaic-I67JMF2Y.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-U2YF4PXP.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/projects": { id: "routes/projects", parentId: "root", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/projects-JK3AXN3C.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-NX7JRWYD.js", imports: ["/build/_shared/chunk-IR7NE7RZ.js", "/build/_shared/chunk-Z7AT2O2U.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/values": { id: "routes/values", parentId: "root", path: "values", index: void 0, caseSensitive: void 0, module: "/build/routes/values-B3C5TGJE.js", imports: ["/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-IR7NE7RZ.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "de3b108e", hmr: { runtime: "/build/_shared/chunk-43WGSL2O.js", timestamp: 1712869992457 }, url: "/build/manifest-DE3B108E.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "development", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1, v3_relativeSplatPath: !1, v3_throwAbortReason: !1 }, publicPath = "/build/", entry = { module: entry_server_node_exports }, routes = {
