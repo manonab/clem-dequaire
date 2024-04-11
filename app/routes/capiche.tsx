@@ -12,6 +12,7 @@ export default function Capiche() {
   useEffect(() => {
     setHeaderColor("mainColor")
   }, [setHeaderColor]);
+
   const timing = {
     duration: 0.7,
     ease: [0.43, 0.13, 0.23, 0.96],

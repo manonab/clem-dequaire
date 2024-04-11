@@ -1,57 +1,64 @@
 import { useEffect } from "react";
+import { BigArrow } from "~/assets/big-arrow";
 import { Images } from "~/common/images";
 import { useHeaderColor } from "~/context";
+import { motion } from "framer-motion";
+import { useNavigate } from "@remix-run/react";
 
 export default function PortFolio() {
   const { setHeaderColor } = useHeaderColor();
+  const router = useNavigate();
 
   useEffect(() => {
     setHeaderColor("mainColor")
   }, [setHeaderColor]);
+
+  const timing = {
+    duration: 0.7,
+    ease: [0.43, 0.13, 0.23, 0.96],
+  };
+  const portfolioContent = [
+    { title: "Concept.", content: "J'ai conçu ce portfolio comme une introduction à mon univers, mon style et mes valeurs. Des arrière-plans neutres mais une des couleurs de texte saturées, une police douce mais imposante... L’ensemble se pose en miroir de mes engagements et croyances : un design simple, avenant mais résolument affirmé." },
+    { title: "Intention", content: "Des fonds pastels, plutôt neutre avec des couleurs audacieuses pour les titres." },
+    { title: "Réalisation", content: "Lorem ipsum dolor sit amet consectetur. Orci sed vulputate molestie et aliquet. Sem sapien eget lectus elementum vulputate. Purus congue ullamcorper id at felis et." },
+  ];
   return (
     <div className="h-full flex-col items-center justify-center mx-auto">
-      <div className="flex-col my-20">
-        <p className="font-neueRegular text-redHome text-[200px] leading-[90%] ml-20 mb-[180px]">MOSAIC</p>
-        <div className="flex justify-evenly items-center">
-          <div className="w-[400px] h-[400px]">
-            <p className="text-[70px] mb-10 font-footer font-semibold leading-[90%]">Concept.</p>
-            <p className="font-footer h-[150px] text-base leading-[130%]">Mosaic est une association LGBTQ+ pour les jeunes de 12 à 18 ans, qui propose des activités, des programmes et des services accessibles qui visent à responsabiliser les membres de la communauté, à fournir des ressources essentielles et à défendre les droits des jeunes LGBT+. </p>
+      <div className="flex-col mt-20 mb-12">
+        <p className="uppercase font-neueRegular md:text-title text-capicheMobile text-redHome text-center mt-[180px] mb-[100px]">Portfolio</p>
+        <motion.div
+          className="mx-auto flex-col flex items-center gap-3 mb-[150px]"
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ ...timing, delay: 0.6 }}
+        >
+          <BigArrow />
+          <p className="font-footer uppercase font-bold leading-[20px] text-[14px]">DISCOVER</p>
+        </motion.div>
+      </div>
+      <div className="w-auto mt-6 mb-10 mx-10">
+        <p className="font-neueCondensed text-left leading-[90%] text-orange text-[30px]">Changer les choses, une<br></br> idée à la fois. </p>
+      </div>
+      <div className="flex gap-6 items-start w-full overflow-auto h-full size-12 px-4 mb-10">
+        {portfolioContent.map((content, index) => (
+          <div key={index} className="flex flex-col items-start pl-6 pb-6">
+            <p className="text-redHome font-neueSemiBold lowercase text-[25px] mb-5">{content.title}</p>
+            <p className="font-footer text-[16px] min-w-[320px]">{content.content}</p>
           </div>
-          <div className="w-[400px] h-[400px]">
-            <p className="text-[70px] mb-10 font-footer font-semibold leading-[90%]">Mission.</p>
-            <p className="font-footer text-base leading-[130%] h-[150px]">Mon travail pour l’association The Mosaic Trust a été de créer entièrement un plan de communication pour leur réseaux sociaux. </p>
-          </div>
+        ))}
+      </div>
+      <div className="bg-saumon mt-10 flex flex-col gap-3 justify-center py-20">
+        <div className="flex gap-3 justify-evenly">
+          <img src={Images.capicheImg1} width="160px" className="-mt-10" />
+          <img src={Images.capicheImg2} width="160px" className="-mb-10" />
         </div>
       </div>
-      <div className="bg-saumon h-full pt-[150px] pb-[200px]">
-        <img src={Images.rectangle} className="absolute left-[10%] z-0" />
-        <div className="flex items-center mt-[150px] ml-[150px] jusitfy-center">
-          <img src={Images.mosaic1} className="ml-[230px] z-[10]" />
-          <img src={Images.mosaic2} className="ml-[100px]" />
+      <div className="my-20">
+        <div onClick={() => router('/projects')} className="py-2 px-2 transition-all duration-300 ease-in-out font-bold text-[10px] text-center text-grayBlack uppercase hover:text-white hover:bg-grayBlack translate hover:cursor-pointer border-black border rounded-full min-w-[100px] max-w-[130px] mx-auto">
+          Autres projets
         </div>
       </div>
-      <div className="h-screen bg-mainColor">
-        <p className="w-[1000px] ml-20 mt-20 leading-[100%] text-[64px] font-neueCondensed text-orange">Mosaic encourage, éduque et inspire les jeune personnes LGBTQ+ et celleux à leur côtés</p>
-        <div className="flex items-center justify-around my-20">
-          <div className="flex-col">
-            <p className="text-center mb-3 font-extrabold font-footer text-[100px] leading-[90%]">+16%</p>
-            <p className="text-right ml-16  w-[200px] font-footer text-[25px] leading-[90%]">Augmentation de l'audience en ligne.</p>
-          </div>
-          <div className="flex-col">
-            <p className="text-center mb-10 font-extrabold font-footer text-[100px] leading-[90%]">1</p>
-            <p className="text-right  w-[321px] font-footer text-[25px] leading-[90%]">Nouveau concours littéraire pour les personnes Queer.</p>
-          </div>
-          <div className="flex-col">
-            <p className="text-center mb-10 font-extrabold font-footer text-[100px] leading-[90%]">+20</p>
-            <p className="text-right  w-[321px] font-footer text-[25px] leading-[90%]">Workshops en ligne pour les jeunes LGBTQ+.</p>
-          </div>
-        </div>
-        <p className="text-center font-neueRegular my-[200px] font-semibold text-[80px] leading-[90%] text-orange">TEMOIGNAGE</p>
-        <p className="w-[1062px] text-center mx-auto font-neueCondensed text-redHome text-[64px] leading-[100%]">“Clémence was a true pleasure to work with. In joining us she created a new role for herself leveraging her skills and abilities to build on Mosaic's online presence and grew our audience [...]”.</p>
-        <p className="w-[280px] text-center mx-auto font-neueCondensed  mt-20 text-[50px] leading-[100%]">Hugh O’Keeffe</p>
-        <div className="border-t border-black w-[108px] my-5 mx-auto"></div>
-        <p className="w-[313px] pb-[100px] text-center mx-auto font-inter  text-[30px] leading-[100%]">Assistant de direction</p>
-      </div>
+
     </div>
   );
 }
