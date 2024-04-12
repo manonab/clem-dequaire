@@ -4,6 +4,8 @@ import { useHeaderColor } from "~/context";
 import { motion } from "framer-motion";
 import { BigArrow } from "~/assets/big-arrow";
 import { useNavigate } from "@remix-run/react";
+import { Capiche001 } from "~/assets/capiche/capiche-001";
+import { Capiche002 } from "~/assets/capiche/capiche-002";
 
 export default function Capiche() {
   const { setHeaderColor } = useHeaderColor();
@@ -52,13 +54,15 @@ export default function Capiche() {
           </div>
         ))}
       </div>
-      <div className="bg-saumon mt-10 flex flex-col gap-3 justify-center py-20">
-        <div className="flex gap-3 justify-evenly">
-          <img src={Images.capicheImg1} width="160px" className="-mt-10" />
-          <img src={Images.capicheImg2} width="160px" className="-mb-10" />
+      <div className="bg-saumon mt-10 pt-10 flex flex-col gap-3 justify-center">
+        <div className="flex gap-3 justify-evenly pt-10">
+          <div className="-mt-10">
+            <Capiche001 />
+          </div>
+          <Capiche002 />
         </div>
       </div>
-      <div className="py-20 bg-saumon">
+      <div className="pb-20 pt-10 bg-saumon">
         <div onClick={() => router('/projects')} className="py-2 px-2 transition-all duration-300 ease-in-out font-bold text-[10px] text-center text-grayBlack uppercase hover:text-white hover:bg-grayBlack translate hover:cursor-pointer border-black border rounded-full min-w-[100px] max-w-[130px] mx-auto">
           Autres projets
         </div>

@@ -149,7 +149,7 @@ export default function Services() {
       </div>
       <div className="md:hidden flex flex-col mx-auto mt-16">
         <p className="text-redHome font-neueSemiBold text-homeMobileTitleServices ml-10">Communication<br></br> & marketing <br></br>digital</p>
-        <p className="text-xl self-end mr-16 -mt-6 hover:cursor-pointer" onClick={handleCommunication}>{isCommunicationSelected ? "-" : "+"}</p>
+        <p className="text-2xl self-end mr-16 -mt-6 hover:cursor-pointer" onClick={handleCommunication}>{isCommunicationSelected ? "-" : "+"}</p>
         {isCommunicationSelected &&
           <div className="ml-5 mt-8">
             <p className="text-[12px] font-footer mx-4">Informer, engager et fidéliser votre audience avec une stratégie moderne et adaptée à vos problématiques.</p>
