@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 import { BigArrow } from "~/assets/big-arrow";
 import { Images } from "~/common/images";
 import { useHeaderColor } from "~/context";
@@ -10,6 +10,7 @@ export default function PortFolio() {
   const { setHeaderColor } = useHeaderColor();
   const router = useNavigate();
   const controls = useAnimation();
+  const contentRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,7 +24,7 @@ export default function PortFolio() {
       } else {
         controls.start({
           opacity: 0,
-          x: 100, // Position initiale vers la droite de la page
+          x: 100,
           transition: { duration: 0.5 }
         });
       }
@@ -45,6 +46,13 @@ export default function PortFolio() {
     duration: 0.7,
     ease: [0.43, 0.13, 0.23, 0.96],
   };
+
+  const handleScrollRight = () => {
+    if (contentRef.current) {
+      contentRef.current.scrollLeft += 380;
+    }
+  };
+
   const portfolioContent = [
     { title: "Concept.", content: "J'ai conçu ce portfolio comme une introduction à mon univers, mon style et mes valeurs. Des arrière-plans neutres mais une des couleurs de texte saturées, une police douce mais imposante... L’ensemble se pose en miroir de mes engagements et croyances : un design simple, avenant mais résolument affirmé." },
     { title: "Intention", content: "Des fonds pastels, plutôt neutre avec des couleurs audacieuses pour les titres." },
@@ -67,28 +75,30 @@ export default function PortFolio() {
       <div className="w-auto mt-6 mb-10 mx-10">
         <p className="font-neueCondensed text-left leading-[90%] text-orange text-[30px]">Changer les choses, une<br></br> idée à la fois. </p>
       </div>
-      <div className="w-[200px] absolute right-0">
+      {/* <div className="w-[200px] absolute right-0">
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
+          initial={{ opacity: 0, x: "100%" }}
           animate={controls}
+          style={{ width: "100%", height: "100%" }}
+
         >
           <img src={Images.bearMobilePortfolio} style={{ width: "100%", height: "100%" }} />
         </motion.div>
-      </div>
+      </div> */}
       <div className="flex gap-6 items-start w-full overflow-auto h-full size-12 px-4 mb-10">
         {portfolioContent.map((content, index) => (
           <div key={index} className="flex flex-col items-start pl-6 pb-6">
             <p className="text-redHome font-neueSemiBold lowercase text-[25px] mb-5">{content.title}</p>
-            <p className="font-footer text-[14px] leading-[100%] min-w-[320px]">{content.content}</p>
+            <p className="font-footer text-[16px] min-w-[320px]">{content.content}</p>
           </div>
         ))}
       </div>
       <div className="bg-saumon mt-10 flex flex-col gap-3 justify-center py-10">
-        <div className="flex gap-6 items-center w-full overflow-auto h-full size-12 px-4 py-6">
+        <div className="flex gap-6 items-center w-full overflow-auto h-full size-12 px-4 py-6" ref={contentRef}>
           <img src={Images.screenPortFolio1} width="350px" className="pl-6" />
-          <img src={Images.service} className="w-8" />
+          <img src={Images.service} className="w-8" onClick={handleScrollRight} />
           <img src={Images.screenPortFolio2} width="350px" />
-          <img src={Images.service} className="w-8" />
+          <img src={Images.service} className="w-8" onClick={handleScrollRight} />
           <img src={Images.screenPortFolio3} width="350px" />
         </div>
       </div>

@@ -24,7 +24,7 @@ export default function Values() {
         <div className="bg-mainColor h-full flex-col flex">
           <div className="flex gap-12 justify-evenly items-center">
             <div className="w-[659px] ml-10">
-              <p className="text-[18px] text-justify"><span className="font-semibold">Spécialisée en communication et marketing digital</span>, j’ai toujours ressenti ce besoin de trouver du sens. Plus qu’un métier, je vois la communication comme un moyen de partager et faire grandir des projets auxquels je crois profondément. Cinq années se sont écoulées depuis mon premier poste et cette idée s’est transformée en un défi que je relève passionnément chaque jour. Grâce à d’autres humain.e.s qui croyaient fort en leur convictions,   j’ai eu la chance de porter défis audacieux et des messages engagés. Peut-être serez vous les prochain.e.s ?</p>
+              <p className="text-[22px] leading-[100%] font-footer text-justify"><span className="font-semibold">Spécialisée en communication et marketing digital</span>, j’ai toujours ressenti ce besoin de trouver du sens. Plus qu’un métier, je vois la communication comme un moyen de partager et faire grandir des projets auxquels je crois profondément. Cinq années se sont écoulées depuis mon premier poste et cette idée s’est transformée en un défi que je relève passionnément chaque jour. Grâce à d’autres humain.e.s qui croyaient fort en leur convictions,   j’ai eu la chance de porter défis audacieux et des messages engagés. Peut-être serez vous les prochain.e.s ?</p>
             </div>
             <div className="!w-fit bg-white h-[480px] rounded-[50px] -mt-16">
               <img alt="men with pride flag" src={Images.pride} />

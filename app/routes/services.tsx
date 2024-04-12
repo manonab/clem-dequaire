@@ -151,15 +151,15 @@ export default function Services() {
         <p className="text-redHome font-neueSemiBold text-homeMobileTitleServices ml-10">Communication<br></br> & marketing <br></br>digital</p>
         <p className="text-xl self-end mr-16 -mt-6 hover:cursor-pointer" onClick={handleCommunication}>{isCommunicationSelected ? "-" : "+"}</p>
         {isCommunicationSelected &&
-          <div className="ml-5 mt-10">
+          <div className="ml-5 mt-8">
             <p className="text-[12px] font-footer mx-4">Informer, engager et fidéliser votre audience avec une stratégie moderne et adaptée à vos problématiques.</p>
             <ul className="list-disc ml-10 mt-5">
-              <li className="text-[12px] font-footer">Community management</li>
-              <li className="text-[12px] font-footer">SEO</li>
-              <li className="text-[12px] font-footer">Gestion de projet</li>
-              <li className="text-[12px] font-footer">Analyse de données (analytics)</li>
-              <li className="text-[12px] font-footer">Rédaction</li>
-              <li className="text-[12px] font-footer">Campagne payantes (ads)</li>
+              <li className="text-[12px] font-footer font-medium">Community management</li>
+              <li className="text-[12px] font-footer font-medium">SEO</li>
+              <li className="text-[12px] font-footer font-medium">Gestion de projet</li>
+              <li className="text-[12px] font-footer font-medium">Analyse de données (analytics)</li>
+              <li className="text-[12px] font-footer font-medium">Rédaction</li>
+              <li className="text-[12px] font-footer font-medium">Campagne payantes (ads)</li>
             </ul>
           </div>
         }
@@ -167,12 +167,12 @@ export default function Services() {
         <p className="text-redHome ml-10 font-neueSemiBold text-homeMobileTitleServices">Design</p>
         <p className="text-xl self-end mr-16 -mt-6 hover:cursor-pointer" onClick={handleDesign}>{isDesignSelected ? "-" : "+"}</p>
         {isDesignSelected &&
-          <div className="ml-5 mt-10">
+          <div className="ml-5 mt-8">
             <p className="text-[12px] font-footer mx-4">Donner de la puissance à vos messages avec des designs marquants et intuitifs, notamment sur les réseaux.</p>
             <ul className="list-disc ml-10 mt-5">
-              <li className="text-[12px] font-footer">UX/UI design (Figma)</li>
-              <li className="text-[12px] font-footer">Cartes de visite, brochures...</li>
-              <li className="text-[12px] font-footer">Réseaux sociaux (posts, stories).</li>
+              <li className="text-[12px] font-footer font-medium">UX/UI design (Figma)</li>
+              <li className="text-[12px] font-footer font-medium">Cartes de visite, brochures...</li>
+              <li className="text-[12px] font-footer font-medium">Réseaux sociaux (posts, stories).</li>
             </ul>
           </div>
         }
@@ -180,11 +180,11 @@ export default function Services() {
         <p className="text-redHome ml-10 font-neueSemiBold text-homeMobileTitleServices">Consulting</p>
         <p className="text-xl self-end mr-16 -mt-6 hover:cursor-pointer" onClick={handleConsulting}>{isConsultingSelected ? "-" : "+"}</p>
         {isConsultingSelected &&
-          <div className="ml-5 mt-10">
+          <div className="ml-5 mt-8">
             <p className="text-[12px] font-footer mx-4">Vous portez vers une communication plus éthique et solidaire qui répond aux problématiques d’aujourd’hui.</p>
             <ul className="list-disc ml-10 mt-5">
-              <li className="text-[12px] font-footer">Relecture inclusive</li>
-              <li className="text-[12px] font-footer">Formation & sensibilisation aux questions LGBTQ+ & féministes</li>
+              <li className="text-[12px] font-footer font-medium">Relecture inclusive</li>
+              <li className="text-[12px] font-footer font-medium">Formation & sensibilisation aux questions LGBTQ+<br></br> & féministes</li>
             </ul>
           </div>
         }

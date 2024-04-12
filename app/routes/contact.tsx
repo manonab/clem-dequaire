@@ -40,6 +40,7 @@ export default function Contact() {
   const handleSendEmail = () => {
     emailjs.send("service_bws8nok", "template_xk52e9b", {
       user_name: name,
+      user_lastName: lastName,
       message: message,
       user_email: email,
       user_object: subject,
@@ -89,14 +90,14 @@ export default function Contact() {
             <p className="font-inter mb-1">Nom</p>
             <input
               value={name}
-              onChange={(e) => setName(e.target.value)}
+              onChange={(e) => setLastName(e.target.value)}
               className="p-2 rounded-[20px] bg-mainColor border border-black" />
           </div>
           <div>
             <p className="font-inter mb-1">Email</p>
             <input
               value={lastName}
-              onChange={(e) => setLastName(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
               className="p-2 rounded-[20px] bg-mainColor border border-black" />
           </div>
         </div>
@@ -127,17 +128,17 @@ export default function Contact() {
           <div className="flex-col flex items-start">
             <p className="font-inter mb-2">Nom</p>
             <input
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="p-2 rounded-[5px] bg-mainColor border border-black w-full"
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+              className="p-2 max-w-[164px] max-h-[55px] rounded-[5px] bg-mainColor border border-black w-full"
             />
           </div>
           <div className="flex-col flex items-start">
             <p className="font-inter mb-2">Prénom</p>
             <input
-              value={lastName}
-              onChange={(e) => setLastName(e.target.value)}
-              className="p-2 rounded-[5px] bg-mainColor border border-black w-full"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="px-2 py-1 max-w-[164px] max-h-[55px] rounded-[5px] bg-mainColor border border-black w-full"
             />
           </div>
         </div>
@@ -147,7 +148,7 @@ export default function Contact() {
             <input
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="p-2 rounded-[5px] bg-mainColor border border-black w-full"
+              className="px-2 py-1 max-w-[164px] max-h-[55px] rounded-[5px] bg-mainColor border border-black w-full"
             />
           </div>
           <div className="flex-col flex items-start">
@@ -155,19 +156,19 @@ export default function Contact() {
             <input
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
-              className="p-2 rounded-[5px] bg-mainColor border border-black w-full"
+              className="px-2 py-1 max-w-[164px] max-h-[55px] rounded-[5px] bg-mainColor border border-black w-full"
             />
           </div>
         </div>
         <div className="flex-col flex items-start">
-          <p className="font-inter mb-1">Votre message</p>
+          <p className="font-inter ml-5 my-1">Votre message</p>
           <textarea
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="p-2 rounded-[5px] bg-mainColor border border-black w-full min-h-[200px]"
+            className="px-2 py-1 min-w-[370px] rounded-[5px] bg-mainColor border border-black mx-auto min-h-[200px] "
           />
         </div>
-        <div className="flex items-center my-10 justify-between gap-3">
+        <div className="flex items-center my-10 justify-around w-auto">
           <div
             className="hover:cursor-pointer border-black border rounded-3xl p-2 mx-auto max-w-[100px] max-h-[25px]"
             onClick={handleSendEmail}
@@ -175,7 +176,7 @@ export default function Contact() {
             <p className="font-footer font-bold text-[6px] text-center text-grayBlack uppercase">Hit me baby (one time)</p>
           </div>
           <div className="flex flex-col items-start gap-3">
-            <p className="font-neueRegular text-[16px] leading-[90%] text-orange">Retrouvez moi également sur <br />Linkedin juste <a className="text-redHome" target="_blank" href="https://www.linkedin.com/in/cl%C3%A9mence-dequaire/?locale=en_US">ici</a>.</p>
+            <p className="font-neueCondensed text-[16px] leading-[90%] text-orange mr-1">Retrouvez moi également sur <br />Linkedin juste <a className="text-redHome" target="_blank" href="https://www.linkedin.com/in/cl%C3%A9mence-dequaire/?locale=en_US">ici</a>.</p>
             <div className="flex items-center gap-1.5">
               <MailOutlined />
               <p className="font-neueCondensed text-grayBlack text-[10px] leading-[90%]">clemence.dequaire.pro@gmail.com</p>

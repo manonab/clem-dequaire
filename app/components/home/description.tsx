@@ -101,7 +101,7 @@ const Description: React.FC = () => {
           <div className="mt-20 mb-10 m-4">
             <p className="text-condensed text-orange text-homeMobileContent max-w-[300px]">Le courage de nos idées, la passion de les partager. Parce que vous avez quelque chose à raconter, <span className="text-redHome font-bold">qu’attendons nous pour commencer ?</span></p>
           </div>
-          <p className="mx-4 mb-5 font-neueBold text-redHome text-homeMobileServices">services</p>
+          <p className="mx-4 mb-5 font-neueRegular text-redHome text-homeMobileServices">services</p>
           <div className="flex flex-col gap-3 items-start mx-4 my-5">
             <p className="text-grayBlack font-footer font-bold">Communication</p>
             <img src={Images.line} className="-mt-3" />
@@ -113,17 +113,18 @@ const Description: React.FC = () => {
             <img src={Images.line} className="-mt-3" />
           </div>
           <p className="uppercase font-footer text-grayBlack text-[8px] mx-4 my-5">EN SAVOIR PLUS</p>
-          <p className="m-4 my-5 font-neueBold text-redHome text-homeMobileServices">projets</p>
+          <p className="m-4 my-5 font-neueRegular text-redHome text-homeMobileServices">projets</p>
           <div className="overflow-auto whitespace-nowrap ml-5 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200">
             <div className="flex items-center justify-evenly space-x-6 py-5 px-10">
-              <img onClick={() => router('/capiche')}
-                src={Images.homeCapiche} alt="Image 1" className="w-[130px] mx-5" />
+              <img
+                onClick={() => router('/capiche')}
+                src={Images.homeCapiche}
+                alt="Logo de capiche" className="w-[130px] mx-5" />
               <img onClick={() => router('/mosaic')} src={Images.homeMosaic} alt="Image 2" className="w-[130px] mx-5" />
-              <img onClick={() => router('/portfolio')} src={Images.homePortfolio} alt="Image 3" className="w-[130px] mx-5" />
+              <img onClick={() => router('/portfolio')} src={Images.homePortfolio} alt="Image 3" className="w-[130px] ml-5 mr-10" />
             </div>
           </div>
           <p className="uppercase font-footer text-grayBlack text-[8px] mx-4 my-5">EN SAVOIR PLUS</p>
-
         </div>
         <div className="bg-mainColor w-full pb-18">
           <Contact />

@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Images } from "~/common/images";
+import { useHeaderColor } from "~/context";
 
 const MobileAnimation: React.FC = () => {
+  const { setHeaderColor } = useHeaderColor();
+
+  useEffect(() => {
+    setHeaderColor("mainColor")
+  }, [setHeaderColor]);
+
   return (
     <div className="flex items-center justify-center h-full z-50">
       {/* Logo initial */}
@@ -16,7 +23,7 @@ const MobileAnimation: React.FC = () => {
 
       <div className="flex gap-1.5">
         {/* Points */}
-        <motion.div
+        {/* <motion.div
           initial={{ y: 10, opacity: 0, scale: 0.5 }}
           animate={{ y: 0, opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 0.8, type: "spring", stiffness: 150 }}
@@ -33,7 +40,7 @@ const MobileAnimation: React.FC = () => {
           animate={{ y: 0, opacity: 1, scale: 1 }}
           transition={{ delay: 0.9, duration: 0.8, type: "spring", stiffness: 150 }}
           className="bg-pinkVive h-2.5 w-2.5 rounded-full"
-        ></motion.div>
+        ></motion.div> */}
       </div>
     </div>
   );
