@@ -131,7 +131,7 @@ import {
 } from "@remix-run/react";
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-GCOY7HE3.css";
+var tailwind_default = "/build/_assets/tailwind-XJ25RNV4.css";
 
 // app/components/header/index.tsx
 import { useState as useState2 } from "react";
@@ -1057,7 +1057,7 @@ function Project() {
   let { setHeaderColor } = useHeaderColor(), router = useNavigate3();
   return useEffect3(() => {
     setHeaderColor("mainColor");
-  }, [setHeaderColor]), /* @__PURE__ */ jsxDEV9("div", { className: "h-full flex flex-col gap-6 md:gap-12 items-start ml-10 my-10 md:my-auto", children: [
+  }, [setHeaderColor]), /* @__PURE__ */ jsxDEV9("div", { className: "h-full flex flex-col gap-6 md:gap-12 items-start justify-center ml-10", children: [
     /* @__PURE__ */ jsxDEV9("div", { onClick: () => router("/mosaic"), className: "hover:cursor-pointer", children: /* @__PURE__ */ jsxDEV9("p", { className: "uppercase text-titleMobile md:text-title text-left font-neueRegular text-orange hover:text-redHome", children: "MOSAIC" }, void 0, !1, {
       fileName: "app/routes/projects.tsx",
       lineNumber: 15,
@@ -2144,7 +2144,7 @@ function Contact() {
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV14("div", { className: "md:hidden flex-col flex gap-3 mx-1", children: [
-      /* @__PURE__ */ jsxDEV14("div", { className: "mx-2 flex flex-col items-start gap-4 justify-around mb-5", children: [
+      /* @__PURE__ */ jsxDEV14("div", { className: "mx-6 flex flex-col items-start gap-4 justify-around mb-5", children: [
         /* @__PURE__ */ jsxDEV14("p", { className: "text-royalBlue text-[45px] leading-[100%] font-neueRegular", children: [
           "Rencontrons",
           /* @__PURE__ */ jsxDEV14("br", {}, void 0, !1, {
@@ -2180,7 +2180,7 @@ function Contact() {
             {
               value: lastName,
               onChange: (e) => setLastName(e.target.value),
-              className: "p-2 max-w-[164px] max-h-[55px] rounded-[5px] bg-mainColor border border-black w-full"
+              className: "px-2 py-1 max-w-[164px] max-h-[55px] rounded-[5px] bg-mainColor border border-black"
             },
             void 0,
             !1,
@@ -2207,7 +2207,7 @@ function Contact() {
             {
               value: name,
               onChange: (e) => setName(e.target.value),
-              className: "px-2 py-1 max-w-[164px] max-h-[55px] rounded-[5px] bg-mainColor border border-black w-full"
+              className: "px-2 py-1 max-w-[164px] max-h-[55px] rounded-[5px] bg-mainColor border border-black"
             },
             void 0,
             !1,
@@ -2240,7 +2240,7 @@ function Contact() {
             {
               value: email,
               onChange: (e) => setEmail(e.target.value),
-              className: "px-2 py-1 max-w-[164px] max-h-[55px] rounded-[5px] bg-mainColor border border-black w-full"
+              className: "px-2 py-1 max-w-[164px] max-h-[55px] rounded-[5px] bg-mainColor border border-black"
             },
             void 0,
             !1,
@@ -2267,7 +2267,7 @@ function Contact() {
             {
               value: subject,
               onChange: (e) => setSubject(e.target.value),
-              className: "px-2 py-1 max-w-[164px] max-h-[55px] rounded-[5px] bg-mainColor border border-black w-full"
+              className: "px-2 py-1 max-w-[164px] max-h-[55px] rounded-[5px] bg-mainColor border border-black"
             },
             void 0,
             !1,
@@ -2315,11 +2315,11 @@ function Contact() {
         lineNumber: 163,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV14("div", { className: "flex items-center my-10 justify-around w-auto", children: [
+      /* @__PURE__ */ jsxDEV14("div", { className: "flex items-start mb-20 justify-around w-auto mt-5", children: [
         /* @__PURE__ */ jsxDEV14(
           "div",
           {
-            className: "hover:cursor-pointer border-black border rounded-3xl p-2 mx-auto max-w-[100px] max-h-[25px]",
+            className: "hover:cursor-pointer border-black border rounded-3xl p-2 max-w-[130px] max-h-[45px]  mr-4",
             onClick: handleSendEmail,
             children: /* @__PURE__ */ jsxDEV14("p", { className: "font-footer font-bold text-[6px] text-center text-grayBlack uppercase", children: "Hit me baby (one time)" }, void 0, !1, {
               fileName: "app/routes/contact.tsx",
@@ -2337,7 +2337,7 @@ function Contact() {
           this
         ),
         /* @__PURE__ */ jsxDEV14("div", { className: "flex flex-col items-start gap-3", children: [
-          /* @__PURE__ */ jsxDEV14("p", { className: "font-neueCondensed text-[16px] leading-[90%] text-orange mr-1", children: [
+          /* @__PURE__ */ jsxDEV14("p", { className: "font-neueCondensed text-[16px] leading-[90%] text-orange mr-8", children: [
             "Retrouvez moi \xE9galement sur ",
             /* @__PURE__ */ jsxDEV14("br", {}, void 0, !1, {
               fileName: "app/routes/contact.tsx",
@@ -2728,7 +2728,7 @@ var Description = () => {
           lineNumber: 88,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV16("div", { className: "mx-6 my-10", children: /* @__PURE__ */ jsxDEV16("p", { className: "text-condensed text-orange text-homeMobileContent max-w-[300px]", children: "Consultante en communication et cr\xE9ative passionn\xE9e, je m\u2019efforce d\u2019aider votre marque \xE0 grandir gr\xE2ce au design et au marketing digital." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV16("div", { className: "mx-6 my-10", children: /* @__PURE__ */ jsxDEV16("p", { className: "font-neueCondensed text-orange text-homeMobileContent max-w-[300px]", children: "Consultante en communication et cr\xE9ative passionn\xE9e, je m\u2019efforce d\u2019aider votre marque \xE0 grandir gr\xE2ce au design et au marketing digital." }, void 0, !1, {
           fileName: "app/components/home/description.tsx",
           lineNumber: 90,
           columnNumber: 13
@@ -2770,12 +2770,12 @@ var Description = () => {
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV16("div", { className: "bg-yellowHome w-full pb-24", children: [
-        /* @__PURE__ */ jsxDEV16("div", { className: "mt-20 mb-10 m-4", children: /* @__PURE__ */ jsxDEV16("p", { className: "text-condensed text-orange text-homeMobileContent max-w-[300px]", children: [
-          "Le courage de nos id\xE9es, la passion de les partager. Parce que vous avez quelque chose \xE0 raconter, ",
+        /* @__PURE__ */ jsxDEV16("div", { className: "mt-20 mb-10 mx-6", children: /* @__PURE__ */ jsxDEV16("p", { className: "font-neueCondensed text-orange text-homeMobileContent max-w-[300px]", children: [
+          "Le courage de nos id\xE9es, la passion de les partager. Parce que chaque histoire m\xE9rite qu'on la raconte, ",
           /* @__PURE__ */ jsxDEV16("span", { className: "text-redHome font-bold", children: "qu\u2019attendons nous pour commencer ?" }, void 0, !1, {
             fileName: "app/components/home/description.tsx",
             lineNumber: 102,
-            columnNumber: 191
+            columnNumber: 200
           }, this)
         ] }, void 0, !0, {
           fileName: "app/components/home/description.tsx",
@@ -2786,12 +2786,12 @@ var Description = () => {
           lineNumber: 101,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV16("p", { className: "mx-4 mb-5 font-neueRegular text-redHome text-homeMobileServices", children: "services" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV16("p", { className: "mx-6 mb-5 font-neueRegular text-redHome text-homeMobileServices", children: "services" }, void 0, !1, {
           fileName: "app/components/home/description.tsx",
           lineNumber: 104,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV16("div", { className: "flex flex-col gap-3 items-start mx-4 my-5", children: [
+        /* @__PURE__ */ jsxDEV16("div", { className: "flex flex-col gap-3 items-start mx-6 my-5", children: [
           /* @__PURE__ */ jsxDEV16("p", { className: "text-grayBlack font-footer font-bold", children: "Communication" }, void 0, !1, {
             fileName: "app/components/home/description.tsx",
             lineNumber: 106,
@@ -2837,17 +2837,17 @@ var Description = () => {
           lineNumber: 105,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV16("p", { className: "uppercase font-footer text-grayBlack text-[8px] mx-4 my-5", children: "EN SAVOIR PLUS" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV16("p", { className: "uppercase font-footer text-grayBlack text-[8px] mx-4 my-5", onClick: () => router("services"), children: "EN SAVOIR PLUS" }, void 0, !1, {
           fileName: "app/components/home/description.tsx",
           lineNumber: 115,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV16("p", { className: "m-4 my-5 font-neueRegular text-redHome text-homeMobileServices", children: "projets" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV16("p", { className: "mx-6 my-5 font-neueRegular text-redHome text-homeMobileServices", children: "projets" }, void 0, !1, {
           fileName: "app/components/home/description.tsx",
           lineNumber: 116,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV16("div", { className: "overflow-auto whitespace-nowrap ml-5 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200", children: /* @__PURE__ */ jsxDEV16("div", { className: "flex items-center justify-evenly space-x-6 py-5 px-10", children: [
+        /* @__PURE__ */ jsxDEV16("div", { className: "overflow-auto whitespace-nowrap mx-5 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200", children: /* @__PURE__ */ jsxDEV16("div", { className: "flex items-center justify-evenly space-x-6 py-5 px-10", children: [
           /* @__PURE__ */ jsxDEV16(
             "img",
             {
@@ -2884,7 +2884,7 @@ var Description = () => {
           lineNumber: 117,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV16("p", { className: "uppercase font-footer text-grayBlack text-[8px] mx-4 my-5", children: "EN SAVOIR PLUS" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV16("p", { className: "uppercase font-footer text-grayBlack text-[8px] mx-4 my-5", onClick: () => router("project"), children: "EN SAVOIR PLUS" }, void 0, !1, {
           fileName: "app/components/home/description.tsx",
           lineNumber: 127,
           columnNumber: 11
@@ -4324,7 +4324,7 @@ function Home() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-75X5CYH4.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-FWVAADBG.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-43WGSL2O.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-JVMBCYZ5.js", imports: ["/build/_shared/chunk-GX2C7XOP.js", "/build/_shared/chunk-3SRQZ3IO.js", "/build/_shared/chunk-KXLZF2FH.js", "/build/_shared/chunk-NMZL6IDN.js", "/build/_shared/chunk-DIGSRBO4.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-DDE2DIIQ.js", imports: ["/build/_shared/chunk-VEMMLYKP.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-IR7NE7RZ.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-FZ2F3HJQ.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-PX7O5U6S.js", imports: ["/build/_shared/chunk-5T6BUAZE.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/capiche": { id: "routes/capiche", parentId: "root", path: "capiche", index: void 0, caseSensitive: void 0, module: "/build/routes/capiche-FTP6YWGZ.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/cards": { id: "routes/cards", parentId: "root", path: "cards", index: void 0, caseSensitive: void 0, module: "/build/routes/cards-F2A3EBFM.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-YVYLN56B.js", imports: ["/build/_shared/chunk-FZ2F3HJQ.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/home": { id: "routes/home", parentId: "root", path: "home", index: void 0, caseSensitive: void 0, module: "/build/routes/home-NW62HD7W.js", imports: ["/build/_shared/chunk-VEMMLYKP.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-FZ2F3HJQ.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/logofolio": { id: "routes/logofolio", parentId: "root", path: "logofolio", index: void 0, caseSensitive: void 0, module: "/build/routes/logofolio-WBCICPFX.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/mosaic": { id: "routes/mosaic", parentId: "root", path: "mosaic", index: void 0, caseSensitive: void 0, module: "/build/routes/mosaic-DY6Q22YC.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-766SKMSG.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/projects": { id: "routes/projects", parentId: "root", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/projects-HTMV7FJF.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-VIM3JJEK.js", imports: ["/build/_shared/chunk-IR7NE7RZ.js", "/build/_shared/chunk-Z7AT2O2U.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/values": { id: "routes/values", parentId: "root", path: "values", index: void 0, caseSensitive: void 0, module: "/build/routes/values-A5WTP4WY.js", imports: ["/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-IR7NE7RZ.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "1add3b1f", hmr: { runtime: "/build/_shared/chunk-43WGSL2O.js", timestamp: 1712941211233 }, url: "/build/manifest-1ADD3B1F.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-75X5CYH4.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-FWVAADBG.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-43WGSL2O.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-SUVUPQR5.js", imports: ["/build/_shared/chunk-GX2C7XOP.js", "/build/_shared/chunk-3SRQZ3IO.js", "/build/_shared/chunk-KXLZF2FH.js", "/build/_shared/chunk-NMZL6IDN.js", "/build/_shared/chunk-DIGSRBO4.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-JQYYD7CK.js", imports: ["/build/_shared/chunk-DUBDN5LM.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-IR7NE7RZ.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-4SCORDN6.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-PX7O5U6S.js", imports: ["/build/_shared/chunk-5T6BUAZE.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/capiche": { id: "routes/capiche", parentId: "root", path: "capiche", index: void 0, caseSensitive: void 0, module: "/build/routes/capiche-FTP6YWGZ.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/cards": { id: "routes/cards", parentId: "root", path: "cards", index: void 0, caseSensitive: void 0, module: "/build/routes/cards-F2A3EBFM.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-TFZQMKRM.js", imports: ["/build/_shared/chunk-4SCORDN6.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/home": { id: "routes/home", parentId: "root", path: "home", index: void 0, caseSensitive: void 0, module: "/build/routes/home-PFCJWZOG.js", imports: ["/build/_shared/chunk-DUBDN5LM.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-4SCORDN6.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/logofolio": { id: "routes/logofolio", parentId: "root", path: "logofolio", index: void 0, caseSensitive: void 0, module: "/build/routes/logofolio-WBCICPFX.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/mosaic": { id: "routes/mosaic", parentId: "root", path: "mosaic", index: void 0, caseSensitive: void 0, module: "/build/routes/mosaic-DY6Q22YC.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-766SKMSG.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/projects": { id: "routes/projects", parentId: "root", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/projects-N4YLKP2V.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-VIM3JJEK.js", imports: ["/build/_shared/chunk-IR7NE7RZ.js", "/build/_shared/chunk-Z7AT2O2U.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/values": { id: "routes/values", parentId: "root", path: "values", index: void 0, caseSensitive: void 0, module: "/build/routes/values-A5WTP4WY.js", imports: ["/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-IR7NE7RZ.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "29aa2b0a", hmr: { runtime: "/build/_shared/chunk-43WGSL2O.js", timestamp: 1712943354145 }, url: "/build/manifest-29AA2B0A.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "development", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1, v3_relativeSplatPath: !1, v3_throwAbortReason: !1 }, publicPath = "/build/", entry = { module: entry_server_node_exports }, routes = {

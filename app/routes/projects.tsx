@@ -10,7 +10,7 @@ export default function Project() {
     setHeaderColor("mainColor")
   }, [setHeaderColor]);
   return (
-    <div className="h-full flex flex-col gap-6 md:gap-12 items-start ml-10 my-10 md:my-auto">
+    <div className="h-full flex flex-col gap-6 md:gap-12 items-start justify-center ml-10">
       <div onClick={() => router('/mosaic')} className="hover:cursor-pointer">
         <p className="uppercase text-titleMobile md:text-title text-left font-neueRegular text-orange hover:text-redHome">MOSAIC</p>
       </div>

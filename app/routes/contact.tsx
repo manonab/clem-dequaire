@@ -120,7 +120,7 @@ export default function Contact() {
         </div>
       </div>
       <div className="md:hidden flex-col flex gap-3 mx-1">
-        <div className="mx-2 flex flex-col items-start gap-4 justify-around mb-5">
+        <div className="mx-6 flex flex-col items-start gap-4 justify-around mb-5">
           <p className="text-royalBlue text-[45px] leading-[100%] font-neueRegular">Rencontrons<br />nous.</p>
           <ContactArrow />
         </div>
@@ -130,7 +130,7 @@ export default function Contact() {
             <input
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
-              className="p-2 max-w-[164px] max-h-[55px] rounded-[5px] bg-mainColor border border-black w-full"
+              className="px-2 py-1 max-w-[164px] max-h-[55px] rounded-[5px] bg-mainColor border border-black"
             />
           </div>
           <div className="flex-col flex items-start">
@@ -138,7 +138,7 @@ export default function Contact() {
             <input
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="px-2 py-1 max-w-[164px] max-h-[55px] rounded-[5px] bg-mainColor border border-black w-full"
+              className="px-2 py-1 max-w-[164px] max-h-[55px] rounded-[5px] bg-mainColor border border-black"
             />
           </div>
         </div>
@@ -148,7 +148,7 @@ export default function Contact() {
             <input
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="px-2 py-1 max-w-[164px] max-h-[55px] rounded-[5px] bg-mainColor border border-black w-full"
+              className="px-2 py-1 max-w-[164px] max-h-[55px] rounded-[5px] bg-mainColor border border-black"
             />
           </div>
           <div className="flex-col flex items-start">
@@ -156,7 +156,7 @@ export default function Contact() {
             <input
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
-              className="px-2 py-1 max-w-[164px] max-h-[55px] rounded-[5px] bg-mainColor border border-black w-full"
+              className="px-2 py-1 max-w-[164px] max-h-[55px] rounded-[5px] bg-mainColor border border-black"
             />
           </div>
         </div>
@@ -168,15 +168,15 @@ export default function Contact() {
             className="px-2 py-1 min-w-[370px] rounded-[5px] bg-mainColor border border-black mx-auto min-h-[200px] "
           />
         </div>
-        <div className="flex items-center my-10 justify-around w-auto">
+        <div className="flex items-start mb-20 justify-around w-auto mt-5">
           <div
-            className="hover:cursor-pointer border-black border rounded-3xl p-2 mx-auto max-w-[100px] max-h-[25px]"
+            className="hover:cursor-pointer border-black border rounded-3xl p-2 max-w-[130px] max-h-[45px]  mr-4"
             onClick={handleSendEmail}
           >
             <p className="font-footer font-bold text-[6px] text-center text-grayBlack uppercase">Hit me baby (one time)</p>
           </div>
           <div className="flex flex-col items-start gap-3">
-            <p className="font-neueCondensed text-[16px] leading-[90%] text-orange mr-1">Retrouvez moi également sur <br />Linkedin juste <a className="text-redHome" target="_blank" href="https://www.linkedin.com/in/cl%C3%A9mence-dequaire/?locale=en_US">ici</a>.</p>
+            <p className="font-neueCondensed text-[16px] leading-[90%] text-orange mr-8">Retrouvez moi également sur <br />Linkedin juste <a className="text-redHome" target="_blank" href="https://www.linkedin.com/in/cl%C3%A9mence-dequaire/?locale=en_US">ici</a>.</p>
             <div className="flex items-center gap-1.5">
               <MailOutlined />
               <p className="font-neueCondensed text-grayBlack text-[10px] leading-[90%]">clemence.dequaire.pro@gmail.com</p>

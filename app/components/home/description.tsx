@@ -87,7 +87,7 @@ const Description: React.FC = () => {
           <img src={Images.homeMobile} width="200px" />
           <p className="text-homeMobileTitle text-redHome font-neueRegular -mt-[100px] ml-8">Tout<br></br> commence<br></br> par une<br></br> idée. </p>
           <div className="mx-6 my-10">
-            <p className="text-condensed text-orange text-homeMobileContent max-w-[300px]">Consultante en communication et créative passionnée, je m’efforce d’aider votre marque à grandir grâce au design et au marketing digital.</p>
+            <p className="font-neueCondensed text-orange text-homeMobileContent max-w-[300px]">Consultante en communication et créative passionnée, je m’efforce d’aider votre marque à grandir grâce au design et au marketing digital.</p>
           </div>
           <div className="flex items-center justify-end">
             <div className="flex flex-col items-center gap-3">
@@ -98,11 +98,11 @@ const Description: React.FC = () => {
           </div>
         </div>
         <div className="bg-yellowHome w-full pb-24">
-          <div className="mt-20 mb-10 m-4">
-            <p className="text-condensed text-orange text-homeMobileContent max-w-[300px]">Le courage de nos idées, la passion de les partager. Parce que vous avez quelque chose à raconter, <span className="text-redHome font-bold">qu’attendons nous pour commencer ?</span></p>
+          <div className="mt-20 mb-10 mx-6">
+            <p className="font-neueCondensed text-orange text-homeMobileContent max-w-[300px]">Le courage de nos idées, la passion de les partager. Parce que chaque histoire mérite qu'on la raconte, <span className="text-redHome font-bold">qu’attendons nous pour commencer ?</span></p>
           </div>
-          <p className="mx-4 mb-5 font-neueRegular text-redHome text-homeMobileServices">services</p>
-          <div className="flex flex-col gap-3 items-start mx-4 my-5">
+          <p className="mx-6 mb-5 font-neueRegular text-redHome text-homeMobileServices">services</p>
+          <div className="flex flex-col gap-3 items-start mx-6 my-5">
             <p className="text-grayBlack font-footer font-bold">Communication</p>
             <img src={Images.line} className="-mt-3" />
             <p className="text-grayBlack font-footer font-bold">Marketing digital</p>
@@ -112,9 +112,9 @@ const Description: React.FC = () => {
             <p className="text-grayBlack font-footer font-bold">Consulting</p>
             <img src={Images.line} className="-mt-3" />
           </div>
-          <p className="uppercase font-footer text-grayBlack text-[8px] mx-4 my-5">EN SAVOIR PLUS</p>
-          <p className="m-4 my-5 font-neueRegular text-redHome text-homeMobileServices">projets</p>
-          <div className="overflow-auto whitespace-nowrap ml-5 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200">
+          <p className="uppercase font-footer text-grayBlack text-[8px] mx-4 my-5" onClick={() => router("services")}>EN SAVOIR PLUS</p>
+          <p className="mx-6 my-5 font-neueRegular text-redHome text-homeMobileServices">projets</p>
+          <div className="overflow-auto whitespace-nowrap mx-5 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200">
             <div className="flex items-center justify-evenly space-x-6 py-5 px-10">
               <img
                 onClick={() => router('/capiche')}
@@ -124,7 +124,7 @@ const Description: React.FC = () => {
               <img onClick={() => router('/portfolio')} src={Images.homePortfolio} alt="Image 3" className="w-[130px] ml-5 mr-10" />
             </div>
           </div>
-          <p className="uppercase font-footer text-grayBlack text-[8px] mx-4 my-5">EN SAVOIR PLUS</p>
+          <p className="uppercase font-footer text-grayBlack text-[8px] mx-4 my-5" onClick={() => router("project")}>EN SAVOIR PLUS</p>
         </div>
         <div className="bg-mainColor w-full pb-18">
           <Contact />
