@@ -4,13 +4,13 @@ import { Images } from "~/common/images";
 import { useHeaderColor } from "~/context";
 import { motion, useAnimation } from "framer-motion";
 import { useNavigate } from "@remix-run/react";
-import { ArrowRight } from "~/assets/arrow-right";
+import { ArrowBack } from "@mui/icons-material";
 
 export default function PortFolio() {
   const { setHeaderColor } = useHeaderColor();
-  const router = useNavigate();
   const controls = useAnimation();
   const contentRef = useRef(null);
+  const router = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,7 +18,7 @@ export default function PortFolio() {
       if (scrollPosition > 50) {
         controls.start({
           opacity: 1,
-          x: 0, // Animation vers la position x = 0 pour simuler l'apparition de la droite
+          x: 0, 
           transition: { duration: 0.5 }
         });
       } else {
@@ -58,9 +58,16 @@ export default function PortFolio() {
     { title: "Intention", content: "Des fonds pastels, plutôt neutre avec des couleurs audacieuses pour les titres." },
     { title: "Réalisation", content: "Lorem ipsum dolor sit amet consectetur. Orci sed vulputate molestie et aliquet. Sem sapien eget lectus elementum vulputate. Purus congue ullamcorper id at felis et." },
   ];
+
+  const handleGoBack = () => {
+    router(-1);
+  };
+
   return (
     <div className="h-full flex-col items-center justify-center mx-auto">
-      <div className="flex-col mt-20 mb-12">
+      <div className="mx-5 w-8" onClick={handleGoBack}><ArrowBack /></div>
+
+      <div className="flex-col mt-10 mb-12">
         <p className="uppercase font-neueRegular md:text-title text-capicheMobile text-redHome text-center mt-[180px] mb-[100px]">Portfolio</p>
         <motion.div
           className="mx-auto flex-col flex items-center gap-3 mb-[150px]"
@@ -75,16 +82,13 @@ export default function PortFolio() {
       <div className="w-auto mt-6 mb-10 mx-10">
         <p className="font-neueCondensed text-left leading-[90%] text-orange text-[30px]">Changer les choses, une<br></br> idée à la fois. </p>
       </div>
-      {/* <div className="w-[200px] absolute right-0">
-        <motion.div
+      {/* <motion.div
           initial={{ opacity: 0, x: "100%" }}
           animate={controls}
-          style={{ width: "100%", height: "100%" }}
-
         >
-          <img src={Images.bearMobilePortfolio} style={{ width: "100%", height: "100%" }} />
-        </motion.div>
-      </div> */}
+      </motion.div>  */}
+      <img src={Images.bearMobilePortfolio} className="absolute right-0 mt-10" />
+
       <div className="flex gap-6 items-start w-full overflow-auto h-full size-12 px-4 mb-10">
         {portfolioContent.map((content, index) => (
           <div key={index} className="flex flex-col items-start pl-6 pb-6">

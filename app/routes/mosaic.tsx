@@ -4,7 +4,7 @@ import { useHeaderColor } from "~/context";
 import { motion } from "framer-motion";
 import { BigArrow } from "~/assets/big-arrow";
 import { useNavigate } from "@remix-run/react";
-import { ArrowForward } from "@mui/icons-material";
+import { ArrowForward, ArrowBack } from "@mui/icons-material";
 
 export default function Mosaic() {
   const { setHeaderColor } = useHeaderColor();
@@ -25,8 +25,13 @@ export default function Mosaic() {
     { title: "Réalisation", content: "J’ai veillé à ce que ce portfolio présente une cohérence entre la version mobile et web, tout en offrant une expérience utilisateur spécifique à chaque support." },
   ];
 
+  const handleGoBack = () => {
+    router(-1);
+  };
+
   return (
     <div className="h-full flex-col items-center justify-center mx-auto">
+      <div className="mx-5 w-8" onClick={handleGoBack}><ArrowBack /></div>
       <div className="flex-col mt-20 mb-16">
         <p className="uppercase font-neueRegular md:text-title text-capicheMobile text-redHome text-center mt-[180px] mb-[100px]">Mosaic</p>
         <motion.div

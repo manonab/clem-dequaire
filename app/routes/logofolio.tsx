@@ -3,11 +3,14 @@ import { BigArrow } from "~/assets/big-arrow";
 import { useHeaderColor } from "~/context";
 import { motion } from "framer-motion";
 import { Images } from "~/common/images";
+import { ArrowBack } from "@mui/icons-material";
+import { useNavigate } from "@remix-run/react";
 
 export default function LogoFolio() {
   const { setHeaderColor } = useHeaderColor();
   const [showYellowBackground, setShowYellowBackground] = useState<boolean>(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  const router = useNavigate();
 
   const timing = {
     duration: 0.7,
@@ -35,8 +38,13 @@ export default function LogoFolio() {
     };
   }, [setHeaderColor]);
 
+  const handleGoBack = () => {
+    router(-1);
+  };
+
   return (
     <div className="h-full flex-col flex" ref={containerRef}>
+      <div className="mx-5 w-8" onClick={handleGoBack}><ArrowBack /></div>
       <div>
         <p className="uppercase font-neueRegular md:text-title text-titleMobile text-redHome text-center my-40">Logofolio</p>
         <motion.div

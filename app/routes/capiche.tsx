@@ -6,6 +6,7 @@ import { BigArrow } from "~/assets/big-arrow";
 import { useNavigate } from "@remix-run/react";
 import { Capiche001 } from "~/assets/capiche/capiche-001";
 import { Capiche002 } from "~/assets/capiche/capiche-002";
+import { ArrowBack } from "@mui/icons-material";
 
 export default function Capiche() {
   const { setHeaderColor } = useHeaderColor();
@@ -26,9 +27,14 @@ export default function Capiche() {
     { title: "Réalisation", content: "La conception du site web et de l'application mobile a été réalisée sur Figma, en respectant les principes de l'UX design. Une attention particulière a été portée sur la pertinence des recherches des consommateurs et les suggestions personnalisées." },
   ];
 
+  const handleGoBack = () => {
+    router(-1);
+  };
+
   return (
     <div className="h-full flex-col items-center justify-center mx-auto">
-      <div className="flex-col my-20">
+      <div className="mx-5 w-8" onClick={handleGoBack}><ArrowBack /></div>
+      <div className="flex-col mb-20">
         <p className="uppercase font-neueRegular md:text-title text-capicheMobile text-redHome text-center mt-[180px] mb-[100px]">Capiche</p>
         <motion.div
           className="mx-auto flex-col flex items-center gap-3 mb-[150px]"
@@ -67,7 +73,6 @@ export default function Capiche() {
           Autres projets
         </div>
       </div>
-
     </div>
   );
 }
