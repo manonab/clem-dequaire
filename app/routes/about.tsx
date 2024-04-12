@@ -82,7 +82,6 @@ export default function About() {
         </div>
       </div>
       <div className="md:hidden flex flex-col">
-
         <p className="text-redHome uppercase  hover:cursor-pointer text-titleMobile font-neueRegular">
           Partage
         </p>

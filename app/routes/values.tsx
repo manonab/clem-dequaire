@@ -24,7 +24,7 @@ export default function Values() {
         <div className="bg-mainColor h-full flex-col flex">
           <div className="flex gap-12 justify-evenly items-center">
             <div className="w-[659px] ml-10">
-              <p className="text-[22px] leading-[100%] font-footer text-justify"><span className="font-semibold">Spécialisée en communication et marketing digital</span>, j’ai toujours ressenti ce besoin de trouver du sens. Plus qu’un métier, je vois la communication comme un moyen de partager et faire grandir des projets auxquels je crois profondément. Cinq années se sont écoulées depuis mon premier poste et cette idée s’est transformée en un défi que je relève passionnément chaque jour. Grâce à d’autres humain.e.s qui croyaient fort en leur convictions,   j’ai eu la chance de porter défis audacieux et des messages engagés. Peut-être serez vous les prochain.e.s ?</p>
+              <p className="text-[22px] leading-[110%] font-footer text-justify"><span className="font-semibold">Spécialisée en communication et marketing digital</span>, j’ai toujours ressenti ce besoin de trouver du sens. Plus qu’un métier, je vois la communication comme un moyen de partager et faire grandir des projets auxquels je crois profondément. Cinq années se sont écoulées depuis mon premier poste et cette idée s’est transformée en un défi que je relève passionnément chaque jour. Grâce à d’autres humain.e.s qui croyaient fort en leur convictions,   j’ai eu la chance de porter défis audacieux et des messages engagés. Peut-être serez vous les prochain.e.s ?</p>
             </div>
             <div className="!w-fit bg-white h-[480px] rounded-[50px] -mt-16">
               <img alt="men with pride flag" src={Images.pride} />
@@ -71,21 +71,21 @@ export default function Values() {
         <p className="text-redHome uppercase hover:cursor-pointer text-[60px] leading-[90%] font-neueRegular">partage</p>
         <p className="text-redHome uppercase hover:cursor-pointer text-[60px] leading-[90%] font-neueRegular">création</p>
         <p className="text-redHome uppercase hover:cursor-pointer text-[60px] leading-[90%] font-neueRegular">ambition</p>
-        <div className="flex gap-3 items-start justify-center mr-16 mt-20">
+        <div className="flex gap-3 items-start justify-center mr-10 mt-20">
           <img src={Images.manifesto} className="rotate-[185deg] w-[20px]" />
-          <p className="font-footer text-justify text-[7px] w-2/3"><span className="font-bold">Spécialisée en communication et marketing digital</span>, j’ai toujours ressenti ce besoin de trouver du sens. Plus qu’un métier, je vois la communication comme un moyen de partager et faire grandir des projets auxquels je crois profondément.<br></br><br></br>
+          <p className="font-footer text-justify text-[10px] w-2/3"><span className="font-bold">Spécialisée en communication et marketing digital</span>, j’ai toujours ressenti ce besoin de trouver du sens. Plus qu’un métier, je vois la communication comme un moyen de partager et faire grandir des projets auxquels je crois profondément.<br></br><br></br>
             Cinq années se sont écoulées depuis mon premier poste et cette idée s’est transformée en un défi que je relève passionnément chaque jour. Grâce à d’autres humain.e.s qui croyaient fort en leur convictions,   j’ai eu la chance de porter défis audacieux et des messages engagés. Peut-être serez vous les prochain.e.s ?</p>
         </div>
-        <p className="self-start ml-20 text-[6px] font-bold mb-10">MON PARCOURS</p>
-        <p className="text-orange w-1/2 -mb-10 z-50">“Seules 54 % des entreprises françaises ont embrassé la diversité”.</p>
-        <div className="flex items-center mx-10">
-          <img src={Images.group} className="w-[130px]" />
+        <p className="self-start ml-20 text-[8px] font-bold mb-10">MON PARCOURS</p>
+        <p className="text-orange -mb-10 z-50 font-neueRegular text-[25px] leading-[90%]">“Seules 54 % des<br></br> entreprises françaises<br></br> ont embrassé la<br></br> diversité”.</p>
+        <div className="flex items-center mx-4">
+          <img src={Images.group} className="w-[160px] h-[210px]" />
           <div className="flex items-start justify-end gap-1.5 ml-5">
             <img src={Images.manifesto} className="rotate-[185deg] w-[20px]" />
-            <p className="text-[7px] text-justify">Au fil de ma vie et de ma carrière personnelle,  j’ai pu appréhender avec clarté et détermination les bouleversements sociaux qui se jouent depuis maintenant des années.  Pour toutes les entreprises qui souhaitent faire parti du changement, je propose une relecture inclusive et une vision sensible de votre communication. </p>
+            <p className="text-[10px] text-justify">Au fil de ma vie et de ma carrière personnelle,  j’ai pu appréhender avec clarté et détermination les bouleversements sociaux qui se jouent depuis maintenant des années.  Pour toutes les entreprises qui souhaitent faire parti du changement, je propose une relecture inclusive et une vision sensible de votre communication. </p>
           </div>
         </div>
-        <div className="bg-yellowHome w-full h-full py-20 mt-10">
+        <div className="bg-yellowHome w-full h-full pt-20 pb-10 mt-10">
           <p className="font-neueRegular text-[20px] leading-[90%] mx-10">Manifesto</p>
           <div className="my-20 flex flex-col gap-4">
             <div className="flex items-center justify-evenly">

@@ -82,7 +82,7 @@ export default function PortFolio() {
       <div className="w-auto mt-6 mb-10 mx-10">
         <p className="font-neueCondensed text-left leading-[90%] text-orange text-[30px]">Changer les choses, une<br></br> idée à la fois. </p>
       </div>
-      {/* <motion.div
+      {/* <motion.div^
           initial={{ opacity: 0, x: "100%" }}
           animate={controls}
         >

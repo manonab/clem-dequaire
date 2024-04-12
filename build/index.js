@@ -131,7 +131,7 @@ import {
 } from "@remix-run/react";
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-ZX7HQJXF.css";
+var tailwind_default = "/build/_assets/tailwind-76R5F2MI.css";
 
 // app/components/header/index.tsx
 import { useState as useState2 } from "react";
@@ -3543,7 +3543,7 @@ function Values() {
       }, this),
       /* @__PURE__ */ jsxDEV22("div", { className: "bg-mainColor h-full flex-col flex", children: [
         /* @__PURE__ */ jsxDEV22("div", { className: "flex gap-12 justify-evenly items-center", children: [
-          /* @__PURE__ */ jsxDEV22("div", { className: "w-[659px] ml-10", children: /* @__PURE__ */ jsxDEV22("p", { className: "text-[22px] leading-[100%] font-footer text-justify", children: [
+          /* @__PURE__ */ jsxDEV22("div", { className: "w-[659px] ml-10", children: /* @__PURE__ */ jsxDEV22("p", { className: "text-[22px] leading-[110%] font-footer text-justify", children: [
             /* @__PURE__ */ jsxDEV22("span", { className: "font-semibold", children: "Sp\xE9cialis\xE9e en communication et marketing digital" }, void 0, !1, {
               fileName: "app/routes/values.tsx",
               lineNumber: 27,
@@ -3763,28 +3763,28 @@ function Values() {
         lineNumber: 73,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV22("div", { className: "flex gap-3 items-start justify-center mr-16 mt-20", children: [
+      /* @__PURE__ */ jsxDEV22("div", { className: "flex gap-3 items-start justify-center mr-10 mt-20", children: [
         /* @__PURE__ */ jsxDEV22("img", { src: Images.manifesto, className: "rotate-[185deg] w-[20px]" }, void 0, !1, {
           fileName: "app/routes/values.tsx",
           lineNumber: 75,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV22("p", { className: "font-footer text-justify text-[7px] w-2/3", children: [
+        /* @__PURE__ */ jsxDEV22("p", { className: "font-footer text-justify text-[10px] w-2/3", children: [
           /* @__PURE__ */ jsxDEV22("span", { className: "font-bold", children: "Sp\xE9cialis\xE9e en communication et marketing digital" }, void 0, !1, {
             fileName: "app/routes/values.tsx",
             lineNumber: 76,
-            columnNumber: 68
+            columnNumber: 69
           }, this),
           ", j\u2019ai toujours ressenti ce besoin de trouver du sens. Plus qu\u2019un m\xE9tier, je vois la communication comme un moyen de partager et faire grandir des projets auxquels je crois profond\xE9ment.",
           /* @__PURE__ */ jsxDEV22("br", {}, void 0, !1, {
             fileName: "app/routes/values.tsx",
             lineNumber: 76,
-            columnNumber: 338
+            columnNumber: 339
           }, this),
           /* @__PURE__ */ jsxDEV22("br", {}, void 0, !1, {
             fileName: "app/routes/values.tsx",
             lineNumber: 76,
-            columnNumber: 347
+            columnNumber: 348
           }, this),
           "Cinq ann\xE9es se sont \xE9coul\xE9es depuis mon premier poste et cette id\xE9e s\u2019est transform\xE9e en un d\xE9fi que je rel\xE8ve passionn\xE9ment chaque jour. Gr\xE2ce \xE0 d\u2019autres humain.e.s qui croyaient fort en leur convictions,   j\u2019ai eu la chance de porter d\xE9fis audacieux et des messages engag\xE9s. Peut-\xEAtre serez vous les prochain.e.s ?"
         ] }, void 0, !0, {
@@ -3797,18 +3797,38 @@ function Values() {
         lineNumber: 74,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV22("p", { className: "self-start ml-20 text-[6px] font-bold mb-10", children: "MON PARCOURS" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV22("p", { className: "self-start ml-20 text-[8px] font-bold mb-10", children: "MON PARCOURS" }, void 0, !1, {
         fileName: "app/routes/values.tsx",
         lineNumber: 79,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV22("p", { className: "text-orange w-1/2 -mb-10 z-50", children: "\u201CSeules 54 % des entreprises fran\xE7aises ont embrass\xE9 la diversit\xE9\u201D." }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV22("p", { className: "text-orange -mb-10 z-50 font-neueRegular text-[25px] leading-[90%]", children: [
+        "\u201CSeules 54 % des",
+        /* @__PURE__ */ jsxDEV22("br", {}, void 0, !1, {
+          fileName: "app/routes/values.tsx",
+          lineNumber: 80,
+          columnNumber: 107
+        }, this),
+        " entreprises fran\xE7aises",
+        /* @__PURE__ */ jsxDEV22("br", {}, void 0, !1, {
+          fileName: "app/routes/values.tsx",
+          lineNumber: 80,
+          columnNumber: 139
+        }, this),
+        " ont embrass\xE9 la",
+        /* @__PURE__ */ jsxDEV22("br", {}, void 0, !1, {
+          fileName: "app/routes/values.tsx",
+          lineNumber: 80,
+          columnNumber: 164
+        }, this),
+        " diversit\xE9\u201D."
+      ] }, void 0, !0, {
         fileName: "app/routes/values.tsx",
         lineNumber: 80,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV22("div", { className: "flex items-center mx-10", children: [
-        /* @__PURE__ */ jsxDEV22("img", { src: Images.group, className: "w-[130px]" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV22("div", { className: "flex items-center mx-4", children: [
+        /* @__PURE__ */ jsxDEV22("img", { src: Images.group, className: "w-[160px] h-[210px]" }, void 0, !1, {
           fileName: "app/routes/values.tsx",
           lineNumber: 82,
           columnNumber: 11
@@ -3819,7 +3839,7 @@ function Values() {
             lineNumber: 84,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ jsxDEV22("p", { className: "text-[7px] text-justify", children: "Au fil de ma vie et de ma carri\xE8re personnelle,  j\u2019ai pu appr\xE9hender avec clart\xE9 et d\xE9termination les bouleversements sociaux qui se jouent depuis maintenant des ann\xE9es.  Pour toutes les entreprises qui souhaitent faire parti du changement, je propose une relecture inclusive et une vision sensible de votre communication. " }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV22("p", { className: "text-[10px] text-justify", children: "Au fil de ma vie et de ma carri\xE8re personnelle,  j\u2019ai pu appr\xE9hender avec clart\xE9 et d\xE9termination les bouleversements sociaux qui se jouent depuis maintenant des ann\xE9es.  Pour toutes les entreprises qui souhaitent faire parti du changement, je propose une relecture inclusive et une vision sensible de votre communication. " }, void 0, !1, {
             fileName: "app/routes/values.tsx",
             lineNumber: 85,
             columnNumber: 13
@@ -3834,7 +3854,7 @@ function Values() {
         lineNumber: 81,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV22("div", { className: "bg-yellowHome w-full h-full py-20 mt-10", children: [
+      /* @__PURE__ */ jsxDEV22("div", { className: "bg-yellowHome w-full h-full pt-20 pb-10 mt-10", children: [
         /* @__PURE__ */ jsxDEV22("p", { className: "font-neueRegular text-[20px] leading-[90%] mx-10", children: "Manifesto" }, void 0, !1, {
           fileName: "app/routes/values.tsx",
           lineNumber: 89,
@@ -4231,17 +4251,17 @@ function About() {
     /* @__PURE__ */ jsxDEV24("div", { className: "md:hidden flex flex-col", children: [
       /* @__PURE__ */ jsxDEV24("p", { className: "text-redHome uppercase  hover:cursor-pointer text-titleMobile font-neueRegular", children: "Partage" }, void 0, !1, {
         fileName: "app/routes/about.tsx",
-        lineNumber: 86,
+        lineNumber: 85,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV24("p", { className: "text-redHome uppercase  hover:cursor-pointer text-titleMobile font-neueRegular", children: "Cr\xE9ation" }, void 0, !1, {
         fileName: "app/routes/about.tsx",
-        lineNumber: 89,
+        lineNumber: 88,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV24("p", { className: "text-redHome uppercase  hover:cursor-pointer text-titleMobile font-neueRegular", children: "Ambition" }, void 0, !1, {
         fileName: "app/routes/about.tsx",
-        lineNumber: 92,
+        lineNumber: 91,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
@@ -4460,7 +4480,7 @@ function Home() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-75X5CYH4.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-FWVAADBG.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-43WGSL2O.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-IFLLSNHX.js", imports: ["/build/_shared/chunk-GX2C7XOP.js", "/build/_shared/chunk-3SRQZ3IO.js", "/build/_shared/chunk-MOEXCUEJ.js", "/build/_shared/chunk-NMZL6IDN.js", "/build/_shared/chunk-DIGSRBO4.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-QJEQSRV5.js", imports: ["/build/_shared/chunk-CQTL2ZHG.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-IR7NE7RZ.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-FGAYG2HC.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-PX7O5U6S.js", imports: ["/build/_shared/chunk-5T6BUAZE.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/capiche": { id: "routes/capiche", parentId: "root", path: "capiche", index: void 0, caseSensitive: void 0, module: "/build/routes/capiche-OQNR5G2O.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/cards": { id: "routes/cards", parentId: "root", path: "cards", index: void 0, caseSensitive: void 0, module: "/build/routes/cards-F2A3EBFM.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-5RUSZKUK.js", imports: ["/build/_shared/chunk-FGAYG2HC.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/home": { id: "routes/home", parentId: "root", path: "home", index: void 0, caseSensitive: void 0, module: "/build/routes/home-7Y7KTVO4.js", imports: ["/build/_shared/chunk-CQTL2ZHG.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-FGAYG2HC.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/logofolio": { id: "routes/logofolio", parentId: "root", path: "logofolio", index: void 0, caseSensitive: void 0, module: "/build/routes/logofolio-S6HXVXFG.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/mosaic": { id: "routes/mosaic", parentId: "root", path: "mosaic", index: void 0, caseSensitive: void 0, module: "/build/routes/mosaic-AJJ7D3YL.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-Q5NIHG64.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/projects": { id: "routes/projects", parentId: "root", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/projects-N4YLKP2V.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-C6B46VLE.js", imports: ["/build/_shared/chunk-IR7NE7RZ.js", "/build/_shared/chunk-Z7AT2O2U.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/values": { id: "routes/values", parentId: "root", path: "values", index: void 0, caseSensitive: void 0, module: "/build/routes/values-A5WTP4WY.js", imports: ["/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-IR7NE7RZ.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "ece3f2aa", hmr: { runtime: "/build/_shared/chunk-43WGSL2O.js", timestamp: 1712947591192 }, url: "/build/manifest-ECE3F2AA.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-75X5CYH4.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-FWVAADBG.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-43WGSL2O.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-NVM2JOYU.js", imports: ["/build/_shared/chunk-GX2C7XOP.js", "/build/_shared/chunk-3SRQZ3IO.js", "/build/_shared/chunk-MOEXCUEJ.js", "/build/_shared/chunk-NMZL6IDN.js", "/build/_shared/chunk-DIGSRBO4.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-QJEQSRV5.js", imports: ["/build/_shared/chunk-CQTL2ZHG.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-IR7NE7RZ.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-FGAYG2HC.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-ZTBWUGNE.js", imports: ["/build/_shared/chunk-5T6BUAZE.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/capiche": { id: "routes/capiche", parentId: "root", path: "capiche", index: void 0, caseSensitive: void 0, module: "/build/routes/capiche-OQNR5G2O.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/cards": { id: "routes/cards", parentId: "root", path: "cards", index: void 0, caseSensitive: void 0, module: "/build/routes/cards-F2A3EBFM.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-5RUSZKUK.js", imports: ["/build/_shared/chunk-FGAYG2HC.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/home": { id: "routes/home", parentId: "root", path: "home", index: void 0, caseSensitive: void 0, module: "/build/routes/home-7Y7KTVO4.js", imports: ["/build/_shared/chunk-CQTL2ZHG.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-FGAYG2HC.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/logofolio": { id: "routes/logofolio", parentId: "root", path: "logofolio", index: void 0, caseSensitive: void 0, module: "/build/routes/logofolio-S6HXVXFG.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/mosaic": { id: "routes/mosaic", parentId: "root", path: "mosaic", index: void 0, caseSensitive: void 0, module: "/build/routes/mosaic-AJJ7D3YL.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-HXCTMUVS.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/projects": { id: "routes/projects", parentId: "root", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/projects-N4YLKP2V.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-C6B46VLE.js", imports: ["/build/_shared/chunk-IR7NE7RZ.js", "/build/_shared/chunk-Z7AT2O2U.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/values": { id: "routes/values", parentId: "root", path: "values", index: void 0, caseSensitive: void 0, module: "/build/routes/values-7LGHBU4O.js", imports: ["/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-IR7NE7RZ.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "3c0ac746", hmr: { runtime: "/build/_shared/chunk-43WGSL2O.js", timestamp: 1712948853910 }, url: "/build/manifest-3C0AC746.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "development", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1, v3_relativeSplatPath: !1, v3_throwAbortReason: !1 }, publicPath = "/build/", entry = { module: entry_server_node_exports }, routes = {
