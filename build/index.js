@@ -131,7 +131,7 @@ import {
 } from "@remix-run/react";
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-PQ5ANSXN.css";
+var tailwind_default = "/build/_assets/tailwind-IRO2OYOB.css";
 
 // app/components/header/index.tsx
 import { useState as useState2 } from "react";
@@ -291,6 +291,18 @@ var cap_img_001_default = "/build/_assets/cap-img-001-LGUTTJPM.png";
 // app/assets/capiche/cap-img-002.png
 var cap_img_002_default = "/build/_assets/cap-img-002-GGMZJ5UJ.png";
 
+// app/assets/portfolio/portfolio-bear-mobile.png
+var portfolio_bear_mobile_default = "/build/_assets/portfolio-bear-mobile-QJGYFPQL.png";
+
+// app/assets/portfolio/screen-001.png
+var screen_001_default = "/build/_assets/screen-001-EQNEZK76.png";
+
+// app/assets/portfolio/screen-002.png
+var screen_002_default = "/build/_assets/screen-002-JWTEIEFW.png";
+
+// app/assets/portfolio/screen-003.png
+var screen_003_default = "/build/_assets/screen-003-CCT63MLH.png";
+
 // app/common/images/index.tsx
 var Images = {
   eye: eye_default,
@@ -337,7 +349,11 @@ var Images = {
   homePortfolio: home_portfolio_default,
   contactArrow: contact_arrow_default,
   capicheImg1: cap_img_001_default,
-  capicheImg2: cap_img_002_default
+  capicheImg2: cap_img_002_default,
+  bearMobilePortfolio: portfolio_bear_mobile_default,
+  screenPortFolio1: screen_001_default,
+  screenPortFolio2: screen_002_default,
+  screenPortFolio3: screen_003_default
 };
 
 // app/components/header/index.tsx
@@ -866,12 +882,29 @@ __export(portfolio_exports, {
   default: () => PortFolio
 });
 import { useEffect as useEffect2 } from "react";
-import { motion as motion3 } from "framer-motion";
+import { motion as motion3, useAnimation } from "framer-motion";
 import { useNavigate as useNavigate2 } from "@remix-run/react";
 import { jsxDEV as jsxDEV8 } from "react/jsx-dev-runtime";
 function PortFolio() {
-  let { setHeaderColor } = useHeaderColor(), router = useNavigate2();
+  let { setHeaderColor } = useHeaderColor(), router = useNavigate2(), controls = useAnimation();
   useEffect2(() => {
+    let handleScroll = () => {
+      window.scrollY > 50 ? controls.start({
+        opacity: 1,
+        x: 0,
+        // Animation vers la position x = 0 pour simuler l'apparition de la droite
+        transition: { duration: 0.5 }
+      }) : controls.start({
+        opacity: 0,
+        x: 100,
+        // Position initiale vers la droite de la page
+        transition: { duration: 0.5 }
+      });
+    };
+    return window.addEventListener("scroll", handleScroll), () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [controls]), useEffect2(() => {
     setHeaderColor("mainColor");
   }, [setHeaderColor]);
   let timing2 = {
@@ -886,7 +919,7 @@ function PortFolio() {
     /* @__PURE__ */ jsxDEV8("div", { className: "flex-col mt-20 mb-12", children: [
       /* @__PURE__ */ jsxDEV8("p", { className: "uppercase font-neueRegular md:text-title text-capicheMobile text-redHome text-center mt-[180px] mb-[100px]", children: "Portfolio" }, void 0, !1, {
         fileName: "app/routes/portfolio.tsx",
-        lineNumber: 28,
+        lineNumber: 56,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV8(
@@ -899,12 +932,12 @@ function PortFolio() {
           children: [
             /* @__PURE__ */ jsxDEV8(BigArrow, {}, void 0, !1, {
               fileName: "app/routes/portfolio.tsx",
-              lineNumber: 35,
+              lineNumber: 63,
               columnNumber: 11
             }, this),
             /* @__PURE__ */ jsxDEV8("p", { className: "font-footer uppercase font-bold leading-[20px] text-[14px]", children: "DISCOVER" }, void 0, !1, {
               fileName: "app/routes/portfolio.tsx",
-              lineNumber: 36,
+              lineNumber: 64,
               columnNumber: 11
             }, this)
           ]
@@ -913,85 +946,124 @@ function PortFolio() {
         !0,
         {
           fileName: "app/routes/portfolio.tsx",
-          lineNumber: 29,
+          lineNumber: 57,
           columnNumber: 9
         },
         this
       )
     ] }, void 0, !0, {
       fileName: "app/routes/portfolio.tsx",
-      lineNumber: 27,
+      lineNumber: 55,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV8("div", { className: "w-auto mt-6 mb-10 mx-10", children: /* @__PURE__ */ jsxDEV8("p", { className: "font-neueCondensed text-left leading-[90%] text-orange text-[30px]", children: [
       "Changer les choses, une",
       /* @__PURE__ */ jsxDEV8("br", {}, void 0, !1, {
         fileName: "app/routes/portfolio.tsx",
-        lineNumber: 40,
+        lineNumber: 68,
         columnNumber: 114
       }, this),
       " id\xE9e \xE0 la fois. "
     ] }, void 0, !0, {
       fileName: "app/routes/portfolio.tsx",
-      lineNumber: 40,
+      lineNumber: 68,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/portfolio.tsx",
-      lineNumber: 39,
+      lineNumber: 67,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV8("div", { className: "w-[200px] absolute right-0", children: /* @__PURE__ */ jsxDEV8(
+      motion3.div,
+      {
+        initial: { opacity: 0, x: 100 },
+        animate: controls,
+        children: /* @__PURE__ */ jsxDEV8("img", { src: Images.bearMobilePortfolio, style: { width: "100%", height: "100%" } }, void 0, !1, {
+          fileName: "app/routes/portfolio.tsx",
+          lineNumber: 75,
+          columnNumber: 11
+        }, this)
+      },
+      void 0,
+      !1,
+      {
+        fileName: "app/routes/portfolio.tsx",
+        lineNumber: 71,
+        columnNumber: 9
+      },
+      this
+    ) }, void 0, !1, {
+      fileName: "app/routes/portfolio.tsx",
+      lineNumber: 70,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV8("div", { className: "flex gap-6 items-start w-full overflow-auto h-full size-12 px-4 mb-10", children: portfolioContent.map((content, index) => /* @__PURE__ */ jsxDEV8("div", { className: "flex flex-col items-start pl-6 pb-6", children: [
       /* @__PURE__ */ jsxDEV8("p", { className: "text-redHome font-neueSemiBold lowercase text-[25px] mb-5", children: content.title }, void 0, !1, {
         fileName: "app/routes/portfolio.tsx",
-        lineNumber: 45,
+        lineNumber: 81,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ jsxDEV8("p", { className: "font-footer text-[16px] min-w-[320px]", children: content.content }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV8("p", { className: "font-footer text-[14px] leading-[100%] min-w-[320px]", children: content.content }, void 0, !1, {
         fileName: "app/routes/portfolio.tsx",
-        lineNumber: 46,
+        lineNumber: 82,
         columnNumber: 13
       }, this)
     ] }, index, !0, {
       fileName: "app/routes/portfolio.tsx",
-      lineNumber: 44,
+      lineNumber: 80,
       columnNumber: 11
     }, this)) }, void 0, !1, {
       fileName: "app/routes/portfolio.tsx",
-      lineNumber: 42,
+      lineNumber: 78,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV8("div", { className: "bg-saumon mt-10 flex flex-col gap-3 justify-center py-20", children: /* @__PURE__ */ jsxDEV8("div", { className: "flex gap-3 justify-evenly", children: [
-      /* @__PURE__ */ jsxDEV8("img", { src: Images.capicheImg1, width: "160px", className: "-mt-10" }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV8("div", { className: "bg-saumon mt-10 flex flex-col gap-3 justify-center py-10", children: /* @__PURE__ */ jsxDEV8("div", { className: "flex gap-6 items-center w-full overflow-auto h-full size-12 px-4 py-6", children: [
+      /* @__PURE__ */ jsxDEV8("img", { src: Images.screenPortFolio1, width: "350px", className: "pl-6" }, void 0, !1, {
         fileName: "app/routes/portfolio.tsx",
-        lineNumber: 52,
+        lineNumber: 88,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV8("img", { src: Images.capicheImg2, width: "160px", className: "-mb-10" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV8("img", { src: Images.service, className: "w-8" }, void 0, !1, {
         fileName: "app/routes/portfolio.tsx",
-        lineNumber: 53,
+        lineNumber: 89,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV8("img", { src: Images.screenPortFolio2, width: "350px" }, void 0, !1, {
+        fileName: "app/routes/portfolio.tsx",
+        lineNumber: 90,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV8("img", { src: Images.service, className: "w-8" }, void 0, !1, {
+        fileName: "app/routes/portfolio.tsx",
+        lineNumber: 91,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV8("img", { src: Images.screenPortFolio3, width: "350px" }, void 0, !1, {
+        fileName: "app/routes/portfolio.tsx",
+        lineNumber: 92,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/portfolio.tsx",
-      lineNumber: 51,
+      lineNumber: 87,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/portfolio.tsx",
-      lineNumber: 50,
+      lineNumber: 86,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV8("div", { className: "my-20", children: /* @__PURE__ */ jsxDEV8("div", { onClick: () => router("/projects"), className: "py-2 px-2 transition-all duration-300 ease-in-out font-bold text-[10px] text-center text-grayBlack uppercase hover:text-white hover:bg-grayBlack translate hover:cursor-pointer border-black border rounded-full min-w-[100px] max-w-[130px] mx-auto", children: "Autres projets" }, void 0, !1, {
       fileName: "app/routes/portfolio.tsx",
-      lineNumber: 57,
+      lineNumber: 96,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/portfolio.tsx",
-      lineNumber: 56,
+      lineNumber: 95,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/portfolio.tsx",
-    lineNumber: 26,
+    lineNumber: 54,
     columnNumber: 5
   }, this);
 }
@@ -1044,15 +1116,6 @@ function Project() {
       fileName: "app/routes/projects.tsx",
       lineNumber: 23,
       columnNumber: 7
-    }, this),
-    /* @__PURE__ */ jsxDEV9("div", { onClick: () => router("/cards"), className: "hover:cursor-pointer", children: /* @__PURE__ */ jsxDEV9("p", { className: "uppercase text-titleMobile md:text-title text-left  font-neueRegular text-orange hover:text-redHome", children: "CARTES" }, void 0, !1, {
-      fileName: "app/routes/projects.tsx",
-      lineNumber: 27,
-      columnNumber: 9
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/projects.tsx",
-      lineNumber: 26,
-      columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/projects.tsx",
@@ -1066,7 +1129,7 @@ var services_exports = {};
 __export(services_exports, {
   default: () => Services
 });
-import { useEffect as useEffect4, useRef as useRef2, useState as useState4 } from "react";
+import { useEffect as useEffect4, useRef as useRef2, useState as useState5 } from "react";
 
 // app/assets/arrow-right.tsx
 import { jsxDEV as jsxDEV10 } from "react/jsx-dev-runtime";
@@ -1086,7 +1149,7 @@ import { Remove, Add } from "@mui/icons-material";
 import { isMobile } from "react-device-detect";
 import { Fragment, jsxDEV as jsxDEV11 } from "react/jsx-dev-runtime";
 function Services() {
-  let { setHeaderColor } = useHeaderColor(), [scrolled, setScrolled] = useState4(!1), [isCommunicationSelected, setIsCommunicationSelected] = useState4(!1), [isDesignSelected, setIsDesignSelected] = useState4(!1), [isConsultingSelected, setIsConsultingSelected] = useState4(!1), router = useNavigate4(), scrollingTextRef = useRef2(null);
+  let { setHeaderColor } = useHeaderColor(), [scrolled, setScrolled] = useState5(!1), [isCommunicationSelected, setIsCommunicationSelected] = useState5(!1), [isDesignSelected, setIsDesignSelected] = useState5(!1), [isConsultingSelected, setIsConsultingSelected] = useState5(!1), router = useNavigate4(), scrollingTextRef = useRef2(null);
   useEffect4(() => {
     if (!isMobile) {
       setHeaderColor("linear-services");
@@ -1884,7 +1947,7 @@ var contact_exports = {};
 __export(contact_exports, {
   default: () => Contact
 });
-import { useEffect as useEffect6, useState as useState5 } from "react";
+import { useEffect as useEffect6, useState as useState6 } from "react";
 import emailjs from "emailjs-com";
 import { MailOutlined } from "@mui/icons-material";
 
@@ -1925,7 +1988,7 @@ function Modal({ onClose }) {
   }, this);
 }
 function Contact() {
-  let { setHeaderColor } = useHeaderColor(), [showModal, setShowModal] = useState5(!1), [name, setName] = useState5(""), [lastName, setLastName] = useState5(""), [email, setEmail] = useState5(""), [subject, setSubject] = useState5(""), [message, setMessage] = useState5("");
+  let { setHeaderColor } = useHeaderColor(), [showModal, setShowModal] = useState6(!1), [name, setName] = useState6(""), [lastName, setLastName] = useState6(""), [email, setEmail] = useState6(""), [subject, setSubject] = useState6(""), [message, setMessage] = useState6("");
   useEffect6(() => {
     emailjs.init("IoYqcS-FyoRAsKFCH"), setHeaderColor("mainColor");
   }, [setHeaderColor]);
@@ -2352,11 +2415,11 @@ __export(index_exports, {
 });
 
 // app/components/home/background-slider.tsx
-import { useEffect as useEffect7, useState as useState6 } from "react";
+import { useEffect as useEffect7, useState as useState7 } from "react";
 import { motion as motion5 } from "framer-motion";
 import { jsxDEV as jsxDEV15 } from "react/jsx-dev-runtime";
 var BackgroundSlider = ({ isVisible = !1 }) => {
-  let [isHovered, setIsHovered] = useState6(!1), { setHeaderColor } = useHeaderColor();
+  let [isHovered, setIsHovered] = useState7(!1), { setHeaderColor } = useHeaderColor();
   return useEffect7(() => {
     let timer = setTimeout(() => {
       setIsHovered(!0);
@@ -2415,12 +2478,12 @@ import { Parallax as Parallax2, ParallaxProvider } from "react-scroll-parallax";
 import { motion as motion6 } from "framer-motion";
 
 // app/components/home/description.tsx
-import { useEffect as useEffect8, useState as useState7 } from "react";
+import { useEffect as useEffect8, useState as useState8 } from "react";
 import { useNavigate as useNavigate6 } from "@remix-run/react";
 import { Parallax } from "react-scroll-parallax";
 import { jsxDEV as jsxDEV16 } from "react/jsx-dev-runtime";
 var Description = () => {
-  let router = useNavigate6(), [scrollPosition, setScrollPosition] = useState7(0), [scrolled, setScrolled] = useState7(!1), isServicesSectionVisible = scrollPosition > 1350;
+  let router = useNavigate6(), [scrollPosition, setScrollPosition] = useState8(0), [scrolled, setScrolled] = useState8(!1), isServicesSectionVisible = scrollPosition > 1350;
   return useEffect8(() => {
     let handleScroll = () => {
       setScrollPosition(window.scrollY), window.scrollY > 1150 && setScrolled(!0);
@@ -2938,9 +3001,9 @@ var timing = {
 import { motion as motion8 } from "framer-motion";
 
 // app/animations/home-desktop.tsx
-import { useEffect as useEffect10, useState as useState9 } from "react";
+import { useEffect as useEffect10, useState as useState10 } from "react";
 var useDesktopAnimation = () => {
-  let { setHeaderColor } = useHeaderColor(), [state, setState] = useState9({
+  let { setHeaderColor } = useHeaderColor(), [state, setState] = useState10({
     currentImage: 0,
     showLastPart: !1,
     animationFinished: !1,
@@ -4176,7 +4239,7 @@ function Home() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-75X5CYH4.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-FWVAADBG.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-43WGSL2O.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-YHR3KNG2.js", imports: ["/build/_shared/chunk-APMP54XW.js", "/build/_shared/chunk-T5TQ65FD.js", "/build/_shared/chunk-JOGLTZST.js", "/build/_shared/chunk-NMZL6IDN.js", "/build/_shared/chunk-DIGSRBO4.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-YCJFWFN5.js", imports: ["/build/_shared/chunk-QAIRQCHO.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-O7O3W72P.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-D26OOSZL.js", imports: ["/build/_shared/chunk-5T6BUAZE.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/capiche": { id: "routes/capiche", parentId: "root", path: "capiche", index: void 0, caseSensitive: void 0, module: "/build/routes/capiche-LQO546ED.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/cards": { id: "routes/cards", parentId: "root", path: "cards", index: void 0, caseSensitive: void 0, module: "/build/routes/cards-BKTA7OK5.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-C4RRCPVE.js", imports: ["/build/_shared/chunk-O7O3W72P.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/home": { id: "routes/home", parentId: "root", path: "home", index: void 0, caseSensitive: void 0, module: "/build/routes/home-6AJTBBGH.js", imports: ["/build/_shared/chunk-QAIRQCHO.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-O7O3W72P.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/logofolio": { id: "routes/logofolio", parentId: "root", path: "logofolio", index: void 0, caseSensitive: void 0, module: "/build/routes/logofolio-V3NFMFL2.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/mosaic": { id: "routes/mosaic", parentId: "root", path: "mosaic", index: void 0, caseSensitive: void 0, module: "/build/routes/mosaic-I67JMF2Y.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-6YIM5YDT.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/projects": { id: "routes/projects", parentId: "root", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/projects-SNASQXDD.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-NX7JRWYD.js", imports: ["/build/_shared/chunk-IR7NE7RZ.js", "/build/_shared/chunk-Z7AT2O2U.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/values": { id: "routes/values", parentId: "root", path: "values", index: void 0, caseSensitive: void 0, module: "/build/routes/values-B3C5TGJE.js", imports: ["/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-IR7NE7RZ.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "048a7522", hmr: { runtime: "/build/_shared/chunk-43WGSL2O.js", timestamp: 1712870425444 }, url: "/build/manifest-048A7522.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-75X5CYH4.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-FWVAADBG.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-43WGSL2O.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-RX6I436V.js", imports: ["/build/_shared/chunk-GX2C7XOP.js", "/build/_shared/chunk-3SRQZ3IO.js", "/build/_shared/chunk-JOGLTZST.js", "/build/_shared/chunk-NMZL6IDN.js", "/build/_shared/chunk-DIGSRBO4.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-OCP2SWWV.js", imports: ["/build/_shared/chunk-VA5C7VDH.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-O7O3W72P.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-PX7O5U6S.js", imports: ["/build/_shared/chunk-5T6BUAZE.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/capiche": { id: "routes/capiche", parentId: "root", path: "capiche", index: void 0, caseSensitive: void 0, module: "/build/routes/capiche-IJ23L5WI.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/cards": { id: "routes/cards", parentId: "root", path: "cards", index: void 0, caseSensitive: void 0, module: "/build/routes/cards-F2A3EBFM.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-C4RRCPVE.js", imports: ["/build/_shared/chunk-O7O3W72P.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/home": { id: "routes/home", parentId: "root", path: "home", index: void 0, caseSensitive: void 0, module: "/build/routes/home-PP7V334B.js", imports: ["/build/_shared/chunk-VA5C7VDH.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-O7O3W72P.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/logofolio": { id: "routes/logofolio", parentId: "root", path: "logofolio", index: void 0, caseSensitive: void 0, module: "/build/routes/logofolio-WBCICPFX.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/mosaic": { id: "routes/mosaic", parentId: "root", path: "mosaic", index: void 0, caseSensitive: void 0, module: "/build/routes/mosaic-NIWYWN4Z.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-SOORNGPG.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/projects": { id: "routes/projects", parentId: "root", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/projects-HTMV7FJF.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-E4G3SJC6.js", imports: ["/build/_shared/chunk-IR7NE7RZ.js", "/build/_shared/chunk-Z7AT2O2U.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/values": { id: "routes/values", parentId: "root", path: "values", index: void 0, caseSensitive: void 0, module: "/build/routes/values-BZPYWFEC.js", imports: ["/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-IR7NE7RZ.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "d8d5fe8a", hmr: { runtime: "/build/_shared/chunk-43WGSL2O.js", timestamp: 1712923236184 }, url: "/build/manifest-D8D5FE8A.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "development", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1, v3_relativeSplatPath: !1, v3_throwAbortReason: !1 }, publicPath = "/build/", entry = { module: entry_server_node_exports }, routes = {

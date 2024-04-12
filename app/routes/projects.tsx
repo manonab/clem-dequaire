@@ -23,9 +23,6 @@ export default function Project() {
       <div onClick={() => router('/logofolio')} className="hover:cursor-pointer">
         <p className="uppercase text-titleMobile md:text-title text-left  font-neueRegular text-orange hover:text-redHome">LOGOfolio</p>
       </div>
-      <div onClick={() => router('/cards')} className="hover:cursor-pointer">
-        <p className="uppercase text-titleMobile md:text-title text-left  font-neueRegular text-orange hover:text-redHome">CARTES</p>
-      </div>
     </div>
   );
 }

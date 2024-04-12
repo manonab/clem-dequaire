@@ -1,13 +1,41 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { BigArrow } from "~/assets/big-arrow";
 import { Images } from "~/common/images";
 import { useHeaderColor } from "~/context";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { useNavigate } from "@remix-run/react";
+import { ArrowRight } from "~/assets/arrow-right";
 
 export default function PortFolio() {
   const { setHeaderColor } = useHeaderColor();
   const router = useNavigate();
+  const controls = useAnimation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 50) {
+        controls.start({
+          opacity: 1,
+          x: 0, // Animation vers la position x = 0 pour simuler l'apparition de la droite
+          transition: { duration: 0.5 }
+        });
+      } else {
+        controls.start({
+          opacity: 0,
+          x: 100, // Position initiale vers la droite de la page
+          transition: { duration: 0.5 }
+        });
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [controls]);
+
 
   useEffect(() => {
     setHeaderColor("mainColor")
@@ -39,18 +67,29 @@ export default function PortFolio() {
       <div className="w-auto mt-6 mb-10 mx-10">
         <p className="font-neueCondensed text-left leading-[90%] text-orange text-[30px]">Changer les choses, une<br></br> idée à la fois. </p>
       </div>
+      <div className="w-[200px] absolute right-0">
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          animate={controls}
+        >
+          <img src={Images.bearMobilePortfolio} style={{ width: "100%", height: "100%" }} />
+        </motion.div>
+      </div>
       <div className="flex gap-6 items-start w-full overflow-auto h-full size-12 px-4 mb-10">
         {portfolioContent.map((content, index) => (
           <div key={index} className="flex flex-col items-start pl-6 pb-6">
             <p className="text-redHome font-neueSemiBold lowercase text-[25px] mb-5">{content.title}</p>
-            <p className="font-footer text-[16px] min-w-[320px]">{content.content}</p>
+            <p className="font-footer text-[14px] leading-[100%] min-w-[320px]">{content.content}</p>
           </div>
         ))}
       </div>
-      <div className="bg-saumon mt-10 flex flex-col gap-3 justify-center py-20">
-        <div className="flex gap-3 justify-evenly">
-          <img src={Images.capicheImg1} width="160px" className="-mt-10" />
-          <img src={Images.capicheImg2} width="160px" className="-mb-10" />
+      <div className="bg-saumon mt-10 flex flex-col gap-3 justify-center py-10">
+        <div className="flex gap-6 items-center w-full overflow-auto h-full size-12 px-4 py-6">
+          <img src={Images.screenPortFolio1} width="350px" className="pl-6" />
+          <img src={Images.service} className="w-8" />
+          <img src={Images.screenPortFolio2} width="350px" />
+          <img src={Images.service} className="w-8" />
+          <img src={Images.screenPortFolio3} width="350px" />
         </div>
       </div>
       <div className="my-20">

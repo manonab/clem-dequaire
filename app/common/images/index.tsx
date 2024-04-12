@@ -27,22 +27,27 @@ import Mosaic2 from "../../assets/mosaic_2.png";
 import NewLogo from "../../assets/newlogo.png";
 import CapicheLogo from "../../assets/capiche-logo.png";
 import Mosaic001 from "../../assets/mosaic/mosaic-001.png";
-import Mosaic002 from "../../assets/mosaic/mosaic-002.png"
-import Mosaic003 from "../../assets/mosaic/mosaic-003.png"
-import Mosaic004 from "../../assets/mosaic/mosaic-004.png"
-import Mosaic005 from "../../assets/mosaic/mosaic-005.png"
-import Mosaic006 from "../../assets/mosaic/mosaic-006.png"
-import Mosaic007 from "../../assets/mosaic/mosaic-007.png"
-import CapicheBG from "../../assets/capiche/background-capiche.png"
-import HomeMobile from "../../assets/home/home-mobile.png"
-import HomeMobile1 from "../../assets/home/home-mobile-2.png"
-import HomeLine from "../../assets/home/home-line.png"
-import HomeCapiche from "../../assets/home/home-capiche.png"
-import HomePortfolio from "../../assets/home/home-portfolio.png"
-import HomeMosaic from "../../assets/home/home-mosaic.png"
-import ContactArrow from "../../assets/contact/contact-arrow.png"
-import Capiche001 from "../../assets/capiche/cap-img-001.png"
-import Capiche002 from "../../assets/capiche/cap-img-002.png"
+import Mosaic002 from "../../assets/mosaic/mosaic-002.png";
+import Mosaic003 from "../../assets/mosaic/mosaic-003.png";
+import Mosaic004 from "../../assets/mosaic/mosaic-004.png";
+import Mosaic005 from "../../assets/mosaic/mosaic-005.png";
+import Mosaic006 from "../../assets/mosaic/mosaic-006.png";
+import Mosaic007 from "../../assets/mosaic/mosaic-007.png";
+import CapicheBG from "../../assets/capiche/background-capiche.png";
+import HomeMobile from "../../assets/home/home-mobile.png";
+import HomeMobile1 from "../../assets/home/home-mobile-2.png";
+import HomeLine from "../../assets/home/home-line.png";
+import HomeCapiche from "../../assets/home/home-capiche.png";
+import HomePortfolio from "../../assets/home/home-portfolio.png";
+import HomeMosaic from "../../assets/home/home-mosaic.png";
+import ContactArrow from "../../assets/contact/contact-arrow.png";
+import Capiche001 from "../../assets/capiche/cap-img-001.png";
+import Capiche002 from "../../assets/capiche/cap-img-002.png";
+import BearMobilePortFolio from "../../assets/portfolio/portfolio-bear-mobile.png";
+import screenPortFolio1 from "../../assets/portfolio/screen-001.png";
+import screenPortFolio2 from "../../assets/portfolio/screen-002.png";
+import screenPortFolio3 from "../../assets/portfolio/screen-003.png";
+
 
 export const Images = {
   eye: Eye,
@@ -90,6 +95,9 @@ export const Images = {
   contactArrow: ContactArrow,
   capicheImg1: Capiche001,
   capicheImg2: Capiche002,
-
+  bearMobilePortfolio: BearMobilePortFolio,
+  screenPortFolio1: screenPortFolio1,
+  screenPortFolio2: screenPortFolio2,
+  screenPortFolio3: screenPortFolio3
 };
 
