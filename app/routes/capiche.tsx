@@ -21,7 +21,7 @@ export default function Capiche() {
   const capicheContent = [
     { title: "Concept.", content: "Capiche est un site fictif spécialisé dans la revente de jeux de société de seconde main. Il se distingue par ses sections dédiées aux produits vintage et japonais, toujours d'occasion. L’objectif est d’encourager le consommateur à un mode de consommation plus responsable via une plateforme ludique et moderne." },
     { title: "Intention", content: "L’univers et le ton se veulent léger, la palette de couleur est un rappel du logo. Le site et l’application mobile sont à la fois ludiques et fondés sur les principes de L’UX design pour une expérience utilisateur optimum." },
-    { title: "Réalisation", content: "Lorem ipsum dolor sit amet consectetur. Orci sed vulputate molestie et aliquet. Sem sapien eget lectus elementum vulputate. Purus congue ullamcorper id at felis et." },
+    { title: "Réalisation", content: "La conception du site web et de l'application mobile a été réalisée sur Figma, en respectant les principes de l'UX design. Une attention particulière a été portée sur la pertinence des recherches des consommateurs et les suggestions personnalisées." },
   ];
 
   return (
@@ -58,7 +58,7 @@ export default function Capiche() {
           <img src={Images.capicheImg2} width="160px" className="-mb-10" />
         </div>
       </div>
-      <div className="my-20">
+      <div className="py-20 bg-saumon">
         <div onClick={() => router('/projects')} className="py-2 px-2 transition-all duration-300 ease-in-out font-bold text-[10px] text-center text-grayBlack uppercase hover:text-white hover:bg-grayBlack translate hover:cursor-pointer border-black border rounded-full min-w-[100px] max-w-[130px] mx-auto">
           Autres projets
         </div>

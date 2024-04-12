@@ -131,7 +131,7 @@ import {
 } from "@remix-run/react";
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-CWWBOJHS.css";
+var tailwind_default = "/build/_assets/tailwind-GCOY7HE3.css";
 
 // app/components/header/index.tsx
 import { useState as useState2 } from "react";
@@ -1796,7 +1796,7 @@ function Capiche() {
   }, capicheContent = [
     { title: "Concept.", content: "Capiche est un site fictif sp\xE9cialis\xE9 dans la revente de jeux de soci\xE9t\xE9 de seconde main. Il se distingue par ses sections d\xE9di\xE9es aux produits vintage et japonais, toujours d'occasion. L\u2019objectif est d\u2019encourager le consommateur \xE0 un mode de consommation plus responsable via une plateforme ludique et moderne." },
     { title: "Intention", content: "L\u2019univers et le ton se veulent l\xE9ger, la palette de couleur est un rappel du logo. Le site et l\u2019application mobile sont \xE0 la fois ludiques et fond\xE9s sur les principes de L\u2019UX design pour une exp\xE9rience utilisateur optimum." },
-    { title: "R\xE9alisation", content: "Lorem ipsum dolor sit amet consectetur. Orci sed vulputate molestie et aliquet. Sem sapien eget lectus elementum vulputate. Purus congue ullamcorper id at felis et." }
+    { title: "R\xE9alisation", content: "La conception du site web et de l'application mobile a \xE9t\xE9 r\xE9alis\xE9e sur Figma, en respectant les principes de l'UX design. Une attention particuli\xE8re a \xE9t\xE9 port\xE9e sur la pertinence des recherches des consommateurs et les suggestions personnalis\xE9es." }
   ];
   return /* @__PURE__ */ jsxDEV12("div", { className: "h-full flex-col items-center justify-center mx-auto", children: [
     /* @__PURE__ */ jsxDEV12("div", { className: "flex-col my-20", children: [
@@ -1911,7 +1911,7 @@ function Capiche() {
       lineNumber: 55,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV12("div", { className: "my-20", children: /* @__PURE__ */ jsxDEV12("div", { onClick: () => router("/projects"), className: "py-2 px-2 transition-all duration-300 ease-in-out font-bold text-[10px] text-center text-grayBlack uppercase hover:text-white hover:bg-grayBlack translate hover:cursor-pointer border-black border rounded-full min-w-[100px] max-w-[130px] mx-auto", children: "Autres projets" }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV12("div", { className: "py-20 bg-saumon", children: /* @__PURE__ */ jsxDEV12("div", { onClick: () => router("/projects"), className: "py-2 px-2 transition-all duration-300 ease-in-out font-bold text-[10px] text-center text-grayBlack uppercase hover:text-white hover:bg-grayBlack translate hover:cursor-pointer border-black border rounded-full min-w-[100px] max-w-[130px] mx-auto", children: "Autres projets" }, void 0, !1, {
       fileName: "app/routes/capiche.tsx",
       lineNumber: 62,
       columnNumber: 9
@@ -3121,58 +3121,248 @@ __export(mosaic_exports, {
 });
 import { useEffect as useEffect12 } from "react";
 import { motion as motion8 } from "framer-motion";
+import { useNavigate as useNavigate8 } from "@remix-run/react";
+import { ArrowForward } from "@mui/icons-material";
 import { jsxDEV as jsxDEV19 } from "react/jsx-dev-runtime";
 function Mosaic() {
-  let { setHeaderColor } = useHeaderColor();
+  let { setHeaderColor } = useHeaderColor(), router = useNavigate8();
   useEffect12(() => {
     setHeaderColor("mainColor");
   }, [setHeaderColor]);
   let timing2 = {
     duration: 0.7,
     ease: [0.43, 0.13, 0.23, 0.96]
-  };
-  return /* @__PURE__ */ jsxDEV19("div", { className: "h-full flex-col items-center justify-center mx-auto", children: /* @__PURE__ */ jsxDEV19("div", { className: "flex-col my-20", children: [
-    /* @__PURE__ */ jsxDEV19("p", { className: "uppercase font-neueRegular md:text-title text-titleMobile text-redHome text-center my-40", children: "Mosaic" }, void 0, !1, {
-      fileName: "app/routes/mosaic.tsx",
-      lineNumber: 20,
-      columnNumber: 9
-    }, this),
-    /* @__PURE__ */ jsxDEV19(
-      motion8.div,
-      {
-        className: "mx-auto flex-col flex items-center gap-3 mb-20",
-        initial: { opacity: 0, y: 100 },
-        animate: { opacity: 1, y: 0 },
-        transition: { ...timing2, delay: 0.6 },
-        children: [
-          /* @__PURE__ */ jsxDEV19(BigArrow, {}, void 0, !1, {
-            fileName: "app/routes/mosaic.tsx",
-            lineNumber: 27,
-            columnNumber: 11
-          }, this),
-          /* @__PURE__ */ jsxDEV19("p", { className: "font-footer uppercase font-bold leading-[20px]", children: "DISCOVER" }, void 0, !1, {
-            fileName: "app/routes/mosaic.tsx",
-            lineNumber: 28,
-            columnNumber: 11
-          }, this)
-        ]
-      },
-      void 0,
-      !0,
-      {
+  }, mosaicContent = [
+    { title: "mission.", content: "J'ai con\xE7u ce portfolio comme une introduction \xE0 mon univers, mon style et mes valeurs. Des arri\xE8re-plans neutres mais une des couleurs de texte satur\xE9es, une police douce mais imposante... L\u2019ensemble se pose en miroir de mes engagements et croyances : un design simple, avenant mais r\xE9solument affirm\xE9." },
+    { title: "objectifs", content: "L\u2019univers et le ton se veulent l\xE9ger, la palette de couleur est un rappel du logo. Le site et l\u2019application mobile sont \xE0 la fois ludiques et fond\xE9s sur les principes de L\u2019UX design pour une exp\xE9rience utilisateur optimum." },
+    { title: "R\xE9alisation", content: "J\u2019ai veill\xE9 \xE0 ce que ce portfolio pr\xE9sente une coh\xE9rence entre la version mobile et web, tout en offrant une exp\xE9rience utilisateur sp\xE9cifique \xE0 chaque support." }
+  ];
+  return /* @__PURE__ */ jsxDEV19("div", { className: "h-full flex-col items-center justify-center mx-auto", children: [
+    /* @__PURE__ */ jsxDEV19("div", { className: "flex-col mt-20 mb-16", children: [
+      /* @__PURE__ */ jsxDEV19("p", { className: "uppercase font-neueRegular md:text-title text-capicheMobile text-redHome text-center mt-[180px] mb-[100px]", children: "Mosaic" }, void 0, !1, {
         fileName: "app/routes/mosaic.tsx",
-        lineNumber: 21,
+        lineNumber: 31,
         columnNumber: 9
-      },
-      this
-    )
+      }, this),
+      /* @__PURE__ */ jsxDEV19(
+        motion8.div,
+        {
+          className: "mx-auto flex-col flex items-center gap-3 mb-[150px]",
+          initial: { opacity: 0, y: 100 },
+          animate: { opacity: 1, y: 0 },
+          transition: { ...timing2, delay: 0.6 },
+          children: [
+            /* @__PURE__ */ jsxDEV19(BigArrow, {}, void 0, !1, {
+              fileName: "app/routes/mosaic.tsx",
+              lineNumber: 38,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV19("p", { className: "font-footer uppercase font-bold leading-[20px] text-[14px]", children: "DISCOVER" }, void 0, !1, {
+              fileName: "app/routes/mosaic.tsx",
+              lineNumber: 39,
+              columnNumber: 11
+            }, this)
+          ]
+        },
+        void 0,
+        !0,
+        {
+          fileName: "app/routes/mosaic.tsx",
+          lineNumber: 32,
+          columnNumber: 9
+        },
+        this
+      )
+    ] }, void 0, !0, {
+      fileName: "app/routes/mosaic.tsx",
+      lineNumber: 30,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV19("div", { className: "w-full h-auto bg-saumon py-10", children: [
+      /* @__PURE__ */ jsxDEV19("div", { className: "flex items-center justify-center gap-4", children: [
+        /* @__PURE__ */ jsxDEV19("p", { className: "text-orange w-1/2 font-neueCondensed text-[24px] leading-[120%]", children: [
+          '"Mosaic encourage, \xE9duque et inspire les jeunes personnes LGBTQ+ et celleux \xE0',
+          /* @__PURE__ */ jsxDEV19("br", {}, void 0, !1, {
+            fileName: "app/routes/mosaic.tsx",
+            lineNumber: 44,
+            columnNumber: 167
+          }, this),
+          ' leur c\xF4t\xE9s."'
+        ] }, void 0, !0, {
+          fileName: "app/routes/mosaic.tsx",
+          lineNumber: 44,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV19("div", { className: "z-50 mt-10 w-[130px] h-[130px] bg-mainColor rounded-2xl", children: /* @__PURE__ */ jsxDEV19("div", { className: "flex flex-col items-center justify-center h-full", children: [
+          /* @__PURE__ */ jsxDEV19("p", { className: "font-neueSemiBold text-[28px] text-center", children: "+16%" }, void 0, !1, {
+            fileName: "app/routes/mosaic.tsx",
+            lineNumber: 47,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV19("p", { className: "font-footer text-[12px] text-center", children: [
+            "Augmentation",
+            /* @__PURE__ */ jsxDEV19("br", {}, void 0, !1, {
+              fileName: "app/routes/mosaic.tsx",
+              lineNumber: 48,
+              columnNumber: 78
+            }, this),
+            " globale en ligne."
+          ] }, void 0, !0, {
+            fileName: "app/routes/mosaic.tsx",
+            lineNumber: 48,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/routes/mosaic.tsx",
+          lineNumber: 46,
+          columnNumber: 13
+        }, this) }, void 0, !1, {
+          fileName: "app/routes/mosaic.tsx",
+          lineNumber: 45,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV19("div", { className: "w-[130px] absolute right-4  mt-14 z-10 h-[130px] bg-yellowHome rounded-2xl" }, void 0, !1, {
+          fileName: "app/routes/mosaic.tsx",
+          lineNumber: 51,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/mosaic.tsx",
+        lineNumber: 43,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV19("div", { className: "flex gap-6 items-start w-full overflow-auto h-full size-12 px-4 mt-8 mb-4", children: mosaicContent.map((content, index) => /* @__PURE__ */ jsxDEV19("div", { className: "flex flex-col items-start pl-6 pb-6", children: [
+        /* @__PURE__ */ jsxDEV19("p", { className: "text-redHome font-neueSemiBold lowercase text-[25px] mb-5", children: content.title }, void 0, !1, {
+          fileName: "app/routes/mosaic.tsx",
+          lineNumber: 57,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV19("p", { className: "font-footer text-[16px] min-w-[320px]", children: content.content }, void 0, !1, {
+          fileName: "app/routes/mosaic.tsx",
+          lineNumber: 58,
+          columnNumber: 15
+        }, this)
+      ] }, index, !0, {
+        fileName: "app/routes/mosaic.tsx",
+        lineNumber: 56,
+        columnNumber: 13
+      }, this)) }, void 0, !1, {
+        fileName: "app/routes/mosaic.tsx",
+        lineNumber: 54,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/mosaic.tsx",
+      lineNumber: 42,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV19("div", { className: "w-auto py-20 bg-yellowHome overflow-hidden", children: [
+      /* @__PURE__ */ jsxDEV19("div", { className: "flex items-center justify-around gap-12", children: [
+        /* @__PURE__ */ jsxDEV19("img", { src: Images.mosaic1, className: "w-[180px] h-[180px] -ml-[120px]" }, void 0, !1, {
+          fileName: "app/routes/mosaic.tsx",
+          lineNumber: 65,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV19("img", { src: Images.mosaic2, className: "w-[220px] h-[220px]" }, void 0, !1, {
+          fileName: "app/routes/mosaic.tsx",
+          lineNumber: 66,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV19("img", { src: Images.mosaic007, className: "w-[180px] h-[180px] rounded-xl" }, void 0, !1, {
+          fileName: "app/routes/mosaic.tsx",
+          lineNumber: 67,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/mosaic.tsx",
+        lineNumber: 64,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV19("p", { className: " mt-5 text-[14px] text-orange text-center font-neueCondensed", children: [
+        "Trust the Word, la premi\xE8re \xE9dition d'un concours ",
+        /* @__PURE__ */ jsxDEV19("br", {}, void 0, !1, {
+          fileName: "app/routes/mosaic.tsx",
+          lineNumber: 69,
+          columnNumber: 135
+        }, this),
+        " litt\xE9raire par et pour la communaut\xE9 Queer."
+      ] }, void 0, !0, {
+        fileName: "app/routes/mosaic.tsx",
+        lineNumber: 69,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/mosaic.tsx",
+      lineNumber: 63,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV19("div", { className: "mb-20 mt-10 flex flex-col items-center", children: [
+      /* @__PURE__ */ jsxDEV19("p", { className: "text-orange font-neueRegular text-[40px] mb-10", children: "T\xE9moignage" }, void 0, !1, {
+        fileName: "app/routes/mosaic.tsx",
+        lineNumber: 72,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV19("div", { className: "flex items-center", children: [
+        /* @__PURE__ */ jsxDEV19(ArrowForward, { className: "w-6" }, void 0, !1, {
+          fileName: "app/routes/mosaic.tsx",
+          lineNumber: 74,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV19("p", { className: "font-footer text-[18px]", children: [
+          /* @__PURE__ */ jsxDEV19("span", { className: "font-footer font-semibold", children: "Hugh O'keeffe" }, void 0, !1, {
+            fileName: "app/routes/mosaic.tsx",
+            lineNumber: 74,
+            columnNumber: 82
+          }, this),
+          ", Assistant Directeur"
+        ] }, void 0, !0, {
+          fileName: "app/routes/mosaic.tsx",
+          lineNumber: 74,
+          columnNumber: 43
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/mosaic.tsx",
+        lineNumber: 73,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV19("p", { className: "font-footer text-[12px] leading-[120%] mt-5 mb-10 w-[300px]", children: [
+        "\u201CCl\xE9mence was a true pleasure to work with. In",
+        /* @__PURE__ */ jsxDEV19("br", {}, void 0, !1, {
+          fileName: "app/routes/mosaic.tsx",
+          lineNumber: 76,
+          columnNumber: 130
+        }, this),
+        " joining us she created a new role for herself",
+        /* @__PURE__ */ jsxDEV19("br", {}, void 0, !1, {
+          fileName: "app/routes/mosaic.tsx",
+          lineNumber: 76,
+          columnNumber: 185
+        }, this),
+        " leveraging her skills and abilities to build on Mosaic's",
+        /* @__PURE__ */ jsxDEV19("br", {}, void 0, !1, {
+          fileName: "app/routes/mosaic.tsx",
+          lineNumber: 76,
+          columnNumber: 251
+        }, this),
+        " online presence and grew our audience [...]\u201D."
+      ] }, void 0, !0, {
+        fileName: "app/routes/mosaic.tsx",
+        lineNumber: 76,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV19("a", { target: "_blank", href: "https://www.linkedin.com/in/cl%C3%A9mence-dequaire/?locale=en_US", className: "py-2 px-2 transition-all duration-300 ease-in-out font-bold text-[10px] text-center text-grayBlack uppercase hover:text-white hover:bg-grayBlack translate hover:cursor-pointer border-black border rounded-full min-w-[100px] max-w-[130px] mx-auto mb-20", children: "Voir sur linkedin" }, void 0, !1, {
+        fileName: "app/routes/mosaic.tsx",
+        lineNumber: 77,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/mosaic.tsx",
+      lineNumber: 71,
+      columnNumber: 7
+    }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/mosaic.tsx",
-    lineNumber: 19,
-    columnNumber: 7
-  }, this) }, void 0, !1, {
-    fileName: "app/routes/mosaic.tsx",
-    lineNumber: 18,
+    lineNumber: 29,
     columnNumber: 5
   }, this);
 }
@@ -3182,13 +3372,13 @@ var values_exports = {};
 __export(values_exports, {
   default: () => Values
 });
-import { useNavigate as useNavigate8 } from "@remix-run/react";
+import { useNavigate as useNavigate9 } from "@remix-run/react";
 import { useEffect as useEffect13 } from "react";
 import { isMobile as isMobile3 } from "react-device-detect";
 import { ParallaxProvider as ParallaxProvider2 } from "react-scroll-parallax";
 import { jsxDEV as jsxDEV20 } from "react/jsx-dev-runtime";
 function Values() {
-  let { setHeaderColor } = useHeaderColor(), router = useNavigate8();
+  let { setHeaderColor } = useHeaderColor(), router = useNavigate9();
   return useEffect13(() => {
     isMobile3 || setHeaderColor("linear-values");
   }, [setHeaderColor]), /* @__PURE__ */ jsxDEV20(ParallaxProvider2, { children: [
@@ -3642,7 +3832,7 @@ var about_exports = {};
 __export(about_exports, {
   default: () => About
 });
-import { useNavigate as useNavigate9 } from "@remix-run/react";
+import { useNavigate as useNavigate10 } from "@remix-run/react";
 import { useEffect as useEffect14 } from "react";
 import { ParallaxProvider as ParallaxProvider3 } from "react-scroll-parallax";
 
@@ -3661,7 +3851,7 @@ var BigDownArrow = () => /* @__PURE__ */ jsxDEV21("svg", { xmlns: "http://www.w3
 // app/routes/about.tsx
 import { jsxDEV as jsxDEV22 } from "react/jsx-dev-runtime";
 function About() {
-  let { setHeaderColor } = useHeaderColor(), router = useNavigate9();
+  let { setHeaderColor } = useHeaderColor(), router = useNavigate10();
   return useEffect14(() => {
     setHeaderColor("linear-background");
   }, [setHeaderColor]), /* @__PURE__ */ jsxDEV22(ParallaxProvider3, { children: [
@@ -4134,7 +4324,7 @@ function Home() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-75X5CYH4.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-FWVAADBG.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-43WGSL2O.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-FMN4BHB4.js", imports: ["/build/_shared/chunk-GX2C7XOP.js", "/build/_shared/chunk-3SRQZ3IO.js", "/build/_shared/chunk-JOGLTZST.js", "/build/_shared/chunk-NMZL6IDN.js", "/build/_shared/chunk-DIGSRBO4.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-57KS6Z7D.js", imports: ["/build/_shared/chunk-6TMRANKA.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-IR7NE7RZ.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-SQXQJDN5.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-PX7O5U6S.js", imports: ["/build/_shared/chunk-5T6BUAZE.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/capiche": { id: "routes/capiche", parentId: "root", path: "capiche", index: void 0, caseSensitive: void 0, module: "/build/routes/capiche-IJ23L5WI.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/cards": { id: "routes/cards", parentId: "root", path: "cards", index: void 0, caseSensitive: void 0, module: "/build/routes/cards-F2A3EBFM.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-5YZILBYJ.js", imports: ["/build/_shared/chunk-SQXQJDN5.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/home": { id: "routes/home", parentId: "root", path: "home", index: void 0, caseSensitive: void 0, module: "/build/routes/home-75SCGB7A.js", imports: ["/build/_shared/chunk-6TMRANKA.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-SQXQJDN5.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/logofolio": { id: "routes/logofolio", parentId: "root", path: "logofolio", index: void 0, caseSensitive: void 0, module: "/build/routes/logofolio-WBCICPFX.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/mosaic": { id: "routes/mosaic", parentId: "root", path: "mosaic", index: void 0, caseSensitive: void 0, module: "/build/routes/mosaic-NIWYWN4Z.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-766SKMSG.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/projects": { id: "routes/projects", parentId: "root", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/projects-HTMV7FJF.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-UHGEDSZH.js", imports: ["/build/_shared/chunk-IR7NE7RZ.js", "/build/_shared/chunk-Z7AT2O2U.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/values": { id: "routes/values", parentId: "root", path: "values", index: void 0, caseSensitive: void 0, module: "/build/routes/values-A5WTP4WY.js", imports: ["/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-IR7NE7RZ.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "6d5ad8f5", hmr: { runtime: "/build/_shared/chunk-43WGSL2O.js", timestamp: 1712936881904 }, url: "/build/manifest-6D5AD8F5.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-75X5CYH4.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-FWVAADBG.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-43WGSL2O.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-JVMBCYZ5.js", imports: ["/build/_shared/chunk-GX2C7XOP.js", "/build/_shared/chunk-3SRQZ3IO.js", "/build/_shared/chunk-KXLZF2FH.js", "/build/_shared/chunk-NMZL6IDN.js", "/build/_shared/chunk-DIGSRBO4.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-DDE2DIIQ.js", imports: ["/build/_shared/chunk-VEMMLYKP.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-IR7NE7RZ.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-FZ2F3HJQ.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-PX7O5U6S.js", imports: ["/build/_shared/chunk-5T6BUAZE.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/capiche": { id: "routes/capiche", parentId: "root", path: "capiche", index: void 0, caseSensitive: void 0, module: "/build/routes/capiche-FTP6YWGZ.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/cards": { id: "routes/cards", parentId: "root", path: "cards", index: void 0, caseSensitive: void 0, module: "/build/routes/cards-F2A3EBFM.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-YVYLN56B.js", imports: ["/build/_shared/chunk-FZ2F3HJQ.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/home": { id: "routes/home", parentId: "root", path: "home", index: void 0, caseSensitive: void 0, module: "/build/routes/home-NW62HD7W.js", imports: ["/build/_shared/chunk-VEMMLYKP.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-FZ2F3HJQ.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/logofolio": { id: "routes/logofolio", parentId: "root", path: "logofolio", index: void 0, caseSensitive: void 0, module: "/build/routes/logofolio-WBCICPFX.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/mosaic": { id: "routes/mosaic", parentId: "root", path: "mosaic", index: void 0, caseSensitive: void 0, module: "/build/routes/mosaic-DY6Q22YC.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-766SKMSG.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/projects": { id: "routes/projects", parentId: "root", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/projects-HTMV7FJF.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-VIM3JJEK.js", imports: ["/build/_shared/chunk-IR7NE7RZ.js", "/build/_shared/chunk-Z7AT2O2U.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/values": { id: "routes/values", parentId: "root", path: "values", index: void 0, caseSensitive: void 0, module: "/build/routes/values-A5WTP4WY.js", imports: ["/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-IR7NE7RZ.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "1add3b1f", hmr: { runtime: "/build/_shared/chunk-43WGSL2O.js", timestamp: 1712941211233 }, url: "/build/manifest-1ADD3B1F.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "development", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1, v3_relativeSplatPath: !1, v3_throwAbortReason: !1 }, publicPath = "/build/", entry = { module: entry_server_node_exports }, routes = {
