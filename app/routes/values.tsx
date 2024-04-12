@@ -30,7 +30,7 @@ export default function Values() {
               <img alt="men with pride flag" src={Images.pride} />
             </div>
           </div>
-          <p className="z-[10] -mb-32 w-[741px] ml-[300px] leading-[72px] text-royalBlue text-[60px] font-neueRegular">
+          <p className="z-10 -mb-32 w-[741px] ml-[300px] leading-[72px] text-royalBlue text-[60px] font-neueRegular">
             "Seules 54% des entreprises françaises ont embrassé la diversité".<span className="text-black">*</span>
           </p>
           <div className="flex items-center justify-evenly">

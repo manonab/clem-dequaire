@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import { useHeaderColor } from "~/context";
 import { motion } from "framer-motion";
-import { Images } from "~/common/images";
 import { BigArrow } from "~/assets/big-arrow";
+import { useNavigate } from "@remix-run/react";
+import { Images } from "~/common/images";
+import { Close, Construction } from "@mui/icons-material";
 import Description from "./description";
 
 const timing = {
@@ -13,28 +15,67 @@ const timing = {
 
 const HomeComponent: React.FC = () => {
   const { setHeaderColor } = useHeaderColor();
+  const [modalOpen, setModalOpen] = useState<boolean>(false);
+  const router = useNavigate();
 
   useEffect(() => {
     setHeaderColor("#FCF6EF");
   }, []);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setModalOpen(true);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleClose = () => {
+    setModalOpen(false)
+  }
   return (
-    <ParallaxProvider>
-      <Parallax speed={-30} className="hidden md:flex flex-col justify-around items-center gap-4">
-        <motion.div
-          transition={{ ...timing, delay: 2 }}
-          className="flex flex-col items-center justify-evenly h-screen">
-          <p className="font-neueRegular text-redHome text-welcome text-center">Bienvenue</p>
-          <div className="flex flex-col items-center gap-3 mb-20">
-            <BigArrow />
-            <p className="font-footer uppercase font-bold leading-[20px]">SCROLL & ROLL</p>
+    <>
+      {modalOpen && (
+        <div className="fixed inset-0 flex justify-center items-center z-50 bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg">
+          <div className="h-[450px] w-[350px] rounded-2xl bg-white flex flex-col justify-around items-center relative">
+            <div className="flex flex-col gap-3 items-center justify-start h-1/2">
+              <div className="self-end" onClick={handleClose}><Close /></div>
+              <p className="text-redHome font-neueRegular text-[60px] z-50">Psst...</p>
+              <p className="text-footer text-m text-center mx-2">si tu veux vraiment vraiment voir ce<br></br> site, sois indulgent.e : il est encore<br></br> <span className="flex gap-0.5 items-center">en construction <Construction className="w-6" /></span></p>
+              <div onClick={handleClose} className="mt-5 bg-mainColor z-50 transition-all duration-300 ease-in-out font-bold text-xs text-center text-grayBlack uppercase hover:text-white hover:bg-grayBlack translate hover:cursor-pointer border-black border rounded-full px-5 py-2 mx-auto">
+                Bien noté!
+              </div>
+            </div>
+            <img
+              src={Images.inProgress}
+              className="h-1/2 z-10"
+            />
+            <motion.img
+              initial={{ opacity: 0, y: "100%" }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.5, type: "spring", stiffness: 150 }}
+              src={Images.posh}
+              className="absolute bottom-0 z-10"
+            />
           </div>
-        </motion.div>
-      </Parallax>
-      <Parallax speed={-15}>
-        <Description />
-      </Parallax>
-    </ParallaxProvider>
+        </div>
+      )}
+      <ParallaxProvider>
+        <Parallax speed={-30} className="hidden md:flex flex-col justify-around items-center gap-4">
+          <motion.div
+            transition={{ ...timing, delay: 2 }}
+            className="flex flex-col items-center justify-evenly h-screen">
+            <p className="font-neueRegular text-redHome text-welcome text-center">Bienvenue</p>
+            <div className="flex flex-col items-center gap-3 mb-20">
+              <BigArrow />
+              <p className="font-footer uppercase font-bold leading-[20px]">SCROLL & ROLL</p>
+            </div>
+          </motion.div>
+        </Parallax>
+        <Parallax speed={-15}>
+          <Description />
+        </Parallax>
+      </ParallaxProvider>
+    </>
   );
 };
 

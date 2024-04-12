@@ -47,7 +47,8 @@ import BearMobilePortFolio from "../../assets/portfolio/portfolio-bear-mobile.pn
 import screenPortFolio1 from "../../assets/portfolio/screen-001.png";
 import screenPortFolio2 from "../../assets/portfolio/screen-002.png";
 import screenPortFolio3 from "../../assets/portfolio/screen-003.png";
-
+import progress from "../../assets/home/frame-victoria.png";
+import posh from "../../assets/home/posh.png"
 
 export const Images = {
   eye: Eye,
@@ -98,6 +99,8 @@ export const Images = {
   bearMobilePortfolio: BearMobilePortFolio,
   screenPortFolio1: screenPortFolio1,
   screenPortFolio2: screenPortFolio2,
-  screenPortFolio3: screenPortFolio3
+  screenPortFolio3: screenPortFolio3,
+  inProgress: progress,
+  posh: posh
 };
 

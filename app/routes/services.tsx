@@ -123,7 +123,7 @@ export default function Services() {
               <p className="font-footer text-[70px] leading-[90%] font-semibold">01.</p>
               <p className="font-footer text-base leading-[90%] font-bold my-6">Analyser.</p>
               <p className="font-footer text-base leading-[130%]">
-                Ma mission est de vous écouter et de vous accompagner pas à pas dans votre parcours. Avoir compréhension approfondie de vos problématiques pour trouver ensemble des solutions efficaces et personnalisées qui répondent à vos défis uniques.
+                Ma mission est de vous écouter et de vous accompagner pas à pas dans votre parcours. Avoir une compréhension approfondie de vos problématiques afin de trouver ensemble des solutions efficaces et personnalisées qui répondent à vos défis uniques.
               </p>
             </div>
 
@@ -131,12 +131,12 @@ export default function Services() {
               <p className="font-footer text-[70px] leading-[90%] font-semibold">02.</p>
               <p className="font-footer text-base leading-[90%] font-bold my-6">Optimiser.</p>
               <p className="font-footer text-base leading-[130%]">
-                Construire ensemble une image de marque solide et cohérente. En adoptant une approche centrée sur vos besoins, je vise à créer pour vous une stratégie innovante et actuelle qui qui résonnera avec votre audience cible et génèrera un engagement nouveau.             </p>
+                Construire ensemble une image de marque solide et cohérente. En adoptant une approche centrée sur vos besoins, je vise à créer pour vous une stratégie innovante et actuelle qui qui résonnera avec votre audience cible et génèrera un engagement nouveau.</p>
             </div>
             <div className="flex-col w-[330px]">
               <p className="font-footer text-[70px] leading-[90%] font-semibold">03.</p>
               <p className="font-footer text-base leading-[90%] font-bold my-6">Conseiller.</p>
-              <p className="font-footer text-base leading-[130%]">Dans un monde où la diversité est devenue un élément incontournable, je serai là pour vous soutenir et vous fournir les outils et conseils nécessaires pour naviguer avec succès dans cet environnement complexe et diversifié.</p>
+              <p className="font-footer text-base leading-[130%]">Dans un monde où la diversité est devenue un facteur non négociable, je serai là pour vous soutenir et vous fournir les outils et conseils nécessaires pour naviguer avec succès dans ces nouveaux enjeux.</p>
             </div>
           </div>
           <div onClick={() => router('/projects')} className="mt-[100px] hover:cursor-pointer ml-[100px] flex gap-1.5 w-[105px] pb-2 items-center justify-around">
@@ -159,7 +159,7 @@ export default function Services() {
               <li className="text-[12px] font-footer font-medium">Gestion de projet</li>
               <li className="text-[12px] font-footer font-medium">Analyse de données (analytics)</li>
               <li className="text-[12px] font-footer font-medium">Rédaction</li>
-              <li className="text-[12px] font-footer font-medium">Campagne payantes (ads)</li>
+              <li className="text-[12px] font-footer font-medium">Campagnes payantes (ads)</li>
             </ul>
           </div>
         }
@@ -181,10 +181,10 @@ export default function Services() {
         <p className="text-xl self-end mr-16 -mt-6 hover:cursor-pointer" onClick={handleConsulting}>{isConsultingSelected ? "-" : "+"}</p>
         {isConsultingSelected &&
           <div className="ml-5 mt-8">
-            <p className="text-[12px] font-footer mx-4">Vous portez vers une communication plus éthique et solidaire qui répond aux problématiques d’aujourd’hui.</p>
+            <p className="text-[12px] font-footer mx-4">Vous porter vers une communication plus éthique et solidaire qui répond aux problématiques d’aujourd’hui.</p>
             <ul className="list-disc ml-10 mt-5">
               <li className="text-[12px] font-footer font-medium">Relecture inclusive</li>
-              <li className="text-[12px] font-footer font-medium">Formation & sensibilisation aux questions LGBTQ+<br></br> & féministes</li>
+              <li className="text-[12px] font-footer font-medium">Sensibilisation aux questions LGBTQ+<br></br> & féministes</li>
             </ul>
           </div>
         }
@@ -193,12 +193,12 @@ export default function Services() {
           <div className="flex flex-col gap-4 mx-6 mt-10 mb-8">
             <p className="font-footer leading-[90‰] text-[38px] font-semibold">01.</p>
             <p className="font-semibold mb-2">Analyser.</p>
-            <p className="text-[14px] leading-[130%] font-footer">Ma mission est de vous écouter et de vous accompagner pas à pas dans votre parcours.Avoir compréhension approfondie de vos problématiques pour trouver ensemble des solutions efficaces et personnalisées qui répondent à vos défis uniques.</p>
+            <p className="text-[14px] leading-[130%] font-footer">Ma mission est de vous écouter et de vous accompagner pas à pas dans votre parcours.Avoir une compréhension approfondie de vos problématiques pour trouver ensemble des solutions efficaces et personnalisées qui répondent à vos défis uniques.</p>
           </div>
           <div className="flex flex-col gap-4 mx-6 mb-8">
             <p className="font-footer leading-[90‰] text-[38px] font-semibold">02.</p>
             <p className="font-semibold mb-2">Optimiser.</p>
-            <p className="text-[14px] leading-[130%] font-footer">Construire ensemble une image de marque solide et cohérente. En adoptant une approche centrée sur vos besoins, je vise à créer pour vous une stratégie innovante et actuelle qui qui résonnera avec votre audience cible et génèrera un engagement nouveau. </p>
+            <p className="text-[14px] leading-[130%] font-footer">Construire ensemble une image de marque solide et cohérente. En adoptant une approche centrée sur vos besoins, je vise à créer pour vous une stratégie innovante et actuelle qui résonnera avec votre audience cible et génèrera un engagement nouveau. </p>
           </div>
           <div className="flex flex-col gap-4 mx-6 mt-10 mb-16">
             <p className="font-footer leading-[90‰] text-[38px] font-semibold">03.</p>
