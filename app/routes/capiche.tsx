@@ -22,7 +22,7 @@ export default function Capiche() {
   };
 
   const capicheContent = [
-    { title: "Concept.", content: "Capiche est un site fictif spécialisé dans la revente de jeux de société de seconde main. Il se distingue par ses sections dédiées aux produits vintage et japonais, toujours d'occasion. L’objectif est d’encourager le consommateur à un mode de consommation plus responsable via une plateforme ludique et moderne." },
+    { title: "Concept.", content: "Capiche est un site spécialisé dans la revente de jeux de société de seconde main. Il se distingue par ses sections dédiées aux produits vintage et japonais, toujours d'occasion. L’objectif est d’encourager le consommateur à un mode de consommation plus responsable via une plateforme ludique et moderne." },
     { title: "Intention", content: "L’univers et le ton se veulent léger, la palette de couleur est un rappel du logo. Le site et l’application mobile sont à la fois ludiques et fondés sur les principes de L’UX design pour une expérience utilisateur optimum." },
     { title: "Réalisation", content: "La conception du site web et de l'application mobile a été réalisée sur Figma, en respectant les principes de l'UX design. Une attention particulière a été portée sur la pertinence des recherches des consommateurs et les suggestions personnalisées." },
   ];
