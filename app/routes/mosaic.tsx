@@ -20,7 +20,7 @@ export default function Mosaic() {
   };
 
   const mosaicContent = [
-    { title: "mission.", content: "Mosaic est une association de défense des droits des personnes LGBTQ+ de 12 à 18 ans. Ils proposent des services d’écoute et d’animations pour les jeunes et leurs proches." },
+    { title: "mission.", content: "Mosaic est une association de défense des droits des personnes LGBTQ+ de 12 à 18 ans. Ils proposent des services d’écoute et d’animation pour les jeunes et leurs proches." },
     { title: "objectifs", content: "Augmenter la visibilité globale de l’association avec un plan de communication adapté, de nouveaux concepts et en accord avec le ton et le design déjà mis en place." },
   ];
 

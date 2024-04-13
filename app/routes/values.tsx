@@ -41,7 +41,7 @@ export default function Values() {
               <img alt="group people" src={Images.group} className="rounded-[50px h-[480px] w-[395px]" />
             </div>
             <p className="text-[18px] font-normal text-justify w-[640px]">
-              Au fil de ma vie et de ma carrière personnelle,  j’ai pu appréhender avec clarté et détermination les bouleversements sociaux qui se jouent depuis maintenant des années.  Pour toutes les entreprises qui souhaitent faire parti du changement, je propose une <span className="font-semibold">relecture inclusive</span> et une vision sensible de votre communication.             </p>
+              Au fil de ma vie et de ma carrière personnelle,  j’ai pu appréhender avec clarté et détermination les bouleversements sociaux qui se jouent depuis maintenant des années.  Pour toutes les entreprises qui souhaitent faire partie du changement, je propose une <span className="font-semibold">relecture inclusive</span> et une vision sensible de votre communication.             </p>
           </div>
         </div>
         <div className="bg-yellowHome pt-40 -mt-16">
