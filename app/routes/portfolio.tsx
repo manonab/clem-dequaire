@@ -51,12 +51,12 @@ export default function PortFolio() {
     if (contentRef.current) {
       contentRef.current.scrollLeft += 380;
     }
-  };
+  }; 
 
   const portfolioContent = [
     { title: "Concept.", content: "J'ai conçu ce portfolio comme une introduction à mon univers, mon style et mes valeurs. Des arrière-plans neutres mais des couleurs de texte saturées, une police douce mais imposante... L’ensemble se pose en miroir de mes engagements et croyances : un design simple, épuré mais résolument affirmé." },
-    { title: "Intention", content: "J’ai veillé à ce que ce portfolio présente une cohérence entre la version mobile et web, tout en offrant une expérience utilisateur spécifique à chaque support." },
-    { title: "Réalisation", content: "audacieux, fluide, engagé" },
+    { title: "Intention", content: "audacieux, fluide, engagé" },
+    { title: "Réalisation", content: "J’ai veillé à ce que ce portfolio présente une cohérence entre la version mobile et web, tout en offrant une expérience utilisateur spécifique à chaque support." },
   ];
 
   const handleGoBack = () => {
