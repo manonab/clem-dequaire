@@ -204,7 +204,7 @@ export default function Services() {
           <div className="flex flex-col gap-4 mx-6 mt-10 mb-16">
             <p className="font-footer leading-[90‰] text-[38px] font-semibold">03.</p>
             <p className="font-semibold mb-2">Conseiller</p>
-            <p className="text-[14px] leading-[130%] font-footer">Dans un monde où la diversité est devenue un facteur non négociable, je serai là pour vous soutenir et vous fournir les outils et conseils nécessaires pour naviguer avec succès dans cet environnement complexe et diversifié.</p>
+            <p className="text-[14px] leading-[130%] font-footer">Dans un monde où la diversité est devenue un facteur non négociable, je serai là pour vous soutenir et vous fournir les outils et conseils nécessaires pour naviguer avec succès dans cet environnement diversifié.</p>
           </div>
           <div onClick={() => router('/projects')} className="py-3 px-2 transition-all duration-300 ease-in-out font-bold text-[7px] text-center text-grayBlack uppercase hover:text-white hover:bg-grayBlack translate hover:cursor-pointer border-black border rounded-full w-[100px] mx-auto">
             Mes projets
