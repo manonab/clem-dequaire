@@ -12,14 +12,12 @@ export default function Index() {
   const redirect = useNavigate()
 
   useEffect(() => {
-    if (isMobile) {
-      redirect("Home")
-    }
+    redirect("Home")
   }, [])
 
   return (
     <div>
-      <div className={`hidden md:flex ${state.currentImage === state.images.length - 1 ? "top-0" : "top-[80px]"} mx-auto top-[80px] relative h-full`}>
+      {/* <div className={`hidden md:flex ${state.currentImage === state.images.length - 1 ? "top-0" : "top-[80px]"} mx-auto top-[80px] relative h-full`}>
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
@@ -37,7 +35,7 @@ export default function Index() {
             </motion.div>
         {state.showLastPart && <BackgroundSlider isVisible={!state.animationFinished} />}
         {state.animationFinished && <HomeComponent />}
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -13,7 +13,7 @@ export default function Project() {
   const pathTextMappingMobile = [
     { path: "/mosaic", name: "mosaic" },
     { path: "/portfolio", name: "portfolio" },
-    { path: "/capciche", name: "capiche" },
+    { path: "/capiche", name: "capiche" },
     { path: "/logofolio", name: "logos" }
   ];
 
@@ -24,7 +24,7 @@ export default function Project() {
 
   return (
     <div
-      className="bg-mainColor z-[999] flex flex-col gap-12 justify-center items-center fixed top-0 left-0 w-full h-full w-full h-full z-50 overflow-y-auto"
+      className="md:hidden bg-mainColor z-[999] flex flex-col gap-12 justify-center items-center fixed top-0 left-0 w-full h-full w-full h-full z-50 overflow-y-auto"
     >
       <div className="flex items-start flex-col gap-6 w-full ml-5">
         {pathTextMappingMobile.map((route) => (

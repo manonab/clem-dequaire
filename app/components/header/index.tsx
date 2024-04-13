@@ -39,12 +39,12 @@ export const Menu: React.FC = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: [0.43, 0.13, 0.23, 0.96] }}
-        className={`${headerColor} hidden md:flex mx-auto justify-between items-center py-[30px] px-[40px]`}>
+        className={`${headerColor} hidden md:hidden mx-auto justify-between items-center py-[30px] px-[40px]`}>
         <div onClick={() => router('/home')} className="hover:cursor-pointer h-[70px]">
           <img src={Images.newlogo} alt='logo' width="50px" height="50px" />
         </div>
         <div
-          className="flex justify-center items-center gap-9">
+          className="md:hidden justify-center items-center gap-9">
           {pathTextMapping.map((route) => (
             <div
               className="w-auto"
@@ -73,7 +73,7 @@ export const Menu: React.FC = () => {
           <div onClick={() => router("/home")} className="hover:cursor-pointer h-[80px]">
             <img src={Images.newlogo} alt="logo" width="60px" height="50px" />
           </div>
-          <div className="flex items-center mb-6">
+          <div className="md:hidden flex items-center mb-6">
             <button onClick={toggleMenu} className="text-grayBlack focus:outline-none flex gap-1">
               <motion.div
                 initial={{ y: 10, opacity: 0, scale: 0.5 }}

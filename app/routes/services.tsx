@@ -16,23 +16,25 @@ export default function Services() {
 
   const scrollingTextRef = useRef<HTMLDivElement>(null);
 
+  // useEffect(() => {
+  //   if (!isMobile) {
+  //     setHeaderColor("linear-services");
+  //     const handleScroll = () => {
+  //       if (scrollingTextRef.current) {
+  //         const rect = scrollingTextRef.current.getBoundingClientRect();
+  //         const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+  //         setScrolled(isVisible);
+  //       }
+  //     };
+  //     window.addEventListener("scroll", handleScroll);
+  //     return () => {
+  //       window.removeEventListener("scroll", handleScroll);
+  //     };
+  //   }
+  // }, [setHeaderColor]);
   useEffect(() => {
-    if (!isMobile) {
-      setHeaderColor("linear-services");
-      const handleScroll = () => {
-        if (scrollingTextRef.current) {
-          const rect = scrollingTextRef.current.getBoundingClientRect();
-          const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
-          setScrolled(isVisible);
-        }
-      };
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }
+    setHeaderColor("linear-background");
   }, [setHeaderColor]);
-
   const handleCommunication = () => {
     setIsCommunicationSelected((isCommunicationSelected: boolean) => !isCommunicationSelected)
   }
@@ -46,7 +48,7 @@ export default function Services() {
 
   return (
     <>
-      <div className="md:flex hidden flex-col flex gap-6">
+      <div className="md:hidden hidden flex-col flex gap-6">
         <div className="bg-yellowHome">
           <div className="flex items-center justify-evenly h-full !w-auto mx-auto py-40">
             <div className="flex-col flex gap-12 w-auto">
@@ -123,8 +125,7 @@ export default function Services() {
               <p className="font-footer text-[70px] leading-[90%] font-semibold">01.</p>
               <p className="font-footer text-base leading-[90%] font-bold my-6">Analyser.</p>
               <p className="font-footer text-base leading-[130%]">
-                Ma mission est de vous écouter et de vous accompagner pas à pas dans votre parcours. Avoir une compréhension approfondie de vos problématiques afin de trouver ensemble des solutions efficaces et personnalisées qui répondent à vos défis uniques.
-              </p>
+                Ma mission est de vous écouter et de vous accompagner pas à pas dans votre parcours. Avoir une compréhension approfondie de vos problématiques pour trouver ensemble des solutions efficaces et personnalisées qui répondent à vos défis uniques.              </p>
             </div>
 
             <div className="flex-col w-[330px]">

@@ -9,15 +9,17 @@ export default function Values() {
   const { setHeaderColor } = useHeaderColor();
   const router = useNavigate();
 
+  // useEffect(() => {
+  //   if (!isMobile) {
+  //     setHeaderColor("linear-values");
+  //   }
+  // }, [setHeaderColor]);
   useEffect(() => {
-    if (!isMobile) {
-      setHeaderColor("linear-values");
-    }
+    setHeaderColor("linear-background");
   }, [setHeaderColor]);
-
   return (
     <ParallaxProvider>
-      <div className="flex-col md:flex w-full h-auto hidden">
+      <div className="flex-col md:hidden w-full h-auto hidden">
         <div className="!w-full bg-saumon pb-20">
           <p className="ml-10 font-neueRegular text-title text-orange font-medium">Tout commença par une <br></br><span className="text-redHome">idée</span>.</p>
         </div>

@@ -60,7 +60,7 @@ const HomeComponent: React.FC = () => {
         </div>
       )}
       <ParallaxProvider>
-        <Parallax speed={-30} className="hidden md:flex flex-col justify-around items-center gap-4">
+        {/* <Parallax speed={-30} className="hidden md:flex flex-col justify-around items-center gap-4">
           <motion.div
             transition={{ ...timing, delay: 2 }}
             className="flex flex-col items-center justify-evenly h-screen">
@@ -70,7 +70,7 @@ const HomeComponent: React.FC = () => {
               <p className="font-footer uppercase font-bold leading-[20px]">SCROLL & ROLL</p>
             </div>
           </motion.div>
-        </Parallax>
+        </Parallax> */}
         <Parallax speed={-15}>
           <Description />
         </Parallax>

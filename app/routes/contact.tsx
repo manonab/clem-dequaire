@@ -61,7 +61,7 @@ export default function Contact() {
 
   return (
     <div>
-      <div className="hidden md:flex">
+      <div className="hidden md:hidden">
         <p className="text-title text-orange  font-neueRegular">Créons</p>
         <p className="text-title text-orange  font-neueRegular">ensemble.</p>
       </div>
@@ -84,7 +84,7 @@ export default function Contact() {
           </span>
         </div>
       </div> */}
-      <div className="hidden flex-col md:flex gap-3 mx-2">
+      <div className="hidden flex-col md:hidden gap-3 mx-2">
         <div className="flex justify-around">
           <div>
             <p className="font-inter mb-1">Nom</p>
