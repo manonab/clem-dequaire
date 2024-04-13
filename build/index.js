@@ -131,7 +131,7 @@ import {
 } from "@remix-run/react";
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-RFOQQUP2.css";
+var tailwind_default = "/build/_assets/tailwind-KATTQR4P.css";
 
 // app/components/header/index.tsx
 import { useState as useState2 } from "react";
@@ -570,7 +570,7 @@ var Menu = () => {
           initial: { opacity: 0, y: -20 },
           animate: { opacity: 1, y: 0 },
           transition: { duration: 0.5 },
-          className: "bg-yellowHome z-[999] flex flex-col gap-12 justify-center items-center fixed top-0 left-0 w-full h-full z-50 overflow-y-auto",
+          className: "bg-yellowHome z-[999] flex flex-col gap-12 justify-center items-center fixed top-0 left-0 w-full h-full w-full h-full z-50 overflow-y-auto",
           children: [
             /* @__PURE__ */ jsxDEV3("div", { className: "absolute top-5 right-5", onClick: toggleMenu, children: /* @__PURE__ */ jsxDEV3(Close, { className: "w-8 h-8" }, void 0, !1, {
               fileName: "app/components/header/index.tsx",
@@ -932,9 +932,9 @@ function PortFolio() {
   }, handleScrollRight = () => {
     contentRef.current && (contentRef.current.scrollLeft += 380);
   }, portfolioContent = [
-    { title: "Concept.", content: "J'ai con\xE7u ce portfolio comme une introduction \xE0 mon univers, mon style et mes valeurs. Des arri\xE8re-plans neutres mais une des couleurs de texte satur\xE9es, une police douce mais imposante... L\u2019ensemble se pose en miroir de mes engagements et croyances : un design simple, avenant mais r\xE9solument affirm\xE9." },
-    { title: "Intention", content: "Des fonds pastels, plut\xF4t neutre avec des couleurs audacieuses pour les titres." },
-    { title: "R\xE9alisation", content: "Lorem ipsum dolor sit amet consectetur. Orci sed vulputate molestie et aliquet. Sem sapien eget lectus elementum vulputate. Purus congue ullamcorper id at felis et." }
+    { title: "Concept.", content: "J'ai con\xE7u ce portfolio comme une introduction \xE0 mon univers, mon style et mes valeurs. Des arri\xE8re-plans neutres mais des couleurs de texte satur\xE9es, une police douce mais imposante... L\u2019ensemble se pose en miroir de mes engagements et croyances : un design simple, \xE9pur\xE9 mais r\xE9solument affirm\xE9." },
+    { title: "Intention", content: "J\u2019ai veill\xE9 \xE0 ce que ce portfolio pr\xE9sente une coh\xE9rence entre la version mobile et web, tout en offrant une exp\xE9rience utilisateur sp\xE9cifique \xE0 chaque support." },
+    { title: "R\xE9alisation", content: "audacieux, fluide, engag\xE9" }
   ];
   return /* @__PURE__ */ jsxDEV8("div", { className: "h-full flex-col items-center justify-center mx-auto", children: [
     /* @__PURE__ */ jsxDEV8("div", { className: "mx-5 w-8", onClick: () => {
@@ -1005,11 +1005,6 @@ function PortFolio() {
       lineNumber: 82,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV8("img", { src: Images.bearMobilePortfolio, className: "absolute right-0 mt-10" }, void 0, !1, {
-      fileName: "app/routes/portfolio.tsx",
-      lineNumber: 90,
-      columnNumber: 7
-    }, this),
     /* @__PURE__ */ jsxDEV8("div", { className: "flex gap-6 items-start w-full overflow-auto h-full size-12 px-4 mb-10", children: portfolioContent.map((content, index) => /* @__PURE__ */ jsxDEV8("div", { className: "flex flex-col items-start pl-6 pb-6", children: [
       /* @__PURE__ */ jsxDEV8("p", { className: "text-redHome font-neueSemiBold lowercase text-[25px] mb-5", children: content.title }, void 0, !1, {
         fileName: "app/routes/portfolio.tsx",
@@ -1030,7 +1025,7 @@ function PortFolio() {
       lineNumber: 92,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV8("div", { className: "bg-saumon mt-10 flex flex-col gap-3 justify-center py-10", children: /* @__PURE__ */ jsxDEV8("div", { className: "flex gap-6 items-center w-full overflow-auto h-full size-12 px-4 py-6", ref: contentRef, children: [
+    /* @__PURE__ */ jsxDEV8("div", { className: "bg-saumon flex flex-col gap-3 justify-center py-10", children: /* @__PURE__ */ jsxDEV8("div", { className: "flex gap-6 items-center w-full overflow-auto h-full size-12 px-4 py-6", ref: contentRef, children: [
       /* @__PURE__ */ jsxDEV8("img", { src: Images.screenPortFolio1, width: "350px", className: "pl-6" }, void 0, !1, {
         fileName: "app/routes/portfolio.tsx",
         lineNumber: 102,
@@ -1087,54 +1082,57 @@ __export(projects_exports, {
   default: () => Project
 });
 import { useNavigate as useNavigate4 } from "@remix-run/react";
-import { useEffect as useEffect3 } from "react";
+import { useEffect as useEffect3, useState as useState4 } from "react";
 import { jsxDEV as jsxDEV9 } from "react/jsx-dev-runtime";
 function Project() {
-  let { setHeaderColor } = useHeaderColor(), router = useNavigate4();
-  return useEffect3(() => {
+  let { setHeaderColor } = useHeaderColor(), router = useNavigate4(), [selected, setSelected] = useState4("");
+  useEffect3(() => {
     setHeaderColor("mainColor");
-  }, [setHeaderColor]), /* @__PURE__ */ jsxDEV9("div", { className: "h-full flex flex-col gap-6 md:gap-12 items-start justify-center ml-10", children: [
-    /* @__PURE__ */ jsxDEV9("div", { onClick: () => router("/mosaic"), className: "hover:cursor-pointer", children: /* @__PURE__ */ jsxDEV9("p", { className: "uppercase text-titleMobile md:text-title text-left font-neueRegular text-orange hover:text-redHome", children: "MOSAIC" }, void 0, !1, {
+  }, [setHeaderColor]);
+  let pathTextMappingMobile = [
+    { path: "/mosaic", name: "mosaic" },
+    { path: "/portfolio", name: "portfolio" },
+    { path: "/capciche", name: "capiche" },
+    { path: "/logofolio", name: "logos" }
+  ], handleChange = (route) => {
+    setSelected(route), router(`${route}`);
+  };
+  return /* @__PURE__ */ jsxDEV9(
+    "div",
+    {
+      className: "bg-mainColor z-[999] flex flex-col gap-12 justify-center items-center fixed top-0 left-0 w-full h-full w-full h-full z-50 overflow-y-auto",
+      children: /* @__PURE__ */ jsxDEV9("div", { className: "flex items-start flex-col gap-6 w-full ml-5", children: pathTextMappingMobile.map((route) => /* @__PURE__ */ jsxDEV9(
+        "p",
+        {
+          onClick: () => {
+            handleChange(route.path);
+          },
+          className: "text-orange uppercase hover:cursor-pointer text-[70px] leading-[90%] font-neueRegular",
+          children: route.name
+        },
+        route.path,
+        !1,
+        {
+          fileName: "app/routes/projects.tsx",
+          lineNumber: 31,
+          columnNumber: 11
+        },
+        this
+      )) }, void 0, !1, {
+        fileName: "app/routes/projects.tsx",
+        lineNumber: 29,
+        columnNumber: 7
+      }, this)
+    },
+    void 0,
+    !1,
+    {
       fileName: "app/routes/projects.tsx",
-      lineNumber: 15,
-      columnNumber: 9
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/projects.tsx",
-      lineNumber: 14,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ jsxDEV9("div", { onClick: () => router("/portfolio"), className: "hover:cursor-pointer", children: /* @__PURE__ */ jsxDEV9("p", { className: "uppercase text-titleMobile md:text-title text-left  font-neueRegular text-orange hover:text-redHome", children: "PORTEFOLIO" }, void 0, !1, {
-      fileName: "app/routes/projects.tsx",
-      lineNumber: 18,
-      columnNumber: 9
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/projects.tsx",
-      lineNumber: 17,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ jsxDEV9("div", { onClick: () => router("/capiche"), className: "hover:cursor-pointer", children: /* @__PURE__ */ jsxDEV9("p", { className: "uppercase text-titleMobile md:text-title text-left  font-neueRegular text-orange hover:text-redHome", children: "CAPICHE" }, void 0, !1, {
-      fileName: "app/routes/projects.tsx",
-      lineNumber: 21,
-      columnNumber: 9
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/projects.tsx",
-      lineNumber: 20,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ jsxDEV9("div", { onClick: () => router("/logofolio"), className: "hover:cursor-pointer", children: /* @__PURE__ */ jsxDEV9("p", { className: "uppercase text-titleMobile md:text-title text-left  font-neueRegular text-orange hover:text-redHome", children: "LOGOfolio" }, void 0, !1, {
-      fileName: "app/routes/projects.tsx",
-      lineNumber: 24,
-      columnNumber: 9
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/projects.tsx",
-      lineNumber: 23,
-      columnNumber: 7
-    }, this)
-  ] }, void 0, !0, {
-    fileName: "app/routes/projects.tsx",
-    lineNumber: 13,
-    columnNumber: 5
-  }, this);
+      lineNumber: 26,
+      columnNumber: 5
+    },
+    this
+  );
 }
 
 // app/routes/services.tsx
@@ -1142,7 +1140,7 @@ var services_exports = {};
 __export(services_exports, {
   default: () => Services
 });
-import { useEffect as useEffect4, useRef as useRef3, useState as useState4 } from "react";
+import { useEffect as useEffect4, useRef as useRef3, useState as useState5 } from "react";
 
 // app/assets/arrow-right.tsx
 import { jsxDEV as jsxDEV10 } from "react/jsx-dev-runtime";
@@ -1162,7 +1160,7 @@ import { Remove, Add } from "@mui/icons-material";
 import { isMobile } from "react-device-detect";
 import { Fragment, jsxDEV as jsxDEV11 } from "react/jsx-dev-runtime";
 function Services() {
-  let { setHeaderColor } = useHeaderColor(), [scrolled, setScrolled] = useState4(!1), [isCommunicationSelected, setIsCommunicationSelected] = useState4(!1), [isDesignSelected, setIsDesignSelected] = useState4(!1), [isConsultingSelected, setIsConsultingSelected] = useState4(!1), router = useNavigate5(), scrollingTextRef = useRef3(null);
+  let { setHeaderColor } = useHeaderColor(), [scrolled, setScrolled] = useState5(!1), [isCommunicationSelected, setIsCommunicationSelected] = useState5(!1), [isDesignSelected, setIsDesignSelected] = useState5(!1), [isConsultingSelected, setIsConsultingSelected] = useState5(!1), router = useNavigate5(), scrollingTextRef = useRef3(null);
   useEffect4(() => {
     if (!isMobile) {
       setHeaderColor("linear-services");
@@ -1738,7 +1736,7 @@ function Services() {
             lineNumber: 195,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ jsxDEV11("p", { className: "text-[14px] leading-[130%] font-footer", children: "Ma mission est de vous \xE9couter et de vous accompagner pas \xE0 pas dans votre parcours.Avoir une compr\xE9hension approfondie de vos probl\xE9matiques pour trouver ensemble des solutions efficaces et personnalis\xE9es qui r\xE9pondent \xE0 vos d\xE9fis uniques." }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV11("p", { className: "text-[14px] leading-[130%] font-footer", children: "Ma mission est de vous \xE9couter et de vous accompagner pas \xE0 pas dans votre parcours. Avoir une compr\xE9hension approfondie de vos probl\xE9matiques pour trouver ensemble des solutions efficaces et personnalis\xE9es qui r\xE9pondent \xE0 vos d\xE9fis uniques." }, void 0, !1, {
             fileName: "app/routes/services.tsx",
             lineNumber: 196,
             columnNumber: 13
@@ -1759,7 +1757,7 @@ function Services() {
             lineNumber: 200,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ jsxDEV11("p", { className: "text-[14px] leading-[130%] font-footer", children: "Construire ensemble une image de marque solide et coh\xE9rente. En adoptant une approche centr\xE9e sur vos besoins, je vise \xE0 cr\xE9er pour vous une strat\xE9gie innovante et actuelle qui r\xE9sonnera avec votre audience cible et g\xE9n\xE8rera un engagement nouveau. " }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV11("p", { className: "text-[14px] leading-[130%] font-footer", children: "Construire ensemble une image de marque solide et coh\xE9rente. En adoptant une approche centr\xE9e sur vos besoins, je vise \xE0 cr\xE9er pour vous une strat\xE9gie innovante et actuelle qui r\xE9sonnera avec votre audience cible et g\xE9n\xE8rera un engagement nouveau." }, void 0, !1, {
             fileName: "app/routes/services.tsx",
             lineNumber: 201,
             columnNumber: 13
@@ -2064,7 +2062,7 @@ var contact_exports = {};
 __export(contact_exports, {
   default: () => Contact
 });
-import { useEffect as useEffect6, useState as useState5 } from "react";
+import { useEffect as useEffect6, useState as useState6 } from "react";
 import emailjs from "emailjs-com";
 import { MailOutlined } from "@mui/icons-material";
 
@@ -2105,7 +2103,7 @@ function Modal({ onClose }) {
   }, this);
 }
 function Contact() {
-  let { setHeaderColor } = useHeaderColor(), [showModal, setShowModal] = useState5(!1), [name, setName] = useState5(""), [lastName, setLastName] = useState5(""), [email, setEmail] = useState5(""), [subject, setSubject] = useState5(""), [message, setMessage] = useState5("");
+  let { setHeaderColor } = useHeaderColor(), [showModal, setShowModal] = useState6(!1), [name, setName] = useState6(""), [lastName, setLastName] = useState6(""), [email, setEmail] = useState6(""), [subject, setSubject] = useState6(""), [message, setMessage] = useState6("");
   useEffect6(() => {
     emailjs.init("IoYqcS-FyoRAsKFCH"), setHeaderColor("mainColor");
   }, [setHeaderColor]);
@@ -2389,7 +2387,7 @@ function Contact() {
           columnNumber: 11
         }, this),
         /* @__PURE__ */ jsxDEV16("div", { className: "flex-col flex items-start", children: [
-          /* @__PURE__ */ jsxDEV16("p", { className: "font-inter mb-2", children: "Object" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV16("p", { className: "font-inter mb-2", children: "Objet" }, void 0, !1, {
             fileName: "app/routes/contact.tsx",
             lineNumber: 155,
             columnNumber: 13
@@ -2533,11 +2531,11 @@ __export(index_exports, {
 });
 
 // app/components/home/background-slider.tsx
-import { useEffect as useEffect7, useState as useState6 } from "react";
+import { useEffect as useEffect7, useState as useState7 } from "react";
 import { motion as motion5 } from "framer-motion";
 import { jsxDEV as jsxDEV17 } from "react/jsx-dev-runtime";
 var BackgroundSlider = ({ isVisible = !1 }) => {
-  let [isHovered, setIsHovered] = useState6(!1), { setHeaderColor } = useHeaderColor();
+  let [isHovered, setIsHovered] = useState7(!1), { setHeaderColor } = useHeaderColor();
   return useEffect7(() => {
     let timer = setTimeout(() => {
       setIsHovered(!0);
@@ -2591,19 +2589,19 @@ var BackgroundSlider = ({ isVisible = !1 }) => {
 }, background_slider_default = BackgroundSlider;
 
 // app/components/home/index.tsx
-import { useEffect as useEffect9, useState as useState8 } from "react";
+import { useEffect as useEffect9, useState as useState9 } from "react";
 import { Parallax as Parallax2, ParallaxProvider } from "react-scroll-parallax";
 import { motion as motion6 } from "framer-motion";
 import { useNavigate as useNavigate8 } from "@remix-run/react";
 import { Close as Close2, Construction } from "@mui/icons-material";
 
 // app/components/home/description.tsx
-import { useEffect as useEffect8, useState as useState7 } from "react";
+import { useEffect as useEffect8, useState as useState8 } from "react";
 import { useNavigate as useNavigate7 } from "@remix-run/react";
 import { Parallax } from "react-scroll-parallax";
 import { jsxDEV as jsxDEV18 } from "react/jsx-dev-runtime";
 var Description = () => {
-  let router = useNavigate7(), [scrollPosition, setScrollPosition] = useState7(0), [scrolled, setScrolled] = useState7(!1), isServicesSectionVisible = scrollPosition > 1350;
+  let router = useNavigate7(), [scrollPosition, setScrollPosition] = useState8(0), [scrolled, setScrolled] = useState8(!1), isServicesSectionVisible = scrollPosition > 1350;
   return useEffect8(() => {
     let handleScroll = () => {
       setScrollPosition(window.scrollY), window.scrollY > 1150 && setScrolled(!0);
@@ -3055,7 +3053,7 @@ var timing = {
   duration: 0.7,
   ease: [0.43, 0.13, 0.23, 0.96]
 }, HomeComponent = () => {
-  let { setHeaderColor } = useHeaderColor(), [modalOpen, setModalOpen] = useState8(!1), router = useNavigate8();
+  let { setHeaderColor } = useHeaderColor(), [modalOpen, setModalOpen] = useState9(!1), router = useNavigate8();
   useEffect9(() => {
     setHeaderColor("#FCF6EF");
   }, []), useEffect9(() => {
@@ -3235,9 +3233,9 @@ var timing = {
 import { motion as motion7 } from "framer-motion";
 
 // app/animations/home-desktop.tsx
-import { useEffect as useEffect10, useState as useState9 } from "react";
+import { useEffect as useEffect10, useState as useState10 } from "react";
 var useDesktopAnimation = () => {
-  let { setHeaderColor } = useHeaderColor(), [state, setState] = useState9({
+  let { setHeaderColor } = useHeaderColor(), [state, setState] = useState10({
     currentImage: 0,
     showLastPart: !1,
     animationFinished: !1,
@@ -3381,26 +3379,25 @@ function Mosaic() {
     duration: 0.7,
     ease: [0.43, 0.13, 0.23, 0.96]
   }, mosaicContent = [
-    { title: "mission.", content: "J'ai con\xE7u ce portfolio comme une introduction \xE0 mon univers, mon style et mes valeurs. Des arri\xE8re-plans neutres mais une des couleurs de texte satur\xE9es, une police douce mais imposante... L\u2019ensemble se pose en miroir de mes engagements et croyances : un design simple, avenant mais r\xE9solument affirm\xE9." },
-    { title: "objectifs", content: "L\u2019univers et le ton se veulent l\xE9ger, la palette de couleur est un rappel du logo. Le site et l\u2019application mobile sont \xE0 la fois ludiques et fond\xE9s sur les principes de L\u2019UX design pour une exp\xE9rience utilisateur optimum." },
-    { title: "R\xE9alisation", content: "J\u2019ai veill\xE9 \xE0 ce que ce portfolio pr\xE9sente une coh\xE9rence entre la version mobile et web, tout en offrant une exp\xE9rience utilisateur sp\xE9cifique \xE0 chaque support." }
+    { title: "mission.", content: "Mosaic est une association de d\xE9fense des droits des personnes LGBTQ+ de 12 \xE0 18 ans. Ils proposent des services d\u2019\xE9coute et d\u2019animations pour les jeunes et leurs proches." },
+    { title: "objectifs", content: "Augmenter la visibilit\xE9 globale de l\u2019association avec un plan de communication adapt\xE9, de nouveaux concepts et en accord avec le ton et le design d\xE9j\xE0 mis en place." }
   ];
   return /* @__PURE__ */ jsxDEV21("div", { className: "h-full flex-col items-center justify-center mx-auto", children: [
     /* @__PURE__ */ jsxDEV21("div", { className: "mx-5 w-8", onClick: () => {
       router(-1);
     }, children: /* @__PURE__ */ jsxDEV21(ArrowBack4, {}, void 0, !1, {
       fileName: "app/routes/mosaic.tsx",
-      lineNumber: 34,
+      lineNumber: 33,
       columnNumber: 56
     }, this) }, void 0, !1, {
       fileName: "app/routes/mosaic.tsx",
-      lineNumber: 34,
+      lineNumber: 33,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV21("div", { className: "flex-col mt-20 mb-16", children: [
       /* @__PURE__ */ jsxDEV21("p", { className: "uppercase font-neueRegular md:text-title text-capicheMobile text-redHome text-center mt-[180px] mb-[100px]", children: "Mosaic" }, void 0, !1, {
         fileName: "app/routes/mosaic.tsx",
-        lineNumber: 36,
+        lineNumber: 35,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV21(
@@ -3413,12 +3410,12 @@ function Mosaic() {
           children: [
             /* @__PURE__ */ jsxDEV21(BigArrow, {}, void 0, !1, {
               fileName: "app/routes/mosaic.tsx",
-              lineNumber: 43,
+              lineNumber: 42,
               columnNumber: 11
             }, this),
             /* @__PURE__ */ jsxDEV21("p", { className: "font-footer uppercase font-bold leading-[20px] text-[14px]", children: "DISCOVER" }, void 0, !1, {
               fileName: "app/routes/mosaic.tsx",
-              lineNumber: 44,
+              lineNumber: 43,
               columnNumber: 11
             }, this)
           ]
@@ -3427,14 +3424,14 @@ function Mosaic() {
         !0,
         {
           fileName: "app/routes/mosaic.tsx",
-          lineNumber: 37,
+          lineNumber: 36,
           columnNumber: 9
         },
         this
       )
     ] }, void 0, !0, {
       fileName: "app/routes/mosaic.tsx",
-      lineNumber: 35,
+      lineNumber: 34,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV21("div", { className: "w-full h-auto bg-saumon py-10", children: [
@@ -3443,185 +3440,185 @@ function Mosaic() {
           '"Mosaic encourage, \xE9duque et inspire les jeunes personnes LGBTQ+ et celleux \xE0',
           /* @__PURE__ */ jsxDEV21("br", {}, void 0, !1, {
             fileName: "app/routes/mosaic.tsx",
-            lineNumber: 49,
+            lineNumber: 48,
             columnNumber: 167
           }, this),
           ' leur c\xF4t\xE9s."'
         ] }, void 0, !0, {
           fileName: "app/routes/mosaic.tsx",
-          lineNumber: 49,
+          lineNumber: 48,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ jsxDEV21("div", { className: "z-50 mt-10 w-[130px] h-[130px] bg-mainColor rounded-2xl", children: /* @__PURE__ */ jsxDEV21("div", { className: "flex flex-col items-center justify-center h-full", children: [
           /* @__PURE__ */ jsxDEV21("p", { className: "font-neueSemiBold text-[28px] text-center", children: "+16%" }, void 0, !1, {
             fileName: "app/routes/mosaic.tsx",
-            lineNumber: 52,
+            lineNumber: 51,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV21("p", { className: "font-footer text-[12px] text-center", children: [
             "Augmentation",
             /* @__PURE__ */ jsxDEV21("br", {}, void 0, !1, {
               fileName: "app/routes/mosaic.tsx",
-              lineNumber: 53,
+              lineNumber: 52,
               columnNumber: 78
             }, this),
             " globale en ligne."
           ] }, void 0, !0, {
             fileName: "app/routes/mosaic.tsx",
-            lineNumber: 53,
+            lineNumber: 52,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/mosaic.tsx",
-          lineNumber: 51,
+          lineNumber: 50,
           columnNumber: 13
         }, this) }, void 0, !1, {
           fileName: "app/routes/mosaic.tsx",
-          lineNumber: 50,
+          lineNumber: 49,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ jsxDEV21("div", { className: "w-[130px] absolute right-4  mt-14 z-10 h-[130px] bg-yellowHome rounded-2xl" }, void 0, !1, {
           fileName: "app/routes/mosaic.tsx",
-          lineNumber: 56,
+          lineNumber: 55,
           columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/mosaic.tsx",
-        lineNumber: 48,
+        lineNumber: 47,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV21("div", { className: "flex gap-6 items-start w-full overflow-auto h-full size-12 px-4 mt-8 mb-4", children: mosaicContent.map((content, index) => /* @__PURE__ */ jsxDEV21("div", { className: "flex flex-col items-start pl-6 pb-6", children: [
         /* @__PURE__ */ jsxDEV21("p", { className: "text-redHome font-neueSemiBold lowercase text-[25px] mb-5", children: content.title }, void 0, !1, {
           fileName: "app/routes/mosaic.tsx",
-          lineNumber: 62,
+          lineNumber: 61,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV21("p", { className: "font-footer text-[16px] min-w-[320px]", children: content.content }, void 0, !1, {
           fileName: "app/routes/mosaic.tsx",
-          lineNumber: 63,
+          lineNumber: 62,
           columnNumber: 15
         }, this)
       ] }, index, !0, {
         fileName: "app/routes/mosaic.tsx",
-        lineNumber: 61,
+        lineNumber: 60,
         columnNumber: 13
       }, this)) }, void 0, !1, {
         fileName: "app/routes/mosaic.tsx",
-        lineNumber: 59,
+        lineNumber: 58,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/mosaic.tsx",
-      lineNumber: 47,
+      lineNumber: 46,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV21("div", { className: "w-auto py-20 bg-yellowHome overflow-hidden", children: [
       /* @__PURE__ */ jsxDEV21("div", { className: "flex items-center justify-around gap-12", children: [
         /* @__PURE__ */ jsxDEV21("img", { src: Images.mosaic1, className: "w-[180px] h-[180px] -ml-[120px]" }, void 0, !1, {
           fileName: "app/routes/mosaic.tsx",
-          lineNumber: 70,
+          lineNumber: 69,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ jsxDEV21("img", { src: Images.mosaic2, className: "w-[220px] h-[220px]" }, void 0, !1, {
           fileName: "app/routes/mosaic.tsx",
-          lineNumber: 71,
+          lineNumber: 70,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ jsxDEV21("img", { src: Images.mosaic007, className: "w-[180px] h-[180px] rounded-xl" }, void 0, !1, {
           fileName: "app/routes/mosaic.tsx",
-          lineNumber: 72,
+          lineNumber: 71,
           columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/mosaic.tsx",
-        lineNumber: 69,
+        lineNumber: 68,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV21("p", { className: " mt-5 text-[14px] text-orange text-center font-neueCondensed", children: [
         "Trust the Word, la premi\xE8re \xE9dition d'un concours ",
         /* @__PURE__ */ jsxDEV21("br", {}, void 0, !1, {
           fileName: "app/routes/mosaic.tsx",
-          lineNumber: 74,
+          lineNumber: 73,
           columnNumber: 135
         }, this),
         " litt\xE9raire par et pour la communaut\xE9 Queer."
       ] }, void 0, !0, {
         fileName: "app/routes/mosaic.tsx",
-        lineNumber: 74,
+        lineNumber: 73,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/mosaic.tsx",
-      lineNumber: 68,
+      lineNumber: 67,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV21("div", { className: "mb-20 mt-10 flex flex-col items-center", children: [
       /* @__PURE__ */ jsxDEV21("p", { className: "text-orange font-neueRegular text-[40px] mb-10", children: "T\xE9moignage" }, void 0, !1, {
         fileName: "app/routes/mosaic.tsx",
-        lineNumber: 77,
+        lineNumber: 76,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV21("div", { className: "flex items-center", children: [
         /* @__PURE__ */ jsxDEV21(ArrowForward, { className: "w-6" }, void 0, !1, {
           fileName: "app/routes/mosaic.tsx",
-          lineNumber: 79,
+          lineNumber: 78,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ jsxDEV21("p", { className: "font-footer text-[18px]", children: [
           /* @__PURE__ */ jsxDEV21("span", { className: "font-footer font-semibold", children: "Hugh O'keeffe" }, void 0, !1, {
             fileName: "app/routes/mosaic.tsx",
-            lineNumber: 79,
+            lineNumber: 78,
             columnNumber: 82
           }, this),
           ", Assistant Directeur"
         ] }, void 0, !0, {
           fileName: "app/routes/mosaic.tsx",
-          lineNumber: 79,
+          lineNumber: 78,
           columnNumber: 43
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/mosaic.tsx",
-        lineNumber: 78,
+        lineNumber: 77,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV21("p", { className: "font-footer text-[12px] leading-[120%] mt-5 mb-10 w-[300px]", children: [
         "\u201CCl\xE9mence was a true pleasure to work with. In",
         /* @__PURE__ */ jsxDEV21("br", {}, void 0, !1, {
           fileName: "app/routes/mosaic.tsx",
-          lineNumber: 81,
+          lineNumber: 80,
           columnNumber: 130
         }, this),
         " joining us she created a new role for herself",
         /* @__PURE__ */ jsxDEV21("br", {}, void 0, !1, {
           fileName: "app/routes/mosaic.tsx",
-          lineNumber: 81,
+          lineNumber: 80,
           columnNumber: 185
         }, this),
         " leveraging her skills and abilities to build on Mosaic's",
         /* @__PURE__ */ jsxDEV21("br", {}, void 0, !1, {
           fileName: "app/routes/mosaic.tsx",
-          lineNumber: 81,
+          lineNumber: 80,
           columnNumber: 251
         }, this),
         " online presence and grew our audience [...]\u201D."
       ] }, void 0, !0, {
         fileName: "app/routes/mosaic.tsx",
-        lineNumber: 81,
+        lineNumber: 80,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV21("a", { target: "_blank", href: "https://www.linkedin.com/in/cl%C3%A9mence-dequaire/?locale=en_US", className: "py-2 px-2 transition-all duration-300 ease-in-out font-bold text-[10px] text-center text-grayBlack uppercase hover:text-white hover:bg-grayBlack translate hover:cursor-pointer border-black border rounded-full min-w-[100px] max-w-[130px] mx-auto mb-20", children: "Voir sur linkedin" }, void 0, !1, {
         fileName: "app/routes/mosaic.tsx",
-        lineNumber: 82,
+        lineNumber: 81,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/mosaic.tsx",
-      lineNumber: 76,
+      lineNumber: 75,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/mosaic.tsx",
-    lineNumber: 33,
+    lineNumber: 32,
     columnNumber: 5
   }, this);
 }
@@ -3909,7 +3906,7 @@ function Values() {
             lineNumber: 76,
             columnNumber: 348
           }, this),
-          "Cinq ann\xE9es se sont \xE9coul\xE9es depuis mon premier poste et cette id\xE9e s\u2019est transform\xE9e en un d\xE9fi que je rel\xE8ve passionn\xE9ment chaque jour. Gr\xE2ce \xE0 d\u2019autres humain.e.s qui croyaient fort en leur convictions,   j\u2019ai eu la chance de porter d\xE9fis audacieux et des messages engag\xE9s. Peut-\xEAtre serez vous les prochain.e.s ?"
+          "Cinq ann\xE9es se sont \xE9coul\xE9es depuis mon premier poste et cette id\xE9e s\u2019est transform\xE9e en un d\xE9fi que je rel\xE8ve passionn\xE9ment chaque jour. Gr\xE2ce \xE0 d\u2019autres humain.e.s qui croyaient fort en leurs convictions,   j\u2019ai eu la chance de porter des d\xE9fis audacieux et des messages engag\xE9s. Peut-\xEAtre serez-vous les prochain.e.s ?"
         ] }, void 0, !0, {
           fileName: "app/routes/values.tsx",
           lineNumber: 76,
@@ -3922,176 +3919,176 @@ function Values() {
       }, this),
       /* @__PURE__ */ jsxDEV22("p", { className: "self-start ml-20 text-[8px] font-bold mb-10", children: "MON PARCOURS" }, void 0, !1, {
         fileName: "app/routes/values.tsx",
-        lineNumber: 79,
+        lineNumber: 78,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV22("p", { className: "text-orange -mb-10 z-50 font-neueRegular text-[25px] leading-[90%]", children: [
         "\u201CSeules 54 % des",
         /* @__PURE__ */ jsxDEV22("br", {}, void 0, !1, {
           fileName: "app/routes/values.tsx",
-          lineNumber: 80,
+          lineNumber: 79,
           columnNumber: 107
         }, this),
         " entreprises fran\xE7aises",
         /* @__PURE__ */ jsxDEV22("br", {}, void 0, !1, {
           fileName: "app/routes/values.tsx",
-          lineNumber: 80,
+          lineNumber: 79,
           columnNumber: 139
         }, this),
         " ont embrass\xE9 la",
         /* @__PURE__ */ jsxDEV22("br", {}, void 0, !1, {
           fileName: "app/routes/values.tsx",
-          lineNumber: 80,
+          lineNumber: 79,
           columnNumber: 164
         }, this),
         " diversit\xE9\u201D."
       ] }, void 0, !0, {
         fileName: "app/routes/values.tsx",
-        lineNumber: 80,
+        lineNumber: 79,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV22("div", { className: "flex items-center mx-4", children: [
         /* @__PURE__ */ jsxDEV22("img", { src: Images.group, className: "w-[160px] h-[210px]" }, void 0, !1, {
           fileName: "app/routes/values.tsx",
-          lineNumber: 82,
+          lineNumber: 81,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ jsxDEV22("div", { className: "flex items-start justify-end gap-1.5 ml-5", children: [
           /* @__PURE__ */ jsxDEV22("img", { src: Images.manifesto, className: "rotate-[185deg] w-[20px]" }, void 0, !1, {
             fileName: "app/routes/values.tsx",
-            lineNumber: 84,
+            lineNumber: 83,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ jsxDEV22("p", { className: "text-[10px] text-justify", children: "Au fil de ma vie et de ma carri\xE8re personnelle,  j\u2019ai pu appr\xE9hender avec clart\xE9 et d\xE9termination les bouleversements sociaux qui se jouent depuis maintenant des ann\xE9es.  Pour toutes les entreprises qui souhaitent faire parti du changement, je propose une relecture inclusive et une vision sensible de votre communication. " }, void 0, !1, {
             fileName: "app/routes/values.tsx",
-            lineNumber: 85,
+            lineNumber: 84,
             columnNumber: 13
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/values.tsx",
-          lineNumber: 83,
+          lineNumber: 82,
           columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/values.tsx",
-        lineNumber: 81,
+        lineNumber: 80,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV22("div", { className: "bg-yellowHome w-full h-full pt-20 pb-10 mt-10", children: [
         /* @__PURE__ */ jsxDEV22("p", { className: "font-neueRegular text-[20px] leading-[90%] mx-10", children: "Manifesto" }, void 0, !1, {
           fileName: "app/routes/values.tsx",
-          lineNumber: 89,
+          lineNumber: 88,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ jsxDEV22("div", { className: "my-20 flex flex-col gap-4", children: [
           /* @__PURE__ */ jsxDEV22("div", { className: "flex items-center justify-evenly", children: [
             /* @__PURE__ */ jsxDEV22("p", { className: "font-semibold text-footer text-[35px] leading-[90px]", children: "01." }, void 0, !1, {
               fileName: "app/routes/values.tsx",
-              lineNumber: 92,
+              lineNumber: 91,
               columnNumber: 15
             }, this),
             /* @__PURE__ */ jsxDEV22("p", { className: "font-semibold text-footer text-[12px] leading-[120%] text-justify tracking-[02%] w-2/3", children: [
               "L'",
               /* @__PURE__ */ jsxDEV22("span", { className: "text-orange", children: "inclusivit\xE9" }, void 0, !1, {
                 fileName: "app/routes/values.tsx",
-                lineNumber: 94,
+                lineNumber: 93,
                 columnNumber: 19
               }, this),
               " et le respect d\u2019autrui sont des valeurs fondamentales. Faisons de la diversit\xE9 un engagement quotidien."
             ] }, void 0, !0, {
               fileName: "app/routes/values.tsx",
-              lineNumber: 93,
+              lineNumber: 92,
               columnNumber: 15
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/values.tsx",
-            lineNumber: 91,
+            lineNumber: 90,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ jsxDEV22("div", { className: "flex items-center justify-evenly", children: [
             /* @__PURE__ */ jsxDEV22("p", { className: "font-semibold text-footer text-[35px] leading-[90px]", children: "02." }, void 0, !1, {
               fileName: "app/routes/values.tsx",
-              lineNumber: 98,
+              lineNumber: 97,
               columnNumber: 15
             }, this),
             /* @__PURE__ */ jsxDEV22("p", { className: "font-semibold text-footer text-[12px] leading-[120%] text-justify tracking-[02%] w-2/3", children: [
               "La ",
               /* @__PURE__ */ jsxDEV22("span", { className: "text-orange", children: "bienveillance" }, void 0, !1, {
                 fileName: "app/routes/values.tsx",
-                lineNumber: 100,
+                lineNumber: 99,
                 columnNumber: 20
               }, this),
               " et l'\xE9coute forment la base d'une culture d'entreprise saine et productive. Le dialogue est la cl\xE9."
             ] }, void 0, !0, {
               fileName: "app/routes/values.tsx",
-              lineNumber: 99,
+              lineNumber: 98,
               columnNumber: 15
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/values.tsx",
-            lineNumber: 97,
+            lineNumber: 96,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ jsxDEV22("div", { className: "flex items-center justify-evenly", children: [
             /* @__PURE__ */ jsxDEV22("p", { className: "font-semibold text-footer text-[35px] leading-[90px]", children: "03." }, void 0, !1, {
               fileName: "app/routes/values.tsx",
-              lineNumber: 104,
+              lineNumber: 103,
               columnNumber: 15
             }, this),
             /* @__PURE__ */ jsxDEV22("p", { className: "font-semibold text-footer text-[12px] leading-[120%] text-justify tracking-[02%] w-2/3", children: [
               "Sans ",
               /* @__PURE__ */ jsxDEV22("span", { className: "text-orange", children: "passion" }, void 0, !1, {
                 fileName: "app/routes/values.tsx",
-                lineNumber: 106,
+                lineNumber: 105,
                 columnNumber: 22
               }, this),
               ", pas d\u2019action. Croyez en votre message, je me charge de le partager."
             ] }, void 0, !0, {
               fileName: "app/routes/values.tsx",
-              lineNumber: 105,
+              lineNumber: 104,
               columnNumber: 15
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/values.tsx",
-            lineNumber: 103,
+            lineNumber: 102,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ jsxDEV22("div", { className: "flex items-center justify-evenly", children: [
             /* @__PURE__ */ jsxDEV22("p", { className: "font-semibold text-footer text-[35px] leading-[90px]", children: "04." }, void 0, !1, {
               fileName: "app/routes/values.tsx",
-              lineNumber: 110,
+              lineNumber: 109,
               columnNumber: 15
             }, this),
             /* @__PURE__ */ jsxDEV22("p", { className: "font-semibold text-footer text-[12px] leading-[120%] text-justify tracking-[02%] w-2/3", children: [
               /* @__PURE__ */ jsxDEV22("span", { className: "text-orange", children: "Amusons nous" }, void 0, !1, {
                 fileName: "app/routes/values.tsx",
-                lineNumber: 112,
+                lineNumber: 111,
                 columnNumber: 17
               }, this),
               " \xE0 cr\xE9er, partager, designer. Partageons l\u2019amour de nos m\xE9tiers.               "
             ] }, void 0, !0, {
               fileName: "app/routes/values.tsx",
-              lineNumber: 111,
+              lineNumber: 110,
               columnNumber: 15
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/values.tsx",
-            lineNumber: 109,
+            lineNumber: 108,
             columnNumber: 13
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/values.tsx",
-          lineNumber: 90,
+          lineNumber: 89,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ jsxDEV22("div", { onClick: () => router("/projects"), className: "py-3 px-2 transition-all duration-300 ease-in-out font-bold text-[7px] text-center text-grayBlack uppercase hover:text-white hover:bg-grayBlack translate hover:cursor-pointer border-black border rounded-full w-[100px] mx-auto", children: "Mes projets" }, void 0, !1, {
           fileName: "app/routes/values.tsx",
-          lineNumber: 115,
+          lineNumber: 114,
           columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/values.tsx",
-        lineNumber: 88,
+        lineNumber: 87,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
@@ -4603,7 +4600,7 @@ function Home() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-75X5CYH4.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-FWVAADBG.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-43WGSL2O.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-ZGBSBBEN.js", imports: ["/build/_shared/chunk-GX2C7XOP.js", "/build/_shared/chunk-EQTILSID.js", "/build/_shared/chunk-ZF5TFIOV.js", "/build/_shared/chunk-NMZL6IDN.js", "/build/_shared/chunk-DIGSRBO4.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-QEUHH6JL.js", imports: ["/build/_shared/chunk-DXGGGQML.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-IR7NE7RZ.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-SYSBVIL5.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-QCO74Y4T.js", imports: ["/build/_shared/chunk-5T6BUAZE.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/capiche": { id: "routes/capiche", parentId: "root", path: "capiche", index: void 0, caseSensitive: void 0, module: "/build/routes/capiche-QSJGUAQI.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/cards": { id: "routes/cards", parentId: "root", path: "cards", index: void 0, caseSensitive: void 0, module: "/build/routes/cards-NWVKPA6B.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-BF5AB4UQ.js", imports: ["/build/_shared/chunk-SYSBVIL5.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/home": { id: "routes/home", parentId: "root", path: "home", index: void 0, caseSensitive: void 0, module: "/build/routes/home-A7SMLWBT.js", imports: ["/build/_shared/chunk-DXGGGQML.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-SYSBVIL5.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/logofolio": { id: "routes/logofolio", parentId: "root", path: "logofolio", index: void 0, caseSensitive: void 0, module: "/build/routes/logofolio-45WFHG56.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/mosaic": { id: "routes/mosaic", parentId: "root", path: "mosaic", index: void 0, caseSensitive: void 0, module: "/build/routes/mosaic-7ZUWMEGZ.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-2N2XLYB7.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/projects": { id: "routes/projects", parentId: "root", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/projects-N4YLKP2V.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-AFNIN7UY.js", imports: ["/build/_shared/chunk-IR7NE7RZ.js", "/build/_shared/chunk-Z7AT2O2U.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/values": { id: "routes/values", parentId: "root", path: "values", index: void 0, caseSensitive: void 0, module: "/build/routes/values-RVNRBEQJ.js", imports: ["/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-IR7NE7RZ.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "3cdef71e", hmr: { runtime: "/build/_shared/chunk-43WGSL2O.js", timestamp: 1712952508014 }, url: "/build/manifest-3CDEF71E.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-75X5CYH4.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-FWVAADBG.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-43WGSL2O.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-FES56SXI.js", imports: ["/build/_shared/chunk-GX2C7XOP.js", "/build/_shared/chunk-EQTILSID.js", "/build/_shared/chunk-ZF5TFIOV.js", "/build/_shared/chunk-NMZL6IDN.js", "/build/_shared/chunk-DIGSRBO4.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-QFYTEQPO.js", imports: ["/build/_shared/chunk-UHKHXWD6.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-IR7NE7RZ.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-IO5QEN4G.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-QCO74Y4T.js", imports: ["/build/_shared/chunk-5T6BUAZE.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/capiche": { id: "routes/capiche", parentId: "root", path: "capiche", index: void 0, caseSensitive: void 0, module: "/build/routes/capiche-QSJGUAQI.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/cards": { id: "routes/cards", parentId: "root", path: "cards", index: void 0, caseSensitive: void 0, module: "/build/routes/cards-NWVKPA6B.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-VRWZISTI.js", imports: ["/build/_shared/chunk-IO5QEN4G.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/home": { id: "routes/home", parentId: "root", path: "home", index: void 0, caseSensitive: void 0, module: "/build/routes/home-YU6AA3SI.js", imports: ["/build/_shared/chunk-UHKHXWD6.js", "/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-Z7AT2O2U.js", "/build/_shared/chunk-OI4BMN2D.js", "/build/_shared/chunk-IO5QEN4G.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/logofolio": { id: "routes/logofolio", parentId: "root", path: "logofolio", index: void 0, caseSensitive: void 0, module: "/build/routes/logofolio-45WFHG56.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/mosaic": { id: "routes/mosaic", parentId: "root", path: "mosaic", index: void 0, caseSensitive: void 0, module: "/build/routes/mosaic-TULLYNVV.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-5JBIH55K.js", imports: ["/build/_shared/chunk-OI4BMN2D.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/projects": { id: "routes/projects", parentId: "root", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/projects-2LUYYASC.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-RSIYHDB3.js", imports: ["/build/_shared/chunk-IR7NE7RZ.js", "/build/_shared/chunk-Z7AT2O2U.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/values": { id: "routes/values", parentId: "root", path: "values", index: void 0, caseSensitive: void 0, module: "/build/routes/values-3NZILSJK.js", imports: ["/build/_shared/chunk-5T6BUAZE.js", "/build/_shared/chunk-IR7NE7RZ.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "6b802456", hmr: { runtime: "/build/_shared/chunk-43WGSL2O.js", timestamp: 1712992905159 }, url: "/build/manifest-6B802456.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "development", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1, v3_relativeSplatPath: !1, v3_throwAbortReason: !1 }, publicPath = "/build/", entry = { module: entry_server_node_exports }, routes = {

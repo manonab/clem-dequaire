@@ -193,12 +193,12 @@ export default function Services() {
           <div className="flex flex-col gap-4 mx-6 mt-10 mb-8">
             <p className="font-footer leading-[90‰] text-[38px] font-semibold">01.</p>
             <p className="font-semibold mb-2">Analyser.</p>
-            <p className="text-[14px] leading-[130%] font-footer">Ma mission est de vous écouter et de vous accompagner pas à pas dans votre parcours.Avoir une compréhension approfondie de vos problématiques pour trouver ensemble des solutions efficaces et personnalisées qui répondent à vos défis uniques.</p>
+            <p className="text-[14px] leading-[130%] font-footer">Ma mission est de vous écouter et de vous accompagner pas à pas dans votre parcours. Avoir une compréhension approfondie de vos problématiques pour trouver ensemble des solutions efficaces et personnalisées qui répondent à vos défis uniques.</p>
           </div>
           <div className="flex flex-col gap-4 mx-6 mb-8">
             <p className="font-footer leading-[90‰] text-[38px] font-semibold">02.</p>
             <p className="font-semibold mb-2">Optimiser.</p>
-            <p className="text-[14px] leading-[130%] font-footer">Construire ensemble une image de marque solide et cohérente. En adoptant une approche centrée sur vos besoins, je vise à créer pour vous une stratégie innovante et actuelle qui résonnera avec votre audience cible et génèrera un engagement nouveau. </p>
+            <p className="text-[14px] leading-[130%] font-footer">Construire ensemble une image de marque solide et cohérente. En adoptant une approche centrée sur vos besoins, je vise à créer pour vous une stratégie innovante et actuelle qui résonnera avec votre audience cible et génèrera un engagement nouveau.</p>
           </div>
           <div className="flex flex-col gap-4 mx-6 mt-10 mb-16">
             <p className="font-footer leading-[90‰] text-[38px] font-semibold">03.</p>

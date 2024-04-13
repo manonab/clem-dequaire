@@ -54,9 +54,9 @@ export default function PortFolio() {
   };
 
   const portfolioContent = [
-    { title: "Concept.", content: "J'ai conçu ce portfolio comme une introduction à mon univers, mon style et mes valeurs. Des arrière-plans neutres mais une des couleurs de texte saturées, une police douce mais imposante... L’ensemble se pose en miroir de mes engagements et croyances : un design simple, avenant mais résolument affirmé." },
-    { title: "Intention", content: "Des fonds pastels, plutôt neutre avec des couleurs audacieuses pour les titres." },
-    { title: "Réalisation", content: "Lorem ipsum dolor sit amet consectetur. Orci sed vulputate molestie et aliquet. Sem sapien eget lectus elementum vulputate. Purus congue ullamcorper id at felis et." },
+    { title: "Concept.", content: "J'ai conçu ce portfolio comme une introduction à mon univers, mon style et mes valeurs. Des arrière-plans neutres mais des couleurs de texte saturées, une police douce mais imposante... L’ensemble se pose en miroir de mes engagements et croyances : un design simple, épuré mais résolument affirmé." },
+    { title: "Intention", content: "J’ai veillé à ce que ce portfolio présente une cohérence entre la version mobile et web, tout en offrant une expérience utilisateur spécifique à chaque support." },
+    { title: "Réalisation", content: "audacieux, fluide, engagé" },
   ];
 
   const handleGoBack = () => {
@@ -87,7 +87,7 @@ export default function PortFolio() {
           animate={controls}
         >
       </motion.div>  */}
-      <img src={Images.bearMobilePortfolio} className="absolute right-0 mt-10" />
+      {/* <img src={Images.bearMobilePortfolio} className='absolute right-0' /> */}
 
       <div className="flex gap-6 items-start w-full overflow-auto h-full size-12 px-4 mb-10">
         {portfolioContent.map((content, index) => (
@@ -97,7 +97,7 @@ export default function PortFolio() {
           </div>
         ))}
       </div>
-      <div className="bg-saumon mt-10 flex flex-col gap-3 justify-center py-10">
+      <div className="bg-saumon flex flex-col gap-3 justify-center py-10">
         <div className="flex gap-6 items-center w-full overflow-auto h-full size-12 px-4 py-6" ref={contentRef}>
           <img src={Images.screenPortFolio1} width="350px" className="pl-6" />
           <img src={Images.service} className="w-8" onClick={handleScrollRight} />

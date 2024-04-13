@@ -152,7 +152,7 @@ export default function Contact() {
             />
           </div>
           <div className="flex-col flex items-start">
-            <p className="font-inter mb-2">Object</p>
+            <p className="font-inter mb-2">Objet</p>
             <input
               value={subject}
               onChange={(e) => setSubject(e.target.value)}

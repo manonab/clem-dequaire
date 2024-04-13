@@ -74,8 +74,7 @@ export default function Values() {
         <div className="flex gap-3 items-start justify-center mr-10 mt-20">
           <img src={Images.manifesto} className="rotate-[185deg] w-[20px]" />
           <p className="font-footer text-justify text-[10px] w-2/3"><span className="font-bold">Spécialisée en communication et marketing digital</span>, j’ai toujours ressenti ce besoin de trouver du sens. Plus qu’un métier, je vois la communication comme un moyen de partager et faire grandir des projets auxquels je crois profondément.<br></br><br></br>
-            Cinq années se sont écoulées depuis mon premier poste et cette idée s’est transformée en un défi que je relève passionnément chaque jour. Grâce à d’autres humain.e.s qui croyaient fort en leur convictions,   j’ai eu la chance de porter défis audacieux et des messages engagés. Peut-être serez vous les prochain.e.s ?</p>
-        </div>
+            Cinq années se sont écoulées depuis mon premier poste et cette idée s’est transformée en un défi que je relève passionnément chaque jour. Grâce à d’autres humain.e.s qui croyaient fort en leurs convictions,   j’ai eu la chance de porter des défis audacieux et des messages engagés. Peut-être serez-vous les prochain.e.s ?</p></div>
         <p className="self-start ml-20 text-[8px] font-bold mb-10">MON PARCOURS</p>
         <p className="text-orange -mb-10 z-50 font-neueRegular text-[25px] leading-[90%]">“Seules 54 % des<br></br> entreprises françaises<br></br> ont embrassé la<br></br> diversité”.</p>
         <div className="flex items-center mx-4">
